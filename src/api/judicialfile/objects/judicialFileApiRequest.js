@@ -1,0 +1,23 @@
+export default {
+    fileIds: [],
+    judicialFileIds: [],
+    judicialEntityIds: [],
+    businessRuleNames: [],
+    representativeIds: [],
+    excludedFormCodes: [],
+    includedFormIds: [],
+    excludedStatuses: [],
+    fileAttributesQuery: {},
+    statuses: [],
+    closingReasons: [],
+    minCreatedDate: null,
+    maxCreatedDate: null,
+    searchStatuses: [],
+    searchText: null,
+    searchBy: [],
+    searchActions: [],
+    take: 25,
+    skip: 0,
+    OrderBy: 'CreatedDate',
+    OrderByDescending: false
+};
