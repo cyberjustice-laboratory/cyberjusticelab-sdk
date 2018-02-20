@@ -7,4 +7,4 @@ async function test() {
     console.log(result);
 }
 
-test();
+test(); 
