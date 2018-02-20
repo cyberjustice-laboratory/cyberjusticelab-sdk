@@ -1,10 +1,10 @@
-import JudicialFilePost from './api/judicialfile/JudicialFilePost';
+// Apis
+import * as JudicialFileApi from './api/judicialfile';
 
-const JUDICIALFILE_POST = new JudicialFilePost();
+// Helpers
+import IdentityHelper from './helpers/IdentityHelper';
 
-async function test() {
-    let result = await JUDICIALFILE_POST.GetFiles();
-    console.log(result);
-}
-
-test();
+export default {
+    JudicialFileApi,
+    IdentityHelper
+};

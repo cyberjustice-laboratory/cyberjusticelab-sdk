@@ -1,7 +1,7 @@
-// Import base class
+// Imports base class
 import JudicialFile from './JudicialFile';
 
-// Import objects
+// Imports objects
 import judicialFileApiRequest from './objects/judicialFileApiRequest';
 import judicialFileApiResponse from './objects/judicialFileApiResponse';
 
@@ -30,10 +30,9 @@ export default class JudicialFilePost extends JudicialFile {
      * @memberof JudicialFilePost
      */
     async GetFiles(request) {
-        let model = Object.assign({}, judicialFileApiRequest, request);
         let result = await this.requestHelper.post({
             url: 'https://localhost:441/JudicialFile/POST/Files',
-            data: model
+            data: request
         });
 
         return Object.assign({}, result, judicialFileApiResponse);

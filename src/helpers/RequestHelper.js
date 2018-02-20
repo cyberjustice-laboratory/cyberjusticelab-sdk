@@ -1,12 +1,7 @@
 // Init
-import ES6Promise, { Promise } from 'es6-promise';
-const MY_ES6PROMISE = ES6Promise.polyfill();
+import * as ES6Promise from 'es6-promise';
+ES6Promise.polyfill();
 import 'isomorphic-fetch';
-
-export const REQUEST_OPTIONS = {
-    url: null,
-    data: {}
-};
 
 // Private accessors
 const _processResponse = Symbol('processResponse');
@@ -30,8 +25,8 @@ export default class RequestHelper {
     /**
      * GET wrapper.
      * 
-     * @param {REQUEST_OPTIONS} opts 
-     * @returns {any} 
+     * @param {{ url: null, data: {} }} opts
+     * @returns {any}
      * @memberof RequestHelper
      */
     async get(opts) {
@@ -54,8 +49,8 @@ export default class RequestHelper {
     /**
      * POST wrapper.
      * 
-     * @param {REQUEST_OPTIONS} opts 
-     * @returns {any} 
+     * @param {{ url: null, data: {} }} opts
+     * @returns {any}
      * @memberof RequestHelper
      */
     async post(opts) {
@@ -78,8 +73,8 @@ export default class RequestHelper {
     /**
      * PUT wrapper.
      * 
-     * @param {REQUEST_OPTIONS} opts 
-     * @returns {any} 
+     * @param {{ url: null, data: {} }} opts
+     * @returns {any}
      * @memberof RequestHelper
      */
     async put(opts) {
@@ -102,8 +97,8 @@ export default class RequestHelper {
     /**
      * PATCH wrapper.
      * 
-     * @param {REQUEST_OPTIONS} opts 
-     * @returns {any} 
+     * @param {{ url: null, data: {} }} opts
+     * @returns {any}
      * @memberof RequestHelper
      */
     async patch(opts) {
@@ -126,8 +121,8 @@ export default class RequestHelper {
     /**
      * DELETE wrapper.
      * 
-     * @param {REQUEST_OPTIONS} opts 
-     * @returns {any} 
+     * @param {{ url: null, data: {} }} opts
+     * @returns {any}
      * @memberof RequestHelper
      */
     async delete(opts) {
@@ -152,7 +147,7 @@ export default class RequestHelper {
     /**
      * Processes an HTTP response.
      * 
-     * @param {any} response 
+     * @param {any} response
      * @memberof RequestHelper
      */
     [_processResponse](response) {

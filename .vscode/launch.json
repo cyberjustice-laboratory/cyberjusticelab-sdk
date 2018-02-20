@@ -3,24 +3,12 @@
     // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
-    "configurations": [   
+    "configurations": [
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch App",
-            "program": "${workspaceFolder}/src/index.js",
-            "outFiles": [
-                "${workspaceRoot}/.compiled/**/*.js"
-            ]
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Current File",
-            "program": "${file}",
-            "outFiles": [
-                "${workspaceRoot}/.compiled/**/*.js"
-            ]
+            "name": "Launch Program",
+            "program": "${workspaceFolder}\\build\\app.js"
         }
     ]
 }

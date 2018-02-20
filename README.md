@@ -1,4 +1,7 @@
-# Introduction 
+![](http://www.cyberjustice.ca/files/sites/102/header_2x-1.png)
+
+# Introduction
+The [Cyberjustice Laboratory SDK](https://www.npmjs.com/package/cyberjusticelab-sdk) 
 TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
 
 # Getting Started

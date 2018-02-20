@@ -16,8 +16,8 @@ export default {
     searchText: null,
     searchBy: [],
     searchActions: [],
-    take: 25,
-    skip: 0,
-    OrderBy: 'CreatedDate',
+    take: null,
+    skip: null,
+    OrderBy: null,
     OrderByDescending: false
 };
