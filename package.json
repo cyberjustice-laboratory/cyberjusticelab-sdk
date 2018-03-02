@@ -2,13 +2,8 @@
   "name": "cyberjusticelab-sdk",
   "version": "0.0.2",
   "description": "Cyberjustice Laboratory SDK.",
-  "private": true,
+  "private": false,
   "license": "MIT",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:cyberjustice-laboratory/cyberjusticelab-sdk.git"
-  },
   "keywords": [
     "Cyberjustice Laboratory SDK"
   ],
@@ -17,6 +12,11 @@
     "url": "http://www.cyberjustice.ca/"
   },
   "homepage": "http://www.cyberjustice.ca/",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cyberjustice-laboratory/cyberjusticelab-sdk.git"
+  },
   "scripts": {},
   "dependencies": {
     "axios": "^0.18.0"
