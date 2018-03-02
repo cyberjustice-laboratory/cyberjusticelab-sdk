@@ -7,17 +7,17 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:cyberjustice-laboratory/Cybejusticelab.SDK.git"
+    "url": "git@github.com:cyberjustice-laboratory/cyberjusticelab-sdk.git"
   },
-  "keywords": ["Cyberjustice Laboratory", "Virtual Tribunal"],
+  "keywords": ["Cyberjustice Laboratory SDK"],
   "author": "Cyberjustice Laboratory",
-  "scripts": {
-    "test": "mocha --compilers js:babel-core/register ./test/**/*.spec.js",
-    "compile": "rimraf build && babel src --out-dir build --source-maps"
+  "bugs": {
+    "url": "http://www.cyberjustice.ca/"
   },
+  "homepage": "http://www.cyberjustice.ca/",
+  "scripts": {},
   "dependencies": {
-    "axios": "^0.18.0",
-    "lodash": "^4.17.5"
+    "axios": "^0.18.0"
   },
   "devDependencies": {
     "eslint": "^4.18.1",
