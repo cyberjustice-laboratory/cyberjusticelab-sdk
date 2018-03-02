@@ -1,5 +1,5 @@
 export default {
-    count: 0,
-    countFiltered: 0,
-    files: []
+  count: 0,
+  countFiltered: 0,
+  files: []
 };

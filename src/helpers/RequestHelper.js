@@ -1,163 +1,148 @@
-// Init
-import * as ES6Promise from 'es6-promise';
-ES6Promise.polyfill();
-import 'isomorphic-fetch';
-
-// Private accessors
-const _processResponse = Symbol('processResponse');
+import axios from "axios";
 
 /**
  * Request wrapper helper.
- * 
+ *
  * @export
  * @class RequestHelper
  */
 export default class RequestHelper {
-
-    /**
-     * Creates an instance of RequestHelper.
-     * @memberof RequestHelper
-     */
-    constructor() {
-        process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+  /**
+   * Creates an instance of RequestHelper.
+   * @memberof RequestHelper
+   */
+  constructor(authState) {
+    if (process.env.NODE_ENV === "development") {
+      process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
     }
-
-    /**
-     * GET wrapper.
-     * 
-     * @param {{ url: null, data: {} }} opts
-     * @returns {any}
-     * @memberof RequestHelper
-     */
-    async get(opts) {
-        try {
-            let response = await fetch(opts.url, {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(opts.data)
-            });
-
-            return this[_processResponse](response);
-        }
-        catch (err) {
-            return err;
-        }
+    this.authState = authState;
+    this.accessToken = authState.isAuthenticated && !!authState.claims.access_token ? authState.claims.access_token : null;
+    this.defaultHeaders = {
+      Accept: "application/json",
+      "Content-Type": "application/json"
+    };
+    if (this.accessToken) {
+      this.defaultHeaders.Authorization = `bearer ${this.accessToken}`;
     }
+  }
 
-    /**
-     * POST wrapper.
-     * 
-     * @param {{ url: null, data: {} }} opts
-     * @returns {any}
-     * @memberof RequestHelper
-     */
-    async post(opts) {
-        try {
-            let response = await fetch(opts.url, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(opts.data)
-            });
+  /**
+   * HTTP GET wrapper.
+   *
+   * @param {{ url: null, data: {} }} opts
+   * @returns {any}
+   * @memberof RequestHelper
+   */
+  get(opts) {
+    return new Promise((resolve, reject) => {
+      axios({
+        method: "get",
+        url: opts.url,
+        headers: this.defaultHeaders,
+        data: opts.data
+      })
+        .then(response => {
+          resolve(response);
+        })
+        .catch(error => {
+          reject(new Error(error));
+        });
+    });
+  }
 
-            return this[_processResponse](response);
-        }
-        catch (err) {
-            return err;
-        }
-    }
+  /**
+   * HTTP POST wrapper.
+   *
+   * @param {{ url: null, data: {} }} opts
+   * @returns {any}
+   * @memberof RequestHelper
+   */
+  post(opts) {
+    return new Promise((resolve, reject) => {
+      axios({
+        method: "post",
+        url: opts.url,
+        headers: this.defaultHeaders,
+        data: opts.data
+      })
+        .then(response => {
+          resolve(response);
+        })
+        .catch(error => {
+          reject(new Error(error));
+        });
+    });
+  }
 
-    /**
-     * PUT wrapper.
-     * 
-     * @param {{ url: null, data: {} }} opts
-     * @returns {any}
-     * @memberof RequestHelper
-     */
-    async put(opts) {
-        try {
-            let response = await fetch(opts.url, {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(opts.data)
-            });
+  /**
+   * HTTP PUT wrapper.
+   *
+   * @param {{ url: null, data: {} }} opts
+   * @returns {any}
+   * @memberof RequestHelper
+   */
+  put(opts) {
+    return new Promise((resolve, reject) => {
+      axios({
+        method: "put",
+        url: opts.url,
+        headers: this.defaultHeaders,
+        data: opts.data
+      })
+        .then(response => {
+          resolve(response);
+        })
+        .catch(error => {
+          reject(new Error(error));
+        });
+    });
+  }
 
-            return this[_processResponse](response);
-        }
-        catch (err) {
-            return err;
-        }
-    }
+  /**
+   * HTTP PATCH wrapper.
+   *
+   * @param {{ url: null, data: {} }} opts
+   * @returns {any}
+   * @memberof RequestHelper
+   */
+  patch(opts) {
+    return new Promise((resolve, reject) => {
+      axios({
+        method: "patch",
+        url: opts.url,
+        headers: this.defaultHeaders,
+        data: opts.data
+      })
+        .then(response => {
+          resolve(response);
+        })
+        .catch(error => {
+          reject(new Error(error));
+        });
+    });
+  }
 
-    /**
-     * PATCH wrapper.
-     * 
-     * @param {{ url: null, data: {} }} opts
-     * @returns {any}
-     * @memberof RequestHelper
-     */
-    async patch(opts) {
-        try {
-            let response = await fetch(opts.url, {
-                method: 'PATCH',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(opts.data)
-            });
-
-            return this[_processResponse](response);
-        }
-        catch (err) {
-            return err;
-        }
-    }
-
-    /**
-     * DELETE wrapper.
-     * 
-     * @param {{ url: null, data: {} }} opts
-     * @returns {any}
-     * @memberof RequestHelper
-     */
-    async delete(opts) {
-        try {
-            let response = await fetch(opts.url, {
-                method: 'DELETE',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(opts.data)
-            });
-
-            return this[_processResponse](response);
-        }
-        catch (err) {
-            return err;
-        }
-    }
-
-    // Private functions
-
-    /**
-     * Processes an HTTP response.
-     * 
-     * @param {any} response
-     * @memberof RequestHelper
-     */
-    [_processResponse](response) {
-        if (response.status >= 200 && response.status < 300) {
-            return response.json();
-        }
-        else {
-            let error = new Error(response.statusText);
-            error.response = response;
-            throw error;
-        }
-    }
+  /**
+   * HTTP DELETE wrapper.
+   *
+   * @param {{ url: null, data: {} }} opts
+   * @returns {any}
+   * @memberof RequestHelper
+   */
+  delete(opts) {
+    return new Promise((resolve, reject) => {
+      axios({
+        method: "delete",
+        url: opts.url,
+        headers: this.defaultHeaders,
+        data: opts.data
+      })
+        .then(response => {
+          resolve(response);
+        })
+        .catch(error => {
+          reject(new Error(error));
+        });
+    });
+  }
 }

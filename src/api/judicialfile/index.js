@@ -1,5 +1,5 @@
-import { JudicialFilePost } from './';
+import { JudicialFilePost } from "./";
 
 export default {
-    JudicialFilePost
+  JudicialFilePost
 };
