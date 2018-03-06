@@ -5,12 +5,12 @@ import RequestHelper from "../../helpers/RequestHelper";
  * Judicial File base class.
  *
  * @export
- * @class JudicialFile
+ * @class JudicialFileBase
  */
-export default class JudicialFile {
+export default class JudicialFileBase {
   /**
-   * Creates an instance of JudicialFile.
-   * @memberof JudicialFile
+   * Creates an instance of JudicialFileBase.
+   * @memberof JudicialFileBase
    */
   constructor(authState) {
     this.authState = authState;

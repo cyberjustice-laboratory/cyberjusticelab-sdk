@@ -1,5 +1,5 @@
 // Imports base class
-import JudicialFile from "./JudicialFile";
+import JudicialFileBase from "./JudicialFileBase";
 
 // Imports objects
 import judicialFileApiRequest from "./objects/judicialFileApiRequest";
@@ -12,7 +12,7 @@ import judicialFileApiResponse from "./objects/judicialFileApiResponse";
  * @class JudicialFilePost
  * @extends {JudicialFile}
  */
-export default class JudicialFilePost extends JudicialFile {
+export default class JudicialFilePost extends JudicialFileBase {
   /**
    * Creates an instance of JudicialFilePost.
    * @memberof JudicialFilePost

@@ -4,9 +4,7 @@
   "description": "Cyberjustice Laboratory SDK.",
   "private": false,
   "license": "MIT",
-  "keywords": [
-    "Cyberjustice Laboratory SDK"
-  ],
+  "keywords": ["Cyberjustice Laboratory SDK"],
   "author": "Cyberjustice Laboratory",
   "bugs": {
     "url": "http://www.cyberjustice.ca/"
@@ -22,7 +20,7 @@
     "axios": "^0.18.0"
   },
   "devDependencies": {
-    "eslint": "^4.18.1",
+    "eslint": "^4.18.2",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.9.0",
