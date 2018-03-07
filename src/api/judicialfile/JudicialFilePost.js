@@ -4,6 +4,7 @@ import JudicialFileBase from "./JudicialFileBase";
 // Imports objects
 import judicialFileApiRequest from "./objects/judicialFileApiRequest";
 import judicialFileApiResponse from "./objects/judicialFileApiResponse";
+import JudicialFileCreateModel from "./objects/JudicialFileCreateModel";
 
 /**
  * Judicial File: POST API.
@@ -37,6 +38,29 @@ export default class JudicialFilePost extends JudicialFileBase {
         })
         .then(response => {
           resolve(...response, judicialFileApiResponse);
+        })
+        .catch(error => {
+          reject(new Error(error));
+        });
+    });
+  }
+
+  /**
+   * Creates a judicial file.
+   *
+   * @param {JudicialFileCreateModel} model
+   * @returns {guid} id of the judicial file
+   * @memberof JudicialFilePost
+   */
+  CreateFile(model) {
+    return new Promise((resolve, reject) => {
+      this.requestHelper
+        .post({
+          url: "https://localhost:441/JudicialFile/POST/CreateJudicialFile",
+          data: model
+        })
+        .then(response => {
+          resolve(...response, {});
         })
         .catch(error => {
           reject(new Error(error));
