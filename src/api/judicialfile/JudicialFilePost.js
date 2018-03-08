@@ -18,8 +18,8 @@ export default class JudicialFilePost extends JudicialFileBase {
    * Creates an instance of JudicialFilePost.
    * @memberof JudicialFilePost
    */
-  constructor() {
-    super();
+  constructor(authState) {
+    super(authState);
   }
 
   /**

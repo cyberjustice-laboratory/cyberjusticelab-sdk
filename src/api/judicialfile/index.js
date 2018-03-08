@@ -1,4 +1,4 @@
-import { JudicialFilePost } from "./";
+import JudicialFilePost from "./JudicialFilePost";
 
 export default {
   JudicialFilePost
