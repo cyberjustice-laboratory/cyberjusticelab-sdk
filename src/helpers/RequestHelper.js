@@ -145,4 +145,9 @@ export default class RequestHelper {
         });
     });
   }
+
+  bidon(bidonArg) {
+    console.log(bidonArg);
+    this.toString();
+  }
 }

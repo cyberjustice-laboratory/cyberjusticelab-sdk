@@ -1,6 +1,8 @@
 // Apis
-import JudicialFileApi from "./src/api/judicialfile";
+import judicialFileApi from "./src/api/judicialfile";
 
 export default {
-  JudicialFilePost: JudicialFileApi.JudicialFilePost
+  judicialFileApi
 };
+
+console.log(judicialFileApi);
