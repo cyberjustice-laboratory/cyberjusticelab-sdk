@@ -10,4 +10,4 @@ const authBidon = {
   claim: []
 };
 
-console.dir(judicialFileApi.post.getFile("lala")(authBidon));
+console.dir(judicialFileApi.post.getFile("DEBUG INFO")(authBidon));
