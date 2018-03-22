@@ -60,4 +60,5 @@ typings/
 # Distribution output
 dist/
 
+# Others
 package-lock.json

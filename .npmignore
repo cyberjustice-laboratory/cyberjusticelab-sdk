@@ -7,3 +7,4 @@ src/
 .prettierrc
 .travis.yml
 cyberjusticelab-sdk.code-workspace
+package-lock.json
