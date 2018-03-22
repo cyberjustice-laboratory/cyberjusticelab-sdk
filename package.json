@@ -1,29 +1,32 @@
 {
   "name": "cyberjusticelab-sdk",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Cyberjustice Laboratory SDK.",
   "private": false,
   "license": "MIT",
-  "keywords": [
-    "Cyberjustice Laboratory SDK"
-  ],
+  "keywords": ["Cyberjustice Laboratory SDK"],
   "author": "Cyberjustice Laboratory",
   "bugs": {
     "url": "http://www.cyberjustice.ca/"
   },
   "homepage": "http://www.cyberjustice.ca/",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:cyberjustice-laboratory/cyberjusticelab-sdk.git"
   },
-  "scripts": {},
-  "dependencies": {
+  "scripts": {
+    "build": "babel src --out-dir dist"
+  },
+  "peerDependencies": {
     "axios": "^0.18.0"
   },
   "devDependencies": {
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.18.2",
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-stage-3": "^7.0.0-beta.42",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.9.0",

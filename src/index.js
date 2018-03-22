@@ -1,13 +1,6 @@
 // Apis
-import judicialFileApi from "./api/judicialFile";
+import judicialFileApi from "./api/judicialfile";
 
 export default {
   judicialFileApi
 };
-
-const authBidon = {
-  id: 0,
-  claim: []
-};
-
-console.dir(judicialFileApi.post.getFile("DEBUG INFO")(authBidon));
