@@ -19,7 +19,7 @@
     "build": "babel src --out-dir dist",
     "prepublish": "npm run build"
   },
-  "peerDependencies": {
+  "dependencies": {
     "axios": "^0.18.0"
   },
   "devDependencies": {
