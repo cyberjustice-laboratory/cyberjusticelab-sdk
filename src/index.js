@@ -1,10 +1,6 @@
 // Apis
-import * as JudicialFileApi from './api/judicialfile';
-
-// Helpers
-import IdentityHelper from './helpers/IdentityHelper';
+import judicialFileApi from "./api/judicialfile";
 
 export default {
-    JudicialFileApi,
-    IdentityHelper
+  judicialFileApi
 };
