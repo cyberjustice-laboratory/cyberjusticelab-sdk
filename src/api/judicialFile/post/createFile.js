@@ -1,22 +1,15 @@
-// import JudicialFileCreateModel from "../objects/JudicialFileCreateModel";
-
 /**
- * Creates a judicial file.
- *
- * @param {JudicialFileCreateModel} model
- * @returns {guid} id of the judicial file
+ * Create a judicial file.
+ * @param {Object} model
+ * @returns {Object} id of the judicial file
  */
-export default requestHelper => model =>
-  new Promise((resolve, reject) => {
-    requestHelper
-      .post({
-        url: "https://localhost:441/JudicialFile/POST/CreateJudicialFile",
-        data: model
-      })
-      .then(response => {
-        resolve(...response, {});
-      })
-      .catch(error => {
-        reject(new Error(error));
-      });
-  });
+export default requestHelper => async model => {
+  try {
+    return await requestHelper.post({
+      url: `https://localhost:441/JudicialFile/POST/CreateJudicialFile`,
+      data: model
+    });
+  } catch (error) {
+    throw new Error(error);
+  }
+};

@@ -4,7 +4,9 @@
   "description": "Cyberjustice Laboratory SDK.",
   "private": false,
   "license": "MIT",
-  "keywords": ["Cyberjustice Laboratory SDK"],
+  "keywords": [
+    "Cyberjustice Laboratory SDK"
+  ],
   "author": "Cyberjustice Laboratory",
   "bugs": {
     "url": "http://www.cyberjustice.ca/"
@@ -17,7 +19,7 @@
   },
   "scripts": {
     "build": "babel src --out-dir dist",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "axios": "^0.18.0"
