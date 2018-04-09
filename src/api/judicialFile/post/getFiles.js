@@ -1,23 +1,18 @@
-// import judicialFileApiRequest from '../objects/judicialFileApiRequest';
 import judicialFileApiResponse from "../objects/judicialFileApiResponse";
 
 /**
- * Gets files list.
- *
- * @param {judicialFileApiRequest} request
- * @return {judicialFileApiResponse} response
+ * Get files list.
+ * @param {Object} request
+ * @return {Object} response
  */
-export default requestHelper => request =>
-  new Promise((resolve, reject) => {
-    requestHelper
-      .post({
-        url: "https://localhost:441/JudicialFile/POST/Files",
-        data: request
-      })
-      .then(response => {
-        resolve(...response, judicialFileApiResponse);
-      })
-      .catch(error => {
-        reject(new Error(error));
-      });
-  });
+export default requestHelper => async request => {
+  try {
+    const response = await requestHelper.post({
+      url: "https://localhost:441/JudicialFile/POST/Files",
+      data: request
+    });
+    return Object.assign({}, response, judicialFileApiResponse);
+  } catch (error) {
+    throw new Error(error);
+  }
+};
