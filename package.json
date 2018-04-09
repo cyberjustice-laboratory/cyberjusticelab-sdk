@@ -18,7 +18,9 @@
   "scripts": {
     "build": "babel src --out-dir dist",
     "prepublishOnly": "npm run build",
-    "test": "mocha --compilers js:@babel/register ./test/**/*.spec.js"
+    "test": "mocha --compilers js:@babel/register ./test/**/*.spec.js",
+    "prepublish": "npm run build"
+
   },
   "dependencies": {
     "axios": "^0.18.0"
