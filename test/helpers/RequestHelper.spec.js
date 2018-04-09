@@ -1,6 +1,6 @@
 import { expect } from "chai";
 import moxios from "moxios";
-import RequestHelper from "../src/helpers/RequestHelper";
+import RequestHelper from "../../src/helpers/RequestHelper";
 
 describe("Tests for RequestHelper class", () => {
   let requestHelper;
