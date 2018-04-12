@@ -1,11 +1,13 @@
 {
   "name": "cyberjusticelab-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Cyberjustice Laboratory SDK.",
   "main": "./dist/index.js",
   "private": false,
   "license": "MIT",
-  "keywords": ["Cyberjustice Laboratory SDK"],
+  "keywords": [
+    "Cyberjustice Laboratory SDK"
+  ],
   "author": "Cyberjustice Laboratory",
   "bugs": {
     "url": "http://www.cyberjustice.ca/"
