@@ -22,7 +22,7 @@ describe("Tests for RequestHelper class", () => {
         .catch(error => {
           expect(error).to.not.be.null;
           expect(error).to.not.be.undefined;
-          expect(error.message).to.equal("Missing opts parameter");
+          expect(error.message).to.equal("Cannot read property 'url' of undefined");
         })
         .then(done, done);
     });
@@ -68,7 +68,7 @@ describe("Tests for RequestHelper class", () => {
         .catch(error => {
           expect(error).to.not.be.null;
           expect(error).to.not.be.undefined;
-          expect(error.message).to.equal("Missing opts parameter");
+          expect(error.message).to.equal("Cannot read property 'url' of undefined");
         })
         .then(done, done);
     });
@@ -115,7 +115,7 @@ describe("Tests for RequestHelper class", () => {
         .catch(error => {
           expect(error).to.not.be.null;
           expect(error).to.not.be.undefined;
-          expect(error.message).to.equal("Missing opts parameter");
+          expect(error.message).to.equal("Cannot read property 'url' of undefined");
         })
         .then(done, done);
     });
@@ -162,7 +162,7 @@ describe("Tests for RequestHelper class", () => {
         .catch(error => {
           expect(error).to.not.be.null;
           expect(error).to.not.be.undefined;
-          expect(error.message).to.equal("Missing opts parameter");
+          expect(error.message).to.equal("Cannot read property 'url' of undefined");
         })
         .then(done, done);
     });
@@ -209,7 +209,7 @@ describe("Tests for RequestHelper class", () => {
         .catch(error => {
           expect(error).to.not.be.null;
           expect(error).to.not.be.undefined;
-          expect(error.message).to.equal("Missing opts parameter");
+          expect(error.message).to.equal("Cannot read property 'url' of undefined");
         })
         .then(done, done);
     });
