@@ -5,9 +5,7 @@
   "main": "./dist/index.js",
   "private": false,
   "license": "MIT",
-  "keywords": [
-    "Cyberjustice Laboratory SDK"
-  ],
+  "keywords": ["Cyberjustice Laboratory SDK"],
   "author": "Cyberjustice Laboratory",
   "bugs": {
     "url": "http://www.cyberjustice.ca/"
@@ -19,9 +17,9 @@
   },
   "scripts": {
     "clean": "rimraf dist",
+    "test": "mocha --compilers js:@babel/register ./test/**/*.spec.js",
     "build": "npm run clean && babel src --out-dir dist",
-    "prepublishOnly": "npm run build",
-    "test": "mocha --compilers js:@babel/register ./test/**/*.spec.js"
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "axios": "0.18.0",
