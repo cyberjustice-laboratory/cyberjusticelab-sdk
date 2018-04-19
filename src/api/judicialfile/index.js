@@ -1,8 +1,10 @@
 // Imports
 import RequestHelper from "../../helpers/RequestHelper";
-// import getJFileDelete from "./delete";
-import getJFilePost from "./post";
-// import getJFilePut from "./put";
+import getJFileDELETE from "./delete";
+import getJFileGET from "./get";
+import getJFilePATCH from "./patch";
+import getJFilePOST from "./post";
+import getJFilePUT from "./put";
 
 export default (config, authState) => {
   const api = {
@@ -11,7 +13,5 @@ export default (config, authState) => {
     requestHelper: new RequestHelper(authState)
   };
 
-  return Object.assign(api, getJFilePost(api));
-  // ...getJFileDelete(this),
-  // ...getJFilePut(this)
+  return Object.assign(api, getJFileDELETE(api), getJFileGET(this), getJFilePATCH(this), getJFilePOST(this), getJFilePUT(this));
 };

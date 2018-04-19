@@ -1,11 +1,11 @@
 // Imports
 import config from "./config";
-import getJudicialFileApi from "./api/judicialfile";
+import judicialFileApi from "./api/judicialFile";
 
 // Get base configuration
-const initConfig = config();
+const initConfig = config;
 
 // Exports
 export default {
-  judicialFileApi: authState => getJudicialFileApi(initConfig, authState)
+  judicialFileApi: authState => judicialFileApi(initConfig, authState)
 };
