@@ -45,22 +45,15 @@ function () {
       this.defaultHeaders.Authorization = "bearer ".concat(this.accessToken);
     }
   }
-  /**
-   * HTTP GET wrapper.
-   * @param {{ url: null, data: {} }} opts
-   * @returns {any}
-   * @memberof RequestHelper
-   */
-
 
   _createClass(RequestHelper, [{
-    key: "get",
-    value: function get(opts) {
+    key: "call",
+    value: function call(opts, methodType) {
       var _this = this;
 
       return new Promise(function (resolve, reject) {
         (0, _axios.default)({
-          method: "get",
+          method: methodType,
           url: opts.url,
           headers: _this.defaultHeaders,
           data: opts.data
@@ -72,6 +65,18 @@ function () {
       });
     }
     /**
+     * HTTP GET wrapper.
+     * @param {{ url: null, data: {} }} opts
+     * @returns {any}
+     * @memberof RequestHelper
+     */
+
+  }, {
+    key: "get",
+    value: function get(opts) {
+      return this.call(opts, "get");
+    }
+    /**
      * HTTP POST wrapper.
      * @param {{ url: null, data: {} }} opts
      * @returns {any}
@@ -81,20 +86,7 @@ function () {
   }, {
     key: "post",
     value: function post(opts) {
-      var _this2 = this;
-
-      return new Promise(function (resolve, reject) {
-        (0, _axios.default)({
-          method: "post",
-          url: opts.url,
-          headers: _this2.defaultHeaders,
-          data: opts.data
-        }).then(function (response) {
-          resolve(response);
-        }).catch(function (error) {
-          reject(new Error(error));
-        });
-      });
+      return this.call(opts, "post");
     }
     /**
      * HTTP PUT wrapper.
@@ -106,20 +98,7 @@ function () {
   }, {
     key: "put",
     value: function put(opts) {
-      var _this3 = this;
-
-      return new Promise(function (resolve, reject) {
-        (0, _axios.default)({
-          method: "put",
-          url: opts.url,
-          headers: _this3.defaultHeaders,
-          data: opts.data
-        }).then(function (response) {
-          resolve(response);
-        }).catch(function (error) {
-          reject(new Error(error));
-        });
-      });
+      return this.call(opts, "put");
     }
     /**
      * HTTP PATCH wrapper.
@@ -131,20 +110,7 @@ function () {
   }, {
     key: "patch",
     value: function patch(opts) {
-      var _this4 = this;
-
-      return new Promise(function (resolve, reject) {
-        (0, _axios.default)({
-          method: "patch",
-          url: opts.url,
-          headers: _this4.defaultHeaders,
-          data: opts.data
-        }).then(function (response) {
-          resolve(response);
-        }).catch(function (error) {
-          reject(new Error(error));
-        });
-      });
+      return this.call(opts, "patch");
     }
     /**
      * HTTP DELETE wrapper.
@@ -156,20 +122,7 @@ function () {
   }, {
     key: "delete",
     value: function _delete(opts) {
-      var _this5 = this;
-
-      return new Promise(function (resolve, reject) {
-        (0, _axios.default)({
-          method: "delete",
-          url: opts.url,
-          headers: _this5.defaultHeaders,
-          data: opts.data
-        }).then(function (response) {
-          resolve(response);
-        }).catch(function (error) {
-          reject(new Error(error));
-        });
-      });
+      return this.call(opts, "delete");
     }
   }]);
 

@@ -1,5 +1,3 @@
-import judicialFileApiResponse from "../_objects/judicialFileApiResponse";
-
 /**
  * Get a file.
  * @prop {Object} config
@@ -13,8 +11,7 @@ export default async function(model) {
       url: `${this.config.baseUrlApi}JudicialFile/POST/Files`,
       data: Object.assign({}, this.config.entity, model)
     });
-    const bindResponse = Object.assign({}, response, judicialFileApiResponse);
-    return bindResponse.files.length > 0 ? bindResponse.files[0] : null;
+    return response.files.length > 0 ? response.files[0] : null;
   } catch (error) {
     throw new Error(error);
   }
