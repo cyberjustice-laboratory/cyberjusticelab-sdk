@@ -3,7 +3,7 @@
  * @prop {Object} config
  * @prop {Object} requestHelper
  * @param {judicialFileApiRequest} model
- * @return {Object} a file.
+ * @return {Object} A file.
  */
 export default async function(model) {
   try {

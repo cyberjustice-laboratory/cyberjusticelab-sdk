@@ -17,17 +17,16 @@ var _post = _interopRequireDefault(require("./post"));
 
 var _put = _interopRequireDefault(require("./put"));
 
-var _this = void 0;
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// Imports
 var _default = function _default(config, authState) {
   var api = {
     config: config,
     authState: authState,
     requestHelper: new _RequestHelper.default(authState)
   };
-  return Object.assign(api, (0, _delete.default)(api), (0, _get.default)(_this), (0, _patch.default)(_this), (0, _post.default)(_this), (0, _put.default)(_this));
+  return Object.assign(api, (0, _delete.default)(api), (0, _get.default)(api), (0, _patch.default)(api), (0, _post.default)(api), (0, _put.default)(api));
 };
 
 exports.default = _default;

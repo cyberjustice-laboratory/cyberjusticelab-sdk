@@ -59,3 +59,6 @@ typings/
 
 # Untrace package-lock.json
 package-lock.json
+
+# Untrace dist
+dist

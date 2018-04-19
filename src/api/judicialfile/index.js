@@ -13,5 +13,5 @@ export default (config, authState) => {
     requestHelper: new RequestHelper(authState)
   };
 
-  return Object.assign(api, getJFileDELETE(api), getJFileGET(this), getJFilePATCH(this), getJFilePOST(this), getJFilePUT(this));
+  return Object.assign(api, getJFileDELETE(api), getJFileGET(api), getJFilePATCH(api), getJFilePOST(api), getJFilePUT(api));
 };

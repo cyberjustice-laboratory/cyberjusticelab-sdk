@@ -12,7 +12,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
  * @prop {Object} config
  * @prop {Object} requestHelper
  * @param {judicialFileApiRequest} model
- * @return {Object} a file.
+ * @return {Object} A file.
  */
 function _default(_x) {
   return _ref.apply(this, arguments);
