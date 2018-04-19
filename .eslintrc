@@ -4,11 +4,6 @@
     "node": true,
     "mocha": true
   },
-  "ecmaFeatures": {
-    "jsx": false,
-    "es6": true,
-    "classes": true
-  },
   "extends": ["airbnb", "prettier"],
   "rules": {
     "space-before-function-paren": 0,

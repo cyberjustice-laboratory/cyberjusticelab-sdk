@@ -1,47 +1,49 @@
 {
   "name": "cyberjusticelab-sdk",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "description": "Cyberjustice Laboratory SDK.",
+  "main": "./dist/index.js",
   "private": false,
   "license": "MIT",
-  "keywords": ["Cyberjustice Laboratory SDK"],
+  "keywords": [
+    "Cyberjustice Laboratory SDK"
+  ],
   "author": "Cyberjustice Laboratory",
   "bugs": {
     "url": "http://www.cyberjustice.ca/"
   },
   "homepage": "http://www.cyberjustice.ca/",
-  "main": "./dist/index.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:cyberjustice-laboratory/cyberjusticelab-sdk.git"
   },
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "clean": "rimraf dist",
+    "build": "npm run clean && babel src --out-dir dist",
     "prepublishOnly": "npm run build",
-    "test": "mocha --compilers js:@babel/register ./test/**/*.spec.js",
-    "prepublish": "npm run build"
-
+    "test": "mocha --compilers js:@babel/register ./test/**/*.spec.js"
   },
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "0.18.0",
+    "cosmiconfig": "4.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.42",
-    "@babel/core": "^7.0.0-beta.42",
-    "@babel/preset-env": "^7.0.0-beta.42",
-    "@babel/preset-stage-3": "^7.0.0-beta.42",
-    "@babel/register": "^7.0.0-beta.42",
-    "axios-mock-adapter": "^1.14.1",
+    "@babel/cli": "^7.0.0-beta.44",
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@babel/preset-stage-3": "^7.0.0-beta.44",
+    "@babel/register": "^7.0.0-beta.44",
     "chai": "^4.1.2",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
+    "sinon": "^4.4.8",
     "mocha": "^5.0.5",
     "moxios": "^0.4.0",
-    "prettier": "^1.11.1",
-    "sinon": "^4.4.8"
+    "prettier": "^1.12.0",
+    "rimraf": "^2.6.2"
   }
 }

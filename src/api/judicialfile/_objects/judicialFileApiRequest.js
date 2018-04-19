@@ -1,8 +1,6 @@
 export default {
   fileIds: [],
   judicialFileIds: [],
-  judicialEntityIds: [],
-  businessRuleNames: [],
   representativeIds: [],
   excludedFormCodes: [],
   includedFormIds: [],
