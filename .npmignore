@@ -1,0 +1,10 @@
+node_modules/
+src/
+.babelrc
+.editorconfig
+.eslintrc
+.gitignore
+.prettierrc
+.travis.yml
+cyberjusticelab-sdk.code-workspace
+package-lock.json

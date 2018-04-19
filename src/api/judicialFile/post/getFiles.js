@@ -1,23 +1,20 @@
-// import judicialFileApiRequest from '../objects/judicialFileApiRequest';
-import judicialFileApiResponse from "../objects/judicialFileApiResponse";
+import judicialFileApiResponse from "../_objects/judicialFileApiResponse";
 
 /**
- * Gets files list.
- *
- * @param {judicialFileApiRequest} request
- * @return {judicialFileApiResponse} response
+ * Get a list of files.
+ * @prop {Object} config
+ * @prop {Object} requestHelper
+ * @param {judicialFileApiRequest} model
+ * @return {Object} List of files.
  */
-export default requestHelper => request =>
-  new Promise((resolve, reject) => {
-    requestHelper
-      .post({
-        url: "https://localhost:441/JudicialFile/POST/Files",
-        data: request
-      })
-      .then(response => {
-        resolve(...response, judicialFileApiResponse);
-      })
-      .catch(error => {
-        reject(new Error(error));
-      });
-  });
+export default async function(model) {
+  try {
+    const response = await this.requestHelper.post({
+      url: `${this.config.baseUrlApi}JudicialFile/POST/Files`,
+      data: Object.assign({}, this.config.entity, model)
+    });
+    return Object.assign({}, response, judicialFileApiResponse);
+  } catch (error) {
+    throw new Error(error);
+  }
+}

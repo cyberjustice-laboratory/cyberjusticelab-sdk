@@ -4,7 +4,7 @@ export default {
   judicialEntityId: null,
   businessRuleName: null,
   permission: null,
-  FormId: null,
-  Status: null,
-  attributes: []
+  formId: null,
+  status: null,
+  attributes: {}
 };

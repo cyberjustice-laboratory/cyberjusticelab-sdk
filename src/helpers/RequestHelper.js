@@ -2,13 +2,12 @@ import axios from "axios";
 
 /**
  * Request wrapper helper.
- *
  * @export
  * @class RequestHelper
  */
 export default class RequestHelper {
   /**
-   * Creates an instance of RequestHelper.
+   * Create an instance of RequestHelper.
    * @memberof RequestHelper
    */
   constructor(authState) {
@@ -28,7 +27,6 @@ export default class RequestHelper {
 
   /**
    * HTTP GET wrapper.
-   *
    * @param {{ url: null, data: {} }} opts
    * @returns {any}
    * @memberof RequestHelper
@@ -52,7 +50,6 @@ export default class RequestHelper {
 
   /**
    * HTTP POST wrapper.
-   *
    * @param {{ url: null, data: {} }} opts
    * @returns {any}
    * @memberof RequestHelper
@@ -76,7 +73,6 @@ export default class RequestHelper {
 
   /**
    * HTTP PUT wrapper.
-   *
    * @param {{ url: null, data: {} }} opts
    * @returns {any}
    * @memberof RequestHelper
@@ -100,7 +96,6 @@ export default class RequestHelper {
 
   /**
    * HTTP PATCH wrapper.
-   *
    * @param {{ url: null, data: {} }} opts
    * @returns {any}
    * @memberof RequestHelper
@@ -124,7 +119,6 @@ export default class RequestHelper {
 
   /**
    * HTTP DELETE wrapper.
-   *
    * @param {{ url: null, data: {} }} opts
    * @returns {any}
    * @memberof RequestHelper
@@ -144,10 +138,5 @@ export default class RequestHelper {
           reject(new Error(error));
         });
     });
-  }
-
-  bidon(bidonArg) {
-    console.log(bidonArg);
-    this.toString();
   }
 }

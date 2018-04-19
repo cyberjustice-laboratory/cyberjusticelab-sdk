@@ -1,14 +1,12 @@
-// Helpers imports
-import withAuth from "../../../helpers/withAuth";
-
-// Methods Imports
-import getFile from "./getFile";
+// Imports
 import getFiles from "./getFiles";
+import getFile from "./getFile";
 import createFile from "./createFile";
+import attachRepresentatives from "./attachRepresentatives";
 
-// Export JudicialFilePost
-export default {
-  getFile: withAuth(getFile),
-  getFiles: withAuth(getFiles),
-  createFile: withAuth(createFile)
-};
+export default api => ({
+  getFiles: getFiles.bind(api),
+  getFile: getFile.bind(api),
+  createFile: createFile.bind(api),
+  attachRepresentatives: attachRepresentatives.bind(api)
+});
