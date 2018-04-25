@@ -4,7 +4,6 @@ import updatePartyRepresentativesAttributes from "./updatePartyRepresentativesAt
 import upsertParty from "./upsertParty";
 import upsertPartyContact from "./upsertPartyContact";
 
-// Exports
 export default api => ({
   updateFileAttributes: updateFileAttributes.bind(api),
   updatePartyRepresentativesAttributes: updatePartyRepresentativesAttributes.bind(api),
