@@ -9,7 +9,7 @@ export default async function(model) {
   try {
     return await this.requestHelper.get({
       url: `${this.config.baseUrlApi}Document/GET/DocumentContent`,
-      data: model
+      params: model
     });
   } catch (error) {
     throw new Error(error);

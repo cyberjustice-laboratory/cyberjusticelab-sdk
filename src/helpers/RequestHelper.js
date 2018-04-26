@@ -15,7 +15,7 @@ export default class RequestHelper {
       process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
     }
     this.authState = authState;
-    this.accessToken = authState.isAuthenticated && !!authState.claims.access_token ? authState.claims.access_token : null;
+    this.accessToken = authState && authState.isAuthenticated && !!authState.claims.access_token ? authState.claims.access_token : null;
     this.defaultHeaders = {
       Accept: "application/json",
       "Content-Type": "application/json"
@@ -31,7 +31,8 @@ export default class RequestHelper {
         method: methodType,
         url: opts.url,
         headers: this.defaultHeaders,
-        data: opts.data
+        data: opts.data,
+        params: opts.params
       })
         .then(response => {
           resolve(response);

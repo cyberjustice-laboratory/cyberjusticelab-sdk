@@ -9,7 +9,9 @@ export default async function(urn) {
   try {
     return await this.requestHelper.get({
       url: `${this.config.baseUrlApi}JudicialEntity/GET/JudicialEntityId`,
-      data: { urn }
+      params: {
+        urn
+      }
     });
   } catch (error) {
     throw new Error(error);
