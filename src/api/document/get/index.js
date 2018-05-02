@@ -1,6 +1,8 @@
 // Imports
-import getDocumentContentByID from "./getDocumentContentByID";
+import getDocumentContentById from "./getDocumentContentById";
+import getDocumentMetadataById from "./getDocumentMetadataById";
 
 export default api => ({
-  getDocumentContentByID: getDocumentContentByID.bind(api)
+  getDocumentContentByID: getDocumentContentById.bind(api),
+  getDocumentMetadataById: getDocumentMetadataById.bind(api)
 });

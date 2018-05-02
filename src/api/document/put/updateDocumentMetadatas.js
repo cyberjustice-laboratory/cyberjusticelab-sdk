@@ -1,13 +1,13 @@
 /**
- * Attach representatives to a party.
+ * Update a document's attributes.
  * @prop {Object} config
  * @prop {Object} requestHelper
  * @param {Object} model
  */
 export default async function(model) {
   try {
-    await this.requestHelper.post({
-      url: `${this.config.baseUrlApi}JudicialFile/POST/AttachRepresentative`,
+    await this.requestHelper.put({
+      url: `${this.config.baseUrlApi}Document/PUT/UpdateDocumentMetadatas`,
       data: model
     });
   } catch (error) {
