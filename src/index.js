@@ -13,5 +13,5 @@ export default {
   judicialFileApi: authState => judicialFile(initConfig, authState),
   judicialEntityApi: authState => judicialEntity(initConfig, authState),
   documentApi: authState => document(initConfig, authState),
-  calendar: authState => calendar(initConfig, authState)
+  calendarApi: authState => calendar(initConfig, authState)
 };
