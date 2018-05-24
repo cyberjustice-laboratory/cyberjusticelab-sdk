@@ -24,8 +24,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "axios": "0.18.0",
-    "cosmiconfig": "4.0.0"
+    "axios": "0.18.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.46",
