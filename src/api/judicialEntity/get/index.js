@@ -1,6 +1,6 @@
 // Imports
-import getJudicialEntityID from "./getJudicialEntityID";
+import getJudicialEntityId from "./getJudicialEntityId";
 
 export default api => ({
-  getJudicialEntityID: getJudicialEntityID.bind(api)
+  getJudicialEntityId: getJudicialEntityId.bind(api)
 });
