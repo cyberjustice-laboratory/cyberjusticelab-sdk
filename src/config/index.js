@@ -2,7 +2,7 @@
 //import cosmiconfig from "cosmiconfig";
 
 const defaultConfig = {
-  baseUrlApi: "https://172.20.0.173:441/",
+  baseUrlApi: "https://localhost:441/",
   judicialEntity: {
     urn: "uri:cyberjusticelab.org/cat.parle",
     businessRuleNames: ["CAT_PARLE"]
