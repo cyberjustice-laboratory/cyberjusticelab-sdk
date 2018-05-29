@@ -5,9 +5,7 @@
   "main": "./dist/index.js",
   "private": false,
   "license": "MIT",
-  "keywords": [
-    "Cyberjustice Laboratory SDK"
-  ],
+  "keywords": ["Cyberjustice Laboratory SDK"],
   "author": "Cyberjustice Laboratory",
   "bugs": {
     "url": "http://www.cyberjustice.ca/"
@@ -33,17 +31,17 @@
     "@babel/preset-stage-3": "^7.0.0-beta.46",
     "@babel/register": "^7.0.0-beta.46",
     "babel-eslint": "^8.2.3",
-    "babel-preset-minify": "^0.4.0",
+    "babel-preset-minify": "^0.4.3",
     "chai": "^4.1.2",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.7.0",
-    "prettier": "^1.12.1",
-    "sinon": "^4.5.0",
-    "mocha": "^5.1.1",
+    "eslint-plugin-react": "^7.8.2",
+    "prettier": "^1.13.2",
+    "sinon": "^5.0.10",
+    "mocha": "^5.2.0",
     "moxios": "^0.4.0",
     "rimraf": "^2.6.2"
   }
