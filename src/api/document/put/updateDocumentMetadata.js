@@ -1,5 +1,5 @@
 /**
- * Update a document's attributes.
+ * Update a document's metadata.
  * @prop {Object} config
  * @prop {Object} requestHelper
  * @param {Object} model
@@ -7,7 +7,7 @@
 export default async function(model) {
   try {
     await this.requestHelper.put({
-      url: `${this.config.baseUrlApi}Document/PUT/UpdateDocumentMetadatas`,
+      url: `${this.config.baseUrlApi}Document/PUT/UpdateDocumentMetadata`,
       data: model
     });
   } catch (error) {
