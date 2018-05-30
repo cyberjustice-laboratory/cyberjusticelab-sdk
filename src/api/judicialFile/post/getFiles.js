@@ -5,13 +5,13 @@
  * @param {Object} model
  * @return {Object} List of files.
  */
-export default async function(model) {
+export default (requestHelper, config) => async model => {
   try {
-    return await this.requestHelper.post({
-      url: `${this.config.baseUrlApi}JudicialFile/POST/Files`,
-      data: Object.assign({}, this.config.entity, model)
+    return await requestHelper.post({
+      url: `${config.baseUrlApi}JudicialFile/POST/Files`,
+      data: Object.assign({}, config.entity, model)
     });
   } catch (error) {
     throw new Error(error);
   }
-}
+};

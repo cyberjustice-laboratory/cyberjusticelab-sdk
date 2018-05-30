@@ -4,13 +4,13 @@
  * @prop {Object} requestHelper
  * @param {Object} model
  */
-export default async function(model) {
+export default (requestHelper, config) => async model => {
   try {
-    await this.requestHelper.post({
-      url: `${this.config.baseUrlApi}JudicialFile/POST/AttachRepresentativesToParty`,
+    await requestHelper.post({
+      url: `${config.baseUrlApi}JudicialFile/POST/AttachRepresentativesToParty`,
       data: model
     });
   } catch (error) {
     throw new Error(error);
   }
-}
+};

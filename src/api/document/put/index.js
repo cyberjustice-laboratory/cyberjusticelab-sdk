@@ -3,8 +3,8 @@ import updateDocumentAttributes from "./updateDocumentAttributes";
 import updateDocumentContent from "./updateDocumentContent";
 import updateDocumentMetadatas from "./updateDocumentMetadatas";
 
-export default api => ({
-  updateDocumentAttributes: updateDocumentAttributes.bind(api),
-  updateDocumentContent: updateDocumentContent.bind(api),
-  updateDocumentMetadatas: updateDocumentMetadatas.bind(api)
+export default connect => ({
+  updateDocumentAttributes: connect(updateDocumentAttributes),
+  updateDocumentContent: connect(updateDocumentContent),
+  updateDocumentMetadatas: connect(updateDocumentMetadatas)
 });

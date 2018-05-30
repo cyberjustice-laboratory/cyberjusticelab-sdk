@@ -4,13 +4,13 @@
  * @prop {Object} requestHelper
  * @param {Object} model
  */
-export default async function(model) {
+export default (requestHelper, config) => async model => {
   try {
-    await this.requestHelper.put({
-      url: `${this.config.baseUrlApi}JudicialFile/PUT/UpdateFileAttribute`,
+    await requestHelper.put({
+      url: `${config.baseUrlApi}JudicialFile/PUT/UpdateFileAttribute`,
       data: model
     });
   } catch (error) {
     throw new Error(error);
   }
-}
+};

@@ -5,13 +5,13 @@
  * @param {Object} model
  * @return {Object} List of documents.
  */
-export default async function(model) {
+export default (requestHelper, config) => async model => {
   try {
-    return await this.requestHelper.post({
-      url: `${this.config.baseUrlApi}Calendar/POST/Events`,
+    return await requestHelper.post({
+      url: `${config.baseUrlApi}Calendar/POST/Events`,
       data: model
     });
   } catch (error) {
     throw new Error(error);
   }
-}
+};

@@ -5,13 +5,13 @@
  * @param {Object} model
  * @returns {Guid} Id of the contact.
  */
-export default async function(model) {
+export default (requestHelper, config) => async model => {
   try {
-    return await this.requestHelper.put({
-      url: `${this.config.baseUrlApi}JudicialFile/PUT/UpsertPartyContact`,
+    return await requestHelper.put({
+      url: `${config.baseUrlApi}JudicialFile/PUT/UpsertPartyContact`,
       data: model
     });
   } catch (error) {
     throw new Error(error);
   }
-}
+};

@@ -4,13 +4,13 @@
  * @prop {Object} requestHelper
  * @param {Object} model
  */
-export default async function(model) {
+export default (requestHelper, config) => async model => {
   try {
-    await this.requestHelper.delete({
-      url: `${this.config.baseUrlApi}Document/DELETE/DeleteDocumentAttributes`,
+    await requestHelper.delete({
+      url: `${config.baseUrlApi}Document/DELETE/DeleteDocumentAttributes`,
       data: model
     });
   } catch (error) {
     throw new Error(error);
   }
-}
+};

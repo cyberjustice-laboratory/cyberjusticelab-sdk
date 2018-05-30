@@ -5,10 +5,10 @@
  * @param {string} urn
  * @return {Guid} a judicial entity ID.
  */
-export default async function(urn) {
+export default (requestHelper, config) => async urn => {
   try {
-    return await this.requestHelper.get({
-      url: `${this.config.baseUrlApi}JudicialEntity/GET/JudicialEntityId`,
+    return await requestHelper.get({
+      url: `${config.baseUrlApi}JudicialEntity/GET/JudicialEntityId`,
       params: {
         urn
       }
@@ -16,4 +16,4 @@ export default async function(urn) {
   } catch (error) {
     throw new Error(error);
   }
-}
+};

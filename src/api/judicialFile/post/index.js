@@ -5,10 +5,10 @@ import getFile from "./getFile";
 import createFile from "./createFile";
 import attachRepresentativesToParty from "./attachRepresentativesToParty";
 
-export default api => ({
-  getFiles: getFiles.bind(api),
-  getFile: getFile.bind(api),
-  createFile: createFile.bind(api),
-  attachRepresentativesToParty: attachRepresentativesToParty.bind(api),
-  getNotifications: getNotifications.bind(api)
+export default connect => ({
+  getFiles: connect(getFiles),
+  getFile: connect(getFile),
+  createFile: connect(createFile),
+  attachRepresentativesToParty: connect(attachRepresentativesToParty),
+  getNotifications: connect(getNotifications)
 });
