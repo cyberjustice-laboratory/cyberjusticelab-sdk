@@ -1,7 +1,7 @@
 /**
  * Upsert a party.
- * @prop {Object} config
- * @prop {Object} requestHelper
+ * @param {Object} requestHelper
+ * @param {Object} config
  * @param {Object} model
  * @returns {Guid} Id of the party.
  */

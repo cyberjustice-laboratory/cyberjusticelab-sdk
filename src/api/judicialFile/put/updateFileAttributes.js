@@ -1,7 +1,7 @@
 /**
  * Update judicial file attributes.
- * @prop {Object} config
- * @prop {Object} requestHelper
+ * @param {Object} requestHelper
+ * @param {Object} config
  * @param {Object} model
  */
 export default (requestHelper, config) => async model => {

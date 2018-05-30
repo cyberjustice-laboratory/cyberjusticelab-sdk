@@ -1,7 +1,7 @@
 /**
  * Get a file.
- * @prop {Object} config
- * @prop {Object} requestHelper
+ * @param {Object} requestHelper
+ * @param {Object} config
  * @param {judicialFileApiRequest} model
  * @return {Object} A file.
  */

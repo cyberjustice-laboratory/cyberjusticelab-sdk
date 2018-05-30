@@ -1,7 +1,7 @@
 /**
  * Get a list of documents.
- * @prop {Object} config
- * @prop {Object} requestHelper
+ * @param {Object} requestHelper
+ * @param {Object} config
  * @param {Object} model
  * @return {Object} List of documents.
  */
