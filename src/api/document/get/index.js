@@ -1,8 +1,8 @@
 // Imports
-import getDocumentContentById from "./getDocumentContentById";
-import getDocumentMetadataById from "./getDocumentMetadataById";
+import getDocumentContent from "./getDocumentContent";
+import getDocumentMetadata from "./getDocumentMetadata";
 
 export default connect => ({
-  getDocumentContentByID: connect(getDocumentContentById),
-  getDocumentMetadataById: connect(getDocumentMetadataById)
+  getDocumentContent: connect(getDocumentContent),
+  getDocumentMetadata: connect(getDocumentMetadata)
 });
