@@ -1,10 +1,10 @@
 // Imports
 import updateDocumentAttributes from "./updateDocumentAttributes";
 import updateDocumentContent from "./updateDocumentContent";
-import updateDocumentMetadatas from "./updateDocumentMetadatas";
+import updateDocumentMetadata from "./updateDocumentMetadata";
 
 export default {
   updateDocumentAttributes,
   updateDocumentContent,
-  updateDocumentMetadatas
+  updateDocumentMetadata
 };

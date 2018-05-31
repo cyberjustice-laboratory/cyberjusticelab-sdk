@@ -1,8 +1,8 @@
 // Imports
-import getDocumentContentById from "./getDocumentContentById";
-import getDocumentMetadataById from "./getDocumentMetadataById";
+import getDocumentContent from "./getDocumentContent";
+import getDocumentMetadata from "./getDocumentMetadata";
 
 export default {
-  getDocumentContentById,
-  getDocumentMetadataById
+  getDocumentContent,
+  getDocumentMetadata
 };

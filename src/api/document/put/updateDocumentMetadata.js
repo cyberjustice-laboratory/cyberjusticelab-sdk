@@ -7,10 +7,10 @@
 export default (requestHelper, config) => async model => {
   try {
     await this.requestHelper.put({
-      url: `${this.config.baseUrlApi}Document/PUT/UpdateDocumentMetadatas`,
+      url: `${this.config.baseUrlApi}Document/PUT/UpdateDocumentMetadata`,
       data: model
     });
   } catch (error) {
     throw new Error(error);
   }
-}
+};
