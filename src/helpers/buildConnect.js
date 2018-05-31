@@ -7,8 +7,8 @@ import RequestHelper from "../helpers/RequestHelper";
  * @param {*} appConfig The configuration provided by the application.
  * @param {*} auth
  */
-export default (appConfig, auth) => {
-  const config = Object.assign({}, defaultConfig, appConfig);
+export default (sdkConfig, auth) => {
+  const config = Object.assign({}, defaultConfig, sdkConfig);
   const requestHelper = new RequestHelper(auth);
   return func => params => func(requestHelper, config)(params);
 };
