@@ -17,7 +17,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "test": "mocha --compilers js:@babel/register ./test/**/*.spec.js",
+    "test": "mocha --require babel-polyfill --compilers js:@babel/register ./test/**/*.spec.js",
     "build": "npm run clean && babel src --out-dir dist",
     "prepublishOnly": "npm run build"
   },
@@ -31,6 +31,7 @@
     "@babel/preset-stage-3": "^7.0.0-beta.49",
     "@babel/register": "^7.0.0-beta.49",
     "babel-eslint": "^8.2.3",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-minify": "^0.4.3",
     "chai": "^4.1.2",
     "eslint": "^4.19.1",
@@ -39,10 +40,10 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.8.2",
-    "prettier": "^1.13.2",
-    "sinon": "^5.0.10",
     "mocha": "^5.2.0",
     "moxios": "^0.4.0",
-    "rimraf": "^2.6.2"
+    "prettier": "^1.13.2",
+    "rimraf": "^2.6.2",
+    "sinon": "^5.0.10"
   }
 }

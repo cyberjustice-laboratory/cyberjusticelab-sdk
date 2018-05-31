@@ -25,6 +25,24 @@ export default class RequestHelper {
     }
   }
 
+  // call(opts, methodType) {
+  //   return new Promise((resolve, reject) => {
+  //     axios({
+  //       method: methodType,
+  //       url: opts.url,
+  //       headers: this.defaultHeaders,
+  //       data: opts.data,
+  //       params: opts.params
+  //     })
+  //       .then(response => {
+  //         resolve(response);
+  //       })
+  //       .catch(error => {
+  //         reject(new Error(error));
+  //       });
+  //   });
+  // }
+
   async call(opts, methodType) {
     try {
       return await axios({
