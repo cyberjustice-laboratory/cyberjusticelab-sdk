@@ -8,7 +8,6 @@ import getCalendarPUT from "./put";
 export default connect => ({
   ...getCalendarDELETE(connect),
   ...getCalendarGET(connect),
-  ...getCalendarGET(connect),
   ...getCalendarPATCH(connect),
   ...getCalendarPOST(connect),
   ...getCalendarPUT(connect)

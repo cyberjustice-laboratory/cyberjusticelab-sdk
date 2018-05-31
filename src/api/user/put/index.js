@@ -1,0 +1,3 @@
+// Imports
+
+export default connect => ({});
