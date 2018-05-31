@@ -1,14 +1,17 @@
 // Imports
-import getDocumentDELETE from "./delete";
-import getDocumentGET from "./get";
-import getDocumentPATCH from "./patch";
-import getDocumentPOST from "./post";
-import getDocumentPUT from "./put";
+import getConnectedMethods from "../../helpers/getConnectedMethods";
+import documentDELETE from "./delete";
+import documentGET from "./get";
+import documentPATCH from "./patch";
+import documentPOST from "./post";
+import documentPUT from "./put";
 
-export default connect => ({
-  ...getDocumentDELETE(connect),
-  ...getDocumentGET(connect),
-  ...getDocumentPATCH(connect),
-  ...getDocumentPOST(connect),
-  ...getDocumentPUT(connect)
-});
+const protocols = [
+  documentDELETE,
+  documentGET,
+  documentPATCH,
+  documentPOST,
+  documentPUT
+];
+
+export default connect => getConnectedMethods(connect, protocols);
