@@ -1,3 +1,6 @@
 // Imports
+import getOrganizationsSummaries from "./getOrganizationsSummaries";
 
-export default connect => ({});
+export default {
+  getOrganizationsSummaries
+};
