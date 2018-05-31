@@ -1,10 +1,10 @@
 /**
- * Update a document's metadata.
- * @prop {Object} config
- * @prop {Object} requestHelper
+ * Update a document's attributes.
+ * @param {Object} requestHelper
+ * @param {Object} config
  * @param {Object} model
  */
-export default async function(model) {
+export default (requestHelper, config) => async model => {
   try {
     await this.requestHelper.put({
       url: `${this.config.baseUrlApi}Document/PUT/UpdateDocumentMetadata`,
@@ -13,4 +13,4 @@ export default async function(model) {
   } catch (error) {
     throw new Error(error);
   }
-}
+};

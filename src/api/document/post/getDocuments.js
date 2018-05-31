@@ -1,11 +1,11 @@
 /**
  * Get a list of documents.
- * @prop {Object} config
- * @prop {Object} requestHelper
+ * @param {Object} requestHelper
+ * @param {Object} config
  * @param {Object} model
  * @return {Object} List of documents.
  */
-export default async function(model) {
+export default (requestHelper, config) => async model => {
   try {
     return await this.requestHelper.post({
       url: `${this.config.baseUrlApi}Document/POST/Documents`,

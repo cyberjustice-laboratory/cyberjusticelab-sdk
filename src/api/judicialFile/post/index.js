@@ -5,10 +5,10 @@ import getFile from "./getFile";
 import createFile from "./createFile";
 import attachRepresentativesToParty from "./attachRepresentativesToParty";
 
-export default connect => ({
-  getFiles: connect(getFiles),
-  getFile: connect(getFile),
-  createFile: connect(createFile),
-  attachRepresentativesToParty: connect(attachRepresentativesToParty),
-  getNotifications: connect(getNotifications)
-});
+export default {
+  getFiles,
+  getFile,
+  createFile,
+  attachRepresentativesToParty,
+  getNotifications
+};

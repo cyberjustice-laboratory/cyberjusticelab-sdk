@@ -1,3 +1,3 @@
 // Imports
 
-export default connect => ({});
+export default {};

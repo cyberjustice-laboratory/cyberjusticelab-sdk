@@ -1,14 +1,17 @@
 // Imports
-import getJEntDELETE from "./delete";
-import getJEntGET from "./get";
-import getJEntPATCH from "./patch";
-import getJEntPOST from "./post";
-import getJEntPUT from "./put";
+import getConnectedMethods from "../../helpers/getConnectedMethods";
+import jEntityDELETE from "./delete";
+import jEntityGET from "./get";
+import jEntityPATCH from "./patch";
+import jEntityPOST from "./post";
+import jEntityPUT from "./put";
 
-export default connect => ({
-  ...getJEntDELETE(connect),
-  ...getJEntGET(connect),
-  ...getJEntPATCH(connect),
-  ...getJEntPOST(connect),
-  ...getJEntPUT(connect)
-});
+const protocols = [
+  jEntityDELETE,
+  jEntityGET,
+  jEntityPATCH,
+  jEntityPOST,
+  jEntityPUT
+];
+
+export default connect => getConnectedMethods(connect, protocols);

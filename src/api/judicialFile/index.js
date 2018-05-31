@@ -1,14 +1,11 @@
 // Imports
-import getJFileDELETE from "./delete";
-import getJFileGET from "./get";
-import getJFilePATCH from "./patch";
-import getJFilePOST from "./post";
-import getJFilePUT from "./put";
+import getConnectedMethods from "../../helpers/getConnectedMethods";
+import jFileDELETE from "./delete";
+import jFileGET from "./get";
+import jFilePATCH from "./patch";
+import jFilePOST from "./post";
+import jFilePUT from "./put";
 
-export default connect => ({
-  ...getJFileDELETE(connect),
-  ...getJFileGET(connect),
-  ...getJFilePATCH(connect),
-  ...getJFilePOST(connect),
-  ...getJFilePUT(connect)
-});
+const protocols = [jFileDELETE, jFileGET, jFilePATCH, jFilePOST, jFilePUT];
+
+export default connect => getConnectedMethods(connect, protocols);

@@ -1,7 +1,7 @@
 /**
  * Get a document as a Base64String.
- * @prop {Object} config
- * @prop {Object} requestHelper
+ * @param {Object} requestHelper
+ * @param {Object} config
  * @param {Object} model
  * @return {Guid} Base64String representation of the document.
  */
