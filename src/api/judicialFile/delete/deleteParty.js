@@ -1,5 +1,5 @@
 /**
- * Attach representatives to a party.
+ * Delete a party.
  * @param {Object} requestHelper
  * @param {Object} config
  * @param {Object} model

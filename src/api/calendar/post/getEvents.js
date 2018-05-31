@@ -1,9 +1,9 @@
 /**
- * Get a list of documents.
+ * Get a list of events.
  * @param {Object} requestHelper
  * @param {Object} config
  * @param {Object} model
- * @return {Object} List of documents.
+ * @return {Object} List of events.
  */
 export default (requestHelper, config) => async model => {
   try {

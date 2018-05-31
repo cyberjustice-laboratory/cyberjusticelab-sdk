@@ -1,9 +1,9 @@
 /**
- * Get a document as a Base64String.
+ * Get a document metadata.
  * @param {Object} requestHelper
  * @param {Object} config
  * @param {Object} model
- * @return {Guid} Base64String representation of the document.
+ * @return {Guid} Metadata of the document.
  */
 export default (requestHelper, config) => async model => {
   try {

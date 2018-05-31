@@ -1,9 +1,9 @@
 /**
- * Get a judicial entity ID.
+ * Get a judicial entity id.
  * @param {Object} requestHelper
  * @param {Object} config
  * @param {string} urn
- * @return {Guid} a judicial entity ID.
+ * @return {Guid} a judicial entity id.
  */
 export default (requestHelper, config) => async urn => {
   try {

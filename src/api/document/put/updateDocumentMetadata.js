@@ -1,5 +1,5 @@
 /**
- * Update a document's attributes.
+ * Update a document's metadata.
  * @param {Object} requestHelper
  * @param {Object} config
  * @param {Object} model
