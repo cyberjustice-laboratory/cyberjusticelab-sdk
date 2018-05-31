@@ -1,9 +1,9 @@
 /**
- * Get a list of files.
+ * Get a list of notifications.
  * @param {Object} requestHelper
  * @param {Object} config
  * @param {Object} model
- * @return {Object} List of files.
+ * @return {Object} List of notifications.
  */
 export default (requestHelper, config) => async model => {
   try {

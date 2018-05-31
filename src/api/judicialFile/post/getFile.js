@@ -1,9 +1,9 @@
 /**
- * Get a file.
+ * Get a judicial file.
  * @param {Object} requestHelper
  * @param {Object} config
  * @param {judicialFileApiRequest} model
- * @return {Object} A file.
+ * @return {Object} A judicial file.
  */
 export default (requestHelper, config) => async model => {
   try {

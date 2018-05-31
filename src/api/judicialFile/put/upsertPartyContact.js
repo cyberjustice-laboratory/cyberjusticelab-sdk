@@ -3,7 +3,7 @@
  * @param {Object} requestHelper
  * @param {Object} config
  * @param {Object} model
- * @returns {Guid} Id of the contact.
+ * @returns {Guid} Id of the party contact.
  */
 export default (requestHelper, config) => async model => {
   try {
