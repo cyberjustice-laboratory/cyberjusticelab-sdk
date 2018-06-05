@@ -7,8 +7,8 @@
  */
 export default (requestHelper, config) => async model => {
   try {
-    return await this.requestHelper.post({
-      url: `${this.config.baseUrlApi}Document/POST/Documents`,
+    return await requestHelper.post({
+      url: `${config.baseUrlApi}Document/POST/Documents`,
       data: model
     });
   } catch (error) {
