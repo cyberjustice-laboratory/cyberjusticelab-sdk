@@ -1,11 +1,13 @@
 {
   "name": "cyberjusticelab-sdk",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0-beta.5",
   "description": "Cyberjustice Laboratory SDK.",
   "main": "./dist/index.js",
   "private": false,
   "license": "MIT",
-  "keywords": ["Cyberjustice Laboratory SDK"],
+  "keywords": [
+    "Cyberjustice Laboratory SDK"
+  ],
   "author": "Cyberjustice Laboratory",
   "bugs": {
     "url": "http://www.cyberjustice.ca/"
@@ -16,10 +18,10 @@
     "url": "git@github.com:cyberjustice-laboratory/cyberjusticelab-sdk.git"
   },
   "scripts": {
-    "clean": "rimraf dist",
-    "test": "mocha --require babel-polyfill --compilers js:@babel/register ./test/**/*.spec.js",
     "build": "npm run clean && babel src --out-dir dist",
-    "prepublishOnly": "npm run build"
+    "test": "mocha --require babel-polyfill --compilers js:@babel/register ./test/**/*.spec.js",
+    "prepublishOnly": "npm run build",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "axios": "0.18.0"
