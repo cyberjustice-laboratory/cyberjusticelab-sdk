@@ -15,10 +15,10 @@ const rawApiArray = {
 };
 
 // Each method has the right confiugations and helper functions.
-const sdkConnectedApiArray = (APIs => {
+const sdkConnectedApiArray = (arr => {
   const connectedApiArray = {};
-  Object.keys(APIs).forEach(key => {
-    const api = APIs[key];
+  Object.keys(arr).forEach(key => {
+    const api = arr[key];
     connectedApiArray[`${key}Api`] = (sdkConfig, authState) => api(buildConnect(sdkConfig, authState));
   });
   return connectedApiArray;
