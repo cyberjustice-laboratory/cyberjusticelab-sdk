@@ -11,7 +11,7 @@ export default (requestHelper, config) => async id => {
       url: `${config.baseUrlApi}JudicialFile/POST/Files`,
       data: Object.assign({}, config.entity, { fileIds: [id] })
     });
-    return response.files.length > 0 ? response.files[0] : null;
+    return response.data.count > 0 ? response.data.files[0] : null;
   } catch (error) {
     throw new Error(error);
   }
