@@ -2,14 +2,14 @@
  * Get a judicial file.
  * @param {Object} requestHelper
  * @param {Object} config
- * @param {judicialFileApiRequest} model
+ * @param {FileId} id
  * @return {Object} A judicial file.
  */
-export default (requestHelper, config) => async model => {
+export default (requestHelper, config) => async id => {
   try {
     const response = await requestHelper.post({
       url: `${config.baseUrlApi}JudicialFile/POST/Files`,
-      data: Object.assign({}, config.entity, model)
+      data: Object.assign({}, config.entity, { fileIds: [id] })
     });
     return response.files.length > 0 ? response.files[0] : null;
   } catch (error) {
