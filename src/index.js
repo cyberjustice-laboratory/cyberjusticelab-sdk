@@ -6,7 +6,7 @@ import document from "./api/document";
 import calendar from "./api/calendar";
 import user from "./api/user";
 
-const rawAPIs = {
+const rawApiArray = {
   judicialFile,
   judicialEntity,
   document,
@@ -15,14 +15,14 @@ const rawAPIs = {
 };
 
 // Each method has the right confiugations and helper functions.
-const sdkConnectedAPIs = (APIs => {
-  const connectedAPIs = {};
+const sdkConnectedApiArray = (APIs => {
+  const connectedApiArray = {};
   Object.keys(APIs).forEach(key => {
     const api = APIs[key];
-    connectedAPIs[`${key}Api`] = (sdkConfig, authState) => api(buildConnect(sdkConfig, authState));
+    connectedApiArray[`${key}Api`] = (sdkConfig, authState) => api(buildConnect(sdkConfig, authState));
   });
-  return connectedAPIs;
-})(rawAPIs);
+  return connectedApiArray;
+})(rawApiArray);
 
 // Exports
-export default sdkConnectedAPIs;
+export default sdkConnectedApiArray;
