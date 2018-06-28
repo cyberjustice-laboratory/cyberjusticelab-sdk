@@ -1,6 +1,6 @@
 {
   "name": "cyberjusticelab-sdk",
-  "version": "1.0.0-beta.6",
+  "version": "1.0.0-beta.7",
   "description": "Cyberjustice Laboratory SDK.",
   "main": "./dist/index.js",
   "private": false,
