@@ -1,9 +1,5 @@
 const defaultConfig = {
-  baseUrlApi: "",
-  judicialEntity: {
-    urn: "",
-    businessRuleNames: []
-  }
+  baseUrlApi: ""
 };
 
 export default defaultConfig;

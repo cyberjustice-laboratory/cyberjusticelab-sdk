@@ -9,7 +9,7 @@ export default (requestHelper, config) => async model => {
   try {
     return await requestHelper.post({
       url: `${config.baseUrlApi}JudicialFile/POST/Notifications`,
-      data: Object.assign({}, config.entity, model)
+      data: model
     });
   } catch (error) {
     throw new Error(error);
