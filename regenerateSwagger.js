@@ -21,7 +21,7 @@ https
       // When file is saved, execute autorest.
       const exec = require("child_process").exec;
       const testscript = exec(
-        "autorest --input-file=swagger.json --output-folder=test --typescript"
+        "autorest --input-file=swagger.json --output-folder=src --typescript"
       );
 
       testscript.stdout.on("data", function(data) {
