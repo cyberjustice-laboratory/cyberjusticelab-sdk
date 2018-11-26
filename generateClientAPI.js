@@ -7,7 +7,7 @@ const url = "https://localhost:441/swagger/docs/v1";
 try {
   fs.unlinkSync("swagger.json");
 } catch {
-  console.log("swagger.json was not found");
+  console.log("Previous swagger.json was not found");
 }
 
 // Create write stream
@@ -30,11 +30,11 @@ https
       });
 
       testscript.stderr.on("data", function(data) {
-        console.log("Error: ", data);
+        console.log("Autorest error: ", data);
       });
 
       testscript.on("close", () => {
-        console.log("Finished recreating autorest");
+        console.log("Finished recreating client api");
       });
     });
   })

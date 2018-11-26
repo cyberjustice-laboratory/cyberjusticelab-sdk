@@ -2,7 +2,7 @@
 
 To regenerate sdk
 
-`node regenerateSwagger.js`
+`node generateClientAPI.js`
 
 Then go to test/
 
