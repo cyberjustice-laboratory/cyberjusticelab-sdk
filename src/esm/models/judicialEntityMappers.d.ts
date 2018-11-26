@@ -1,0 +1,2 @@
+export { CyberjusticeLabKernelServiceContractsJudicialEntityJudicialEntityData, CyberjusticeLabKernelServiceContractsJudicialEntityNeutralPredicateData, CyberjusticeLabKernelServiceContractsJudicialEntityProsecutingAgentPredicateData } from "../models/mappers";
+//# sourceMappingURL=judicialEntityMappers.d.ts.map

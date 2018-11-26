@@ -1,0 +1,2 @@
+export { CyberjusticeLabKernelSharedRequestRequestData, CyberjusticeLabKernelSharedRequestRequestAttributeData, CyberjusticeLabKernelSharedRequestRequestCreateData, CyberjusticeLabKernelSharedRequestRequestUpdateData, CyberjusticeLabKernelSharedRequestRequestUpdateAttributeData } from "../models/mappers";
+//# sourceMappingURL=requestMappers.d.ts.map
