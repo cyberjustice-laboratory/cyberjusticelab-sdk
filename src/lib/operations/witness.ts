@@ -285,6 +285,34 @@ export class Witness {
       updateWitnessOperationSpec,
       callback);
   }
+
+  /**
+   * @summary Update the party actions of a witness.
+   * @param model Model with the requested changes.
+   * @param [options] The optional parameters
+   * @returns Promise<msRest.RestResponse>
+   */
+  updateWitnessPartyActions(model: Models.CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  /**
+   * @param model Model with the requested changes.
+   * @param callback The callback
+   */
+  updateWitnessPartyActions(model: Models.CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel, callback: msRest.ServiceCallback<void>): void;
+  /**
+   * @param model Model with the requested changes.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  updateWitnessPartyActions(model: Models.CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  updateWitnessPartyActions(model: Models.CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+    return this.client.sendOperationRequest(
+      {
+        model,
+        options
+      },
+      updateWitnessPartyActionsOperationSpec,
+      callback);
+  }
 }
 
 // Operation Specifications
@@ -466,6 +494,23 @@ const updateWitnessOperationSpec: msRest.OperationSpec = {
     403: {},
     404: {},
     409: {},
+    default: {}
+  },
+  serializer
+};
+
+const updateWitnessPartyActionsOperationSpec: msRest.OperationSpec = {
+  httpMethod: "PUT",
+  path: "Witness/PUT/UpdateWitnessPartyActions",
+  requestBody: {
+    parameterPath: "model",
+    mapper: {
+      ...Mappers.CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel,
+      required: true
+    }
+  },
+  responses: {
+    404: {},
     default: {}
   },
   serializer

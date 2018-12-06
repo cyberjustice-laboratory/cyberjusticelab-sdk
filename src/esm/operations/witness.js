@@ -73,6 +73,12 @@ var Witness = /** @class */ (function () {
             options: options
         }, updateWitnessOperationSpec, callback);
     };
+    Witness.prototype.updateWitnessPartyActions = function (model, options, callback) {
+        return this.client.sendOperationRequest({
+            model: model,
+            options: options
+        }, updateWitnessPartyActionsOperationSpec, callback);
+    };
     return Witness;
 }());
 export { Witness };
@@ -235,6 +241,19 @@ var updateWitnessOperationSpec = {
         403: {},
         404: {},
         409: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var updateWitnessPartyActionsOperationSpec = {
+    httpMethod: "PUT",
+    path: "Witness/PUT/UpdateWitnessPartyActions",
+    requestBody: {
+        parameterPath: "model",
+        mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel, { required: true })
+    },
+    responses: {
+        404: {},
         default: {}
     },
     serializer: serializer

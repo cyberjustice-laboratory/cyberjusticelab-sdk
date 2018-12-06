@@ -219,5 +219,23 @@ export declare class Document {
      * @param callback The callback
      */
     updateDocumentAttributes(attributes: Models.CyberjusticeLabKernelSharedDocumentModelsEditDocumentAttributeModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    /**
+     * @summary Update the party actions of a document.
+     * @param model Model with the requested changes.
+     * @param [options] The optional parameters
+     * @returns Promise<msRest.RestResponse>
+     */
+    updateDocumentPartyActions(model: Models.CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    /**
+     * @param model Model with the requested changes.
+     * @param callback The callback
+     */
+    updateDocumentPartyActions(model: Models.CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel, callback: msRest.ServiceCallback<void>): void;
+    /**
+     * @param model Model with the requested changes.
+     * @param options The optional parameters
+     * @param callback The callback
+     */
+    updateDocumentPartyActions(model: Models.CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
 }
 //# sourceMappingURL=document.d.ts.map

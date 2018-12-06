@@ -85,6 +85,12 @@ var Document = /** @class */ (function () {
             options: options
         }, updateDocumentAttributesOperationSpec, callback);
     };
+    Document.prototype.updateDocumentPartyActions = function (model, options, callback) {
+        return this.client.sendOperationRequest({
+            model: model,
+            options: options
+        }, updateDocumentPartyActionsOperationSpec, callback);
+    };
     return Document;
 }());
 export { Document };
@@ -252,6 +258,19 @@ var updateDocumentAttributesOperationSpec = {
     requestBody: {
         parameterPath: "attributes",
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedDocumentModelsEditDocumentAttributeModel, { required: true })
+    },
+    responses: {
+        404: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var updateDocumentPartyActionsOperationSpec = {
+    httpMethod: "PUT",
+    path: "Document/PUT/UpdateDocumentPartyActions",
+    requestBody: {
+        parameterPath: "model",
+        mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel, { required: true })
     },
     responses: {
         404: {},

@@ -180,5 +180,23 @@ export declare class Witness {
      * @param callback The callback
      */
     updateWitness(updateWitnessParameter: Models.CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    /**
+     * @summary Update the party actions of a witness.
+     * @param model Model with the requested changes.
+     * @param [options] The optional parameters
+     * @returns Promise<msRest.RestResponse>
+     */
+    updateWitnessPartyActions(model: Models.CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    /**
+     * @param model Model with the requested changes.
+     * @param callback The callback
+     */
+    updateWitnessPartyActions(model: Models.CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel, callback: msRest.ServiceCallback<void>): void;
+    /**
+     * @param model Model with the requested changes.
+     * @param options The optional parameters
+     * @param callback The callback
+     */
+    updateWitnessPartyActions(model: Models.CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
 }
 //# sourceMappingURL=witness.d.ts.map

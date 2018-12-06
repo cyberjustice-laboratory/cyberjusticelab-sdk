@@ -344,6 +344,34 @@ export class Document {
       updateDocumentAttributesOperationSpec,
       callback);
   }
+
+  /**
+   * @summary Update the party actions of a document.
+   * @param model Model with the requested changes.
+   * @param [options] The optional parameters
+   * @returns Promise<msRest.RestResponse>
+   */
+  updateDocumentPartyActions(model: Models.CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  /**
+   * @param model Model with the requested changes.
+   * @param callback The callback
+   */
+  updateDocumentPartyActions(model: Models.CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel, callback: msRest.ServiceCallback<void>): void;
+  /**
+   * @param model Model with the requested changes.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  updateDocumentPartyActions(model: Models.CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  updateDocumentPartyActions(model: Models.CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+    return this.client.sendOperationRequest(
+      {
+        model,
+        options
+      },
+      updateDocumentPartyActionsOperationSpec,
+      callback);
+  }
 }
 
 // Operation Specifications
@@ -536,6 +564,23 @@ const updateDocumentAttributesOperationSpec: msRest.OperationSpec = {
     parameterPath: "attributes",
     mapper: {
       ...Mappers.CyberjusticeLabKernelSharedDocumentModelsEditDocumentAttributeModel,
+      required: true
+    }
+  },
+  responses: {
+    404: {},
+    default: {}
+  },
+  serializer
+};
+
+const updateDocumentPartyActionsOperationSpec: msRest.OperationSpec = {
+  httpMethod: "PUT",
+  path: "Document/PUT/UpdateDocumentPartyActions",
+  requestBody: {
+    parameterPath: "model",
+    mapper: {
+      ...Mappers.CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel,
       required: true
     }
   },

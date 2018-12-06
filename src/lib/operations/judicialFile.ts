@@ -58,18 +58,21 @@ export class JudicialFile {
    * @summary Delete a party invitation.
    * @param partyInvitationId Party invitation Guid.
    * @param [options] The optional parameters
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    * @returns Promise<msRest.RestResponse>
    */
   deletePartyInvitation(partyInvitationId: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
   /**
    * @param partyInvitationId Party invitation Guid.
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
   deletePartyInvitation(partyInvitationId: string, callback: msRest.ServiceCallback<void>): void;
   /**
    * @param partyInvitationId Party invitation Guid.
    * @param options The optional parameters
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
   deletePartyInvitation(partyInvitationId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
   deletePartyInvitation(partyInvitationId: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
@@ -79,6 +82,34 @@ export class JudicialFile {
         options
       },
       deletePartyInvitationOperationSpec,
+      callback);
+  }
+
+  /**
+   * @summary Delete a file invitation.
+   * @param fileInvitationId File invitation Guid.
+   * @param [options] The optional parameters
+   * @returns Promise<msRest.RestResponse>
+   */
+  deleteFileInvitation(fileInvitationId: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  /**
+   * @param fileInvitationId File invitation Guid.
+   * @param callback The callback
+   */
+  deleteFileInvitation(fileInvitationId: string, callback: msRest.ServiceCallback<void>): void;
+  /**
+   * @param fileInvitationId File invitation Guid.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  deleteFileInvitation(fileInvitationId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  deleteFileInvitation(fileInvitationId: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+    return this.client.sendOperationRequest(
+      {
+        fileInvitationId,
+        options
+      },
+      deleteFileInvitationOperationSpec,
       callback);
   }
 
@@ -607,21 +638,24 @@ export class JudicialFile {
    * @summary Get a party invitation.
    * @param partyInvitationId The party invitation Guid.
    * @param [options] The optional parameters
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    * @returns Promise<Models.JudicialFileGetPartyInvitationResponse>
    */
   getPartyInvitation(partyInvitationId: string, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileGetPartyInvitationResponse>;
   /**
    * @param partyInvitationId The party invitation Guid.
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
-  getPartyInvitation(partyInvitationId: string, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel>): void;
+  getPartyInvitation(partyInvitationId: string, callback: msRest.ServiceCallback<any>): void;
   /**
    * @param partyInvitationId The party invitation Guid.
    * @param options The optional parameters
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
-  getPartyInvitation(partyInvitationId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel>): void;
-  getPartyInvitation(partyInvitationId: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel>, callback?: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel>): Promise<Models.JudicialFileGetPartyInvitationResponse> {
+  getPartyInvitation(partyInvitationId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<any>): void;
+  getPartyInvitation(partyInvitationId: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<any>, callback?: msRest.ServiceCallback<any>): Promise<Models.JudicialFileGetPartyInvitationResponse> {
     return this.client.sendOperationRequest(
       {
         partyInvitationId,
@@ -635,21 +669,24 @@ export class JudicialFile {
    * @summary Get the party invitations from a specific party Id.
    * @param partyId The party Guid.
    * @param [options] The optional parameters
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    * @returns Promise<Models.JudicialFileGetPartyInvitationsOfPartyResponse>
    */
   getPartyInvitationsOfParty(partyId: string, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileGetPartyInvitationsOfPartyResponse>;
   /**
    * @param partyId The party Guid.
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
-  getPartyInvitationsOfParty(partyId: string, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel[]>): void;
+  getPartyInvitationsOfParty(partyId: string, callback: msRest.ServiceCallback<any>): void;
   /**
    * @param partyId The party Guid.
    * @param options The optional parameters
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
-  getPartyInvitationsOfParty(partyId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel[]>): void;
-  getPartyInvitationsOfParty(partyId: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel[]>, callback?: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel[]>): Promise<Models.JudicialFileGetPartyInvitationsOfPartyResponse> {
+  getPartyInvitationsOfParty(partyId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<any>): void;
+  getPartyInvitationsOfParty(partyId: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<any>, callback?: msRest.ServiceCallback<any>): Promise<Models.JudicialFileGetPartyInvitationsOfPartyResponse> {
     return this.client.sendOperationRequest(
       {
         partyId,
@@ -657,6 +694,94 @@ export class JudicialFile {
       },
       getPartyInvitationsOfPartyOperationSpec,
       callback) as Promise<Models.JudicialFileGetPartyInvitationsOfPartyResponse>;
+  }
+
+  /**
+   * @summary Get the file invitations from a specific party Id.
+   * @param partyId The party Guid.
+   * @param [options] The optional parameters
+   * @returns Promise<Models.JudicialFileGetFileInvitationsOfPartyResponse>
+   */
+  getFileInvitationsOfParty(partyId: string, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileGetFileInvitationsOfPartyResponse>;
+  /**
+   * @param partyId The party Guid.
+   * @param callback The callback
+   */
+  getFileInvitationsOfParty(partyId: string, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel[]>): void;
+  /**
+   * @param partyId The party Guid.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  getFileInvitationsOfParty(partyId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel[]>): void;
+  getFileInvitationsOfParty(partyId: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel[]>, callback?: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel[]>): Promise<Models.JudicialFileGetFileInvitationsOfPartyResponse> {
+    return this.client.sendOperationRequest(
+      {
+        partyId,
+        options
+      },
+      getFileInvitationsOfPartyOperationSpec,
+      callback) as Promise<Models.JudicialFileGetFileInvitationsOfPartyResponse>;
+  }
+
+  /**
+   * @summary Get the file invitation information.
+   * @param code The Invitation Code.
+   * @param dateParameter The Invitation Date.
+   * @param [options] The optional parameters
+   * @returns Promise<msRest.RestResponse>
+   */
+  getFileInvitationInformation(code: string, dateParameter: Date | string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  /**
+   * @param code The Invitation Code.
+   * @param dateParameter The Invitation Date.
+   * @param callback The callback
+   */
+  getFileInvitationInformation(code: string, dateParameter: Date | string, callback: msRest.ServiceCallback<void>): void;
+  /**
+   * @param code The Invitation Code.
+   * @param dateParameter The Invitation Date.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  getFileInvitationInformation(code: string, dateParameter: Date | string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  getFileInvitationInformation(code: string, dateParameter: Date | string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+    return this.client.sendOperationRequest(
+      {
+        code,
+        dateParameter,
+        options
+      },
+      getFileInvitationInformationOperationSpec,
+      callback);
+  }
+
+  /**
+   * @summary Use the invitationId to get some basic information about the file.
+   * @param invitationId The party invitation Guid.
+   * @param [options] The optional parameters
+   * @returns Promise<Models.JudicialFileGetFileInformationFromPartyInvitationResponse>
+   */
+  getFileInformationFromPartyInvitation(invitationId: string, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileGetFileInformationFromPartyInvitationResponse>;
+  /**
+   * @param invitationId The party invitation Guid.
+   * @param callback The callback
+   */
+  getFileInformationFromPartyInvitation(invitationId: string, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel>): void;
+  /**
+   * @param invitationId The party invitation Guid.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  getFileInformationFromPartyInvitation(invitationId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel>): void;
+  getFileInformationFromPartyInvitation(invitationId: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel>, callback?: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel>): Promise<Models.JudicialFileGetFileInformationFromPartyInvitationResponse> {
+    return this.client.sendOperationRequest(
+      {
+        invitationId,
+        options
+      },
+      getFileInformationFromPartyInvitationOperationSpec,
+      callback) as Promise<Models.JudicialFileGetFileInformationFromPartyInvitationResponse>;
   }
 
   /**
@@ -955,21 +1080,95 @@ export class JudicialFile {
   }
 
   /**
+   * @summary Update the Expiration date of a file invitation.
+   * @param fileInvitationId Identification of the file invitation.
+   * @param expiryDate New expiration date of the file invitation.
+   * @param lastModified For optimistic concurrency check.
+   * @param [options] The optional parameters
+   * @returns Promise<msRest.RestResponse>
+   */
+  updateFileInvitationExpirationDate(fileInvitationId: string, expiryDate: Date | string, lastModified: Date | string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  /**
+   * @param fileInvitationId Identification of the file invitation.
+   * @param expiryDate New expiration date of the file invitation.
+   * @param lastModified For optimistic concurrency check.
+   * @param callback The callback
+   */
+  updateFileInvitationExpirationDate(fileInvitationId: string, expiryDate: Date | string, lastModified: Date | string, callback: msRest.ServiceCallback<void>): void;
+  /**
+   * @param fileInvitationId Identification of the file invitation.
+   * @param expiryDate New expiration date of the file invitation.
+   * @param lastModified For optimistic concurrency check.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  updateFileInvitationExpirationDate(fileInvitationId: string, expiryDate: Date | string, lastModified: Date | string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  updateFileInvitationExpirationDate(fileInvitationId: string, expiryDate: Date | string, lastModified: Date | string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+    return this.client.sendOperationRequest(
+      {
+        fileInvitationId,
+        expiryDate,
+        lastModified,
+        options
+      },
+      updateFileInvitationExpirationDateOperationSpec,
+      callback);
+  }
+
+  /**
+   * @summary Update the Expiration date of a party invitation.
+   * @param partyInvitationId Identification of the party invitation.
+   * @param expiryDate New expiration date of the party invitation.
+   * @param [options] The optional parameters
+   * @deprecated This operation is deprecated. Please do not use it any longer.
+   * @returns Promise<msRest.RestResponse>
+   */
+  updatePartyInvitationExpirationDate(partyInvitationId: string, expiryDate: Date | string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  /**
+   * @param partyInvitationId Identification of the party invitation.
+   * @param expiryDate New expiration date of the party invitation.
+   * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
+   */
+  updatePartyInvitationExpirationDate(partyInvitationId: string, expiryDate: Date | string, callback: msRest.ServiceCallback<void>): void;
+  /**
+   * @param partyInvitationId Identification of the party invitation.
+   * @param expiryDate New expiration date of the party invitation.
+   * @param options The optional parameters
+   * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
+   */
+  updatePartyInvitationExpirationDate(partyInvitationId: string, expiryDate: Date | string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  updatePartyInvitationExpirationDate(partyInvitationId: string, expiryDate: Date | string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+    return this.client.sendOperationRequest(
+      {
+        partyInvitationId,
+        expiryDate,
+        options
+      },
+      updatePartyInvitationExpirationDateOperationSpec,
+      callback);
+  }
+
+  /**
    * @summary Create a party invitation.
    * @param createModel The party invitation create model.
    * @param [options] The optional parameters
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    * @returns Promise<msRest.RestResponse>
    */
   createPartyInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
   /**
    * @param createModel The party invitation create model.
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
   createPartyInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateModel, callback: msRest.ServiceCallback<void>): void;
   /**
    * @param createModel The party invitation create model.
    * @param options The optional parameters
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
   createPartyInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
   createPartyInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
@@ -983,21 +1182,52 @@ export class JudicialFile {
   }
 
   /**
+   * @summary Create an invitation to a file.
+   * @param createModel The file invitation create model.
+   * @param [options] The optional parameters
+   * @returns Promise<msRest.RestResponse>
+   */
+  createFileInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  /**
+   * @param createModel The file invitation create model.
+   * @param callback The callback
+   */
+  createFileInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel, callback: msRest.ServiceCallback<void>): void;
+  /**
+   * @param createModel The file invitation create model.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  createFileInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  createFileInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+    return this.client.sendOperationRequest(
+      {
+        createModel,
+        options
+      },
+      createFileInvitationOperationSpec,
+      callback);
+  }
+
+  /**
    * @summary Accept a party invitation.
    * @param partyInvitationId The party invitation Guid.
    * @param [options] The optional parameters
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    * @returns Promise<msRest.RestResponse>
    */
   acceptPartyInvitation(partyInvitationId: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
   /**
    * @param partyInvitationId The party invitation Guid.
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
   acceptPartyInvitation(partyInvitationId: string, callback: msRest.ServiceCallback<void>): void;
   /**
    * @param partyInvitationId The party invitation Guid.
    * @param options The optional parameters
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
   acceptPartyInvitation(partyInvitationId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
   acceptPartyInvitation(partyInvitationId: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
@@ -1014,18 +1244,21 @@ export class JudicialFile {
    * @summary Refuse a party invitation. Update a tag with a complement.
    * @param refuseModel Data to refuse an invite.
    * @param [options] The optional parameters
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    * @returns Promise<msRest.RestResponse>
    */
   refusePartyInvitation(refuseModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationRefuseModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
   /**
    * @param refuseModel Data to refuse an invite.
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
   refusePartyInvitation(refuseModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationRefuseModel, callback: msRest.ServiceCallback<void>): void;
   /**
    * @param refuseModel Data to refuse an invite.
    * @param options The optional parameters
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
   refusePartyInvitation(refuseModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationRefuseModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
   refusePartyInvitation(refuseModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationRefuseModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
@@ -1035,6 +1268,34 @@ export class JudicialFile {
         options
       },
       refusePartyInvitationOperationSpec,
+      callback);
+  }
+
+  /**
+   * @summary Refuse a file invitation. Update a tag with a complement.
+   * @param refuseModel Data to refuse an invite.
+   * @param [options] The optional parameters
+   * @returns Promise<msRest.RestResponse>
+   */
+  refuseFileInvitation(refuseModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationRefuseModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  /**
+   * @param refuseModel Data to refuse an invite.
+   * @param callback The callback
+   */
+  refuseFileInvitation(refuseModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationRefuseModel, callback: msRest.ServiceCallback<void>): void;
+  /**
+   * @param refuseModel Data to refuse an invite.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  refuseFileInvitation(refuseModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationRefuseModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  refuseFileInvitation(refuseModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationRefuseModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+    return this.client.sendOperationRequest(
+      {
+        refuseModel,
+        options
+      },
+      refuseFileInvitationOperationSpec,
       callback);
   }
 
@@ -1138,18 +1399,21 @@ export class JudicialFile {
    * <remarks>The representative will be assigned the viewer role by default.</remarks>
    * @param invitationId The invitation id.
    * @param [options] The optional parameters
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    * @returns Promise<msRest.RestResponse>
    */
   acceptRepresentativeInvitation(invitationId: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
   /**
    * @param invitationId The invitation id.
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
   acceptRepresentativeInvitation(invitationId: string, callback: msRest.ServiceCallback<void>): void;
   /**
    * @param invitationId The invitation id.
    * @param options The optional parameters
    * @param callback The callback
+   * @deprecated This operation is deprecated. Please do not use it any longer.
    */
   acceptRepresentativeInvitation(invitationId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
   acceptRepresentativeInvitation(invitationId: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
@@ -1159,6 +1423,34 @@ export class JudicialFile {
         options
       },
       acceptRepresentativeInvitationOperationSpec,
+      callback);
+  }
+
+  /**
+   * @summary Accept an invitation to a file.
+   * @param acceptModel The accept invitaton Model.
+   * @param [options] The optional parameters
+   * @returns Promise<msRest.RestResponse>
+   */
+  acceptFileInvitation(acceptModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  /**
+   * @param acceptModel The accept invitaton Model.
+   * @param callback The callback
+   */
+  acceptFileInvitation(acceptModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel, callback: msRest.ServiceCallback<void>): void;
+  /**
+   * @param acceptModel The accept invitaton Model.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  acceptFileInvitation(acceptModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  acceptFileInvitation(acceptModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+    return this.client.sendOperationRequest(
+      {
+        acceptModel,
+        options
+      },
+      acceptFileInvitationOperationSpec,
       callback);
   }
 
@@ -1591,34 +1883,6 @@ export class JudicialFile {
   }
 
   /**
-   * @summary Update the party invitation.
-   * @param updateModel Update model.
-   * @param [options] The optional parameters
-   * @returns Promise<msRest.RestResponse>
-   */
-  updatePartyInvitation(updateModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationUpdateModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
-  /**
-   * @param updateModel Update model.
-   * @param callback The callback
-   */
-  updatePartyInvitation(updateModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationUpdateModel, callback: msRest.ServiceCallback<void>): void;
-  /**
-   * @param updateModel Update model.
-   * @param options The optional parameters
-   * @param callback The callback
-   */
-  updatePartyInvitation(updateModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationUpdateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
-  updatePartyInvitation(updateModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationUpdateModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
-    return this.client.sendOperationRequest(
-      {
-        updateModel,
-        options
-      },
-      updatePartyInvitationOperationSpec,
-      callback);
-  }
-
-  /**
    * @summary Update a file tag link.
    * @param tagModel The updated tag link model.
    * @param [options] The optional parameters
@@ -1824,7 +2088,7 @@ const deletePartyOperationSpec: msRest.OperationSpec = {
   path: "JudicialFile/DELETE/Party",
   queryParameters: [
     Parameters.partyId1,
-    Parameters.lastModified
+    Parameters.lastModified0
   ],
   responses: {
     404: {},
@@ -1838,6 +2102,19 @@ const deletePartyInvitationOperationSpec: msRest.OperationSpec = {
   path: "JudicialFile/DELETE/PartyInvitation",
   queryParameters: [
     Parameters.partyInvitationId
+  ],
+  responses: {
+    404: {},
+    default: {}
+  },
+  serializer
+};
+
+const deleteFileInvitationOperationSpec: msRest.OperationSpec = {
+  httpMethod: "DELETE",
+  path: "JudicialFile/DELETE/FileInvitation",
+  queryParameters: [
+    Parameters.fileInvitationId
   ],
   responses: {
     404: {},
@@ -2255,7 +2532,12 @@ const getPartyInvitationOperationSpec: msRest.OperationSpec = {
   ],
   responses: {
     200: {
-      bodyMapper: Mappers.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel
+      bodyMapper: {
+        serializedName: "parsedResponse",
+        type: {
+          name: "Object"
+        }
+      }
     },
     default: {}
   },
@@ -2273,15 +2555,64 @@ const getPartyInvitationsOfPartyOperationSpec: msRest.OperationSpec = {
       bodyMapper: {
         serializedName: "parsedResponse",
         type: {
+          name: "Object"
+        }
+      }
+    },
+    default: {}
+  },
+  serializer
+};
+
+const getFileInvitationsOfPartyOperationSpec: msRest.OperationSpec = {
+  httpMethod: "GET",
+  path: "JudicialFile/GET/FileInvitationsOfParty",
+  queryParameters: [
+    Parameters.partyId1
+  ],
+  responses: {
+    200: {
+      bodyMapper: {
+        serializedName: "parsedResponse",
+        type: {
           name: "Sequence",
           element: {
             type: {
               name: "Composite",
-              className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel"
+              className: "CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel"
             }
           }
         }
       }
+    },
+    default: {}
+  },
+  serializer
+};
+
+const getFileInvitationInformationOperationSpec: msRest.OperationSpec = {
+  httpMethod: "GET",
+  path: "JudicialFile/GET/FileInvitationInformation",
+  queryParameters: [
+    Parameters.code,
+    Parameters.dateParameter
+  ],
+  responses: {
+    401: {},
+    default: {}
+  },
+  serializer
+};
+
+const getFileInformationFromPartyInvitationOperationSpec: msRest.OperationSpec = {
+  httpMethod: "GET",
+  path: "JudicialFile/GET/FileInformation",
+  queryParameters: [
+    Parameters.invitationId
+  ],
+  responses: {
+    200: {
+      bodyMapper: Mappers.CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel
     },
     default: {}
   },
@@ -2430,7 +2761,7 @@ const updatePartyTypeOperationSpec: msRest.OperationSpec = {
   queryParameters: [
     Parameters.partyId1,
     Parameters.partyType,
-    Parameters.lastModified
+    Parameters.lastModified0
   ],
   responses: {
     404: {},
@@ -2445,7 +2776,36 @@ const updatePartyDisputeDescriptionOperationSpec: msRest.OperationSpec = {
   queryParameters: [
     Parameters.partyId1,
     Parameters.disputeDescription,
-    Parameters.lastModified
+    Parameters.lastModified0
+  ],
+  responses: {
+    404: {},
+    default: {}
+  },
+  serializer
+};
+
+const updateFileInvitationExpirationDateOperationSpec: msRest.OperationSpec = {
+  httpMethod: "PATCH",
+  path: "JudicialFile/PATCH/UpdateFileInvitationExpirationDate",
+  queryParameters: [
+    Parameters.fileInvitationId,
+    Parameters.expiryDate,
+    Parameters.lastModified1
+  ],
+  responses: {
+    404: {},
+    default: {}
+  },
+  serializer
+};
+
+const updatePartyInvitationExpirationDateOperationSpec: msRest.OperationSpec = {
+  httpMethod: "PATCH",
+  path: "JudicialFile/PATCH/UpdatePartyInvitationExpirationDate",
+  queryParameters: [
+    Parameters.partyInvitationId,
+    Parameters.expiryDate
   ],
   responses: {
     404: {},
@@ -2465,6 +2825,24 @@ const createPartyInvitationOperationSpec: msRest.OperationSpec = {
     }
   },
   responses: {
+    404: {},
+    default: {}
+  },
+  serializer
+};
+
+const createFileInvitationOperationSpec: msRest.OperationSpec = {
+  httpMethod: "POST",
+  path: "JudicialFile/POST/CreateFileInvitation",
+  requestBody: {
+    parameterPath: "createModel",
+    mapper: {
+      ...Mappers.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel,
+      required: true
+    }
+  },
+  responses: {
+    401: {},
     404: {},
     default: {}
   },
@@ -2505,6 +2883,25 @@ const refusePartyInvitationOperationSpec: msRest.OperationSpec = {
     }
   },
   responses: {
+    403: {},
+    404: {},
+    default: {}
+  },
+  serializer
+};
+
+const refuseFileInvitationOperationSpec: msRest.OperationSpec = {
+  httpMethod: "POST",
+  path: "JudicialFile/POST/RefuseFileInvitation",
+  requestBody: {
+    parameterPath: "refuseModel",
+    mapper: {
+      ...Mappers.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationRefuseModel,
+      required: true
+    }
+  },
+  responses: {
+    401: {},
     403: {},
     404: {},
     default: {}
@@ -2580,6 +2977,26 @@ const acceptRepresentativeInvitationOperationSpec: msRest.OperationSpec = {
     }
   },
   responses: {
+    403: {},
+    404: {},
+    409: {},
+    default: {}
+  },
+  serializer
+};
+
+const acceptFileInvitationOperationSpec: msRest.OperationSpec = {
+  httpMethod: "POST",
+  path: "JudicialFile/POST/AcceptFileInvitation",
+  requestBody: {
+    parameterPath: "acceptModel",
+    mapper: {
+      ...Mappers.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel,
+      required: true
+    }
+  },
+  responses: {
+    401: {},
     403: {},
     404: {},
     409: {},
@@ -2891,23 +3308,6 @@ const updatePartyRepresentativesAttributesOperationSpec: msRest.OperationSpec = 
   },
   responses: {
     403: {},
-    404: {},
-    default: {}
-  },
-  serializer
-};
-
-const updatePartyInvitationOperationSpec: msRest.OperationSpec = {
-  httpMethod: "PUT",
-  path: "JudicialFile/PUT/UpdatePartyInvitation",
-  requestBody: {
-    parameterPath: "updateModel",
-    mapper: {
-      ...Mappers.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationUpdateModel,
-      required: true
-    }
-  },
-  responses: {
     404: {},
     default: {}
   },

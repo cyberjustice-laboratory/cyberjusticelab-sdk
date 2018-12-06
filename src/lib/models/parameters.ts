@@ -334,6 +334,16 @@ export const cycleIds: msRest.OperationQueryParameter = {
   },
   collectionFormat: msRest.QueryCollectionFormat.Multi
 };
+export const dateParameter: msRest.OperationQueryParameter = {
+  parameterPath: "dateParameter",
+  mapper: {
+    required: true,
+    serializedName: "date",
+    type: {
+      name: "DateTime"
+    }
+  }
+};
 export const disputeDescription: msRest.OperationQueryParameter = {
   parameterPath: "disputeDescription",
   mapper: {
@@ -432,6 +442,16 @@ export const excludedStatuses: msRest.OperationQueryParameter = {
   },
   collectionFormat: msRest.QueryCollectionFormat.Multi
 };
+export const expiryDate: msRest.OperationQueryParameter = {
+  parameterPath: "expiryDate",
+  mapper: {
+    required: true,
+    serializedName: "expiryDate",
+    type: {
+      name: "DateTime"
+    }
+  }
+};
 export const fileId0: msRest.OperationQueryParameter = {
   parameterPath: "fileId",
   mapper: {
@@ -485,6 +505,16 @@ export const fileIds1: msRest.OperationQueryParameter = {
     }
   },
   collectionFormat: msRest.QueryCollectionFormat.Multi
+};
+export const fileInvitationId: msRest.OperationQueryParameter = {
+  parameterPath: "fileInvitationId",
+  mapper: {
+    required: true,
+    serializedName: "fileInvitationId",
+    type: {
+      name: "Uuid"
+    }
+  }
 };
 export const fileStatus: msRest.OperationQueryParameter = {
   parameterPath: "fileStatus",
@@ -551,6 +581,16 @@ export const id1: msRest.OperationQueryParameter = {
   mapper: {
     required: true,
     serializedName: "id",
+    type: {
+      name: "Uuid"
+    }
+  }
+};
+export const invitationId: msRest.OperationQueryParameter = {
+  parameterPath: "invitationId",
+  mapper: {
+    required: true,
+    serializedName: "invitationId",
     type: {
       name: "Uuid"
     }
@@ -708,13 +748,23 @@ export const lang: msRest.OperationQueryParameter = {
     }
   }
 };
-export const lastModified: msRest.OperationQueryParameter = {
+export const lastModified0: msRest.OperationQueryParameter = {
   parameterPath: "lastModified",
   mapper: {
     required: true,
     serializedName: "lastModified",
     type: {
       name: "Number"
+    }
+  }
+};
+export const lastModified1: msRest.OperationQueryParameter = {
+  parameterPath: "lastModified",
+  mapper: {
+    required: true,
+    serializedName: "lastModified",
+    type: {
+      name: "DateTime"
     }
   }
 };

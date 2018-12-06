@@ -29,6 +29,12 @@ var JudicialFile = /** @class */ (function () {
             options: options
         }, deletePartyInvitationOperationSpec, callback);
     };
+    JudicialFile.prototype.deleteFileInvitation = function (fileInvitationId, options, callback) {
+        return this.client.sendOperationRequest({
+            fileInvitationId: fileInvitationId,
+            options: options
+        }, deleteFileInvitationOperationSpec, callback);
+    };
     JudicialFile.prototype.deleteFileTagLink = function (fileId, tagCode, modifiedTicks, options, callback) {
         return this.client.sendOperationRequest({
             fileId: fileId,
@@ -147,6 +153,25 @@ var JudicialFile = /** @class */ (function () {
             options: options
         }, getPartyInvitationsOfPartyOperationSpec, callback);
     };
+    JudicialFile.prototype.getFileInvitationsOfParty = function (partyId, options, callback) {
+        return this.client.sendOperationRequest({
+            partyId: partyId,
+            options: options
+        }, getFileInvitationsOfPartyOperationSpec, callback);
+    };
+    JudicialFile.prototype.getFileInvitationInformation = function (code, dateParameter, options, callback) {
+        return this.client.sendOperationRequest({
+            code: code,
+            dateParameter: dateParameter,
+            options: options
+        }, getFileInvitationInformationOperationSpec, callback);
+    };
+    JudicialFile.prototype.getFileInformationFromPartyInvitation = function (invitationId, options, callback) {
+        return this.client.sendOperationRequest({
+            invitationId: invitationId,
+            options: options
+        }, getFileInformationFromPartyInvitationOperationSpec, callback);
+    };
     JudicialFile.prototype.getNewNotificationsCount = function (judicialEntityId, options, callback) {
         return this.client.sendOperationRequest({
             judicialEntityId: judicialEntityId,
@@ -211,11 +236,32 @@ var JudicialFile = /** @class */ (function () {
             options: options
         }, updatePartyDisputeDescriptionOperationSpec, callback);
     };
+    JudicialFile.prototype.updateFileInvitationExpirationDate = function (fileInvitationId, expiryDate, lastModified, options, callback) {
+        return this.client.sendOperationRequest({
+            fileInvitationId: fileInvitationId,
+            expiryDate: expiryDate,
+            lastModified: lastModified,
+            options: options
+        }, updateFileInvitationExpirationDateOperationSpec, callback);
+    };
+    JudicialFile.prototype.updatePartyInvitationExpirationDate = function (partyInvitationId, expiryDate, options, callback) {
+        return this.client.sendOperationRequest({
+            partyInvitationId: partyInvitationId,
+            expiryDate: expiryDate,
+            options: options
+        }, updatePartyInvitationExpirationDateOperationSpec, callback);
+    };
     JudicialFile.prototype.createPartyInvitation = function (createModel, options, callback) {
         return this.client.sendOperationRequest({
             createModel: createModel,
             options: options
         }, createPartyInvitationOperationSpec, callback);
+    };
+    JudicialFile.prototype.createFileInvitation = function (createModel, options, callback) {
+        return this.client.sendOperationRequest({
+            createModel: createModel,
+            options: options
+        }, createFileInvitationOperationSpec, callback);
     };
     JudicialFile.prototype.acceptPartyInvitation = function (partyInvitationId, options, callback) {
         return this.client.sendOperationRequest({
@@ -228,6 +274,12 @@ var JudicialFile = /** @class */ (function () {
             refuseModel: refuseModel,
             options: options
         }, refusePartyInvitationOperationSpec, callback);
+    };
+    JudicialFile.prototype.refuseFileInvitation = function (refuseModel, options, callback) {
+        return this.client.sendOperationRequest({
+            refuseModel: refuseModel,
+            options: options
+        }, refuseFileInvitationOperationSpec, callback);
     };
     JudicialFile.prototype.createFileTagLink = function (tagModel, options, callback) {
         return this.client.sendOperationRequest({
@@ -252,6 +304,12 @@ var JudicialFile = /** @class */ (function () {
             invitationId: invitationId,
             options: options
         }, acceptRepresentativeInvitationOperationSpec, callback);
+    };
+    JudicialFile.prototype.acceptFileInvitation = function (acceptModel, options, callback) {
+        return this.client.sendOperationRequest({
+            acceptModel: acceptModel,
+            options: options
+        }, acceptFileInvitationOperationSpec, callback);
     };
     JudicialFile.prototype.getNotificationTypes = function (requestModel, options, callback) {
         return this.client.sendOperationRequest({
@@ -345,12 +403,6 @@ var JudicialFile = /** @class */ (function () {
             options: options
         }, updatePartyRepresentativesAttributesOperationSpec, callback);
     };
-    JudicialFile.prototype.updatePartyInvitation = function (updateModel, options, callback) {
-        return this.client.sendOperationRequest({
-            updateModel: updateModel,
-            options: options
-        }, updatePartyInvitationOperationSpec, callback);
-    };
     JudicialFile.prototype.updateFileTagLink = function (tagModel, options, callback) {
         return this.client.sendOperationRequest({
             tagModel: tagModel,
@@ -403,7 +455,7 @@ var deletePartyOperationSpec = {
     path: "JudicialFile/DELETE/Party",
     queryParameters: [
         Parameters.partyId1,
-        Parameters.lastModified
+        Parameters.lastModified0
     ],
     responses: {
         404: {},
@@ -416,6 +468,18 @@ var deletePartyInvitationOperationSpec = {
     path: "JudicialFile/DELETE/PartyInvitation",
     queryParameters: [
         Parameters.partyInvitationId
+    ],
+    responses: {
+        404: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var deleteFileInvitationOperationSpec = {
+    httpMethod: "DELETE",
+    path: "JudicialFile/DELETE/FileInvitation",
+    queryParameters: [
+        Parameters.fileInvitationId
     ],
     responses: {
         404: {},
@@ -811,7 +875,12 @@ var getPartyInvitationOperationSpec = {
     ],
     responses: {
         200: {
-            bodyMapper: Mappers.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
+                    name: "Object"
+                }
+            }
         },
         default: {}
     },
@@ -828,15 +897,61 @@ var getPartyInvitationsOfPartyOperationSpec = {
             bodyMapper: {
                 serializedName: "parsedResponse",
                 type: {
+                    name: "Object"
+                }
+            }
+        },
+        default: {}
+    },
+    serializer: serializer
+};
+var getFileInvitationsOfPartyOperationSpec = {
+    httpMethod: "GET",
+    path: "JudicialFile/GET/FileInvitationsOfParty",
+    queryParameters: [
+        Parameters.partyId1
+    ],
+    responses: {
+        200: {
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
                     name: "Sequence",
                     element: {
                         type: {
                             name: "Composite",
-                            className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel"
+                            className: "CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel"
                         }
                     }
                 }
             }
+        },
+        default: {}
+    },
+    serializer: serializer
+};
+var getFileInvitationInformationOperationSpec = {
+    httpMethod: "GET",
+    path: "JudicialFile/GET/FileInvitationInformation",
+    queryParameters: [
+        Parameters.code,
+        Parameters.dateParameter
+    ],
+    responses: {
+        401: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var getFileInformationFromPartyInvitationOperationSpec = {
+    httpMethod: "GET",
+    path: "JudicialFile/GET/FileInformation",
+    queryParameters: [
+        Parameters.invitationId
+    ],
+    responses: {
+        200: {
+            bodyMapper: Mappers.CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel
         },
         default: {}
     },
@@ -977,7 +1092,7 @@ var updatePartyTypeOperationSpec = {
     queryParameters: [
         Parameters.partyId1,
         Parameters.partyType,
-        Parameters.lastModified
+        Parameters.lastModified0
     ],
     responses: {
         404: {},
@@ -991,7 +1106,34 @@ var updatePartyDisputeDescriptionOperationSpec = {
     queryParameters: [
         Parameters.partyId1,
         Parameters.disputeDescription,
-        Parameters.lastModified
+        Parameters.lastModified0
+    ],
+    responses: {
+        404: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var updateFileInvitationExpirationDateOperationSpec = {
+    httpMethod: "PATCH",
+    path: "JudicialFile/PATCH/UpdateFileInvitationExpirationDate",
+    queryParameters: [
+        Parameters.fileInvitationId,
+        Parameters.expiryDate,
+        Parameters.lastModified1
+    ],
+    responses: {
+        404: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var updatePartyInvitationExpirationDateOperationSpec = {
+    httpMethod: "PATCH",
+    path: "JudicialFile/PATCH/UpdatePartyInvitationExpirationDate",
+    queryParameters: [
+        Parameters.partyInvitationId,
+        Parameters.expiryDate
     ],
     responses: {
         404: {},
@@ -1007,6 +1149,20 @@ var createPartyInvitationOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateModel, { required: true })
     },
     responses: {
+        404: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var createFileInvitationOperationSpec = {
+    httpMethod: "POST",
+    path: "JudicialFile/POST/CreateFileInvitation",
+    requestBody: {
+        parameterPath: "createModel",
+        mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel, { required: true })
+    },
+    responses: {
+        401: {},
         404: {},
         default: {}
     },
@@ -1042,6 +1198,21 @@ var refusePartyInvitationOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationRefuseModel, { required: true })
     },
     responses: {
+        403: {},
+        404: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var refuseFileInvitationOperationSpec = {
+    httpMethod: "POST",
+    path: "JudicialFile/POST/RefuseFileInvitation",
+    requestBody: {
+        parameterPath: "refuseModel",
+        mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationRefuseModel, { required: true })
+    },
+    responses: {
+        401: {},
         403: {},
         404: {},
         default: {}
@@ -1104,6 +1275,22 @@ var acceptRepresentativeInvitationOperationSpec = {
         }
     },
     responses: {
+        403: {},
+        404: {},
+        409: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var acceptFileInvitationOperationSpec = {
+    httpMethod: "POST",
+    path: "JudicialFile/POST/AcceptFileInvitation",
+    requestBody: {
+        parameterPath: "acceptModel",
+        mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel, { required: true })
+    },
+    responses: {
+        401: {},
         403: {},
         404: {},
         409: {},
@@ -1358,19 +1545,6 @@ var updatePartyRepresentativesAttributesOperationSpec = {
     },
     responses: {
         403: {},
-        404: {},
-        default: {}
-    },
-    serializer: serializer
-};
-var updatePartyInvitationOperationSpec = {
-    httpMethod: "PUT",
-    path: "JudicialFile/PUT/UpdatePartyInvitation",
-    requestBody: {
-        parameterPath: "updateModel",
-        mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationUpdateModel, { required: true })
-    },
-    responses: {
         404: {},
         default: {}
     },

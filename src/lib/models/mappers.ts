@@ -14,13 +14,13 @@ export const CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithF
     className: "CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithFormProposalsCount",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       judicialFileId: {
-        serializedName: "judicialFileId",
+        serializedName: "JudicialFileId",
         constraints: {
           MaxLength: 256,
           MinLength: 0
@@ -30,13 +30,13 @@ export const CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithF
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
       },
       businessRuleName: {
-        serializedName: "businessRuleName",
+        serializedName: "BusinessRuleName",
         constraints: {
           MaxLength: 256,
           MinLength: 0
@@ -46,7 +46,7 @@ export const CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithF
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         constraints: {
           MaxLength: 256,
           MinLength: 0
@@ -56,7 +56,7 @@ export const CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithF
         }
       },
       closingReason: {
-        serializedName: "closingReason",
+        serializedName: "ClosingReason",
         constraints: {
           MaxLength: 256,
           MinLength: 0
@@ -66,31 +66,31 @@ export const CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithF
         }
       },
       allProposalsCount: {
-        serializedName: "allProposalsCount",
+        serializedName: "AllProposalsCount",
         type: {
           name: "Number"
         }
       },
       negotiationProposalsCount: {
-        serializedName: "negotiationProposalsCount",
+        serializedName: "NegotiationProposalsCount",
         type: {
           name: "Number"
         }
       },
       mediationProposalsCount: {
-        serializedName: "mediationProposalsCount",
+        serializedName: "MediationProposalsCount",
         type: {
           name: "Number"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
@@ -105,38 +105,38 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarUpdateData
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsCalendarBaseCalendarUpdateData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
@@ -151,38 +151,38 @@ export const CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityUpda
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityUpdateData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       periodGroupId: {
-        serializedName: "periodGroupId",
+        serializedName: "PeriodGroupId",
         type: {
           name: "Uuid"
         }
@@ -197,32 +197,32 @@ export const CyberjusticeLabKernelServiceContractsCalendarClosedDayUpdateData: m
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsCalendarClosedDayUpdateData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       rule: {
-        serializedName: "rule",
+        serializedName: "Rule",
         type: {
           name: "String"
         }
@@ -237,50 +237,50 @@ export const CyberjusticeLabKernelServiceContractsCalendarAssignmentWeekRoomUser
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsCalendarAssignmentWeekRoomUserLinkData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       assignmentCycleId: {
-        serializedName: "assignmentCycleId",
+        serializedName: "AssignmentCycleId",
         type: {
           name: "Uuid"
         }
       },
       roomId: {
-        serializedName: "roomId",
+        serializedName: "RoomId",
         type: {
           name: "Uuid"
         }
       },
       realm: {
-        serializedName: "realm",
+        serializedName: "Realm",
         type: {
           name: "String"
         }
       },
       userId: {
-        serializedName: "userId",
+        serializedName: "UserId",
         type: {
           name: "String"
         }
       },
       year: {
-        serializedName: "year",
+        serializedName: "Year",
         type: {
           name: "Number"
         }
       },
       month: {
-        serializedName: "month",
+        serializedName: "Month",
         type: {
           name: "Number"
         }
       },
       week: {
-        serializedName: "week",
+        serializedName: "Week",
         type: {
           name: "Number"
         }
@@ -295,20 +295,20 @@ export const CyberjusticeLabKernelServiceContractsCalendarAssignmentCycleUpdateD
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsCalendarAssignmentCycleUpdateData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       assignmentWeekRoomUserLinks: {
-        serializedName: "assignmentWeekRoomUserLinks",
+        serializedName: "AssignmentWeekRoomUserLinks",
         type: {
           name: "Sequence",
           element: {
@@ -320,25 +320,25 @@ export const CyberjusticeLabKernelServiceContractsCalendarAssignmentCycleUpdateD
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       resourceType: {
-        serializedName: "resourceType",
+        serializedName: "ResourceType",
         type: {
           name: "String"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
@@ -354,19 +354,19 @@ export const CyberjusticeLabKernelServiceContractsCalendarSchedulePatternUpdateD
     className: "CyberjusticeLabKernelServiceContractsCalendarSchedulePatternUpdateData",
     modelProperties: {
       schedulePatternId: {
-        serializedName: "schedulePatternId",
+        serializedName: "SchedulePatternId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
@@ -382,55 +382,55 @@ export const CyberjusticeLabKernelServiceContractsCalendarScheduleEntryUpdateDat
     className: "CyberjusticeLabKernelServiceContractsCalendarScheduleEntryUpdateData",
     modelProperties: {
       scheduleEntryId: {
-        serializedName: "scheduleEntryId",
+        serializedName: "ScheduleEntryId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       entryType: {
-        serializedName: "entryType",
+        serializedName: "EntryType",
         type: {
           name: "String"
         }
       },
       weekday: {
-        serializedName: "weekday",
+        serializedName: "Weekday",
         type: {
           name: "String"
         }
       },
       weekPosition: {
-        serializedName: "weekPosition",
+        serializedName: "WeekPosition",
         type: {
           name: "Number"
         }
       },
       recurrence: {
-        serializedName: "recurrence",
+        serializedName: "Recurrence",
         type: {
           name: "Number"
         }
       },
       recurrenceAlternateStart: {
-        serializedName: "recurrenceAlternateStart",
+        serializedName: "RecurrenceAlternateStart",
         type: {
           name: "Number"
         }
       },
       startTime: {
-        serializedName: "startTime",
+        serializedName: "StartTime",
         type: {
           name: "String"
         }
       },
       endTime: {
-        serializedName: "endTime",
+        serializedName: "EndTime",
         type: {
           name: "String"
         }
@@ -446,25 +446,25 @@ export const CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityJudi
     className: "CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityJudicialFileData",
     modelProperties: {
       periodAvailabilityId: {
-        serializedName: "periodAvailabilityId",
+        serializedName: "PeriodAvailabilityId",
         type: {
           name: "Uuid"
         }
       },
       judicialFileId: {
-        serializedName: "judicialFileId",
+        serializedName: "JudicialFileId",
         type: {
           name: "Uuid"
         }
       },
       partyEntityId: {
-        serializedName: "partyEntityId",
+        serializedName: "PartyEntityId",
         type: {
           name: "Uuid"
         }
       },
       timeAllocation: {
-        serializedName: "timeAllocation",
+        serializedName: "TimeAllocation",
         type: {
           name: "String"
         }
@@ -480,7 +480,7 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventPartyLinkModel: msRes
     className: "CyberjusticeLabKernelSharedCalendarModelsEventPartyLinkModel",
     modelProperties: {
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
@@ -496,13 +496,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsCreateAttributeModel: msRe
     className: "CyberjusticeLabKernelSharedCalendarModelsCreateAttributeModel",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -518,79 +518,79 @@ export const CyberjusticeLabKernelSharedCalendarModelsUpdateEventModel: msRest.C
     className: "CyberjusticeLabKernelSharedCalendarModelsUpdateEventModel",
     modelProperties: {
       eventId: {
-        serializedName: "eventId",
+        serializedName: "EventId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       fileStatus: {
-        serializedName: "fileStatus",
+        serializedName: "FileStatus",
         type: {
           name: "String"
         }
       },
       title: {
-        serializedName: "title",
+        serializedName: "Title",
         type: {
           name: "String"
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
       },
       place: {
-        serializedName: "place",
+        serializedName: "Place",
         type: {
           name: "String"
         }
       },
       rank: {
-        serializedName: "rank",
+        serializedName: "Rank",
         type: {
           name: "Number"
         }
       },
       category: {
-        serializedName: "category",
+        serializedName: "Category",
         type: {
           name: "String"
         }
       },
       subCategory: {
-        serializedName: "subCategory",
+        serializedName: "SubCategory",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       partiesLinks: {
-        serializedName: "partiesLinks",
+        serializedName: "PartiesLinks",
         type: {
           name: "Sequence",
           element: {
@@ -602,7 +602,7 @@ export const CyberjusticeLabKernelSharedCalendarModelsUpdateEventModel: msRest.C
         }
       },
       eventAttributes: {
-        serializedName: "eventAttributes",
+        serializedName: "EventAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -624,13 +624,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsUpdateAttributeModel: msRe
     className: "CyberjusticeLabKernelSharedCalendarModelsUpdateAttributeModel",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -646,25 +646,25 @@ export const CyberjusticeLabKernelSharedCalendarModelsUpdateEventAttributesModel
     className: "CyberjusticeLabKernelSharedCalendarModelsUpdateEventAttributesModel",
     modelProperties: {
       eventId: {
-        serializedName: "eventId",
+        serializedName: "EventId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       eventAttributes: {
-        serializedName: "eventAttributes",
+        serializedName: "EventAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -686,7 +686,7 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventBehaviourPartyLinkMod
     className: "CyberjusticeLabKernelSharedCalendarModelsEventBehaviourPartyLinkModel",
     modelProperties: {
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
@@ -702,13 +702,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsUpdateEventBehaviourModel:
     className: "CyberjusticeLabKernelSharedCalendarModelsUpdateEventBehaviourModel",
     modelProperties: {
       behaviourCode: {
-        serializedName: "behaviourCode",
+        serializedName: "BehaviourCode",
         type: {
           name: "String"
         }
       },
       behaviourAttributes: {
-        serializedName: "behaviourAttributes",
+        serializedName: "BehaviourAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -720,7 +720,7 @@ export const CyberjusticeLabKernelSharedCalendarModelsUpdateEventBehaviourModel:
         }
       },
       partiesLinks: {
-        serializedName: "partiesLinks",
+        serializedName: "PartiesLinks",
         type: {
           name: "Sequence",
           element: {
@@ -742,25 +742,25 @@ export const CyberjusticeLabKernelSharedCalendarModelsUpdateEventBehavioursModel
     className: "CyberjusticeLabKernelSharedCalendarModelsUpdateEventBehavioursModel",
     modelProperties: {
       eventId: {
-        serializedName: "eventId",
+        serializedName: "EventId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       eventBehaviours: {
-        serializedName: "eventBehaviours",
+        serializedName: "EventBehaviours",
         type: {
           name: "Sequence",
           element: {
@@ -782,31 +782,31 @@ export const CyberjusticeLabKernelSharedCalendarModelsUpdateEventRankModel: msRe
     className: "CyberjusticeLabKernelSharedCalendarModelsUpdateEventRankModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       eventId: {
-        serializedName: "eventId",
+        serializedName: "EventId",
         type: {
           name: "Uuid"
         }
       },
       targetRank: {
-        serializedName: "targetRank",
+        serializedName: "TargetRank",
         type: {
           name: "Number"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       removeDependency: {
-        serializedName: "removeDependency",
+        serializedName: "RemoveDependency",
         type: {
           name: "String"
         }
@@ -822,25 +822,25 @@ export const CyberjusticeLabKernelSharedCalendarModelsUpdateEventStartDateModel:
     className: "CyberjusticeLabKernelSharedCalendarModelsUpdateEventStartDateModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       eventId: {
-        serializedName: "eventId",
+        serializedName: "EventId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       startDate: {
-        serializedName: "startDate",
+        serializedName: "StartDate",
         type: {
           name: "DateTime"
         }
@@ -856,37 +856,37 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventApiResquestData: msRe
     className: "CyberjusticeLabKernelSharedCalendarModelsEventApiResquestData",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       eventId: {
-        serializedName: "eventId",
+        serializedName: "EventId",
         type: {
           name: "Uuid"
         }
       },
       fileStatus: {
-        serializedName: "fileStatus",
+        serializedName: "FileStatus",
         type: {
           name: "String"
         }
       },
       take: {
-        serializedName: "take",
+        serializedName: "Take",
         type: {
           name: "Number"
         }
       },
       skip: {
-        serializedName: "skip",
+        serializedName: "Skip",
         type: {
           name: "Number"
         }
       },
       eventBehaviourPartyLinks: {
-        serializedName: "eventBehaviourPartyLinks",
+        serializedName: "EventBehaviourPartyLinks",
         type: {
           name: "Sequence",
           element: {
@@ -897,13 +897,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventApiResquestData: msRe
         }
       },
       searchText: {
-        serializedName: "searchText",
+        serializedName: "SearchText",
         type: {
           name: "String"
         }
       },
       searchBy: {
-        serializedName: "searchBy",
+        serializedName: "SearchBy",
         type: {
           name: "Sequence",
           element: {
@@ -914,7 +914,7 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventApiResquestData: msRe
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Dictionary",
           value: {
@@ -925,13 +925,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventApiResquestData: msRe
         }
       },
       orderBy: {
-        serializedName: "orderBy",
+        serializedName: "OrderBy",
         type: {
           name: "String"
         }
       },
       orderByDescending: {
-        serializedName: "orderByDescending",
+        serializedName: "OrderByDescending",
         type: {
           name: "Boolean"
         }
@@ -947,19 +947,19 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventAttributeModel: msRes
     className: "CyberjusticeLabKernelSharedCalendarModelsEventAttributeModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Number"
         }
       },
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -975,37 +975,37 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventPartyResponseModel: m
     className: "CyberjusticeLabKernelSharedCalendarModelsEventPartyResponseModel",
     modelProperties: {
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       response: {
-        serializedName: "response",
+        serializedName: "Response",
         type: {
           name: "Boolean"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -1021,25 +1021,25 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventAttemptModel: msRest.
     className: "CyberjusticeLabKernelSharedCalendarModelsEventAttemptModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       partyResponses: {
-        serializedName: "partyResponses",
+        serializedName: "PartyResponses",
         type: {
           name: "Sequence",
           element: {
@@ -1051,25 +1051,25 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventAttemptModel: msRest.
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -1085,19 +1085,19 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventBehaviourAttributeMod
     className: "CyberjusticeLabKernelSharedCalendarModelsEventBehaviourAttributeModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Number"
         }
       },
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -1113,19 +1113,19 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventBehaviourModel: msRes
     className: "CyberjusticeLabKernelSharedCalendarModelsEventBehaviourModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Number"
         }
       },
       behaviourCode: {
-        serializedName: "behaviourCode",
+        serializedName: "BehaviourCode",
         type: {
           name: "String"
         }
       },
       behaviourAttributes: {
-        serializedName: "behaviourAttributes",
+        serializedName: "BehaviourAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -1137,7 +1137,7 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventBehaviourModel: msRes
         }
       },
       behaviourPartyLinks: {
-        serializedName: "behaviourPartyLinks",
+        serializedName: "BehaviourPartyLinks",
         type: {
           name: "Sequence",
           element: {
@@ -1149,25 +1149,25 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventBehaviourModel: msRes
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -1183,79 +1183,79 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventModel: msRest.Composi
     className: "CyberjusticeLabKernelSharedCalendarModelsEventModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       calendarId: {
-        serializedName: "calendarId",
+        serializedName: "CalendarId",
         type: {
           name: "Uuid"
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       fileStatus: {
-        serializedName: "fileStatus",
+        serializedName: "FileStatus",
         type: {
           name: "String"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       title: {
-        serializedName: "title",
+        serializedName: "Title",
         type: {
           name: "String"
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
       },
       place: {
-        serializedName: "place",
+        serializedName: "Place",
         type: {
           name: "String"
         }
       },
       rank: {
-        serializedName: "rank",
+        serializedName: "Rank",
         type: {
           name: "Number"
         }
       },
       category: {
-        serializedName: "category",
+        serializedName: "Category",
         type: {
           name: "String"
         }
       },
       subCategory: {
-        serializedName: "subCategory",
+        serializedName: "SubCategory",
         type: {
           name: "String"
         }
       },
       eventAttributes: {
-        serializedName: "eventAttributes",
+        serializedName: "EventAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -1267,7 +1267,7 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventModel: msRest.Composi
         }
       },
       eventPartyLinks: {
-        serializedName: "eventPartyLinks",
+        serializedName: "EventPartyLinks",
         type: {
           name: "Sequence",
           element: {
@@ -1279,7 +1279,7 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventModel: msRest.Composi
         }
       },
       eventAttempts: {
-        serializedName: "eventAttempts",
+        serializedName: "EventAttempts",
         type: {
           name: "Sequence",
           element: {
@@ -1291,7 +1291,7 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventModel: msRest.Composi
         }
       },
       eventBehaviours: {
-        serializedName: "eventBehaviours",
+        serializedName: "EventBehaviours",
         type: {
           name: "Sequence",
           element: {
@@ -1303,25 +1303,25 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventModel: msRest.Composi
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -1337,19 +1337,19 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventApiResponseData: msRe
     className: "CyberjusticeLabKernelSharedCalendarModelsEventApiResponseData",
     modelProperties: {
       count: {
-        serializedName: "count",
+        serializedName: "Count",
         type: {
           name: "Number"
         }
       },
       countFiltered: {
-        serializedName: "countFiltered",
+        serializedName: "CountFiltered",
         type: {
           name: "Number"
         }
       },
       events: {
-        serializedName: "events",
+        serializedName: "Events",
         type: {
           name: "Sequence",
           element: {
@@ -1371,31 +1371,31 @@ export const CyberjusticeLabKernelSharedCalendarModelsFullCalendarApiRequestData
     className: "CyberjusticeLabKernelSharedCalendarModelsFullCalendarApiRequestData",
     modelProperties: {
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       isHoliday: {
-        serializedName: "isHoliday",
+        serializedName: "IsHoliday",
         type: {
           name: "Boolean"
         }
       },
       isWeekend: {
-        serializedName: "isWeekend",
+        serializedName: "IsWeekend",
         type: {
           name: "Boolean"
         }
       },
       take: {
-        serializedName: "take",
+        serializedName: "Take",
         type: {
           name: "Number"
         }
@@ -1481,13 +1481,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsFullCalendarApiResponseDat
     className: "CyberjusticeLabKernelSharedCalendarModelsFullCalendarApiResponseData",
     modelProperties: {
       count: {
-        serializedName: "count",
+        serializedName: "Count",
         type: {
           name: "Number"
         }
       },
       days: {
-        serializedName: "days",
+        serializedName: "Days",
         type: {
           name: "Sequence",
           element: {
@@ -1509,19 +1509,19 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarCreateRole
     className: "CyberjusticeLabKernelServiceContractsCalendarBaseCalendarCreateRoleData",
     modelProperties: {
       role: {
-        serializedName: "role",
+        serializedName: "Role",
         type: {
           name: "String"
         }
       },
       realm: {
-        serializedName: "realm",
+        serializedName: "Realm",
         type: {
           name: "String"
         }
       },
       userId: {
-        serializedName: "userId",
+        serializedName: "UserId",
         type: {
           name: "String"
         }
@@ -1537,7 +1537,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarCreateData
     className: "CyberjusticeLabKernelServiceContractsCalendarBaseCalendarCreateData",
     modelProperties: {
       locationRoomIds: {
-        serializedName: "locationRoomIds",
+        serializedName: "LocationRoomIds",
         type: {
           name: "Sequence",
           element: {
@@ -1548,7 +1548,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarCreateData
         }
       },
       judicialEntityIds: {
-        serializedName: "judicialEntityIds",
+        serializedName: "JudicialEntityIds",
         type: {
           name: "Sequence",
           element: {
@@ -1559,7 +1559,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarCreateData
         }
       },
       roles: {
-        serializedName: "roles",
+        serializedName: "Roles",
         type: {
           name: "Sequence",
           element: {
@@ -1571,25 +1571,25 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarCreateData
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
@@ -1605,25 +1605,25 @@ export const CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityRole
     className: "CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityRoleBaseData",
     modelProperties: {
       role: {
-        serializedName: "role",
+        serializedName: "Role",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       realm: {
-        serializedName: "realm",
+        serializedName: "Realm",
         type: {
           name: "String"
         }
       },
       userId: {
-        serializedName: "userId",
+        serializedName: "UserId",
         type: {
           name: "String"
         }
@@ -1639,19 +1639,19 @@ export const CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityJudi
     className: "CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityJudicialFileBaseData",
     modelProperties: {
       judicialFileId: {
-        serializedName: "judicialFileId",
+        serializedName: "JudicialFileId",
         type: {
           name: "Uuid"
         }
       },
       partyEntityId: {
-        serializedName: "partyEntityId",
+        serializedName: "PartyEntityId",
         type: {
           name: "Uuid"
         }
       },
       timeAllocation: {
-        serializedName: "timeAllocation",
+        serializedName: "TimeAllocation",
         type: {
           name: "String"
         }
@@ -1667,13 +1667,13 @@ export const CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityCrea
     className: "CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityCreateData",
     modelProperties: {
       baseCalendarId: {
-        serializedName: "baseCalendarId",
+        serializedName: "BaseCalendarId",
         type: {
           name: "Uuid"
         }
       },
       roles: {
-        serializedName: "roles",
+        serializedName: "Roles",
         type: {
           name: "Sequence",
           element: {
@@ -1685,7 +1685,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityCrea
         }
       },
       fileLinks: {
-        serializedName: "fileLinks",
+        serializedName: "FileLinks",
         type: {
           name: "Sequence",
           element: {
@@ -1697,25 +1697,25 @@ export const CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityCrea
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       periodGroupId: {
-        serializedName: "periodGroupId",
+        serializedName: "PeriodGroupId",
         type: {
           name: "Uuid"
         }
@@ -1731,13 +1731,13 @@ export const CyberjusticeLabKernelServiceContractsCalendarClosedWeekdayData: msR
     className: "CyberjusticeLabKernelServiceContractsCalendarClosedWeekdayData",
     modelProperties: {
       baseCalendarId: {
-        serializedName: "baseCalendarId",
+        serializedName: "BaseCalendarId",
         type: {
           name: "Uuid"
         }
       },
       weekday: {
-        serializedName: "weekday",
+        serializedName: "Weekday",
         type: {
           name: "String"
         }
@@ -1753,31 +1753,31 @@ export const CyberjusticeLabKernelServiceContractsCalendarClosedDayCreateData: m
     className: "CyberjusticeLabKernelServiceContractsCalendarClosedDayCreateData",
     modelProperties: {
       baseCalendarId: {
-        serializedName: "baseCalendarId",
+        serializedName: "BaseCalendarId",
         type: {
           name: "Uuid"
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       rule: {
-        serializedName: "rule",
+        serializedName: "Rule",
         type: {
           name: "String"
         }
@@ -1793,37 +1793,37 @@ export const CyberjusticeLabKernelServiceContractsCalendarAssignmentWeekRoomUser
     className: "CyberjusticeLabKernelServiceContractsCalendarAssignmentWeekRoomUserLinkCreateData",
     modelProperties: {
       roomId: {
-        serializedName: "roomId",
+        serializedName: "RoomId",
         type: {
           name: "Uuid"
         }
       },
       realm: {
-        serializedName: "realm",
+        serializedName: "Realm",
         type: {
           name: "String"
         }
       },
       userId: {
-        serializedName: "userId",
+        serializedName: "UserId",
         type: {
           name: "String"
         }
       },
       year: {
-        serializedName: "year",
+        serializedName: "Year",
         type: {
           name: "Number"
         }
       },
       month: {
-        serializedName: "month",
+        serializedName: "Month",
         type: {
           name: "Number"
         }
       },
       week: {
-        serializedName: "week",
+        serializedName: "Week",
         type: {
           name: "Number"
         }
@@ -1839,13 +1839,13 @@ export const CyberjusticeLabKernelServiceContractsCalendarAssignmentCycleCreateD
     className: "CyberjusticeLabKernelServiceContractsCalendarAssignmentCycleCreateData",
     modelProperties: {
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       assignmentWeekRoomUserLinks: {
-        serializedName: "assignmentWeekRoomUserLinks",
+        serializedName: "AssignmentWeekRoomUserLinks",
         type: {
           name: "Sequence",
           element: {
@@ -1857,25 +1857,25 @@ export const CyberjusticeLabKernelServiceContractsCalendarAssignmentCycleCreateD
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       resourceType: {
-        serializedName: "resourceType",
+        serializedName: "ResourceType",
         type: {
           name: "String"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
@@ -1891,31 +1891,31 @@ export const CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityRole
     className: "CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityRoleCreateData",
     modelProperties: {
       periodAvailabilityId: {
-        serializedName: "periodAvailabilityId",
+        serializedName: "PeriodAvailabilityId",
         type: {
           name: "Uuid"
         }
       },
       role: {
-        serializedName: "role",
+        serializedName: "Role",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       realm: {
-        serializedName: "realm",
+        serializedName: "Realm",
         type: {
           name: "String"
         }
       },
       userId: {
-        serializedName: "userId",
+        serializedName: "UserId",
         type: {
           name: "String"
         }
@@ -1931,25 +1931,25 @@ export const CyberjusticeLabKernelServiceContractsCalendarSchedulePatternCopyReq
     className: "CyberjusticeLabKernelServiceContractsCalendarSchedulePatternCopyRequestData",
     modelProperties: {
       schedulePatternId: {
-        serializedName: "schedulePatternId",
+        serializedName: "SchedulePatternId",
         type: {
           name: "Uuid"
         }
       },
       baseCalendarId: {
-        serializedName: "baseCalendarId",
+        serializedName: "BaseCalendarId",
         type: {
           name: "Uuid"
         }
       },
       startDate: {
-        serializedName: "startDate",
+        serializedName: "StartDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
@@ -1965,43 +1965,43 @@ export const CyberjusticeLabKernelServiceContractsCalendarScheduleEntryBaseData:
     className: "CyberjusticeLabKernelServiceContractsCalendarScheduleEntryBaseData",
     modelProperties: {
       entryType: {
-        serializedName: "entryType",
+        serializedName: "EntryType",
         type: {
           name: "String"
         }
       },
       weekday: {
-        serializedName: "weekday",
+        serializedName: "Weekday",
         type: {
           name: "String"
         }
       },
       weekPosition: {
-        serializedName: "weekPosition",
+        serializedName: "WeekPosition",
         type: {
           name: "Number"
         }
       },
       recurrence: {
-        serializedName: "recurrence",
+        serializedName: "Recurrence",
         type: {
           name: "Number"
         }
       },
       recurrenceAlternateStart: {
-        serializedName: "recurrenceAlternateStart",
+        serializedName: "RecurrenceAlternateStart",
         type: {
           name: "Number"
         }
       },
       startTime: {
-        serializedName: "startTime",
+        serializedName: "StartTime",
         type: {
           name: "String"
         }
       },
       endTime: {
-        serializedName: "endTime",
+        serializedName: "EndTime",
         type: {
           name: "String"
         }
@@ -2017,13 +2017,13 @@ export const CyberjusticeLabKernelServiceContractsCalendarSchedulePatternCreateD
     className: "CyberjusticeLabKernelServiceContractsCalendarSchedulePatternCreateData",
     modelProperties: {
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
       },
       locationRoomIds: {
-        serializedName: "locationRoomIds",
+        serializedName: "LocationRoomIds",
         type: {
           name: "Sequence",
           element: {
@@ -2034,7 +2034,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarSchedulePatternCreateD
         }
       },
       scheduleEntries: {
-        serializedName: "scheduleEntries",
+        serializedName: "ScheduleEntries",
         type: {
           name: "Sequence",
           element: {
@@ -2046,7 +2046,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarSchedulePatternCreateD
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
@@ -2062,49 +2062,49 @@ export const CyberjusticeLabKernelServiceContractsCalendarScheduleEntryCreateDat
     className: "CyberjusticeLabKernelServiceContractsCalendarScheduleEntryCreateData",
     modelProperties: {
       schedulePatternId: {
-        serializedName: "schedulePatternId",
+        serializedName: "SchedulePatternId",
         type: {
           name: "Uuid"
         }
       },
       entryType: {
-        serializedName: "entryType",
+        serializedName: "EntryType",
         type: {
           name: "String"
         }
       },
       weekday: {
-        serializedName: "weekday",
+        serializedName: "Weekday",
         type: {
           name: "String"
         }
       },
       weekPosition: {
-        serializedName: "weekPosition",
+        serializedName: "WeekPosition",
         type: {
           name: "Number"
         }
       },
       recurrence: {
-        serializedName: "recurrence",
+        serializedName: "Recurrence",
         type: {
           name: "Number"
         }
       },
       recurrenceAlternateStart: {
-        serializedName: "recurrenceAlternateStart",
+        serializedName: "RecurrenceAlternateStart",
         type: {
           name: "Number"
         }
       },
       startTime: {
-        serializedName: "startTime",
+        serializedName: "StartTime",
         type: {
           name: "String"
         }
       },
       endTime: {
-        serializedName: "endTime",
+        serializedName: "EndTime",
         type: {
           name: "String"
         }
@@ -2120,13 +2120,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsCreateCalendarModel: msRes
     className: "CyberjusticeLabKernelSharedCalendarModelsCreateCalendarModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
@@ -2142,13 +2142,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsCreateEventAttemptModel: m
     className: "CyberjusticeLabKernelSharedCalendarModelsCreateEventAttemptModel",
     modelProperties: {
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
@@ -2164,13 +2164,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsCreateEventBehaviourModel:
     className: "CyberjusticeLabKernelSharedCalendarModelsCreateEventBehaviourModel",
     modelProperties: {
       behaviourCode: {
-        serializedName: "behaviourCode",
+        serializedName: "BehaviourCode",
         type: {
           name: "String"
         }
       },
       behaviourAttributes: {
-        serializedName: "behaviourAttributes",
+        serializedName: "BehaviourAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -2182,7 +2182,7 @@ export const CyberjusticeLabKernelSharedCalendarModelsCreateEventBehaviourModel:
         }
       },
       partiesLinks: {
-        serializedName: "partiesLinks",
+        serializedName: "PartiesLinks",
         type: {
           name: "Sequence",
           element: {
@@ -2204,79 +2204,79 @@ export const CyberjusticeLabKernelSharedCalendarModelsCreateEventModel: msRest.C
     className: "CyberjusticeLabKernelSharedCalendarModelsCreateEventModel",
     modelProperties: {
       calendarId: {
-        serializedName: "calendarId",
+        serializedName: "CalendarId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       fileStatus: {
-        serializedName: "fileStatus",
+        serializedName: "FileStatus",
         type: {
           name: "String"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       title: {
-        serializedName: "title",
+        serializedName: "Title",
         type: {
           name: "String"
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
       },
       place: {
-        serializedName: "place",
+        serializedName: "Place",
         type: {
           name: "String"
         }
       },
       rank: {
-        serializedName: "rank",
+        serializedName: "Rank",
         type: {
           name: "Number"
         }
       },
       category: {
-        serializedName: "category",
+        serializedName: "Category",
         type: {
           name: "String"
         }
       },
       subCategory: {
-        serializedName: "subCategory",
+        serializedName: "SubCategory",
         type: {
           name: "String"
         }
       },
       eventAttributes: {
-        serializedName: "eventAttributes",
+        serializedName: "EventAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -2288,7 +2288,7 @@ export const CyberjusticeLabKernelSharedCalendarModelsCreateEventModel: msRest.C
         }
       },
       partiesLinks: {
-        serializedName: "partiesLinks",
+        serializedName: "PartiesLinks",
         type: {
           name: "Sequence",
           element: {
@@ -2300,7 +2300,7 @@ export const CyberjusticeLabKernelSharedCalendarModelsCreateEventModel: msRest.C
         }
       },
       eventAttempts: {
-        serializedName: "eventAttempts",
+        serializedName: "EventAttempts",
         type: {
           name: "Sequence",
           element: {
@@ -2312,7 +2312,7 @@ export const CyberjusticeLabKernelSharedCalendarModelsCreateEventModel: msRest.C
         }
       },
       eventBehaviours: {
-        serializedName: "eventBehaviours",
+        serializedName: "EventBehaviours",
         type: {
           name: "Sequence",
           element: {
@@ -2333,38 +2333,38 @@ export const CyberjusticeLabKernelServiceContractsCalendarClosedDayData: msRest.
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsCalendarClosedDayData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       baseCalendarId: {
-        serializedName: "baseCalendarId",
+        serializedName: "BaseCalendarId",
         type: {
           name: "Uuid"
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       rule: {
-        serializedName: "rule",
+        serializedName: "Rule",
         type: {
           name: "String"
         }
@@ -2379,38 +2379,38 @@ export const CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityRole
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityRoleData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       periodAvailabilityId: {
-        serializedName: "periodAvailabilityId",
+        serializedName: "PeriodAvailabilityId",
         type: {
           name: "Uuid"
         }
       },
       role: {
-        serializedName: "role",
+        serializedName: "Role",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       realm: {
-        serializedName: "realm",
+        serializedName: "Realm",
         type: {
           name: "String"
         }
       },
       userId: {
-        serializedName: "userId",
+        serializedName: "UserId",
         type: {
           name: "String"
         }
@@ -2425,44 +2425,44 @@ export const CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityData
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       baseCalendarId: {
-        serializedName: "baseCalendarId",
+        serializedName: "BaseCalendarId",
         type: {
           name: "Uuid"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       roles: {
-        serializedName: "roles",
+        serializedName: "Roles",
         type: {
           name: "Sequence",
           element: {
@@ -2474,7 +2474,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityData
         }
       },
       fileLinks: {
-        serializedName: "fileLinks",
+        serializedName: "FileLinks",
         type: {
           name: "Sequence",
           element: {
@@ -2486,25 +2486,25 @@ export const CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityData
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       periodGroupId: {
-        serializedName: "periodGroupId",
+        serializedName: "PeriodGroupId",
         type: {
           name: "Uuid"
         }
@@ -2520,25 +2520,25 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarRoleData: 
     className: "CyberjusticeLabKernelServiceContractsCalendarBaseCalendarRoleData",
     modelProperties: {
       baseCalendarId: {
-        serializedName: "baseCalendarId",
+        serializedName: "BaseCalendarId",
         type: {
           name: "Uuid"
         }
       },
       role: {
-        serializedName: "role",
+        serializedName: "Role",
         type: {
           name: "String"
         }
       },
       realm: {
-        serializedName: "realm",
+        serializedName: "Realm",
         type: {
           name: "String"
         }
       },
       userId: {
-        serializedName: "userId",
+        serializedName: "UserId",
         type: {
           name: "String"
         }
@@ -2554,25 +2554,25 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarData: msRe
     className: "CyberjusticeLabKernelServiceContractsCalendarBaseCalendarData",
     modelProperties: {
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       closedDays: {
-        serializedName: "closedDays",
+        serializedName: "ClosedDays",
         type: {
           name: "Sequence",
           element: {
@@ -2584,7 +2584,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarData: msRe
         }
       },
       closedWeekdays: {
-        serializedName: "closedWeekdays",
+        serializedName: "ClosedWeekdays",
         type: {
           name: "Sequence",
           element: {
@@ -2596,7 +2596,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarData: msRe
         }
       },
       locationRoomIds: {
-        serializedName: "locationRoomIds",
+        serializedName: "LocationRoomIds",
         type: {
           name: "Sequence",
           element: {
@@ -2607,7 +2607,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarData: msRe
         }
       },
       judicialEntityIds: {
-        serializedName: "judicialEntityIds",
+        serializedName: "JudicialEntityIds",
         type: {
           name: "Sequence",
           element: {
@@ -2618,7 +2618,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarData: msRe
         }
       },
       periodAvailabilities: {
-        serializedName: "periodAvailabilities",
+        serializedName: "PeriodAvailabilities",
         type: {
           name: "Sequence",
           element: {
@@ -2630,7 +2630,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarData: msRe
         }
       },
       roles: {
-        serializedName: "roles",
+        serializedName: "Roles",
         type: {
           name: "Sequence",
           element: {
@@ -2641,38 +2641,38 @@ export const CyberjusticeLabKernelServiceContractsCalendarBaseCalendarData: msRe
           }
         }
       },
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
@@ -2687,44 +2687,44 @@ export const CyberjusticeLabKernelServiceContractsCalendarAssignmentCycleData: m
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsCalendarAssignmentCycleData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       assignmentWeekRoomUserLinks: {
-        serializedName: "assignmentWeekRoomUserLinks",
+        serializedName: "AssignmentWeekRoomUserLinks",
         type: {
           name: "Sequence",
           element: {
@@ -2736,25 +2736,25 @@ export const CyberjusticeLabKernelServiceContractsCalendarAssignmentCycleData: m
         }
       },
       beginDate: {
-        serializedName: "beginDate",
+        serializedName: "BeginDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
       },
       resourceType: {
-        serializedName: "resourceType",
+        serializedName: "ResourceType",
         type: {
           name: "String"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
@@ -2770,79 +2770,79 @@ export const CyberjusticeLabKernelServiceContractsCalendarScheduleEntryData: msR
     className: "CyberjusticeLabKernelServiceContractsCalendarScheduleEntryData",
     modelProperties: {
       scheduleEntryId: {
-        serializedName: "scheduleEntryId",
+        serializedName: "ScheduleEntryId",
         type: {
           name: "Uuid"
         }
       },
       schedulePatternId: {
-        serializedName: "schedulePatternId",
+        serializedName: "SchedulePatternId",
         type: {
           name: "Uuid"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       entryType: {
-        serializedName: "entryType",
+        serializedName: "EntryType",
         type: {
           name: "String"
         }
       },
       weekday: {
-        serializedName: "weekday",
+        serializedName: "Weekday",
         type: {
           name: "String"
         }
       },
       weekPosition: {
-        serializedName: "weekPosition",
+        serializedName: "WeekPosition",
         type: {
           name: "Number"
         }
       },
       recurrence: {
-        serializedName: "recurrence",
+        serializedName: "Recurrence",
         type: {
           name: "Number"
         }
       },
       recurrenceAlternateStart: {
-        serializedName: "recurrenceAlternateStart",
+        serializedName: "RecurrenceAlternateStart",
         type: {
           name: "Number"
         }
       },
       startTime: {
-        serializedName: "startTime",
+        serializedName: "StartTime",
         type: {
           name: "String"
         }
       },
       endTime: {
-        serializedName: "endTime",
+        serializedName: "EndTime",
         type: {
           name: "String"
         }
@@ -2858,43 +2858,43 @@ export const CyberjusticeLabKernelServiceContractsCalendarSchedulePatternData: m
     className: "CyberjusticeLabKernelServiceContractsCalendarSchedulePatternData",
     modelProperties: {
       schedulePatternId: {
-        serializedName: "schedulePatternId",
+        serializedName: "SchedulePatternId",
         type: {
           name: "Uuid"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       locationRoomIds: {
-        serializedName: "locationRoomIds",
+        serializedName: "LocationRoomIds",
         type: {
           name: "Sequence",
           element: {
@@ -2905,7 +2905,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarSchedulePatternData: m
         }
       },
       scheduleEntries: {
-        serializedName: "scheduleEntries",
+        serializedName: "ScheduleEntries",
         type: {
           name: "Sequence",
           element: {
@@ -2917,7 +2917,7 @@ export const CyberjusticeLabKernelServiceContractsCalendarSchedulePatternData: m
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
@@ -2933,43 +2933,43 @@ export const CyberjusticeLabKernelSharedCalendarModelsCalendarModel: msRest.Comp
     className: "CyberjusticeLabKernelSharedCalendarModelsCalendarModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -2984,116 +2984,116 @@ export const CyberjusticeLabKernelServiceContractsDocumentDocumentData: msRest.C
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsDocumentDocumentData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       fileID: {
-        serializedName: "fileID",
+        serializedName: "FileID",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       title: {
-        serializedName: "title",
+        serializedName: "Title",
         type: {
           name: "String"
         }
       },
       version: {
-        serializedName: "version",
+        serializedName: "Version",
         type: {
           name: "Number"
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
       },
       format: {
-        serializedName: "format",
+        serializedName: "Format",
         type: {
           name: "String"
         }
       },
       formatEnum: {
-        serializedName: "formatEnum",
+        serializedName: "FormatEnum",
         type: {
           name: "String"
         }
       },
       type: {
-        serializedName: "type",
+        serializedName: "Type",
         type: {
           name: "String"
         }
       },
       typeEnum: {
-        serializedName: "typeEnum",
+        serializedName: "TypeEnum",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       permission: {
-        serializedName: "permission",
+        serializedName: "Permission",
         type: {
           name: "String"
         }
       },
       permissionEnum: {
-        serializedName: "permissionEnum",
+        serializedName: "PermissionEnum",
         type: {
           name: "String"
         }
       },
       documentation: {
-        serializedName: "documentation",
+        serializedName: "Documentation",
         type: {
           name: "String"
         }
       },
       documentationEnum: {
-        serializedName: "documentationEnum",
+        serializedName: "DocumentationEnum",
         type: {
           name: "String"
         }
       },
       reference: {
-        serializedName: "reference",
+        serializedName: "Reference",
         type: {
           name: "String"
         }
       },
       partyID: {
-        serializedName: "partyID",
+        serializedName: "PartyID",
         type: {
           name: "Uuid"
         }
       },
       parties: {
-        serializedName: "parties",
+        serializedName: "Parties",
         type: {
           name: "Sequence",
           element: {
@@ -3104,37 +3104,37 @@ export const CyberjusticeLabKernelServiceContractsDocumentDocumentData: msRest.C
         }
       },
       forumId: {
-        serializedName: "forumId",
+        serializedName: "ForumId",
         type: {
           name: "Uuid"
         }
       },
       parentForumId: {
-        serializedName: "parentForumId",
+        serializedName: "ParentForumId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -3151,14 +3151,14 @@ export const SystemCollectionsGenericKeyValuePairSystemStringSystemString: msRes
     modelProperties: {
       key: {
         readOnly: true,
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
         readOnly: true,
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -3174,7 +3174,7 @@ export const CyberjusticeLabKernelSharedDocumentModelsAttributesFilters: msRest.
     className: "CyberjusticeLabKernelSharedDocumentModelsAttributesFilters",
     modelProperties: {
       notAndAttributes: {
-        serializedName: "notAndAttributes",
+        serializedName: "NotAndAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -3186,7 +3186,7 @@ export const CyberjusticeLabKernelSharedDocumentModelsAttributesFilters: msRest.
         }
       },
       andAttributes: {
-        serializedName: "andAttributes",
+        serializedName: "AndAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -3198,13 +3198,46 @@ export const CyberjusticeLabKernelSharedDocumentModelsAttributesFilters: msRest.
         }
       },
       orAttributes: {
-        serializedName: "orAttributes",
+        serializedName: "OrAttributes",
         type: {
           name: "Sequence",
           element: {
             type: {
               name: "Composite",
               className: "SystemCollectionsGenericKeyValuePairSystemStringSystemString"
+            }
+          }
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedDocumentModelsActionsFilters: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.Document.Models.ActionsFilters",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedDocumentModelsActionsFilters",
+    modelProperties: {
+      restrictedCodesAndComplements: {
+        serializedName: "RestrictedCodesAndComplements",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "SystemCollectionsGenericKeyValuePairSystemStringSystemString"
+            }
+          }
+        }
+      },
+      allowedPartyIds: {
+        serializedName: "AllowedPartyIds",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Uuid"
             }
           }
         }
@@ -3220,7 +3253,7 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData: ms
     className: "CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData",
     modelProperties: {
       documentIds: {
-        serializedName: "documentIds",
+        serializedName: "DocumentIds",
         type: {
           name: "Sequence",
           element: {
@@ -3231,7 +3264,7 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData: ms
         }
       },
       fileIds: {
-        serializedName: "fileIds",
+        serializedName: "FileIds",
         type: {
           name: "Sequence",
           element: {
@@ -3242,7 +3275,7 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData: ms
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Dictionary",
           value: {
@@ -3253,25 +3286,25 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData: ms
         }
       },
       hasForumId: {
-        serializedName: "hasForumId",
+        serializedName: "HasForumId",
         type: {
           name: "Boolean"
         }
       },
       documentType: {
-        serializedName: "documentType",
+        serializedName: "DocumentType",
         type: {
           name: "String"
         }
       },
       searchText: {
-        serializedName: "searchText",
+        serializedName: "SearchText",
         type: {
           name: "String"
         }
       },
       searchBy: {
-        serializedName: "searchBy",
+        serializedName: "SearchBy",
         type: {
           name: "Sequence",
           element: {
@@ -3282,37 +3315,49 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData: ms
         }
       },
       take: {
-        serializedName: "take",
+        serializedName: "Take",
         type: {
           name: "Number"
         }
       },
       skip: {
-        serializedName: "skip",
+        serializedName: "Skip",
         type: {
           name: "Number"
         }
       },
       orderBy: {
-        serializedName: "orderBy",
+        serializedName: "OrderBy",
         type: {
           name: "String"
         }
       },
       orderByDescending: {
-        serializedName: "orderByDescending",
+        serializedName: "OrderByDescending",
         type: {
           name: "Boolean"
         }
       },
       documentsAttributesFilters: {
-        serializedName: "documentsAttributesFilters",
+        serializedName: "DocumentsAttributesFilters",
         type: {
           name: "Sequence",
           element: {
             type: {
               name: "Composite",
               className: "CyberjusticeLabKernelSharedDocumentModelsAttributesFilters"
+            }
+          }
+        }
+      },
+      documentsActionsFilters: {
+        serializedName: "DocumentsActionsFilters",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedDocumentModelsActionsFilters"
             }
           }
         }
@@ -3328,13 +3373,59 @@ export const CyberjusticeLabKernelSharedDocumentModelsAttributeModel: msRest.Com
     className: "CyberjusticeLabKernelSharedDocumentModelsAttributeModel",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
+        type: {
+          name: "String"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedDocumentModelsDocumentPartyActionModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.Document.Models.DocumentPartyActionModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedDocumentModelsDocumentPartyActionModel",
+    modelProperties: {
+      id: {
+        serializedName: "Id",
+        type: {
+          name: "Number"
+        }
+      },
+      partyId: {
+        serializedName: "PartyId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      representativeId: {
+        serializedName: "RepresentativeId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      actionCode: {
+        serializedName: "ActionCode",
+        type: {
+          name: "String"
+        }
+      },
+      actionDate: {
+        serializedName: "ActionDate",
+        type: {
+          name: "DateTime"
+        }
+      },
+      actionComplement: {
+        serializedName: "ActionComplement",
         type: {
           name: "String"
         }
@@ -3350,121 +3441,121 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentModel: msRest.Comp
     className: "CyberjusticeLabKernelSharedDocumentModelsDocumentModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       title: {
-        serializedName: "title",
+        serializedName: "Title",
         type: {
           name: "String"
         }
       },
       version: {
-        serializedName: "version",
+        serializedName: "Version",
         type: {
           name: "Number"
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
       },
       format: {
-        serializedName: "format",
+        serializedName: "Format",
         type: {
           name: "String"
         }
       },
       formatEnum: {
-        serializedName: "formatEnum",
+        serializedName: "FormatEnum",
         type: {
           name: "String"
         }
       },
       type: {
-        serializedName: "type",
+        serializedName: "Type",
         type: {
           name: "String"
         }
       },
       typeEnum: {
-        serializedName: "typeEnum",
+        serializedName: "TypeEnum",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       permission: {
-        serializedName: "permission",
+        serializedName: "Permission",
         type: {
           name: "String"
         }
       },
       permissionEnum: {
-        serializedName: "permissionEnum",
+        serializedName: "PermissionEnum",
         type: {
           name: "String"
         }
       },
       documentation: {
-        serializedName: "documentation",
+        serializedName: "Documentation",
         type: {
           name: "String"
         }
       },
       documentationEnum: {
-        serializedName: "documentationEnum",
+        serializedName: "DocumentationEnum",
         type: {
           name: "String"
         }
       },
       reference: {
-        serializedName: "reference",
+        serializedName: "Reference",
         type: {
           name: "String"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       partyName: {
-        serializedName: "partyName",
+        serializedName: "PartyName",
         type: {
           name: "String"
         }
       },
       parties: {
-        serializedName: "parties",
+        serializedName: "Parties",
         type: {
           name: "Sequence",
           element: {
@@ -3475,26 +3566,26 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentModel: msRest.Comp
         }
       },
       forumId: {
-        serializedName: "forumId",
+        serializedName: "ForumId",
         type: {
           name: "Uuid"
         }
       },
       parentForumId: {
-        serializedName: "parentForumId",
+        serializedName: "ParentForumId",
         type: {
           name: "Uuid"
         }
       },
       hasRestriction: {
         readOnly: true,
-        serializedName: "hasRestriction",
+        serializedName: "HasRestriction",
         type: {
           name: "Boolean"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
@@ -3505,26 +3596,38 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentModel: msRest.Comp
           }
         }
       },
+      partyActions: {
+        serializedName: "PartyActions",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedDocumentModelsDocumentPartyActionModel"
+            }
+          }
+        }
+      },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -3540,19 +3643,19 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentApiResponseData: m
     className: "CyberjusticeLabKernelSharedDocumentModelsDocumentApiResponseData",
     modelProperties: {
       count: {
-        serializedName: "count",
+        serializedName: "Count",
         type: {
           name: "Number"
         }
       },
       countFiltered: {
-        serializedName: "countFiltered",
+        serializedName: "CountFiltered",
         type: {
           name: "Number"
         }
       },
       documents: {
-        serializedName: "documents",
+        serializedName: "Documents",
         type: {
           name: "Sequence",
           element: {
@@ -3567,6 +3670,46 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentApiResponseData: m
   }
 };
 
+export const CyberjusticeLabKernelSharedDocumentModelsCreateDocumentPartyActionModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.Document.Models.CreateDocumentPartyActionModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedDocumentModelsCreateDocumentPartyActionModel",
+    modelProperties: {
+      partyId: {
+        serializedName: "PartyId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      representativeId: {
+        serializedName: "RepresentativeId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      actionCode: {
+        serializedName: "ActionCode",
+        type: {
+          name: "String"
+        }
+      },
+      actionDate: {
+        serializedName: "ActionDate",
+        type: {
+          name: "DateTime"
+        }
+      },
+      actionComplement: {
+        serializedName: "ActionComplement",
+        type: {
+          name: "String"
+        }
+      }
+    }
+  }
+};
+
 export const CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel: msRest.CompositeMapper = {
   serializedName: "CyberjusticeLab.Kernel.Shared.Document.Models.CreateDocumentModel",
   type: {
@@ -3574,97 +3717,97 @@ export const CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel: msRes
     className: "CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       title: {
-        serializedName: "title",
+        serializedName: "Title",
         type: {
           name: "String"
         }
       },
       version: {
-        serializedName: "version",
+        serializedName: "Version",
         type: {
           name: "Number"
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
       },
       content: {
-        serializedName: "content",
+        serializedName: "Content",
         type: {
           name: "ByteArray"
         }
       },
       format: {
-        serializedName: "format",
+        serializedName: "Format",
         type: {
           name: "String"
         }
       },
       typeEnum: {
-        serializedName: "typeEnum",
+        serializedName: "TypeEnum",
         type: {
           name: "String"
         }
       },
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       permissionEnum: {
-        serializedName: "permissionEnum",
+        serializedName: "PermissionEnum",
         type: {
           name: "String"
         }
       },
       documentationEnum: {
-        serializedName: "documentationEnum",
+        serializedName: "DocumentationEnum",
         type: {
           name: "String"
         }
       },
       reference: {
-        serializedName: "reference",
+        serializedName: "Reference",
         type: {
           name: "String"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       forumId: {
-        serializedName: "forumId",
+        serializedName: "ForumId",
         type: {
           name: "Uuid"
         }
       },
       parentForumId: {
-        serializedName: "parentForumId",
+        serializedName: "ParentForumId",
         type: {
           name: "Uuid"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
@@ -3676,7 +3819,7 @@ export const CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel: msRes
         }
       },
       partiesIds: {
-        serializedName: "partiesIds",
+        serializedName: "PartiesIds",
         type: {
           name: "Sequence",
           element: {
@@ -3688,9 +3831,21 @@ export const CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel: msRes
       },
       hasRestriction: {
         readOnly: true,
-        serializedName: "hasRestriction",
+        serializedName: "HasRestriction",
         type: {
           name: "Boolean"
+        }
+      },
+      partyActions: {
+        serializedName: "PartyActions",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedDocumentModelsCreateDocumentPartyActionModel"
+            }
+          }
         }
       }
     }
@@ -3704,7 +3859,7 @@ export const CyberjusticeLabKernelSharedDocumentModelsCreateDocumentsModel: msRe
     className: "CyberjusticeLabKernelSharedDocumentModelsCreateDocumentsModel",
     modelProperties: {
       documentModels: {
-        serializedName: "documentModels",
+        serializedName: "DocumentModels",
         type: {
           name: "Sequence",
           element: {
@@ -3726,13 +3881,13 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentErrorModel: msRest
     className: "CyberjusticeLabKernelSharedDocumentModelsDocumentErrorModel",
     modelProperties: {
       title: {
-        serializedName: "title",
+        serializedName: "Title",
         type: {
           name: "String"
         }
       },
       errorMessage: {
-        serializedName: "errorMessage",
+        serializedName: "ErrorMessage",
         type: {
           name: "String"
         }
@@ -3748,32 +3903,32 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentResponseModel: msR
     className: "CyberjusticeLabKernelSharedDocumentModelsDocumentResponseModel",
     modelProperties: {
       documentId: {
-        serializedName: "documentId",
+        serializedName: "DocumentId",
         type: {
           name: "Uuid"
         }
       },
       title: {
-        serializedName: "title",
+        serializedName: "Title",
         type: {
           name: "String"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       error: {
-        serializedName: "error",
+        serializedName: "Error",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedDocumentModelsDocumentErrorModel"
         }
       },
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
@@ -3789,7 +3944,7 @@ export const CyberjusticeLabKernelSharedDocumentModelsCreateDocumentsResponseMod
     className: "CyberjusticeLabKernelSharedDocumentModelsCreateDocumentsResponseModel",
     modelProperties: {
       documents: {
-        serializedName: "documents",
+        serializedName: "Documents",
         type: {
           name: "Sequence",
           element: {
@@ -3811,49 +3966,49 @@ export const CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentContentModel
     className: "CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentContentModel",
     modelProperties: {
       documentId: {
-        serializedName: "documentId",
+        serializedName: "DocumentId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       version: {
-        serializedName: "version",
+        serializedName: "Version",
         type: {
           name: "Number"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       format: {
-        serializedName: "format",
+        serializedName: "Format",
         type: {
           name: "String"
         }
       },
       formatEnum: {
-        serializedName: "formatEnum",
+        serializedName: "FormatEnum",
         type: {
           name: "String"
         }
       },
       binaryData: {
-        serializedName: "binaryData",
+        serializedName: "BinaryData",
         type: {
           name: "ByteArray"
         }
@@ -3869,49 +4024,49 @@ export const CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentMetadatasMod
     className: "CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentMetadatasModel",
     modelProperties: {
       documentId: {
-        serializedName: "documentId",
+        serializedName: "DocumentId",
         type: {
           name: "Uuid"
         }
       },
       documentTitle: {
-        serializedName: "documentTitle",
+        serializedName: "DocumentTitle",
         type: {
           name: "String"
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
       },
       type: {
-        serializedName: "type",
+        serializedName: "Type",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       permission: {
-        serializedName: "permission",
+        serializedName: "Permission",
         type: {
           name: "String"
         }
       },
       currentVersion: {
-        serializedName: "currentVersion",
+        serializedName: "CurrentVersion",
         type: {
           name: "Number"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
@@ -3933,19 +4088,70 @@ export const CyberjusticeLabKernelSharedDocumentModelsEditDocumentAttributeModel
     className: "CyberjusticeLabKernelSharedDocumentModelsEditDocumentAttributeModel",
     modelProperties: {
       documentId: {
-        serializedName: "documentId",
+        serializedName: "DocumentId",
         type: {
           name: "Uuid"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
             type: {
               name: "Composite",
               className: "CyberjusticeLabKernelSharedDocumentModelsAttributeModel"
+            }
+          }
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.Document.Models.UpdateDocumentPartyActionsModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel",
+    modelProperties: {
+      documentId: {
+        serializedName: "DocumentId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      updatedPartyActions: {
+        serializedName: "UpdatedPartyActions",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedDocumentModelsDocumentPartyActionModel"
+            }
+          }
+        }
+      },
+      deletedPartyActions: {
+        serializedName: "DeletedPartyActions",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Number"
+            }
+          }
+        }
+      },
+      createdPartyActions: {
+        serializedName: "CreatedPartyActions",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedDocumentModelsCreateDocumentPartyActionModel"
             }
           }
         }
@@ -3961,25 +4167,25 @@ export const CyberjusticeLabKernelServiceContractsExchangeForumPartyLinkData: ms
     className: "CyberjusticeLabKernelServiceContractsExchangeForumPartyLinkData",
     modelProperties: {
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       role: {
-        serializedName: "role",
+        serializedName: "Role",
         type: {
           name: "String"
         }
       },
       roleEnum: {
-        serializedName: "roleEnum",
+        serializedName: "RoleEnum",
         type: {
           name: "String"
         }
@@ -3995,38 +4201,38 @@ export const CyberjusticeLabKernelServiceContractsExchangeForumData: msRest.Comp
     className: "CyberjusticeLabKernelServiceContractsExchangeForumData",
     modelProperties: {
       forumId: {
-        serializedName: "forumId",
+        serializedName: "ForumId",
         type: {
           name: "Uuid"
         }
       },
       parentForumId: {
-        serializedName: "parentForumId",
+        serializedName: "ParentForumId",
         type: {
           name: "Uuid"
         }
       },
       subject: {
-        serializedName: "subject",
+        serializedName: "Subject",
         type: {
           name: "String"
         }
       },
       content: {
-        serializedName: "content",
+        serializedName: "Content",
         type: {
           name: "String"
         }
       },
       sender: {
-        serializedName: "sender",
+        serializedName: "Sender",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelServiceContractsExchangeForumPartyLinkData"
         }
       },
       receivers: {
-        serializedName: "receivers",
+        serializedName: "Receivers",
         type: {
           name: "Sequence",
           element: {
@@ -4038,43 +4244,43 @@ export const CyberjusticeLabKernelServiceContractsExchangeForumData: msRest.Comp
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       fileName: {
-        serializedName: "fileName",
+        serializedName: "FileName",
         type: {
           name: "String"
         }
       },
       hasDocument: {
-        serializedName: "hasDocument",
+        serializedName: "HasDocument",
         type: {
           name: "Boolean"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -4090,7 +4296,7 @@ export const CyberjusticeLabKernelSharedExchangeModelsForumMessageApiRequestData
     className: "CyberjusticeLabKernelSharedExchangeModelsForumMessageApiRequestData",
     modelProperties: {
       forumIds: {
-        serializedName: "forumIds",
+        serializedName: "ForumIds",
         type: {
           name: "Sequence",
           element: {
@@ -4101,7 +4307,7 @@ export const CyberjusticeLabKernelSharedExchangeModelsForumMessageApiRequestData
         }
       },
       parentForumIds: {
-        serializedName: "parentForumIds",
+        serializedName: "ParentForumIds",
         type: {
           name: "Sequence",
           element: {
@@ -4112,13 +4318,13 @@ export const CyberjusticeLabKernelSharedExchangeModelsForumMessageApiRequestData
         }
       },
       includeParentForumIds: {
-        serializedName: "includeParentForumIds",
+        serializedName: "IncludeParentForumIds",
         type: {
           name: "Boolean"
         }
       },
       fileIds: {
-        serializedName: "fileIds",
+        serializedName: "FileIds",
         type: {
           name: "Sequence",
           element: {
@@ -4129,7 +4335,7 @@ export const CyberjusticeLabKernelSharedExchangeModelsForumMessageApiRequestData
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Dictionary",
           value: {
@@ -4140,19 +4346,19 @@ export const CyberjusticeLabKernelSharedExchangeModelsForumMessageApiRequestData
         }
       },
       noParentsOnly: {
-        serializedName: "noParentsOnly",
+        serializedName: "NoParentsOnly",
         type: {
           name: "Boolean"
         }
       },
       searchText: {
-        serializedName: "searchText",
+        serializedName: "SearchText",
         type: {
           name: "String"
         }
       },
       searchBy: {
-        serializedName: "searchBy",
+        serializedName: "SearchBy",
         type: {
           name: "Sequence",
           element: {
@@ -4163,37 +4369,37 @@ export const CyberjusticeLabKernelSharedExchangeModelsForumMessageApiRequestData
         }
       },
       take: {
-        serializedName: "take",
+        serializedName: "Take",
         type: {
           name: "Number"
         }
       },
       skip: {
-        serializedName: "skip",
+        serializedName: "Skip",
         type: {
           name: "Number"
         }
       },
       orderBy: {
-        serializedName: "orderBy",
+        serializedName: "OrderBy",
         type: {
           name: "String"
         }
       },
       orderByDescending: {
-        serializedName: "orderByDescending",
+        serializedName: "OrderByDescending",
         type: {
           name: "Boolean"
         }
       },
       lastRefresh: {
-        serializedName: "lastRefresh",
+        serializedName: "LastRefresh",
         type: {
           name: "DateTime"
         }
       },
       isRefresh: {
-        serializedName: "isRefresh",
+        serializedName: "IsRefresh",
         type: {
           name: "Boolean"
         }
@@ -4209,25 +4415,25 @@ export const CyberjusticeLabKernelSharedExchangeModelsForumMessagePartyLinkModel
     className: "CyberjusticeLabKernelSharedExchangeModelsForumMessagePartyLinkModel",
     modelProperties: {
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       role: {
-        serializedName: "role",
+        serializedName: "Role",
         type: {
           name: "String"
         }
       },
       roleEnum: {
-        serializedName: "roleEnum",
+        serializedName: "RoleEnum",
         type: {
           name: "String"
         }
@@ -4243,13 +4449,13 @@ export const CyberjusticeLabKernelSharedExchangeModelsAttributeModel: msRest.Com
     className: "CyberjusticeLabKernelSharedExchangeModelsAttributeModel",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -4265,38 +4471,38 @@ export const CyberjusticeLabKernelSharedExchangeModelsForumMessageModel: msRest.
     className: "CyberjusticeLabKernelSharedExchangeModelsForumMessageModel",
     modelProperties: {
       forumId: {
-        serializedName: "forumId",
+        serializedName: "ForumId",
         type: {
           name: "Uuid"
         }
       },
       parentForumId: {
-        serializedName: "parentForumId",
+        serializedName: "ParentForumId",
         type: {
           name: "Uuid"
         }
       },
       subject: {
-        serializedName: "subject",
+        serializedName: "Subject",
         type: {
           name: "String"
         }
       },
       content: {
-        serializedName: "content",
+        serializedName: "Content",
         type: {
           name: "String"
         }
       },
       sender: {
-        serializedName: "sender",
+        serializedName: "Sender",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedExchangeModelsForumMessagePartyLinkModel"
         }
       },
       receivers: {
-        serializedName: "receivers",
+        serializedName: "Receivers",
         type: {
           name: "Sequence",
           element: {
@@ -4308,25 +4514,25 @@ export const CyberjusticeLabKernelSharedExchangeModelsForumMessageModel: msRest.
         }
       },
       hasDocument: {
-        serializedName: "hasDocument",
+        serializedName: "HasDocument",
         type: {
           name: "Boolean"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
@@ -4338,25 +4544,25 @@ export const CyberjusticeLabKernelSharedExchangeModelsForumMessageModel: msRest.
         }
       },
       lastMessageForum: {
-        serializedName: "lastMessageForum",
+        serializedName: "LastMessageForum",
         type: {
           name: "DateTime"
         }
       },
       childCount: {
-        serializedName: "childCount",
+        serializedName: "ChildCount",
         type: {
           name: "Number"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -4372,19 +4578,19 @@ export const CyberjusticeLabKernelSharedExchangeModelsForumMessageApiResponseDat
     className: "CyberjusticeLabKernelSharedExchangeModelsForumMessageApiResponseData",
     modelProperties: {
       count: {
-        serializedName: "count",
+        serializedName: "Count",
         type: {
           name: "Number"
         }
       },
       countFiltered: {
-        serializedName: "countFiltered",
+        serializedName: "CountFiltered",
         type: {
           name: "Number"
         }
       },
       messages: {
-        serializedName: "messages",
+        serializedName: "Messages",
         type: {
           name: "Sequence",
           element: {
@@ -4406,38 +4612,38 @@ export const CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel: msRe
     className: "CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       parentForumId: {
-        serializedName: "parentForumId",
+        serializedName: "ParentForumId",
         type: {
           name: "Uuid"
         }
       },
       subject: {
-        serializedName: "subject",
+        serializedName: "Subject",
         type: {
           name: "String"
         }
       },
       content: {
-        serializedName: "content",
+        serializedName: "Content",
         type: {
           name: "String"
         }
       },
       sender: {
-        serializedName: "sender",
+        serializedName: "Sender",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedExchangeModelsForumMessagePartyLinkModel"
         }
       },
       receivers: {
-        serializedName: "receivers",
+        serializedName: "Receivers",
         type: {
           name: "Sequence",
           element: {
@@ -4449,19 +4655,19 @@ export const CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel: msRe
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
@@ -4473,13 +4679,13 @@ export const CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel: msRe
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -4495,31 +4701,31 @@ export const CyberjusticeLabKernelSharedExchangeModelsAddPartyToForumMessagesMod
     className: "CyberjusticeLabKernelSharedExchangeModelsAddPartyToForumMessagesModel",
     modelProperties: {
       party: {
-        serializedName: "party",
+        serializedName: "Party",
         type: {
           name: "Uuid"
         }
       },
       partyName: {
-        serializedName: "partyName",
+        serializedName: "PartyName",
         type: {
           name: "String"
         }
       },
       role: {
-        serializedName: "role",
+        serializedName: "Role",
         type: {
           name: "String"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
@@ -4541,19 +4747,19 @@ export const CyberjusticeLabKernelSharedExchangeModelsAddForumMessageAttributesM
     className: "CyberjusticeLabKernelSharedExchangeModelsAddForumMessageAttributesModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       forumId: {
-        serializedName: "forumId",
+        serializedName: "ForumId",
         type: {
           name: "Uuid"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
@@ -4575,31 +4781,31 @@ export const CyberjusticeLabKernelServiceContractsFormResourceOptionData: msRest
     className: "CyberjusticeLabKernelServiceContractsFormResourceOptionData",
     modelProperties: {
       optionId: {
-        serializedName: "optionId",
+        serializedName: "OptionId",
         type: {
           name: "Uuid"
         }
       },
       culture: {
-        serializedName: "culture",
+        serializedName: "Culture",
         type: {
           name: "String"
         }
       },
       optionCaption: {
-        serializedName: "optionCaption",
+        serializedName: "OptionCaption",
         type: {
           name: "String"
         }
       },
       optionComplementCaption: {
-        serializedName: "optionComplementCaption",
+        serializedName: "OptionComplementCaption",
         type: {
           name: "String"
         }
       },
       optionHelp: {
-        serializedName: "optionHelp",
+        serializedName: "OptionHelp",
         type: {
           name: "String"
         }
@@ -4615,79 +4821,79 @@ export const CyberjusticeLabKernelServiceContractsFormFormSectionOptionData: msR
     className: "CyberjusticeLabKernelServiceContractsFormFormSectionOptionData",
     modelProperties: {
       culture: {
-        serializedName: "culture",
+        serializedName: "Culture",
         type: {
           name: "String"
         }
       },
       optionVersion: {
-        serializedName: "optionVersion",
+        serializedName: "OptionVersion",
         type: {
           name: "Number"
         }
       },
       complementValue: {
-        serializedName: "complementValue",
+        serializedName: "ComplementValue",
         type: {
           name: "String"
         }
       },
       partyType: {
-        serializedName: "partyType",
+        serializedName: "PartyType",
         type: {
           name: "String"
         }
       },
       optionId: {
-        serializedName: "optionId",
+        serializedName: "OptionId",
         type: {
           name: "Uuid"
         }
       },
       sectionId: {
-        serializedName: "sectionId",
+        serializedName: "SectionId",
         type: {
           name: "Uuid"
         }
       },
       optionCaption: {
-        serializedName: "optionCaption",
+        serializedName: "OptionCaption",
         type: {
           name: "String"
         }
       },
       optionComplementCaption: {
-        serializedName: "optionComplementCaption",
+        serializedName: "OptionComplementCaption",
         type: {
           name: "String"
         }
       },
       optionComplementType: {
-        serializedName: "optionComplementType",
+        serializedName: "OptionComplementType",
         type: {
           name: "Number"
         }
       },
       optionComplementLength: {
-        serializedName: "optionComplementLength",
+        serializedName: "OptionComplementLength",
         type: {
           name: "Number"
         }
       },
       optionHelp: {
-        serializedName: "optionHelp",
+        serializedName: "OptionHelp",
         type: {
           name: "String"
         }
       },
       optionRank: {
-        serializedName: "optionRank",
+        serializedName: "OptionRank",
         type: {
           name: "Number"
         }
       },
       optionResources: {
-        serializedName: "optionResources",
+        serializedName: "OptionResources",
         type: {
           name: "Sequence",
           element: {
@@ -4709,25 +4915,25 @@ export const CyberjusticeLabKernelServiceContractsFormResourceData: msRest.Compo
     className: "CyberjusticeLabKernelServiceContractsFormResourceData",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       culture: {
-        serializedName: "culture",
+        serializedName: "Culture",
         type: {
           name: "String"
         }
       },
       caption: {
-        serializedName: "caption",
+        serializedName: "Caption",
         type: {
           name: "String"
         }
       },
       help: {
-        serializedName: "help",
+        serializedName: "Help",
         type: {
           name: "String"
         }
@@ -4743,13 +4949,13 @@ export const CyberjusticeLabKernelServiceContractsFormFormSectionData: msRest.Co
     className: "CyberjusticeLabKernelServiceContractsFormFormSectionData",
     modelProperties: {
       culture: {
-        serializedName: "culture",
+        serializedName: "Culture",
         type: {
           name: "String"
         }
       },
       sectionOptions: {
-        serializedName: "sectionOptions",
+        serializedName: "SectionOptions",
         type: {
           name: "Sequence",
           element: {
@@ -4761,37 +4967,37 @@ export const CyberjusticeLabKernelServiceContractsFormFormSectionData: msRest.Co
         }
       },
       sectionId: {
-        serializedName: "sectionId",
+        serializedName: "SectionId",
         type: {
           name: "Uuid"
         }
       },
       formId: {
-        serializedName: "formId",
+        serializedName: "FormId",
         type: {
           name: "Uuid"
         }
       },
       sectionCaption: {
-        serializedName: "sectionCaption",
+        serializedName: "SectionCaption",
         type: {
           name: "String"
         }
       },
       sectionHelp: {
-        serializedName: "sectionHelp",
+        serializedName: "SectionHelp",
         type: {
           name: "String"
         }
       },
       sectionRank: {
-        serializedName: "sectionRank",
+        serializedName: "SectionRank",
         type: {
           name: "Number"
         }
       },
       sectionResources: {
-        serializedName: "sectionResources",
+        serializedName: "SectionResources",
         type: {
           name: "Sequence",
           element: {
@@ -4813,13 +5019,13 @@ export const CyberjusticeLabKernelServiceContractsFormFormQuestionData: msRest.C
     className: "CyberjusticeLabKernelServiceContractsFormFormQuestionData",
     modelProperties: {
       culture: {
-        serializedName: "culture",
+        serializedName: "Culture",
         type: {
           name: "String"
         }
       },
       formSections: {
-        serializedName: "formSections",
+        serializedName: "FormSections",
         type: {
           name: "Sequence",
           element: {
@@ -4831,79 +5037,79 @@ export const CyberjusticeLabKernelServiceContractsFormFormQuestionData: msRest.C
         }
       },
       formId: {
-        serializedName: "formId",
+        serializedName: "FormId",
         type: {
           name: "Uuid"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
       },
       formCaption: {
-        serializedName: "formCaption",
+        serializedName: "FormCaption",
         type: {
           name: "String"
         }
       },
       formHelp: {
-        serializedName: "formHelp",
+        serializedName: "FormHelp",
         type: {
           name: "String"
         }
       },
       formRank: {
-        serializedName: "formRank",
+        serializedName: "FormRank",
         type: {
           name: "Number"
         }
       },
       formVersion: {
-        serializedName: "formVersion",
+        serializedName: "FormVersion",
         type: {
           name: "Number"
         }
       },
       formCode: {
-        serializedName: "formCode",
+        serializedName: "FormCode",
         type: {
           name: "String"
         }
       },
       formStatus: {
-        serializedName: "formStatus",
+        serializedName: "FormStatus",
         type: {
           name: "String"
         }
       },
       formStatusEnum: {
-        serializedName: "formStatusEnum",
+        serializedName: "FormStatusEnum",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -4919,7 +5125,7 @@ export const CyberjusticeLabKernelServiceContractsFormFormData: msRest.Composite
     className: "CyberjusticeLabKernelServiceContractsFormFormData",
     modelProperties: {
       formResources: {
-        serializedName: "formResources",
+        serializedName: "FormResources",
         type: {
           name: "Sequence",
           element: {
@@ -4931,7 +5137,7 @@ export const CyberjusticeLabKernelServiceContractsFormFormData: msRest.Composite
         }
       },
       problemDescriptionSections: {
-        serializedName: "problemDescriptionSections",
+        serializedName: "ProblemDescriptionSections",
         type: {
           name: "Sequence",
           element: {
@@ -4943,7 +5149,7 @@ export const CyberjusticeLabKernelServiceContractsFormFormData: msRest.Composite
         }
       },
       solutionProposalSections: {
-        serializedName: "solutionProposalSections",
+        serializedName: "SolutionProposalSections",
         type: {
           name: "Sequence",
           element: {
@@ -4955,79 +5161,79 @@ export const CyberjusticeLabKernelServiceContractsFormFormData: msRest.Composite
         }
       },
       formId: {
-        serializedName: "formId",
+        serializedName: "FormId",
         type: {
           name: "Uuid"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
       },
       formCaption: {
-        serializedName: "formCaption",
+        serializedName: "FormCaption",
         type: {
           name: "String"
         }
       },
       formHelp: {
-        serializedName: "formHelp",
+        serializedName: "FormHelp",
         type: {
           name: "String"
         }
       },
       formRank: {
-        serializedName: "formRank",
+        serializedName: "FormRank",
         type: {
           name: "Number"
         }
       },
       formVersion: {
-        serializedName: "formVersion",
+        serializedName: "FormVersion",
         type: {
           name: "Number"
         }
       },
       formCode: {
-        serializedName: "formCode",
+        serializedName: "FormCode",
         type: {
           name: "String"
         }
       },
       formStatus: {
-        serializedName: "formStatus",
+        serializedName: "FormStatus",
         type: {
           name: "String"
         }
       },
       formStatusEnum: {
-        serializedName: "formStatusEnum",
+        serializedName: "FormStatusEnum",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -5043,49 +5249,49 @@ export const CyberjusticeLabKernelServiceContractsFormFormPartyDescriptionOption
     className: "CyberjusticeLabKernelServiceContractsFormFormPartyDescriptionOptionData",
     modelProperties: {
       formDescriptionOptionId: {
-        serializedName: "formDescriptionOptionId",
+        serializedName: "FormDescriptionOptionId",
         type: {
           name: "Uuid"
         }
       },
       formDescriptionPartyId: {
-        serializedName: "formDescriptionPartyId",
+        serializedName: "FormDescriptionPartyId",
         type: {
           name: "Uuid"
         }
       },
       descriptionOptionId: {
-        serializedName: "descriptionOptionId",
+        serializedName: "DescriptionOptionId",
         type: {
           name: "Uuid"
         }
       },
       caseDescriptionOptionComplement: {
-        serializedName: "caseDescriptionOptionComplement",
+        serializedName: "CaseDescriptionOptionComplement",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -5101,55 +5307,55 @@ export const CyberjusticeLabKernelServiceContractsFormFormPartyDescriptionData: 
     className: "CyberjusticeLabKernelServiceContractsFormFormPartyDescriptionData",
     modelProperties: {
       formDescriptionPartyId: {
-        serializedName: "formDescriptionPartyId",
+        serializedName: "FormDescriptionPartyId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       formId: {
-        serializedName: "formId",
+        serializedName: "FormId",
         type: {
           name: "Uuid"
         }
       },
       descriptionOther: {
-        serializedName: "descriptionOther",
+        serializedName: "DescriptionOther",
         type: {
           name: "String"
         }
       },
       descriptionProblem: {
-        serializedName: "descriptionProblem",
+        serializedName: "DescriptionProblem",
         type: {
           name: "String"
         }
       },
       descriptionDate: {
-        serializedName: "descriptionDate",
+        serializedName: "DescriptionDate",
         type: {
           name: "DateTime"
         }
       },
       descriptionSectionVersion: {
-        serializedName: "descriptionSectionVersion",
+        serializedName: "DescriptionSectionVersion",
         type: {
           name: "Number"
         }
       },
       optionList: {
-        serializedName: "optionList",
+        serializedName: "OptionList",
         type: {
           name: "Sequence",
           element: {
@@ -5161,25 +5367,25 @@ export const CyberjusticeLabKernelServiceContractsFormFormPartyDescriptionData: 
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -5195,55 +5401,55 @@ export const CyberjusticeLabKernelServiceContractsFormApprovalPartyData: msRest.
     className: "CyberjusticeLabKernelServiceContractsFormApprovalPartyData",
     modelProperties: {
       replyDate: {
-        serializedName: "replyDate",
+        serializedName: "ReplyDate",
         type: {
           name: "DateTime"
         }
       },
       replyState: {
-        serializedName: "replyState",
+        serializedName: "ReplyState",
         type: {
           name: "Number"
         }
       },
       approvalJournalId: {
-        serializedName: "approvalJournalId",
+        serializedName: "ApprovalJournalId",
         type: {
           name: "String"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       partyType: {
-        serializedName: "partyType",
+        serializedName: "PartyType",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -5259,49 +5465,49 @@ export const CyberjusticeLabKernelServiceContractsFormFormProposalPartyOptionDat
     className: "CyberjusticeLabKernelServiceContractsFormFormProposalPartyOptionData",
     modelProperties: {
       formProposalOptionId: {
-        serializedName: "formProposalOptionId",
+        serializedName: "FormProposalOptionId",
         type: {
           name: "Uuid"
         }
       },
       formProposalPartyId: {
-        serializedName: "formProposalPartyId",
+        serializedName: "FormProposalPartyId",
         type: {
           name: "Uuid"
         }
       },
       proposalOptionId: {
-        serializedName: "proposalOptionId",
+        serializedName: "ProposalOptionId",
         type: {
           name: "Uuid"
         }
       },
       caseProposalOptionComplement: {
-        serializedName: "caseProposalOptionComplement",
+        serializedName: "CaseProposalOptionComplement",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -5317,61 +5523,61 @@ export const CyberjusticeLabKernelServiceContractsFormFormPartyProposalData: msR
     className: "CyberjusticeLabKernelServiceContractsFormFormPartyProposalData",
     modelProperties: {
       formProposalPartyId: {
-        serializedName: "formProposalPartyId",
+        serializedName: "FormProposalPartyId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       formId: {
-        serializedName: "formId",
+        serializedName: "FormId",
         type: {
           name: "Uuid"
         }
       },
       proposalOther: {
-        serializedName: "proposalOther",
+        serializedName: "ProposalOther",
         type: {
           name: "String"
         }
       },
       proposalState: {
-        serializedName: "proposalState",
+        serializedName: "ProposalState",
         type: {
           name: "Number"
         }
       },
       proposalDate: {
-        serializedName: "proposalDate",
+        serializedName: "ProposalDate",
         type: {
           name: "DateTime"
         }
       },
       proposalWhy: {
-        serializedName: "proposalWhy",
+        serializedName: "ProposalWhy",
         type: {
           name: "String"
         }
       },
       proposalSectionVersion: {
-        serializedName: "proposalSectionVersion",
+        serializedName: "ProposalSectionVersion",
         type: {
           name: "Number"
         }
       },
       approvalPartyList: {
-        serializedName: "approvalPartyList",
+        serializedName: "ApprovalPartyList",
         type: {
           name: "Sequence",
           element: {
@@ -5383,7 +5589,7 @@ export const CyberjusticeLabKernelServiceContractsFormFormPartyProposalData: msR
         }
       },
       optionList: {
-        serializedName: "optionList",
+        serializedName: "OptionList",
         type: {
           name: "Sequence",
           element: {
@@ -5395,25 +5601,25 @@ export const CyberjusticeLabKernelServiceContractsFormFormPartyProposalData: msR
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -5429,13 +5635,13 @@ export const CyberjusticeLabKernelServiceContractsFormPartyQuestionProposalCount
     className: "CyberjusticeLabKernelServiceContractsFormPartyQuestionProposalCountData",
     modelProperties: {
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       proposalNb: {
-        serializedName: "proposalNb",
+        serializedName: "ProposalNb",
         type: {
           name: "Number"
         }
@@ -5451,13 +5657,13 @@ export const CyberjusticeLabKernelSharedFormModelsQuestionFormApiRequestData: ms
     className: "CyberjusticeLabKernelSharedFormModelsQuestionFormApiRequestData",
     modelProperties: {
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
       },
       formIds: {
-        serializedName: "formIds",
+        serializedName: "FormIds",
         type: {
           name: "Sequence",
           element: {
@@ -5468,7 +5674,7 @@ export const CyberjusticeLabKernelSharedFormModelsQuestionFormApiRequestData: ms
         }
       },
       formCodes: {
-        serializedName: "formCodes",
+        serializedName: "FormCodes",
         type: {
           name: "Sequence",
           element: {
@@ -5479,7 +5685,7 @@ export const CyberjusticeLabKernelSharedFormModelsQuestionFormApiRequestData: ms
         }
       },
       formCaptions: {
-        serializedName: "formCaptions",
+        serializedName: "FormCaptions",
         type: {
           name: "Sequence",
           element: {
@@ -5490,31 +5696,31 @@ export const CyberjusticeLabKernelSharedFormModelsQuestionFormApiRequestData: ms
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       searchText: {
-        serializedName: "searchText",
+        serializedName: "SearchText",
         type: {
           name: "String"
         }
       },
       culture: {
-        serializedName: "culture",
+        serializedName: "Culture",
         type: {
           name: "String"
         }
       },
       searchBy: {
-        serializedName: "searchBy",
+        serializedName: "SearchBy",
         type: {
           name: "Sequence",
           element: {
@@ -5525,25 +5731,25 @@ export const CyberjusticeLabKernelSharedFormModelsQuestionFormApiRequestData: ms
         }
       },
       orderBy: {
-        serializedName: "orderBy",
+        serializedName: "OrderBy",
         type: {
           name: "String"
         }
       },
       take: {
-        serializedName: "take",
+        serializedName: "Take",
         type: {
           name: "Number"
         }
       },
       skip: {
-        serializedName: "skip",
+        serializedName: "Skip",
         type: {
           name: "Number"
         }
       },
       isOrderByDescending: {
-        serializedName: "isOrderByDescending",
+        serializedName: "IsOrderByDescending",
         type: {
           name: "Boolean"
         }
@@ -5559,79 +5765,79 @@ export const CyberjusticeLabKernelSharedFormModelsQuestionFormModel: msRest.Comp
     className: "CyberjusticeLabKernelSharedFormModelsQuestionFormModel",
     modelProperties: {
       formId: {
-        serializedName: "formId",
+        serializedName: "FormId",
         type: {
           name: "Uuid"
         }
       },
       formCode: {
-        serializedName: "formCode",
+        serializedName: "FormCode",
         type: {
           name: "String"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
       },
       formCaption: {
-        serializedName: "formCaption",
+        serializedName: "FormCaption",
         type: {
           name: "String"
         }
       },
       formHelp: {
-        serializedName: "formHelp",
+        serializedName: "FormHelp",
         type: {
           name: "String"
         }
       },
       culture: {
-        serializedName: "culture",
+        serializedName: "Culture",
         type: {
           name: "String"
         }
       },
       formRank: {
-        serializedName: "formRank",
+        serializedName: "FormRank",
         type: {
           name: "Number"
         }
       },
       formVersion: {
-        serializedName: "formVersion",
+        serializedName: "FormVersion",
         type: {
           name: "Number"
         }
       },
       formStatus: {
-        serializedName: "formStatus",
+        serializedName: "FormStatus",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -5647,19 +5853,19 @@ export const CyberjusticeLabKernelSharedFormModelsQuestionFormApiResponseData: m
     className: "CyberjusticeLabKernelSharedFormModelsQuestionFormApiResponseData",
     modelProperties: {
       count: {
-        serializedName: "count",
+        serializedName: "Count",
         type: {
           name: "Number"
         }
       },
       countFiltered: {
-        serializedName: "countFiltered",
+        serializedName: "CountFiltered",
         type: {
           name: "Number"
         }
       },
       questionForms: {
-        serializedName: "questionForms",
+        serializedName: "QuestionForms",
         type: {
           name: "Sequence",
           element: {
@@ -5681,49 +5887,49 @@ export const CyberjusticeLabKernelServiceContractsHearingMenuData: msRest.Compos
     className: "CyberjusticeLabKernelServiceContractsHearingMenuData",
     modelProperties: {
       menuId: {
-        serializedName: "menuId",
+        serializedName: "MenuId",
         type: {
           name: "Uuid"
         }
       },
       hearingId: {
-        serializedName: "hearingId",
+        serializedName: "HearingId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       position: {
-        serializedName: "position",
+        serializedName: "Position",
         type: {
           name: "Number"
         }
       },
       parentId: {
-        serializedName: "parentId",
+        serializedName: "ParentId",
         type: {
           name: "Uuid"
         }
       },
       rootId: {
-        serializedName: "rootId",
+        serializedName: "RootId",
         type: {
           name: "Uuid"
         }
       },
       listDocumentId: {
-        serializedName: "listDocumentId",
+        serializedName: "ListDocumentId",
         type: {
           name: "Sequence",
           element: {
@@ -5734,7 +5940,7 @@ export const CyberjusticeLabKernelServiceContractsHearingMenuData: msRest.Compos
         }
       },
       listSubMenus: {
-        serializedName: "listSubMenus",
+        serializedName: "ListSubMenus",
         type: {
           name: "Sequence",
           element: {
@@ -5746,25 +5952,25 @@ export const CyberjusticeLabKernelServiceContractsHearingMenuData: msRest.Compos
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -5780,73 +5986,73 @@ export const CyberjusticeLabKernelServiceContractsJournalJournalData: msRest.Com
     className: "CyberjusticeLabKernelServiceContractsJournalJournalData",
     modelProperties: {
       journalId: {
-        serializedName: "journalId",
+        serializedName: "JournalId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       isSystemEntry: {
-        serializedName: "isSystemEntry",
+        serializedName: "IsSystemEntry",
         type: {
           name: "Number"
         }
       },
       journalDate: {
-        serializedName: "journalDate",
+        serializedName: "JournalDate",
         type: {
           name: "DateTime"
         }
       },
       journalTitle: {
-        serializedName: "journalTitle",
+        serializedName: "JournalTitle",
         type: {
           name: "String"
         }
       },
       journalFrom: {
-        serializedName: "journalFrom",
+        serializedName: "JournalFrom",
         type: {
           name: "String"
         }
       },
       journalTo: {
-        serializedName: "journalTo",
+        serializedName: "JournalTo",
         type: {
           name: "String"
         }
       },
       journalCc: {
-        serializedName: "journalCc",
+        serializedName: "JournalCc",
         type: {
           name: "String"
         }
       },
       journalDescription: {
-        serializedName: "journalDescription",
+        serializedName: "JournalDescription",
         type: {
           name: "String"
         }
       },
       journalKey: {
-        serializedName: "journalKey",
+        serializedName: "JournalKey",
         type: {
           name: "String"
         }
       },
       journalParameters: {
-        serializedName: "journalParameters",
+        serializedName: "JournalParameters",
         type: {
           name: "String"
         }
       },
       journalParametersArray: {
-        serializedName: "journalParametersArray",
+        serializedName: "JournalParametersArray",
         type: {
           name: "Sequence",
           element: {
@@ -5857,19 +6063,19 @@ export const CyberjusticeLabKernelServiceContractsJournalJournalData: msRest.Com
         }
       },
       culture: {
-        serializedName: "culture",
+        serializedName: "Culture",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -5885,31 +6091,31 @@ export const CyberjusticeLabKernelSharedJournalModelsJournalModel: msRest.Compos
     className: "CyberjusticeLabKernelSharedJournalModelsJournalModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       journalCode: {
-        serializedName: "journalCode",
+        serializedName: "JournalCode",
         type: {
           name: "String"
         }
       },
       journalDate: {
-        serializedName: "journalDate",
+        serializedName: "JournalDate",
         type: {
           name: "DateTime"
         }
       },
       journalSubject: {
-        serializedName: "journalSubject",
+        serializedName: "JournalSubject",
         type: {
           name: "String"
         }
       },
       journalFrom: {
-        serializedName: "journalFrom",
+        serializedName: "JournalFrom",
         type: {
           name: "String"
         }
@@ -5925,25 +6131,25 @@ export const CyberjusticeLabKernelSharedJournalModelsJournalApiResquestData: msR
     className: "CyberjusticeLabKernelSharedJournalModelsJournalApiResquestData",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       currentLanguage: {
-        serializedName: "currentLanguage",
+        serializedName: "CurrentLanguage",
         type: {
           name: "String"
         }
       },
       searchText: {
-        serializedName: "searchText",
+        serializedName: "SearchText",
         type: {
           name: "String"
         }
       },
       searchBy: {
-        serializedName: "searchBy",
+        serializedName: "SearchBy",
         type: {
           name: "Sequence",
           element: {
@@ -5954,25 +6160,25 @@ export const CyberjusticeLabKernelSharedJournalModelsJournalApiResquestData: msR
         }
       },
       take: {
-        serializedName: "take",
+        serializedName: "Take",
         type: {
           name: "Number"
         }
       },
       skip: {
-        serializedName: "skip",
+        serializedName: "Skip",
         type: {
           name: "Number"
         }
       },
       orderBy: {
-        serializedName: "orderBy",
+        serializedName: "OrderBy",
         type: {
           name: "String"
         }
       },
       orderByDescending: {
-        serializedName: "orderByDescending",
+        serializedName: "OrderByDescending",
         type: {
           name: "Boolean"
         }
@@ -5988,19 +6194,19 @@ export const CyberjusticeLabKernelSharedJournalModelsJournalApiResponseData: msR
     className: "CyberjusticeLabKernelSharedJournalModelsJournalApiResponseData",
     modelProperties: {
       count: {
-        serializedName: "count",
+        serializedName: "Count",
         type: {
           name: "Number"
         }
       },
       countFiltered: {
-        serializedName: "countFiltered",
+        serializedName: "CountFiltered",
         type: {
           name: "Number"
         }
       },
       journals: {
-        serializedName: "journals",
+        serializedName: "Journals",
         type: {
           name: "Sequence",
           element: {
@@ -6022,13 +6228,13 @@ export const CyberjusticeLabKernelSharedJournalModelsJournalLatestApiResquestDat
     className: "CyberjusticeLabKernelSharedJournalModelsJournalLatestApiResquestData",
     modelProperties: {
       language: {
-        serializedName: "language",
+        serializedName: "Language",
         type: {
           name: "String"
         }
       },
       fileIds: {
-        serializedName: "fileIds",
+        serializedName: "FileIds",
         type: {
           name: "Sequence",
           element: {
@@ -6049,25 +6255,25 @@ export const CyberjusticeLabKernelSharedJournalModelsFileLatestJournalModel: msR
     className: "CyberjusticeLabKernelSharedJournalModelsFileLatestJournalModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       journalDate: {
-        serializedName: "journalDate",
+        serializedName: "JournalDate",
         type: {
           name: "DateTime"
         }
       },
       journalMessage: {
-        serializedName: "journalMessage",
+        serializedName: "JournalMessage",
         type: {
           name: "String"
         }
       },
       journalId: {
-        serializedName: "journalId",
+        serializedName: "JournalId",
         type: {
           name: "Uuid"
         }
@@ -6083,7 +6289,7 @@ export const CyberjusticeLabKernelSharedJournalModelsJournalLatestApiResponseDat
     className: "CyberjusticeLabKernelSharedJournalModelsJournalLatestApiResponseData",
     modelProperties: {
       journals: {
-        serializedName: "journals",
+        serializedName: "Journals",
         type: {
           name: "Sequence",
           element: {
@@ -6105,19 +6311,19 @@ export const CyberjusticeLabKernelSharedJournalModelsCreateJournalModel: msRest.
     className: "CyberjusticeLabKernelSharedJournalModelsCreateJournalModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       journalKey: {
-        serializedName: "journalKey",
+        serializedName: "JournalKey",
         type: {
           name: "String"
         }
       },
       journalParameters: {
-        serializedName: "journalParameters",
+        serializedName: "JournalParameters",
         type: {
           name: "String"
         }
@@ -6133,13 +6339,13 @@ export const CyberjusticeLabKernelServiceContractsJudicialEntityNeutralPredicate
     className: "CyberjusticeLabKernelServiceContractsJudicialEntityNeutralPredicateData",
     modelProperties: {
       neutralPredicateId: {
-        serializedName: "neutralPredicateId",
+        serializedName: "NeutralPredicateId",
         type: {
           name: "Uuid"
         }
       },
       neutralPredicateName: {
-        serializedName: "neutralPredicateName",
+        serializedName: "NeutralPredicateName",
         type: {
           name: "String"
         }
@@ -6155,13 +6361,13 @@ export const CyberjusticeLabKernelServiceContractsJudicialEntityProsecutingAgent
     className: "CyberjusticeLabKernelServiceContractsJudicialEntityProsecutingAgentPredicateData",
     modelProperties: {
       prosecutingAgentPredicateId: {
-        serializedName: "prosecutingAgentPredicateId",
+        serializedName: "ProsecutingAgentPredicateId",
         type: {
           name: "Uuid"
         }
       },
       prosecutingAgentPredicateName: {
-        serializedName: "prosecutingAgentPredicateName",
+        serializedName: "ProsecutingAgentPredicateName",
         type: {
           name: "String"
         }
@@ -6176,62 +6382,62 @@ export const CyberjusticeLabKernelServiceContractsJudicialEntityJudicialEntityDa
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsJudicialEntityJudicialEntityData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       uRN: {
-        serializedName: "uRN",
+        serializedName: "URN",
         type: {
           name: "String"
         }
       },
       clerkPredicateId: {
-        serializedName: "clerkPredicateId",
+        serializedName: "ClerkPredicateId",
         type: {
           name: "Uuid"
         }
       },
       clerkPredicateName: {
-        serializedName: "clerkPredicateName",
+        serializedName: "ClerkPredicateName",
         type: {
           name: "String"
         }
       },
       judgePredicateId: {
-        serializedName: "judgePredicateId",
+        serializedName: "JudgePredicateId",
         type: {
           name: "Uuid"
         }
       },
       judgePredicateName: {
-        serializedName: "judgePredicateName",
+        serializedName: "JudgePredicateName",
         type: {
           name: "String"
         }
       },
       tenantPredicateId: {
-        serializedName: "tenantPredicateId",
+        serializedName: "TenantPredicateId",
         type: {
           name: "Uuid"
         }
       },
       tenantPredicateName: {
-        serializedName: "tenantPredicateName",
+        serializedName: "TenantPredicateName",
         type: {
           name: "String"
         }
       },
       neutralPredicates: {
-        serializedName: "neutralPredicates",
+        serializedName: "NeutralPredicates",
         type: {
           name: "Sequence",
           element: {
@@ -6243,7 +6449,7 @@ export const CyberjusticeLabKernelServiceContractsJudicialEntityJudicialEntityDa
         }
       },
       prosecutingAgentPredicates: {
-        serializedName: "prosecutingAgentPredicates",
+        serializedName: "ProsecutingAgentPredicates",
         type: {
           name: "Sequence",
           element: {
@@ -6255,25 +6461,25 @@ export const CyberjusticeLabKernelServiceContractsJudicialEntityJudicialEntityDa
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -6288,20 +6494,20 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileContactPhoneNumber
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsJudicialFileContactPhoneNumberData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       phoneNumber: {
-        serializedName: "phoneNumber",
+        serializedName: "PhoneNumber",
         type: {
           name: "String"
         }
       },
       phoneTypeID: {
-        serializedName: "phoneTypeID",
+        serializedName: "PhoneTypeID",
         type: {
           name: "String"
         }
@@ -6317,13 +6523,13 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileContactAttributeDa
     className: "CyberjusticeLabKernelServiceContractsJudicialFileContactAttributeData",
     modelProperties: {
       contactAttributeKey: {
-        serializedName: "contactAttributeKey",
+        serializedName: "ContactAttributeKey",
         type: {
           name: "String"
         }
       },
       contactAttributeValue: {
-        serializedName: "contactAttributeValue",
+        serializedName: "ContactAttributeValue",
         type: {
           name: "String"
         }
@@ -6338,98 +6544,98 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileContactData: msRes
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsJudicialFileContactData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       isCompany: {
-        serializedName: "isCompany",
+        serializedName: "IsCompany",
         type: {
           name: "Boolean"
         }
       },
       companyName: {
-        serializedName: "companyName",
+        serializedName: "CompanyName",
         type: {
           name: "String"
         }
       },
       firstName: {
-        serializedName: "firstName",
+        serializedName: "FirstName",
         type: {
           name: "String"
         }
       },
       lastName: {
-        serializedName: "lastName",
+        serializedName: "LastName",
         type: {
           name: "String"
         }
       },
       adresse: {
-        serializedName: "adresse",
+        serializedName: "Adresse",
         type: {
           name: "String"
         }
       },
       adresse2: {
-        serializedName: "adresse2",
+        serializedName: "Adresse2",
         type: {
           name: "String"
         }
       },
       city: {
-        serializedName: "city",
+        serializedName: "City",
         type: {
           name: "String"
         }
       },
       state: {
-        serializedName: "state",
+        serializedName: "State",
         type: {
           name: "String"
         }
       },
       country: {
-        serializedName: "country",
+        serializedName: "Country",
         type: {
           name: "String"
         }
       },
       zipCode: {
-        serializedName: "zipCode",
+        serializedName: "ZipCode",
         type: {
           name: "String"
         }
       },
       email: {
-        serializedName: "email",
+        serializedName: "Email",
         type: {
           name: "String"
         }
       },
       website: {
-        serializedName: "website",
+        serializedName: "Website",
         type: {
           name: "String"
         }
       },
       latitude: {
-        serializedName: "latitude",
+        serializedName: "Latitude",
         type: {
           name: "String"
         }
       },
       longitude: {
-        serializedName: "longitude",
+        serializedName: "Longitude",
         type: {
           name: "String"
         }
       },
       phoneNumbers: {
-        serializedName: "phoneNumbers",
+        serializedName: "PhoneNumbers",
         type: {
           name: "Sequence",
           element: {
@@ -6441,7 +6647,7 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileContactData: msRes
         }
       },
       contactAttributes: {
-        serializedName: "contactAttributes",
+        serializedName: "ContactAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -6453,25 +6659,25 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileContactData: msRes
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -6486,63 +6692,63 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileRepresentativeData
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsJudicialFileRepresentativeData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       contact: {
-        serializedName: "contact",
+        serializedName: "Contact",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelServiceContractsJudicialFileContactData"
         }
       },
       fileInternalReferenceNumber: {
-        serializedName: "fileInternalReferenceNumber",
+        serializedName: "FileInternalReferenceNumber",
         type: {
           name: "String"
         }
       },
       predicateID: {
-        serializedName: "predicateID",
+        serializedName: "PredicateID",
         type: {
           name: "Uuid"
         }
       },
       predicateName: {
-        serializedName: "predicateName",
+        serializedName: "PredicateName",
         type: {
           name: "String"
         }
       },
       authorityId: {
-        serializedName: "authorityId",
+        serializedName: "AuthorityId",
         type: {
           name: "Uuid"
         }
       },
       competenceCategories: {
-        serializedName: "competenceCategories",
+        serializedName: "CompetenceCategories",
         type: {
           name: "Sequence",
           element: {
@@ -6553,25 +6759,25 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileRepresentativeData
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -6587,13 +6793,13 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileChargeAttributeDat
     className: "CyberjusticeLabKernelServiceContractsJudicialFileChargeAttributeData",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -6609,73 +6815,73 @@ export const CyberjusticeLabKernelServiceContractsJudicialFilePleaData: msRest.C
     className: "CyberjusticeLabKernelServiceContractsJudicialFilePleaData",
     modelProperties: {
       pleaId: {
-        serializedName: "pleaId",
+        serializedName: "PleaId",
         type: {
           name: "Uuid"
         }
       },
       chargeId: {
-        serializedName: "chargeId",
+        serializedName: "ChargeId",
         type: {
           name: "Uuid"
         }
       },
       type: {
-        serializedName: "type",
+        serializedName: "Type",
         type: {
           name: "String"
         }
       },
       typeEnum: {
-        serializedName: "typeEnum",
+        serializedName: "TypeEnum",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       statusReason: {
-        serializedName: "statusReason",
+        serializedName: "StatusReason",
         type: {
           name: "String"
         }
       },
       documentId: {
-        serializedName: "documentId",
+        serializedName: "DocumentId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -6691,55 +6897,55 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileChargePenalOffence
     className: "CyberjusticeLabKernelServiceContractsJudicialFileChargePenalOffenceStatementData",
     modelProperties: {
       offenceStatementDate: {
-        serializedName: "offenceStatementDate",
+        serializedName: "OffenceStatementDate",
         type: {
           name: "DateTime"
         }
       },
       offenceStatementDescription: {
-        serializedName: "offenceStatementDescription",
+        serializedName: "OffenceStatementDescription",
         type: {
           name: "String"
         }
       },
       offenceStatementNumber: {
-        serializedName: "offenceStatementNumber",
+        serializedName: "OffenceStatementNumber",
         type: {
           name: "String"
         }
       },
       documentId: {
-        serializedName: "documentId",
+        serializedName: "DocumentId",
         type: {
           name: "Uuid"
         }
       },
       chargeId: {
-        serializedName: "chargeId",
+        serializedName: "ChargeId",
         type: {
           name: "Uuid"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       ruleType: {
-        serializedName: "ruleType",
+        serializedName: "RuleType",
         type: {
           name: "String"
         }
       },
       ruleCode: {
-        serializedName: "ruleCode",
+        serializedName: "RuleCode",
         type: {
           name: "String"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
@@ -6751,32 +6957,32 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileChargePenalOffence
         }
       },
       plea: {
-        serializedName: "plea",
+        serializedName: "Plea",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelServiceContractsJudicialFilePleaData"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -6792,13 +6998,13 @@ export const CyberjusticeLabKernelServiceContractsJudicialFilePartyAttributeData
     className: "CyberjusticeLabKernelServiceContractsJudicialFilePartyAttributeData",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -6814,13 +7020,13 @@ export const CyberjusticeLabKernelServiceContractsJudicialFilePartyHearingPrefer
     className: "CyberjusticeLabKernelServiceContractsJudicialFilePartyHearingPreferenceTimeData",
     modelProperties: {
       startTime: {
-        serializedName: "startTime",
+        serializedName: "StartTime",
         type: {
           name: "String"
         }
       },
       endTime: {
-        serializedName: "endTime",
+        serializedName: "EndTime",
         type: {
           name: "String"
         }
@@ -6835,40 +7041,40 @@ export const CyberjusticeLabKernelServiceContractsJudicialFilePartyData: msRest.
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsJudicialFilePartyData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       partyType: {
-        serializedName: "partyType",
+        serializedName: "PartyType",
         type: {
           name: "String"
         }
       },
       contact: {
-        serializedName: "contact",
+        serializedName: "Contact",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelServiceContractsJudicialFileContactData"
         }
       },
       mainRepresentativeContact: {
-        serializedName: "mainRepresentativeContact",
+        serializedName: "MainRepresentativeContact",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelServiceContractsJudicialFileContactData"
         }
       },
       representatives: {
-        serializedName: "representatives",
+        serializedName: "Representatives",
         type: {
           name: "Sequence",
           element: {
@@ -6880,25 +7086,25 @@ export const CyberjusticeLabKernelServiceContractsJudicialFilePartyData: msRest.
         }
       },
       disputeDescription: {
-        serializedName: "disputeDescription",
+        serializedName: "DisputeDescription",
         type: {
           name: "String"
         }
       },
       authorityId: {
-        serializedName: "authorityId",
+        serializedName: "AuthorityId",
         type: {
           name: "Uuid"
         }
       },
       partyEntityId: {
-        serializedName: "partyEntityId",
+        serializedName: "PartyEntityId",
         type: {
           name: "Uuid"
         }
       },
       penalCharges: {
-        serializedName: "penalCharges",
+        serializedName: "PenalCharges",
         type: {
           name: "Sequence",
           element: {
@@ -6910,7 +7116,7 @@ export const CyberjusticeLabKernelServiceContractsJudicialFilePartyData: msRest.
         }
       },
       partyAttributes: {
-        serializedName: "partyAttributes",
+        serializedName: "PartyAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -6922,7 +7128,7 @@ export const CyberjusticeLabKernelServiceContractsJudicialFilePartyData: msRest.
         }
       },
       hearingPreferenceTimes: {
-        serializedName: "hearingPreferenceTimes",
+        serializedName: "HearingPreferenceTimes",
         type: {
           name: "Sequence",
           element: {
@@ -6934,7 +7140,7 @@ export const CyberjusticeLabKernelServiceContractsJudicialFilePartyData: msRest.
         }
       },
       hearingPreferenceLocations: {
-        serializedName: "hearingPreferenceLocations",
+        serializedName: "HearingPreferenceLocations",
         type: {
           name: "Sequence",
           element: {
@@ -6945,25 +7151,25 @@ export const CyberjusticeLabKernelServiceContractsJudicialFilePartyData: msRest.
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -6979,19 +7185,19 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileTrackingStatusData
     className: "CyberjusticeLabKernelServiceContractsJudicialFileTrackingStatusData",
     modelProperties: {
       judicialFileStatus: {
-        serializedName: "judicialFileStatus",
+        serializedName: "JudicialFileStatus",
         type: {
           name: "String"
         }
       },
       judicialFileStatusEnum: {
-        serializedName: "judicialFileStatusEnum",
+        serializedName: "JudicialFileStatusEnum",
         type: {
           name: "String"
         }
       },
       date: {
-        serializedName: "date",
+        serializedName: "Date",
         type: {
           name: "DateTime"
         }
@@ -7007,13 +7213,13 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileAttributeData: msR
     className: "CyberjusticeLabKernelServiceContractsJudicialFileAttributeData",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -7029,49 +7235,49 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileTagDat
     className: "CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileTagData",
     modelProperties: {
       tagId: {
-        serializedName: "tagId",
+        serializedName: "TagId",
         type: {
           name: "Uuid"
         }
       },
       tagCode: {
-        serializedName: "tagCode",
+        serializedName: "TagCode",
         type: {
           name: "String"
         }
       },
       taskStatus: {
-        serializedName: "taskStatus",
+        serializedName: "TaskStatus",
         type: {
           name: "String"
         }
       },
       taskActor: {
-        serializedName: "taskActor",
+        serializedName: "TaskActor",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
@@ -7086,50 +7292,50 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileData: 
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       judicialFileID: {
-        serializedName: "judicialFileID",
+        serializedName: "JudicialFileID",
         type: {
           name: "String"
         }
       },
       judicialEntityID: {
-        serializedName: "judicialEntityID",
+        serializedName: "JudicialEntityID",
         type: {
           name: "Uuid"
         }
       },
       judicialEntityName: {
-        serializedName: "judicialEntityName",
+        serializedName: "JudicialEntityName",
         type: {
           name: "String"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       parties: {
-        serializedName: "parties",
+        serializedName: "Parties",
         type: {
           name: "Sequence",
           element: {
@@ -7141,79 +7347,79 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileData: 
         }
       },
       permission: {
-        serializedName: "permission",
+        serializedName: "Permission",
         type: {
           name: "String"
         }
       },
       permissionEnum: {
-        serializedName: "permissionEnum",
+        serializedName: "PermissionEnum",
         type: {
           name: "String"
         }
       },
       formId: {
-        serializedName: "formId",
+        serializedName: "FormId",
         type: {
           name: "Uuid"
         }
       },
       businessRuleId: {
-        serializedName: "businessRuleId",
+        serializedName: "BusinessRuleId",
         type: {
           name: "Uuid"
         }
       },
       businessRuleName: {
-        serializedName: "businessRuleName",
+        serializedName: "BusinessRuleName",
         type: {
           name: "String"
         }
       },
       closingReason: {
-        serializedName: "closingReason",
+        serializedName: "ClosingReason",
         type: {
           name: "String"
         }
       },
       closingReasonEnum: {
-        serializedName: "closingReasonEnum",
+        serializedName: "ClosingReasonEnum",
         type: {
           name: "String"
         }
       },
       statusBeforeClosing: {
-        serializedName: "statusBeforeClosing",
+        serializedName: "StatusBeforeClosing",
         type: {
           name: "String"
         }
       },
       statusBeforeClosingEnum: {
-        serializedName: "statusBeforeClosingEnum",
+        serializedName: "StatusBeforeClosingEnum",
         type: {
           name: "String"
         }
       },
       procedureCategory: {
-        serializedName: "procedureCategory",
+        serializedName: "ProcedureCategory",
         type: {
           name: "String"
         }
       },
       procedureCategoryEnum: {
-        serializedName: "procedureCategoryEnum",
+        serializedName: "ProcedureCategoryEnum",
         type: {
           name: "String"
         }
       },
       agentAuthorityId: {
-        serializedName: "agentAuthorityId",
+        serializedName: "AgentAuthorityId",
         type: {
           name: "Uuid"
         }
       },
       trackingStatuses: {
-        serializedName: "trackingStatuses",
+        serializedName: "TrackingStatuses",
         type: {
           name: "Sequence",
           element: {
@@ -7225,7 +7431,7 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileData: 
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
@@ -7237,7 +7443,7 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileData: 
         }
       },
       fileTags: {
-        serializedName: "fileTags",
+        serializedName: "FileTags",
         type: {
           name: "Sequence",
           element: {
@@ -7249,25 +7455,25 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileData: 
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -7283,7 +7489,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
     className: "CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResquestData",
     modelProperties: {
       fileIds: {
-        serializedName: "fileIds",
+        serializedName: "FileIds",
         type: {
           name: "Sequence",
           element: {
@@ -7294,7 +7500,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       judicialFileIds: {
-        serializedName: "judicialFileIds",
+        serializedName: "JudicialFileIds",
         type: {
           name: "Sequence",
           element: {
@@ -7305,7 +7511,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       judicialEntityIds: {
-        serializedName: "judicialEntityIds",
+        serializedName: "JudicialEntityIds",
         type: {
           name: "Sequence",
           element: {
@@ -7316,7 +7522,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       businessRuleNames: {
-        serializedName: "businessRuleNames",
+        serializedName: "BusinessRuleNames",
         type: {
           name: "Sequence",
           element: {
@@ -7327,7 +7533,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       representativeIds: {
-        serializedName: "representativeIds",
+        serializedName: "RepresentativeIds",
         type: {
           name: "Sequence",
           element: {
@@ -7338,7 +7544,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       excludedFormCodes: {
-        serializedName: "excludedFormCodes",
+        serializedName: "ExcludedFormCodes",
         type: {
           name: "Sequence",
           element: {
@@ -7349,7 +7555,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       includedFormIds: {
-        serializedName: "includedFormIds",
+        serializedName: "IncludedFormIds",
         type: {
           name: "Sequence",
           element: {
@@ -7360,7 +7566,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       excludedStatuses: {
-        serializedName: "excludedStatuses",
+        serializedName: "ExcludedStatuses",
         type: {
           name: "Sequence",
           element: {
@@ -7371,7 +7577,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       fileAttributesQuery: {
-        serializedName: "fileAttributesQuery",
+        serializedName: "FileAttributesQuery",
         type: {
           name: "Dictionary",
           value: {
@@ -7382,7 +7588,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       statuses: {
-        serializedName: "statuses",
+        serializedName: "Statuses",
         type: {
           name: "Sequence",
           element: {
@@ -7393,7 +7599,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       closingReasons: {
-        serializedName: "closingReasons",
+        serializedName: "ClosingReasons",
         type: {
           name: "Sequence",
           element: {
@@ -7404,19 +7610,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       minCreatedDate: {
-        serializedName: "minCreatedDate",
+        serializedName: "MinCreatedDate",
         type: {
           name: "DateTime"
         }
       },
       maxCreatedDate: {
-        serializedName: "maxCreatedDate",
+        serializedName: "MaxCreatedDate",
         type: {
           name: "DateTime"
         }
       },
       searchStatuses: {
-        serializedName: "searchStatuses",
+        serializedName: "SearchStatuses",
         type: {
           name: "Sequence",
           element: {
@@ -7427,13 +7633,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       searchText: {
-        serializedName: "searchText",
+        serializedName: "SearchText",
         type: {
           name: "String"
         }
       },
       searchBy: {
-        serializedName: "searchBy",
+        serializedName: "SearchBy",
         type: {
           name: "Sequence",
           element: {
@@ -7444,7 +7650,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       searchActions: {
-        serializedName: "searchActions",
+        serializedName: "SearchActions",
         type: {
           name: "Sequence",
           element: {
@@ -7455,25 +7661,25 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResques
         }
       },
       take: {
-        serializedName: "take",
+        serializedName: "Take",
         type: {
           name: "Number"
         }
       },
       skip: {
-        serializedName: "skip",
+        serializedName: "Skip",
         type: {
           name: "Number"
         }
       },
       orderBy: {
-        serializedName: "orderBy",
+        serializedName: "OrderBy",
         type: {
           name: "String"
         }
       },
       orderByDescending: {
-        serializedName: "orderByDescending",
+        serializedName: "OrderByDescending",
         type: {
           name: "Boolean"
         }
@@ -7489,19 +7695,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsContactPhoneNumberMode
     className: "CyberjusticeLabKernelSharedJudicialFileModelsContactPhoneNumberModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       phoneNumber: {
-        serializedName: "phoneNumber",
+        serializedName: "PhoneNumber",
         type: {
           name: "String"
         }
       },
       phoneTypeId: {
-        serializedName: "phoneTypeId",
+        serializedName: "PhoneTypeId",
         type: {
           name: "String"
         }
@@ -7517,13 +7723,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsContactAttributeModel:
     className: "CyberjusticeLabKernelSharedJudicialFileModelsContactAttributeModel",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -7539,97 +7745,97 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsContactModel: msRest.C
     className: "CyberjusticeLabKernelSharedJudicialFileModelsContactModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       isCompany: {
-        serializedName: "isCompany",
+        serializedName: "IsCompany",
         type: {
           name: "Boolean"
         }
       },
       companyName: {
-        serializedName: "companyName",
+        serializedName: "CompanyName",
         type: {
           name: "String"
         }
       },
       firstName: {
-        serializedName: "firstName",
+        serializedName: "FirstName",
         type: {
           name: "String"
         }
       },
       lastName: {
-        serializedName: "lastName",
+        serializedName: "LastName",
         type: {
           name: "String"
         }
       },
       address: {
-        serializedName: "address",
+        serializedName: "Address",
         type: {
           name: "String"
         }
       },
       address2: {
-        serializedName: "address2",
+        serializedName: "Address2",
         type: {
           name: "String"
         }
       },
       city: {
-        serializedName: "city",
+        serializedName: "City",
         type: {
           name: "String"
         }
       },
       state: {
-        serializedName: "state",
+        serializedName: "State",
         type: {
           name: "String"
         }
       },
       country: {
-        serializedName: "country",
+        serializedName: "Country",
         type: {
           name: "String"
         }
       },
       zipCode: {
-        serializedName: "zipCode",
+        serializedName: "ZipCode",
         type: {
           name: "String"
         }
       },
       email: {
-        serializedName: "email",
+        serializedName: "Email",
         type: {
           name: "String"
         }
       },
       website: {
-        serializedName: "website",
+        serializedName: "Website",
         type: {
           name: "String"
         }
       },
       latitude: {
-        serializedName: "latitude",
+        serializedName: "Latitude",
         type: {
           name: "String"
         }
       },
       longitude: {
-        serializedName: "longitude",
+        serializedName: "Longitude",
         type: {
           name: "String"
         }
       },
       phoneNumbers: {
-        serializedName: "phoneNumbers",
+        serializedName: "PhoneNumbers",
         type: {
           name: "Sequence",
           element: {
@@ -7641,7 +7847,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsContactModel: msRest.C
         }
       },
       contactAttributes: {
-        serializedName: "contactAttributes",
+        serializedName: "ContactAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -7653,25 +7859,25 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsContactModel: msRest.C
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -7687,13 +7893,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyRepresentativeLin
     className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyRepresentativeLinkAttributeModel",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -7709,62 +7915,62 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeModel: m
     className: "CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       contact: {
-        serializedName: "contact",
+        serializedName: "Contact",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedJudicialFileModelsContactModel"
         }
       },
       fileInternalReferenceNumber: {
-        serializedName: "fileInternalReferenceNumber",
+        serializedName: "FileInternalReferenceNumber",
         type: {
           name: "String"
         }
       },
       predicateId: {
-        serializedName: "predicateId",
+        serializedName: "PredicateId",
         type: {
           name: "Uuid"
         }
       },
       predicateName: {
-        serializedName: "predicateName",
+        serializedName: "PredicateName",
         type: {
           name: "String"
         }
       },
       authorityId: {
-        serializedName: "authorityId",
+        serializedName: "AuthorityId",
         type: {
           name: "Uuid"
         }
       },
       competenceCategories: {
-        serializedName: "competenceCategories",
+        serializedName: "CompetenceCategories",
         type: {
           name: "Sequence",
           element: {
@@ -7775,7 +7981,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeModel: m
         }
       },
       partyRepresentativeLinkAttributes: {
-        serializedName: "partyRepresentativeLinkAttributes",
+        serializedName: "PartyRepresentativeLinkAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -7787,25 +7993,25 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeModel: m
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -7821,13 +8027,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsChargeAttributeModel: 
     className: "CyberjusticeLabKernelSharedJudicialFileModelsChargeAttributeModel",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -7843,73 +8049,73 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPleaModel: msRest.Comp
     className: "CyberjusticeLabKernelSharedJudicialFileModelsPleaModel",
     modelProperties: {
       pleaId: {
-        serializedName: "pleaId",
+        serializedName: "PleaId",
         type: {
           name: "Uuid"
         }
       },
       chargeId: {
-        serializedName: "chargeId",
+        serializedName: "ChargeId",
         type: {
           name: "Uuid"
         }
       },
       type: {
-        serializedName: "type",
+        serializedName: "Type",
         type: {
           name: "String"
         }
       },
       typeEnum: {
-        serializedName: "typeEnum",
+        serializedName: "TypeEnum",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       statusReason: {
-        serializedName: "statusReason",
+        serializedName: "StatusReason",
         type: {
           name: "String"
         }
       },
       documentId: {
-        serializedName: "documentId",
+        serializedName: "DocumentId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -7925,55 +8131,55 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsChargePenalOffenceStat
     className: "CyberjusticeLabKernelSharedJudicialFileModelsChargePenalOffenceStatementModel",
     modelProperties: {
       offenceStatementDate: {
-        serializedName: "offenceStatementDate",
+        serializedName: "OffenceStatementDate",
         type: {
           name: "DateTime"
         }
       },
       offenceStatementDescription: {
-        serializedName: "offenceStatementDescription",
+        serializedName: "OffenceStatementDescription",
         type: {
           name: "String"
         }
       },
       offenceStatementNumber: {
-        serializedName: "offenceStatementNumber",
+        serializedName: "OffenceStatementNumber",
         type: {
           name: "String"
         }
       },
       documentId: {
-        serializedName: "documentId",
+        serializedName: "DocumentId",
         type: {
           name: "Uuid"
         }
       },
       chargeId: {
-        serializedName: "chargeId",
+        serializedName: "ChargeId",
         type: {
           name: "Uuid"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       ruleType: {
-        serializedName: "ruleType",
+        serializedName: "RuleType",
         type: {
           name: "String"
         }
       },
       ruleCode: {
-        serializedName: "ruleCode",
+        serializedName: "RuleCode",
         type: {
           name: "String"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
@@ -7985,32 +8191,32 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsChargePenalOffenceStat
         }
       },
       plea: {
-        serializedName: "plea",
+        serializedName: "Plea",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedJudicialFileModelsPleaModel"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -8026,13 +8232,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyAttributeModel: m
     className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyAttributeModel",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -8048,13 +8254,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyHearingPreference
     className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyHearingPreferenceTimeModel",
     modelProperties: {
       startTime: {
-        serializedName: "startTime",
+        serializedName: "StartTime",
         type: {
           name: "String"
         }
       },
       endTime: {
-        serializedName: "endTime",
+        serializedName: "EndTime",
         type: {
           name: "String"
         }
@@ -8070,45 +8276,45 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyModel: msRest.Com
     className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       partyType: {
-        serializedName: "partyType",
+        serializedName: "PartyType",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       contact: {
-        serializedName: "contact",
+        serializedName: "Contact",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedJudicialFileModelsContactModel"
         }
       },
       mainRepresentativeContact: {
-        serializedName: "mainRepresentativeContact",
+        serializedName: "MainRepresentativeContact",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedJudicialFileModelsContactModel"
         }
       },
       representatives: {
-        serializedName: "representatives",
+        serializedName: "Representatives",
         type: {
           name: "Sequence",
           element: {
@@ -8120,25 +8326,25 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyModel: msRest.Com
         }
       },
       disputeDescription: {
-        serializedName: "disputeDescription",
+        serializedName: "DisputeDescription",
         type: {
           name: "String"
         }
       },
       authorityId: {
-        serializedName: "authorityId",
+        serializedName: "AuthorityId",
         type: {
           name: "Uuid"
         }
       },
       partyEntityId: {
-        serializedName: "partyEntityId",
+        serializedName: "PartyEntityId",
         type: {
           name: "Uuid"
         }
       },
       penalCharges: {
-        serializedName: "penalCharges",
+        serializedName: "PenalCharges",
         type: {
           name: "Sequence",
           element: {
@@ -8150,7 +8356,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyModel: msRest.Com
         }
       },
       partyAttributes: {
-        serializedName: "partyAttributes",
+        serializedName: "PartyAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -8162,7 +8368,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyModel: msRest.Com
         }
       },
       hearingPreferenceTimes: {
-        serializedName: "hearingPreferenceTimes",
+        serializedName: "HearingPreferenceTimes",
         type: {
           name: "Sequence",
           element: {
@@ -8174,7 +8380,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyModel: msRest.Com
         }
       },
       hearingPreferenceLocations: {
-        serializedName: "hearingPreferenceLocations",
+        serializedName: "HearingPreferenceLocations",
         type: {
           name: "Sequence",
           element: {
@@ -8185,25 +8391,25 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyModel: msRest.Com
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -8219,19 +8425,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsTrackingStatusModel: m
     className: "CyberjusticeLabKernelSharedJudicialFileModelsTrackingStatusModel",
     modelProperties: {
       judicialFileStatus: {
-        serializedName: "judicialFileStatus",
+        serializedName: "JudicialFileStatus",
         type: {
           name: "String"
         }
       },
       judicialFileStatusEnum: {
-        serializedName: "judicialFileStatusEnum",
+        serializedName: "JudicialFileStatusEnum",
         type: {
           name: "String"
         }
       },
       date: {
-        serializedName: "date",
+        serializedName: "Date",
         type: {
           name: "DateTime"
         }
@@ -8247,13 +8453,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsFileAttributeModel: ms
     className: "CyberjusticeLabKernelSharedJudicialFileModelsFileAttributeModel",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -8269,31 +8475,31 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagComplem
     className: "CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagComplementModel",
     modelProperties: {
       complementId: {
-        serializedName: "complementId",
+        serializedName: "ComplementId",
         type: {
           name: "Uuid"
         }
       },
       code: {
-        serializedName: "code",
+        serializedName: "Code",
         type: {
           name: "String"
         }
       },
       actor: {
-        serializedName: "actor",
+        serializedName: "Actor",
         type: {
           name: "String"
         }
       },
       date: {
-        serializedName: "date",
+        serializedName: "Date",
         type: {
           name: "DateTime"
         }
       },
       additionalText: {
-        serializedName: "additionalText",
+        serializedName: "AdditionalText",
         type: {
           name: "String"
         }
@@ -8309,31 +8515,31 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagModel: 
     className: "CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagModel",
     modelProperties: {
       tagId: {
-        serializedName: "tagId",
+        serializedName: "TagId",
         type: {
           name: "Uuid"
         }
       },
       tagCode: {
-        serializedName: "tagCode",
+        serializedName: "TagCode",
         type: {
           name: "String"
         }
       },
       taskStatus: {
-        serializedName: "taskStatus",
+        serializedName: "TaskStatus",
         type: {
           name: "String"
         }
       },
       taskActor: {
-        serializedName: "taskActor",
+        serializedName: "TaskActor",
         type: {
           name: "String"
         }
       },
       complements: {
-        serializedName: "complements",
+        serializedName: "Complements",
         type: {
           name: "Sequence",
           element: {
@@ -8345,25 +8551,25 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagModel: 
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -8379,49 +8585,49 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel: msR
     className: "CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       judicialFileId: {
-        serializedName: "judicialFileId",
+        serializedName: "JudicialFileId",
         type: {
           name: "String"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
       },
       judicialEntityName: {
-        serializedName: "judicialEntityName",
+        serializedName: "JudicialEntityName",
         type: {
           name: "String"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       parties: {
-        serializedName: "parties",
+        serializedName: "Parties",
         type: {
           name: "Sequence",
           element: {
@@ -8433,73 +8639,73 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel: msR
         }
       },
       permission: {
-        serializedName: "permission",
+        serializedName: "Permission",
         type: {
           name: "String"
         }
       },
       permissionEnum: {
-        serializedName: "permissionEnum",
+        serializedName: "PermissionEnum",
         type: {
           name: "String"
         }
       },
       formId: {
-        serializedName: "formId",
+        serializedName: "FormId",
         type: {
           name: "Uuid"
         }
       },
       businessRuleId: {
-        serializedName: "businessRuleId",
+        serializedName: "BusinessRuleId",
         type: {
           name: "Uuid"
         }
       },
       businessRuleName: {
-        serializedName: "businessRuleName",
+        serializedName: "BusinessRuleName",
         type: {
           name: "String"
         }
       },
       closingReason: {
-        serializedName: "closingReason",
+        serializedName: "ClosingReason",
         type: {
           name: "String"
         }
       },
       statusBeforeClosing: {
-        serializedName: "statusBeforeClosing",
+        serializedName: "StatusBeforeClosing",
         type: {
           name: "String"
         }
       },
       statusBeforeClosingEnum: {
-        serializedName: "statusBeforeClosingEnum",
+        serializedName: "StatusBeforeClosingEnum",
         type: {
           name: "String"
         }
       },
       procedureCategory: {
-        serializedName: "procedureCategory",
+        serializedName: "ProcedureCategory",
         type: {
           name: "String"
         }
       },
       procedureCategoryEnum: {
-        serializedName: "procedureCategoryEnum",
+        serializedName: "ProcedureCategoryEnum",
         type: {
           name: "String"
         }
       },
       agentAuthorityId: {
-        serializedName: "agentAuthorityId",
+        serializedName: "AgentAuthorityId",
         type: {
           name: "Uuid"
         }
       },
       trackingStatuses: {
-        serializedName: "trackingStatuses",
+        serializedName: "TrackingStatuses",
         type: {
           name: "Sequence",
           element: {
@@ -8511,7 +8717,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel: msR
         }
       },
       fileAttributes: {
-        serializedName: "fileAttributes",
+        serializedName: "FileAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -8523,7 +8729,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel: msR
         }
       },
       fileTags: {
-        serializedName: "fileTags",
+        serializedName: "FileTags",
         type: {
           name: "Sequence",
           element: {
@@ -8535,25 +8741,25 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel: msR
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -8569,19 +8775,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiRespons
     className: "CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiResponseData",
     modelProperties: {
       count: {
-        serializedName: "count",
+        serializedName: "Count",
         type: {
           name: "Number"
         }
       },
       countFiltered: {
-        serializedName: "countFiltered",
+        serializedName: "CountFiltered",
         type: {
           name: "Number"
         }
       },
       files: {
-        serializedName: "files",
+        serializedName: "Files",
         type: {
           name: "Sequence",
           element: {
@@ -8603,13 +8809,13 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileSet1Da
     className: "CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileSet1Data",
     modelProperties: {
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
@@ -8625,13 +8831,13 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileSet2Da
     className: "CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileSet2Data",
     modelProperties: {
       statusEnum: {
-        serializedName: "statusEnum",
+        serializedName: "StatusEnum",
         type: {
           name: "String"
         }
       },
       closingReasonEnum: {
-        serializedName: "closingReasonEnum",
+        serializedName: "ClosingReasonEnum",
         type: {
           name: "String"
         }
@@ -8646,45 +8852,45 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileRepresentativeProf
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsJudicialFileRepresentativeProfileData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       userName: {
-        serializedName: "userName",
+        serializedName: "UserName",
         type: {
           name: "String"
         }
       },
       contactInfo: {
-        serializedName: "contactInfo",
+        serializedName: "ContactInfo",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelServiceContractsJudicialFileContactData"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -8699,26 +8905,26 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileRepresentativeUser
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsJudicialFileRepresentativeUserData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       representativeProfiles: {
-        serializedName: "representativeProfiles",
+        serializedName: "RepresentativeProfiles",
         type: {
           name: "Sequence",
           element: {
@@ -8730,25 +8936,25 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileRepresentativeUser
         }
       },
       predicateID: {
-        serializedName: "predicateID",
+        serializedName: "PredicateID",
         type: {
           name: "Uuid"
         }
       },
       predicateName: {
-        serializedName: "predicateName",
+        serializedName: "PredicateName",
         type: {
           name: "String"
         }
       },
       authorityId: {
-        serializedName: "authorityId",
+        serializedName: "AuthorityId",
         type: {
           name: "Uuid"
         }
       },
       competenceCategories: {
-        serializedName: "competenceCategories",
+        serializedName: "CompetenceCategories",
         type: {
           name: "Sequence",
           element: {
@@ -8759,25 +8965,25 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileRepresentativeUser
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -8793,25 +8999,25 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileOfPart
     className: "CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileOfPartyEntityData",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       judicialFileId: {
-        serializedName: "judicialFileId",
+        serializedName: "JudicialFileId",
         type: {
           name: "String"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
@@ -8827,38 +9033,38 @@ export const CyberjusticeLabKernelServiceContractsJudicialFilePartyEntityData: m
     className: "CyberjusticeLabKernelServiceContractsJudicialFilePartyEntityData",
     modelProperties: {
       partyEntityId: {
-        serializedName: "partyEntityId",
+        serializedName: "PartyEntityId",
         type: {
           name: "Uuid"
         }
       },
       partyEntityCode: {
-        serializedName: "partyEntityCode",
+        serializedName: "PartyEntityCode",
         type: {
           name: "String"
         }
       },
       partyEntityStatus: {
-        serializedName: "partyEntityStatus",
+        serializedName: "PartyEntityStatus",
         type: {
           name: "String"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
       },
       contact: {
-        serializedName: "contact",
+        serializedName: "Contact",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelServiceContractsJudicialFileContactData"
         }
       },
       representatives: {
-        serializedName: "representatives",
+        serializedName: "Representatives",
         type: {
           name: "Sequence",
           element: {
@@ -8870,7 +9076,7 @@ export const CyberjusticeLabKernelServiceContractsJudicialFilePartyEntityData: m
         }
       },
       judicialFiles: {
-        serializedName: "judicialFiles",
+        serializedName: "JudicialFiles",
         type: {
           name: "Sequence",
           element: {
@@ -8882,25 +9088,25 @@ export const CyberjusticeLabKernelServiceContractsJudicialFilePartyEntityData: m
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -8916,25 +9122,25 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileBusinessRuleEntity
     className: "CyberjusticeLabKernelServiceContractsJudicialFileBusinessRuleEntityData",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
       },
       businessRuleId: {
-        serializedName: "businessRuleId",
+        serializedName: "BusinessRuleId",
         type: {
           name: "Uuid"
         }
       },
       applicationName: {
-        serializedName: "applicationName",
+        serializedName: "ApplicationName",
         type: {
           name: "String"
         }
@@ -8950,19 +9156,19 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileBusinessRuleData: 
     className: "CyberjusticeLabKernelServiceContractsJudicialFileBusinessRuleData",
     modelProperties: {
       businessRuleId: {
-        serializedName: "businessRuleId",
+        serializedName: "BusinessRuleId",
         type: {
           name: "Uuid"
         }
       },
       businessRuleName: {
-        serializedName: "businessRuleName",
+        serializedName: "BusinessRuleName",
         type: {
           name: "String"
         }
       },
       businessRuleEntities: {
-        serializedName: "businessRuleEntities",
+        serializedName: "BusinessRuleEntities",
         type: {
           name: "Sequence",
           element: {
@@ -8984,13 +9190,13 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileNeutralZipCodeData
     className: "CyberjusticeLabKernelServiceContractsJudicialFileNeutralZipCodeData",
     modelProperties: {
       representativeId: {
-        serializedName: "representativeId",
+        serializedName: "RepresentativeId",
         type: {
           name: "Uuid"
         }
       },
       zipCode: {
-        serializedName: "zipCode",
+        serializedName: "ZipCode",
         type: {
           name: "String"
         }
@@ -9006,19 +9212,19 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileVerify
     className: "CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileVerifyData",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       judicialFileId: {
-        serializedName: "judicialFileId",
+        serializedName: "JudicialFileId",
         type: {
           name: "String"
         }
       },
       currentUserIsRepresentative: {
-        serializedName: "currentUserIsRepresentative",
+        serializedName: "CurrentUserIsRepresentative",
         type: {
           name: "Boolean"
         }
@@ -9027,34 +9233,253 @@ export const CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileVerify
   }
 };
 
-export const CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel: msRest.CompositeMapper = {
-  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PartyInvitationModel",
+export const CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.FileInvitationModel",
   type: {
     name: "Composite",
-    className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel",
+    className: "CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel",
     modelProperties: {
-      partyInvitationId: {
-        serializedName: "partyInvitationId",
-        type: {
-          name: "Uuid"
-        }
-      },
-      partyId: {
-        serializedName: "partyId",
-        type: {
-          name: "Uuid"
-        }
-      },
-      expiryDate: {
-        serializedName: "expiryDate",
+      modifiedDate: {
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
-      validationParameter: {
-        serializedName: "validationParameter",
+      modifiedBy: {
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
+        }
+      },
+      createdDate: {
+        serializedName: "CreatedDate",
+        type: {
+          name: "DateTime"
+        }
+      },
+      createdBy: {
+        serializedName: "CreatedBy",
+        type: {
+          name: "String"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialFileFileInvitationPartyInformationModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.FileInvitationPartyInformationModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialFileFileInvitationPartyInformationModel",
+    modelProperties: {
+      partyName: {
+        serializedName: "PartyName",
+        type: {
+          name: "String"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationInformationModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.FileInvitationInformationModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationInformationModel",
+    modelProperties: {
+      fileInvitationId: {
+        serializedName: "FileInvitationId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      judicialFileId: {
+        serializedName: "JudicialFileId",
+        type: {
+          name: "String"
+        }
+      },
+      partyId: {
+        serializedName: "PartyId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      parties: {
+        serializedName: "Parties",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedJudicialFileFileInvitationPartyInformationModel"
+            }
+          }
+        }
+      },
+      additionalAttributes: {
+        serializedName: "AdditionalAttributes",
+        type: {
+          name: "String"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PhoneNumber",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber",
+    modelProperties: {
+      number: {
+        serializedName: "Number",
+        type: {
+          name: "String"
+        }
+      },
+      type: {
+        serializedName: "Type",
+        type: {
+          name: "String"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PartyInformation",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation",
+    modelProperties: {
+      partyType: {
+        serializedName: "PartyType",
+        type: {
+          name: "String"
+        }
+      },
+      isCompany: {
+        serializedName: "IsCompany",
+        type: {
+          name: "Boolean"
+        }
+      },
+      companyName: {
+        serializedName: "CompanyName",
+        type: {
+          name: "String"
+        }
+      },
+      firstName: {
+        serializedName: "FirstName",
+        type: {
+          name: "String"
+        }
+      },
+      lastName: {
+        serializedName: "LastName",
+        type: {
+          name: "String"
+        }
+      },
+      address: {
+        serializedName: "Address",
+        type: {
+          name: "String"
+        }
+      },
+      address2: {
+        serializedName: "Address2",
+        type: {
+          name: "String"
+        }
+      },
+      city: {
+        serializedName: "City",
+        type: {
+          name: "String"
+        }
+      },
+      state: {
+        serializedName: "State",
+        type: {
+          name: "String"
+        }
+      },
+      country: {
+        serializedName: "Country",
+        type: {
+          name: "String"
+        }
+      },
+      zipCode: {
+        serializedName: "ZipCode",
+        type: {
+          name: "String"
+        }
+      },
+      email: {
+        serializedName: "Email",
+        type: {
+          name: "String"
+        }
+      },
+      phoneNumbers: {
+        serializedName: "PhoneNumbers",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber"
+            }
+          }
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.FileInformationFromPartyInvitationModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel",
+    modelProperties: {
+      fileId: {
+        serializedName: "FileId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      fileName: {
+        serializedName: "FileName",
+        type: {
+          name: "String"
+        }
+      },
+      judicialFileId: {
+        serializedName: "JudicialFileId",
+        type: {
+          name: "String"
+        }
+      },
+      invitationId: {
+        serializedName: "InvitationId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      partyInvited: {
+        serializedName: "PartyInvited",
+        type: {
+          name: "Composite",
+          className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation"
         }
       }
     }
@@ -9068,25 +9493,25 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByFil
     className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByFileModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       judicialFileId: {
-        serializedName: "judicialFileId",
+        serializedName: "JudicialFileId",
         type: {
           name: "String"
         }
       },
       newNotificationsCount: {
-        serializedName: "newNotificationsCount",
+        serializedName: "NewNotificationsCount",
         type: {
           name: "Number"
         }
       },
       mostRecentNotification: {
-        serializedName: "mostRecentNotification",
+        serializedName: "MostRecentNotification",
         type: {
           name: "DateTime"
         }
@@ -9102,19 +9527,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByAgg
     className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByAggregatorCodeModel",
     modelProperties: {
       aggregatorCode: {
-        serializedName: "aggregatorCode",
+        serializedName: "AggregatorCode",
         type: {
           name: "String"
         }
       },
       newNotificationsCount: {
-        serializedName: "newNotificationsCount",
+        serializedName: "NewNotificationsCount",
         type: {
           name: "Number"
         }
       },
       mostRecentNotification: {
-        serializedName: "mostRecentNotification",
+        serializedName: "MostRecentNotification",
         type: {
           name: "DateTime"
         }
@@ -9130,25 +9555,25 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeModel:
     className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeModel",
     modelProperties: {
       notificationCode: {
-        serializedName: "notificationCode",
+        serializedName: "NotificationCode",
         type: {
           name: "String"
         }
       },
       businessRuleName: {
-        serializedName: "businessRuleName",
+        serializedName: "BusinessRuleName",
         type: {
           name: "String"
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
       },
       cultureContentDictionary: {
-        serializedName: "cultureContentDictionary",
+        serializedName: "CultureContentDictionary",
         type: {
           name: "Dictionary",
           value: {
@@ -9169,19 +9594,94 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateM
     className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateModel",
     modelProperties: {
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       expiryDate: {
-        serializedName: "expiryDate",
+        serializedName: "ExpiryDate",
         type: {
           name: "DateTime"
         }
       },
       validationParameter: {
-        serializedName: "validationParameter",
+        serializedName: "ValidationParameter",
+        type: {
+          name: "String"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.FileInvitationCreateModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel",
+    modelProperties: {
+      partyId: {
+        serializedName: "PartyId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      invitationType: {
+        serializedName: "InvitationType",
+        type: {
+          name: "String"
+        }
+      },
+      substitutionParameter: {
+        serializedName: "SubstitutionParameter",
+        type: {
+          name: "Dictionary",
+          value: {
+            type: {
+              name: "String"
+            }
+          }
+        }
+      },
+      expiryDate: {
+        serializedName: "ExpiryDate",
+        type: {
+          name: "DateTime"
+        }
+      },
+      representativeAttributes: {
+        serializedName: "RepresentativeAttributes",
+        type: {
+          name: "String"
+        }
+      },
+      representativeId: {
+        serializedName: "RepresentativeId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      applicationName: {
+        serializedName: "ApplicationName",
+        type: {
+          name: "String"
+        }
+      },
+      additionalAttributes: {
+        serializedName: "AdditionalAttributes",
+        type: {
+          name: "String"
+        }
+      },
+      mailCode: {
+        serializedName: "MailCode",
+        type: {
+          name: "String"
+        }
+      },
+      culture: {
+        serializedName: "Culture",
         type: {
           name: "String"
         }
@@ -9197,25 +9697,66 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationRefuseM
     className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationRefuseModel",
     modelProperties: {
       partyInvitationId: {
-        serializedName: "partyInvitationId",
+        serializedName: "PartyInvitationId",
         type: {
           name: "Uuid"
         }
       },
       tagCode: {
-        serializedName: "tagCode",
+        serializedName: "TagCode",
         type: {
           name: "String"
         }
       },
       taskStatus: {
-        serializedName: "taskStatus",
+        serializedName: "TaskStatus",
         type: {
           name: "String"
         }
       },
       complement: {
-        serializedName: "complement",
+        serializedName: "Complement",
+        type: {
+          name: "Composite",
+          className: "CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagComplementModel"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationRefuseModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.FileInvitationRefuseModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationRefuseModel",
+    modelProperties: {
+      invitationCode: {
+        serializedName: "InvitationCode",
+        type: {
+          name: "String"
+        }
+      },
+      invitationDate: {
+        serializedName: "InvitationDate",
+        type: {
+          name: "DateTime"
+        }
+      },
+      tagCode: {
+        serializedName: "TagCode",
+        type: {
+          name: "String"
+        }
+      },
+      taskStatus: {
+        serializedName: "TaskStatus",
+        type: {
+          name: "String"
+        }
+      },
+      complement: {
+        serializedName: "Complement",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagComplementModel"
@@ -9232,31 +9773,31 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagCreateM
     className: "CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagCreateModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       tagCode: {
-        serializedName: "tagCode",
+        serializedName: "TagCode",
         type: {
           name: "String"
         }
       },
       taskStatus: {
-        serializedName: "taskStatus",
+        serializedName: "TaskStatus",
         type: {
           name: "String"
         }
       },
       taskActor: {
-        serializedName: "taskActor",
+        serializedName: "TaskActor",
         type: {
           name: "String"
         }
       },
       complements: {
-        serializedName: "complements",
+        serializedName: "Complements",
         type: {
           name: "Sequence",
           element: {
@@ -9278,13 +9819,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsRepresentativesToParty
     className: "CyberjusticeLabKernelSharedJudicialFileModelsRepresentativesToPartyModel",
     modelProperties: {
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       representativesWithAttributes: {
-        serializedName: "representativesWithAttributes",
+        serializedName: "RepresentativesWithAttributes",
         type: {
           name: "Dictionary",
           value: {
@@ -9301,31 +9842,31 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsRepresentativesToParty
         }
       },
       fileInternalReferenceNumber: {
-        serializedName: "fileInternalReferenceNumber",
+        serializedName: "FileInternalReferenceNumber",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -9341,13 +9882,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLinkRepresentativesToP
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLinkRepresentativesToPartyModel",
     modelProperties: {
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       representativesWithAttributes: {
-        serializedName: "representativesWithAttributes",
+        serializedName: "RepresentativesWithAttributes",
         type: {
           name: "Dictionary",
           value: {
@@ -9364,33 +9905,55 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLinkRepresentativesToP
         }
       },
       fileInternalReferenceNumber: {
-        serializedName: "fileInternalReferenceNumber",
+        serializedName: "FileInternalReferenceNumber",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.FileInvitationAcceptModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel",
+    modelProperties: {
+      invitationCode: {
+        serializedName: "InvitationCode",
+        type: {
+          name: "String"
+        }
+      },
+      invitationDate: {
+        serializedName: "InvitationDate",
+        type: {
+          name: "DateTime"
         }
       }
     }
@@ -9404,13 +9967,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeApiReq
     className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeApiRequestData",
     modelProperties: {
       searchText: {
-        serializedName: "searchText",
+        serializedName: "SearchText",
         type: {
           name: "String"
         }
       },
       searchBy: {
-        serializedName: "searchBy",
+        serializedName: "SearchBy",
         type: {
           name: "Sequence",
           element: {
@@ -9421,7 +9984,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeApiReq
         }
       },
       businessRuleNames: {
-        serializedName: "businessRuleNames",
+        serializedName: "BusinessRuleNames",
         type: {
           name: "Sequence",
           element: {
@@ -9432,19 +9995,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeApiReq
         }
       },
       take: {
-        serializedName: "take",
+        serializedName: "Take",
         type: {
           name: "Number"
         }
       },
       skip: {
-        serializedName: "skip",
+        serializedName: "Skip",
         type: {
           name: "Number"
         }
       },
       orderByDescending: {
-        serializedName: "orderByDescending",
+        serializedName: "OrderByDescending",
         type: {
           name: "Boolean"
         }
@@ -9460,19 +10023,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeApiRes
     className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeApiResponseData",
     modelProperties: {
       count: {
-        serializedName: "count",
+        serializedName: "Count",
         type: {
           name: "Number"
         }
       },
       countFiltered: {
-        serializedName: "countFiltered",
+        serializedName: "CountFiltered",
         type: {
           name: "Number"
         }
       },
       notifications: {
-        serializedName: "notifications",
+        serializedName: "Notifications",
         type: {
           name: "Sequence",
           element: {
@@ -9494,7 +10057,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRequest
     className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRequestData",
     modelProperties: {
       fileIds: {
-        serializedName: "fileIds",
+        serializedName: "FileIds",
         type: {
           name: "Sequence",
           element: {
@@ -9505,7 +10068,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRequest
         }
       },
       businessRuleNames: {
-        serializedName: "businessRuleNames",
+        serializedName: "BusinessRuleNames",
         type: {
           name: "Sequence",
           element: {
@@ -9516,19 +10079,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRequest
         }
       },
       prioritizeNewNotifications: {
-        serializedName: "prioritizeNewNotifications",
+        serializedName: "PrioritizeNewNotifications",
         type: {
           name: "Boolean"
         }
       },
       filterOnlyNewNotifications: {
-        serializedName: "filterOnlyNewNotifications",
+        serializedName: "FilterOnlyNewNotifications",
         type: {
           name: "Boolean"
         }
       },
       filterNotificationsCodes: {
-        serializedName: "filterNotificationsCodes",
+        serializedName: "FilterNotificationsCodes",
         type: {
           name: "Sequence",
           element: {
@@ -9539,7 +10102,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRequest
         }
       },
       filterAttributeKeys: {
-        serializedName: "filterAttributeKeys",
+        serializedName: "FilterAttributeKeys",
         type: {
           name: "Sequence",
           element: {
@@ -9550,19 +10113,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRequest
         }
       },
       take: {
-        serializedName: "take",
+        serializedName: "Take",
         type: {
           name: "Number"
         }
       },
       skip: {
-        serializedName: "skip",
+        serializedName: "Skip",
         type: {
           name: "Number"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
@@ -9578,43 +10141,43 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel: msR
     className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel",
     modelProperties: {
       notificationId: {
-        serializedName: "notificationId",
+        serializedName: "NotificationId",
         type: {
           name: "Number"
         }
       },
       notificationCode: {
-        serializedName: "notificationCode",
+        serializedName: "NotificationCode",
         type: {
           name: "String"
         }
       },
       businessRuleName: {
-        serializedName: "businessRuleName",
+        serializedName: "BusinessRuleName",
         type: {
           name: "String"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       aggregatorCode: {
-        serializedName: "aggregatorCode",
+        serializedName: "AggregatorCode",
         type: {
           name: "String"
         }
       },
       message: {
-        serializedName: "message",
+        serializedName: "Message",
         type: {
           name: "String"
         }
       },
       cultureContentDictionary: {
-        serializedName: "cultureContentDictionary",
+        serializedName: "CultureContentDictionary",
         type: {
           name: "Dictionary",
           value: {
@@ -9625,49 +10188,49 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel: msR
         }
       },
       notificationSubstitutionParameters: {
-        serializedName: "notificationSubstitutionParameters",
+        serializedName: "NotificationSubstitutionParameters",
         type: {
           name: "String"
         }
       },
       link: {
-        serializedName: "link",
+        serializedName: "Link",
         type: {
           name: "String"
         }
       },
       accessDate: {
-        serializedName: "accessDate",
+        serializedName: "AccessDate",
         type: {
           name: "DateTime"
         }
       },
       sentDate: {
-        serializedName: "sentDate",
+        serializedName: "SentDate",
         type: {
           name: "DateTime"
         }
       },
       notificationDismissed: {
-        serializedName: "notificationDismissed",
+        serializedName: "NotificationDismissed",
         type: {
           name: "Boolean"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Dictionary",
           value: {
@@ -9688,19 +10251,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRespons
     className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiResponseData",
     modelProperties: {
       count: {
-        serializedName: "count",
+        serializedName: "Count",
         type: {
           name: "Number"
         }
       },
       countFiltered: {
-        serializedName: "countFiltered",
+        serializedName: "CountFiltered",
         type: {
           name: "Number"
         }
       },
       notifications: {
-        serializedName: "notifications",
+        serializedName: "Notifications",
         type: {
           name: "Sequence",
           element: {
@@ -9722,31 +10285,31 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreatePart
     className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreatePartyRepresentativeModel",
     modelProperties: {
       representativeId: {
-        serializedName: "representativeId",
+        serializedName: "RepresentativeId",
         type: {
           name: "Uuid"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       notificationDismissed: {
-        serializedName: "notificationDismissed",
+        serializedName: "NotificationDismissed",
         type: {
           name: "Boolean"
         }
       },
       accessDate: {
-        serializedName: "accessDate",
+        serializedName: "AccessDate",
         type: {
           name: "DateTime"
         }
       },
       sentDate: {
-        serializedName: "sentDate",
+        serializedName: "SentDate",
         type: {
           name: "DateTime"
         }
@@ -9762,49 +10325,49 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreateMode
     className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreateModel",
     modelProperties: {
       notificationCode: {
-        serializedName: "notificationCode",
+        serializedName: "NotificationCode",
         type: {
           name: "String"
         }
       },
       businessRuleName: {
-        serializedName: "businessRuleName",
+        serializedName: "BusinessRuleName",
         type: {
           name: "String"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       aggregatorCode: {
-        serializedName: "aggregatorCode",
+        serializedName: "AggregatorCode",
         type: {
           name: "String"
         }
       },
       message: {
-        serializedName: "message",
+        serializedName: "Message",
         type: {
           name: "String"
         }
       },
       notificationSubstitutionParameters: {
-        serializedName: "notificationSubstitutionParameters",
+        serializedName: "NotificationSubstitutionParameters",
         type: {
           name: "String"
         }
       },
       link: {
-        serializedName: "link",
+        serializedName: "Link",
         type: {
           name: "String"
         }
       },
       partyAndRepresentatives: {
-        serializedName: "partyAndRepresentatives",
+        serializedName: "PartyAndRepresentatives",
         type: {
           name: "Sequence",
           element: {
@@ -9826,31 +10389,31 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileCreateMode
     className: "CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileCreateModel",
     modelProperties: {
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
       },
       businessRuleName: {
-        serializedName: "businessRuleName",
+        serializedName: "BusinessRuleName",
         type: {
           name: "String"
         }
       },
       permission: {
-        serializedName: "permission",
+        serializedName: "Permission",
         type: {
           name: "String"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Dictionary",
           value: {
@@ -9861,19 +10424,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileCreateMode
         }
       },
       judicialFileId: {
-        serializedName: "judicialFileId",
+        serializedName: "JudicialFileId",
         type: {
           name: "String"
         }
       },
       formId: {
-        serializedName: "formId",
+        serializedName: "FormId",
         type: {
           name: "Uuid"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
@@ -9889,13 +10452,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLastActorRequestData: 
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLastActorRequestData",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       partyName: {
-        serializedName: "partyName",
+        serializedName: "PartyName",
         type: {
           name: "String"
         }
@@ -9911,7 +10474,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateApiRequestD
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateApiRequestData",
     modelProperties: {
       logTemplateIds: {
-        serializedName: "logTemplateIds",
+        serializedName: "LogTemplateIds",
         type: {
           name: "Sequence",
           element: {
@@ -9922,7 +10485,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateApiRequestD
         }
       },
       eventCodes: {
-        serializedName: "eventCodes",
+        serializedName: "EventCodes",
         type: {
           name: "Sequence",
           element: {
@@ -9933,19 +10496,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateApiRequestD
         }
       },
       entryCodeSearchText: {
-        serializedName: "entryCodeSearchText",
+        serializedName: "EntryCodeSearchText",
         type: {
           name: "String"
         }
       },
       searchInMessages: {
-        serializedName: "searchInMessages",
+        serializedName: "SearchInMessages",
         type: {
           name: "String"
         }
       },
       searchInMessagesLanguages: {
-        serializedName: "searchInMessagesLanguages",
+        serializedName: "SearchInMessagesLanguages",
         type: {
           name: "Sequence",
           element: {
@@ -9956,43 +10519,43 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateApiRequestD
         }
       },
       searchStatus: {
-        serializedName: "searchStatus",
+        serializedName: "SearchStatus",
         type: {
           name: "String"
         }
       },
       specificStatus: {
-        serializedName: "specificStatus",
+        serializedName: "SpecificStatus",
         type: {
           name: "String"
         }
       },
       orderBy: {
-        serializedName: "orderBy",
+        serializedName: "OrderBy",
         type: {
           name: "String"
         }
       },
       orderByCulture: {
-        serializedName: "orderByCulture",
+        serializedName: "OrderByCulture",
         type: {
           name: "String"
         }
       },
       orderByDescending: {
-        serializedName: "orderByDescending",
+        serializedName: "OrderByDescending",
         type: {
           name: "Boolean"
         }
       },
       take: {
-        serializedName: "take",
+        serializedName: "Take",
         type: {
           name: "Number"
         }
       },
       skip: {
-        serializedName: "skip",
+        serializedName: "Skip",
         type: {
           name: "Number"
         }
@@ -10008,19 +10571,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogPermissionModel: ms
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLogPermissionModel",
     modelProperties: {
       logPermissionId: {
-        serializedName: "logPermissionId",
+        serializedName: "LogPermissionId",
         type: {
           name: "Uuid"
         }
       },
       visibleByDefault: {
-        serializedName: "visibleByDefault",
+        serializedName: "VisibleByDefault",
         type: {
           name: "Boolean"
         }
       },
       permissionExceptions: {
-        serializedName: "permissionExceptions",
+        serializedName: "PermissionExceptions",
         type: {
           name: "Sequence",
           element: {
@@ -10041,32 +10604,32 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateModel: msRe
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateModel",
     modelProperties: {
       logTemplateId: {
-        serializedName: "logTemplateId",
+        serializedName: "LogTemplateId",
         type: {
           name: "Uuid"
         }
       },
       eventCode: {
-        serializedName: "eventCode",
+        serializedName: "EventCode",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       permissionModel: {
-        serializedName: "permissionModel",
+        serializedName: "PermissionModel",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedJudicialFileModelsLogPermissionModel"
         }
       },
       templateMessages: {
-        serializedName: "templateMessages",
+        serializedName: "TemplateMessages",
         type: {
           name: "Dictionary",
           value: {
@@ -10087,19 +10650,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateApiResponse
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateApiResponseData",
     modelProperties: {
       count: {
-        serializedName: "count",
+        serializedName: "Count",
         type: {
           name: "Number"
         }
       },
       countFiltered: {
-        serializedName: "countFiltered",
+        serializedName: "CountFiltered",
         type: {
           name: "Number"
         }
       },
       logTemplates: {
-        serializedName: "logTemplates",
+        serializedName: "LogTemplates",
         type: {
           name: "Sequence",
           element: {
@@ -10115,7 +10678,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateApiResponse
 };
 
 export const CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestDataDedicatedSearch: msRest.CompositeMapper = {
-  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.LogEntryApiRequestData_dedicatedSearch",
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.LogEntryApiRequestData_DedicatedSearch",
   type: {
     name: "Composite",
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestDataDedicatedSearch",
@@ -10161,43 +10724,43 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestData
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestData",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       currentRole: {
-        serializedName: "currentRole",
+        serializedName: "CurrentRole",
         type: {
           name: "String"
         }
       },
       minEntryDate: {
-        serializedName: "minEntryDate",
+        serializedName: "MinEntryDate",
         type: {
           name: "DateTime"
         }
       },
       maxEntryDate: {
-        serializedName: "maxEntryDate",
+        serializedName: "MaxEntryDate",
         type: {
           name: "DateTime"
         }
       },
       globalSearchText: {
-        serializedName: "globalSearchText",
+        serializedName: "GlobalSearchText",
         type: {
           name: "String"
         }
       },
       searchMessageLanguage: {
-        serializedName: "searchMessageLanguage",
+        serializedName: "SearchMessageLanguage",
         type: {
           name: "String"
         }
       },
       globalSearchBy: {
-        serializedName: "globalSearchBy",
+        serializedName: "GlobalSearchBy",
         type: {
           name: "Sequence",
           element: {
@@ -10208,32 +10771,32 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestData
         }
       },
       dedicatedSearch: {
-        serializedName: "dedicatedSearch",
+        serializedName: "DedicatedSearch",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestDataDedicatedSearch"
         }
       },
       orderBy: {
-        serializedName: "orderBy",
+        serializedName: "OrderBy",
         type: {
           name: "String"
         }
       },
       orderByDescending: {
-        serializedName: "orderByDescending",
+        serializedName: "OrderByDescending",
         type: {
           name: "Boolean"
         }
       },
       take: {
-        serializedName: "take",
+        serializedName: "Take",
         type: {
           name: "Number"
         }
       },
       skip: {
-        serializedName: "skip",
+        serializedName: "Skip",
         type: {
           name: "Number"
         }
@@ -10249,19 +10812,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogEntryResourceModel:
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLogEntryResourceModel",
     modelProperties: {
       culture: {
-        serializedName: "culture",
+        serializedName: "Culture",
         type: {
           name: "String"
         }
       },
       message: {
-        serializedName: "message",
+        serializedName: "Message",
         type: {
           name: "String"
         }
       },
       dynamicParameters: {
-        serializedName: "dynamicParameters",
+        serializedName: "DynamicParameters",
         type: {
           name: "String"
         }
@@ -10277,55 +10840,55 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogEntryModel: msRest.
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLogEntryModel",
     modelProperties: {
       logEntryId: {
-        serializedName: "logEntryId",
+        serializedName: "LogEntryId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       logTemplateId: {
-        serializedName: "logTemplateId",
+        serializedName: "LogTemplateId",
         type: {
           name: "Uuid"
         }
       },
       authorName: {
-        serializedName: "authorName",
+        serializedName: "AuthorName",
         type: {
           name: "String"
         }
       },
       authorRole: {
-        serializedName: "authorRole",
+        serializedName: "AuthorRole",
         type: {
           name: "String"
         }
       },
       authorUID: {
-        serializedName: "authorUID",
+        serializedName: "AuthorUID",
         type: {
           name: "String"
         }
       },
       fileStep: {
-        serializedName: "fileStep",
+        serializedName: "FileStep",
         type: {
           name: "String"
         }
       },
       entryDate: {
-        serializedName: "entryDate",
+        serializedName: "EntryDate",
         type: {
           name: "DateTime"
         }
       },
       logEntryResources: {
-        serializedName: "logEntryResources",
+        serializedName: "LogEntryResources",
         type: {
           name: "Sequence",
           element: {
@@ -10347,19 +10910,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiResponseDat
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiResponseData",
     modelProperties: {
       count: {
-        serializedName: "count",
+        serializedName: "Count",
         type: {
           name: "Number"
         }
       },
       countFiltered: {
-        serializedName: "countFiltered",
+        serializedName: "CountFiltered",
         type: {
           name: "Number"
         }
       },
       logEntries: {
-        serializedName: "logEntries",
+        serializedName: "LogEntries",
         type: {
           name: "Sequence",
           element: {
@@ -10381,26 +10944,26 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateCreateModel
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateCreateModel",
     modelProperties: {
       eventCode: {
-        serializedName: "eventCode",
+        serializedName: "EventCode",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       permissionModel: {
-        serializedName: "permissionModel",
+        serializedName: "PermissionModel",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedJudicialFileModelsLogPermissionModel"
         }
       },
       templateMessages: {
-        serializedName: "templateMessages",
+        serializedName: "TemplateMessages",
         type: {
           name: "Dictionary",
           value: {
@@ -10421,49 +10984,49 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogEntryCreateModel: m
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLogEntryCreateModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       eventCode: {
-        serializedName: "eventCode",
+        serializedName: "EventCode",
         type: {
           name: "String"
         }
       },
       authorName: {
-        serializedName: "authorName",
+        serializedName: "AuthorName",
         type: {
           name: "String"
         }
       },
       authorRole: {
-        serializedName: "authorRole",
+        serializedName: "AuthorRole",
         type: {
           name: "String"
         }
       },
       authorUID: {
-        serializedName: "authorUID",
+        serializedName: "AuthorUID",
         type: {
           name: "String"
         }
       },
       fileStep: {
-        serializedName: "fileStep",
+        serializedName: "FileStep",
         type: {
           name: "String"
         }
       },
       entryDate: {
-        serializedName: "entryDate",
+        serializedName: "EntryDate",
         type: {
           name: "DateTime"
         }
       },
       cultureDynamicParametersDictionary: {
-        serializedName: "cultureDynamicParametersDictionary",
+        serializedName: "CultureDynamicParametersDictionary",
         type: {
           name: "Dictionary",
           value: {
@@ -10484,19 +11047,19 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsCloseFileModel: msRest
     className: "CyberjusticeLabKernelSharedJudicialFileModelsCloseFileModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       reason: {
-        serializedName: "reason",
+        serializedName: "Reason",
         type: {
           name: "String"
         }
       },
       lastModified: {
-        serializedName: "lastModified",
+        serializedName: "LastModified",
         type: {
           name: "DateTime"
         }
@@ -10512,7 +11075,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileAttributes
     className: "CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileAttributesUpdateModel",
     modelProperties: {
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
@@ -10524,31 +11087,31 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileAttributes
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -10564,57 +11127,57 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyUpsertModel: msRe
     className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyUpsertModel",
     modelProperties: {
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       partyType: {
-        serializedName: "partyType",
+        serializedName: "PartyType",
         type: {
           name: "String"
         }
       },
       contact: {
-        serializedName: "contact",
+        serializedName: "Contact",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedJudicialFileModelsContactModel"
         }
       },
       mainRepresentativeContact: {
-        serializedName: "mainRepresentativeContact",
+        serializedName: "MainRepresentativeContact",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedJudicialFileModelsContactModel"
         }
       },
       disputeDescription: {
-        serializedName: "disputeDescription",
+        serializedName: "DisputeDescription",
         type: {
           name: "String"
         }
       },
       authorityId: {
-        serializedName: "authorityId",
+        serializedName: "AuthorityId",
         type: {
           name: "Uuid"
         }
       },
       partyEntityId: {
-        serializedName: "partyEntityId",
+        serializedName: "PartyEntityId",
         type: {
           name: "Uuid"
         }
       },
       partyAttributes: {
-        serializedName: "partyAttributes",
+        serializedName: "PartyAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -10626,25 +11189,25 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyUpsertModel: msRe
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -10660,109 +11223,109 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyContactUpsertMode
     className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyContactUpsertModel",
     modelProperties: {
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       isMainPartyContact: {
-        serializedName: "isMainPartyContact",
+        serializedName: "IsMainPartyContact",
         type: {
           name: "Boolean"
         }
       },
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       isCompany: {
-        serializedName: "isCompany",
+        serializedName: "IsCompany",
         type: {
           name: "Boolean"
         }
       },
       companyName: {
-        serializedName: "companyName",
+        serializedName: "CompanyName",
         type: {
           name: "String"
         }
       },
       firstName: {
-        serializedName: "firstName",
+        serializedName: "FirstName",
         type: {
           name: "String"
         }
       },
       lastName: {
-        serializedName: "lastName",
+        serializedName: "LastName",
         type: {
           name: "String"
         }
       },
       address: {
-        serializedName: "address",
+        serializedName: "Address",
         type: {
           name: "String"
         }
       },
       address2: {
-        serializedName: "address2",
+        serializedName: "Address2",
         type: {
           name: "String"
         }
       },
       city: {
-        serializedName: "city",
+        serializedName: "City",
         type: {
           name: "String"
         }
       },
       state: {
-        serializedName: "state",
+        serializedName: "State",
         type: {
           name: "String"
         }
       },
       country: {
-        serializedName: "country",
+        serializedName: "Country",
         type: {
           name: "String"
         }
       },
       zipCode: {
-        serializedName: "zipCode",
+        serializedName: "ZipCode",
         type: {
           name: "String"
         }
       },
       email: {
-        serializedName: "email",
+        serializedName: "Email",
         type: {
           name: "String"
         }
       },
       website: {
-        serializedName: "website",
+        serializedName: "Website",
         type: {
           name: "String"
         }
       },
       latitude: {
-        serializedName: "latitude",
+        serializedName: "Latitude",
         type: {
           name: "String"
         }
       },
       longitude: {
-        serializedName: "longitude",
+        serializedName: "Longitude",
         type: {
           name: "String"
         }
       },
       phoneNumbers: {
-        serializedName: "phoneNumbers",
+        serializedName: "PhoneNumbers",
         type: {
           name: "Sequence",
           element: {
@@ -10774,7 +11337,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyContactUpsertMode
         }
       },
       contactAttributes: {
-        serializedName: "contactAttributes",
+        serializedName: "ContactAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -10786,49 +11349,27 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyContactUpsertMode
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
-        }
-      }
-    }
-  }
-};
-
-export const CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationUpdateModel: msRest.CompositeMapper = {
-  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PartyInvitationUpdateModel",
-  type: {
-    name: "Composite",
-    className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationUpdateModel",
-    modelProperties: {
-      partyInvitationId: {
-        serializedName: "partyInvitationId",
-        type: {
-          name: "Uuid"
-        }
-      },
-      expiryDate: {
-        serializedName: "expiryDate",
-        type: {
-          name: "DateTime"
         }
       }
     }
@@ -10842,31 +11383,31 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagUpdateM
     className: "CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagUpdateModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       tagCode: {
-        serializedName: "tagCode",
+        serializedName: "TagCode",
         type: {
           name: "String"
         }
       },
       taskStatus: {
-        serializedName: "taskStatus",
+        serializedName: "TaskStatus",
         type: {
           name: "String"
         }
       },
       taskActor: {
-        serializedName: "taskActor",
+        serializedName: "TaskActor",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
@@ -10882,7 +11423,7 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagUpdateW
     className: "CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagUpdateWithComplementModel",
     modelProperties: {
       complements: {
-        serializedName: "complements",
+        serializedName: "Complements",
         type: {
           name: "Sequence",
           element: {
@@ -10894,31 +11435,31 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagUpdateW
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       tagCode: {
-        serializedName: "tagCode",
+        serializedName: "TagCode",
         type: {
           name: "String"
         }
       },
       taskStatus: {
-        serializedName: "taskStatus",
+        serializedName: "TaskStatus",
         type: {
           name: "String"
         }
       },
       taskActor: {
-        serializedName: "taskActor",
+        serializedName: "TaskActor",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
@@ -10934,25 +11475,25 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeResour
     className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeResourceUpdateModel",
     modelProperties: {
       notificationCode: {
-        serializedName: "notificationCode",
+        serializedName: "NotificationCode",
         type: {
           name: "String"
         }
       },
       businessRuleName: {
-        serializedName: "businessRuleName",
+        serializedName: "BusinessRuleName",
         type: {
           name: "String"
         }
       },
       culture: {
-        serializedName: "culture",
+        serializedName: "Culture",
         type: {
           name: "String"
         }
       },
       content: {
-        serializedName: "content",
+        serializedName: "Content",
         type: {
           name: "String"
         }
@@ -10968,31 +11509,31 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationUpdateMode
     className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationUpdateModel",
     modelProperties: {
       notificationId: {
-        serializedName: "notificationId",
+        serializedName: "NotificationId",
         type: {
           name: "Number"
         }
       },
       aggregatorCode: {
-        serializedName: "aggregatorCode",
+        serializedName: "AggregatorCode",
         type: {
           name: "String"
         }
       },
       message: {
-        serializedName: "message",
+        serializedName: "Message",
         type: {
           name: "String"
         }
       },
       notificationSubstitutionParameters: {
-        serializedName: "notificationSubstitutionParameters",
+        serializedName: "NotificationSubstitutionParameters",
         type: {
           name: "String"
         }
       },
       link: {
-        serializedName: "link",
+        serializedName: "Link",
         type: {
           name: "String"
         }
@@ -11008,25 +11549,25 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsNotificationRepresenta
     className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationRepresentativeUpdateModel",
     modelProperties: {
       notificationId: {
-        serializedName: "notificationId",
+        serializedName: "NotificationId",
         type: {
           name: "Number"
         }
       },
       accessDate: {
-        serializedName: "accessDate",
+        serializedName: "AccessDate",
         type: {
           name: "DateTime"
         }
       },
       sentDate: {
-        serializedName: "sentDate",
+        serializedName: "SentDate",
         type: {
           name: "DateTime"
         }
       },
       notificationDismissed: {
-        serializedName: "notificationDismissed",
+        serializedName: "NotificationDismissed",
         type: {
           name: "Boolean"
         }
@@ -11042,32 +11583,32 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateUpdateModel
     className: "CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateUpdateModel",
     modelProperties: {
       logTemplateId: {
-        serializedName: "logTemplateId",
+        serializedName: "LogTemplateId",
         type: {
           name: "Uuid"
         }
       },
       eventCode: {
-        serializedName: "eventCode",
+        serializedName: "EventCode",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       permissionModel: {
-        serializedName: "permissionModel",
+        serializedName: "PermissionModel",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedJudicialFileModelsLogPermissionModel"
         }
       },
       templateMessages: {
-        serializedName: "templateMessages",
+        serializedName: "TemplateMessages",
         type: {
           name: "Dictionary",
           value: {
@@ -11088,79 +11629,79 @@ export const CyberjusticeLabKernelSharedLocationLocationRoomData: msRest.Composi
     className: "CyberjusticeLabKernelSharedLocationLocationRoomData",
     modelProperties: {
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       locationRoomId: {
-        serializedName: "locationRoomId",
+        serializedName: "LocationRoomId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       locationBuildingId: {
-        serializedName: "locationBuildingId",
+        serializedName: "LocationBuildingId",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       code: {
-        serializedName: "code",
+        serializedName: "Code",
         type: {
           name: "String"
         }
       },
       roomNumber: {
-        serializedName: "roomNumber",
+        serializedName: "RoomNumber",
         type: {
           name: "String"
         }
       },
       capacity: {
-        serializedName: "capacity",
+        serializedName: "Capacity",
         type: {
           name: "Number"
         }
       },
       locationStatus: {
-        serializedName: "locationStatus",
+        serializedName: "LocationStatus",
         type: {
           name: "String"
         }
       },
       startDate: {
-        serializedName: "startDate",
+        serializedName: "StartDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
@@ -11176,25 +11717,25 @@ export const CyberjusticeLabKernelSharedLocationLocationBuildingData: msRest.Com
     className: "CyberjusticeLabKernelSharedLocationLocationBuildingData",
     modelProperties: {
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       locationRooms: {
-        serializedName: "locationRooms",
+        serializedName: "LocationRooms",
         type: {
           name: "Sequence",
           element: {
@@ -11206,61 +11747,61 @@ export const CyberjusticeLabKernelSharedLocationLocationBuildingData: msRest.Com
         }
       },
       locationBuildingId: {
-        serializedName: "locationBuildingId",
+        serializedName: "LocationBuildingId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       address: {
-        serializedName: "address",
+        serializedName: "Address",
         type: {
           name: "String"
         }
       },
       city: {
-        serializedName: "city",
+        serializedName: "City",
         type: {
           name: "String"
         }
       },
       state: {
-        serializedName: "state",
+        serializedName: "State",
         type: {
           name: "String"
         }
       },
       postalCode: {
-        serializedName: "postalCode",
+        serializedName: "PostalCode",
         type: {
           name: "String"
         }
       },
       country: {
-        serializedName: "country",
+        serializedName: "Country",
         type: {
           name: "String"
         }
       },
       locationStatus: {
-        serializedName: "locationStatus",
+        serializedName: "LocationStatus",
         type: {
           name: "String"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
@@ -11276,61 +11817,61 @@ export const CyberjusticeLabKernelSharedLocationLocationBuildingUpdateData: msRe
     className: "CyberjusticeLabKernelSharedLocationLocationBuildingUpdateData",
     modelProperties: {
       locationBuildingId: {
-        serializedName: "locationBuildingId",
+        serializedName: "LocationBuildingId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       address: {
-        serializedName: "address",
+        serializedName: "Address",
         type: {
           name: "String"
         }
       },
       city: {
-        serializedName: "city",
+        serializedName: "City",
         type: {
           name: "String"
         }
       },
       state: {
-        serializedName: "state",
+        serializedName: "State",
         type: {
           name: "String"
         }
       },
       postalCode: {
-        serializedName: "postalCode",
+        serializedName: "PostalCode",
         type: {
           name: "String"
         }
       },
       country: {
-        serializedName: "country",
+        serializedName: "Country",
         type: {
           name: "String"
         }
       },
       locationStatus: {
-        serializedName: "locationStatus",
+        serializedName: "LocationStatus",
         type: {
           name: "String"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
@@ -11346,61 +11887,61 @@ export const CyberjusticeLabKernelSharedLocationLocationRoomUpdateData: msRest.C
     className: "CyberjusticeLabKernelSharedLocationLocationRoomUpdateData",
     modelProperties: {
       locationRoomId: {
-        serializedName: "locationRoomId",
+        serializedName: "LocationRoomId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       locationBuildingId: {
-        serializedName: "locationBuildingId",
+        serializedName: "LocationBuildingId",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       code: {
-        serializedName: "code",
+        serializedName: "Code",
         type: {
           name: "String"
         }
       },
       roomNumber: {
-        serializedName: "roomNumber",
+        serializedName: "RoomNumber",
         type: {
           name: "String"
         }
       },
       capacity: {
-        serializedName: "capacity",
+        serializedName: "Capacity",
         type: {
           name: "Number"
         }
       },
       locationStatus: {
-        serializedName: "locationStatus",
+        serializedName: "LocationStatus",
         type: {
           name: "String"
         }
       },
       startDate: {
-        serializedName: "startDate",
+        serializedName: "StartDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
@@ -11416,49 +11957,49 @@ export const CyberjusticeLabKernelSharedLocationLocationBuildingCreateData: msRe
     className: "CyberjusticeLabKernelSharedLocationLocationBuildingCreateData",
     modelProperties: {
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       address: {
-        serializedName: "address",
+        serializedName: "Address",
         type: {
           name: "String"
         }
       },
       city: {
-        serializedName: "city",
+        serializedName: "City",
         type: {
           name: "String"
         }
       },
       state: {
-        serializedName: "state",
+        serializedName: "State",
         type: {
           name: "String"
         }
       },
       postalCode: {
-        serializedName: "postalCode",
+        serializedName: "PostalCode",
         type: {
           name: "String"
         }
       },
       country: {
-        serializedName: "country",
+        serializedName: "Country",
         type: {
           name: "String"
         }
       },
       locationStatus: {
-        serializedName: "locationStatus",
+        serializedName: "LocationStatus",
         type: {
           name: "String"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
@@ -11474,49 +12015,49 @@ export const CyberjusticeLabKernelSharedLocationLocationRoomCreateData: msRest.C
     className: "CyberjusticeLabKernelSharedLocationLocationRoomCreateData",
     modelProperties: {
       locationBuildingId: {
-        serializedName: "locationBuildingId",
+        serializedName: "LocationBuildingId",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       code: {
-        serializedName: "code",
+        serializedName: "Code",
         type: {
           name: "String"
         }
       },
       roomNumber: {
-        serializedName: "roomNumber",
+        serializedName: "RoomNumber",
         type: {
           name: "String"
         }
       },
       capacity: {
-        serializedName: "capacity",
+        serializedName: "Capacity",
         type: {
           name: "Number"
         }
       },
       locationStatus: {
-        serializedName: "locationStatus",
+        serializedName: "LocationStatus",
         type: {
           name: "String"
         }
       },
       startDate: {
-        serializedName: "startDate",
+        serializedName: "StartDate",
         type: {
           name: "DateTime"
         }
       },
       endDate: {
-        serializedName: "endDate",
+        serializedName: "EndDate",
         type: {
           name: "DateTime"
         }
@@ -11532,13 +12073,13 @@ export const CyberjusticeLabKernelSharedLookupModelsLookupValueModel: msRest.Com
     className: "CyberjusticeLabKernelSharedLookupModelsLookupValueModel",
     modelProperties: {
       cultureName: {
-        serializedName: "cultureName",
+        serializedName: "CultureName",
         type: {
           name: "String"
         }
       },
       localizedValue: {
-        serializedName: "localizedValue",
+        serializedName: "LocalizedValue",
         type: {
           name: "String"
         }
@@ -11554,13 +12095,13 @@ export const CyberjusticeLabKernelSharedLookupModelsLookupModel: msRest.Composit
     className: "CyberjusticeLabKernelSharedLookupModelsLookupModel",
     modelProperties: {
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       lookupValues: {
-        serializedName: "lookupValues",
+        serializedName: "LookupValues",
         type: {
           name: "Sequence",
           element: {
@@ -11572,13 +12113,13 @@ export const CyberjusticeLabKernelSharedLookupModelsLookupModel: msRest.Composit
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
       },
       children: {
-        serializedName: "children",
+        serializedName: "Children",
         type: {
           name: "Sequence",
           element: {
@@ -11600,7 +12141,7 @@ export const CyberjusticeLabKernelSharedLookupModelsLookupApiRequestData: msRest
     className: "CyberjusticeLabKernelSharedLookupModelsLookupApiRequestData",
     modelProperties: {
       lookupNames: {
-        serializedName: "lookupNames",
+        serializedName: "LookupNames",
         type: {
           name: "Sequence",
           element: {
@@ -11611,7 +12152,7 @@ export const CyberjusticeLabKernelSharedLookupModelsLookupApiRequestData: msRest
         }
       },
       cultures: {
-        serializedName: "cultures",
+        serializedName: "Cultures",
         type: {
           name: "Sequence",
           element: {
@@ -11632,25 +12173,25 @@ export const CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthority
     className: "CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData",
     modelProperties: {
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       delegatingAuthorityId: {
-        serializedName: "delegatingAuthorityId",
+        serializedName: "DelegatingAuthorityId",
         type: {
           name: "Uuid"
         }
       },
       procedureCategory: {
-        serializedName: "procedureCategory",
+        serializedName: "ProcedureCategory",
         type: {
           name: "String"
         }
       },
       delegateAuthorityId: {
-        serializedName: "delegateAuthorityId",
+        serializedName: "DelegateAuthorityId",
         type: {
           name: "Uuid"
         }
@@ -11666,43 +12207,43 @@ export const CyberjusticeLabKernelSharedProsecutingAuthorityBaseProsecutingAutho
     className: "CyberjusticeLabKernelSharedProsecutingAuthorityBaseProsecutingAuthorityData",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       code: {
-        serializedName: "code",
+        serializedName: "Code",
         type: {
           name: "String"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
@@ -11718,50 +12259,50 @@ export const CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthority
     className: "CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationData",
     modelProperties: {
       delegateAuthority: {
-        serializedName: "delegateAuthority",
+        serializedName: "DelegateAuthority",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedProsecutingAuthorityBaseProsecutingAuthorityData"
         }
       },
       delegatingAuthorityId: {
-        serializedName: "delegatingAuthorityId",
+        serializedName: "DelegatingAuthorityId",
         type: {
           name: "Uuid"
         }
       },
       procedureCategory: {
-        serializedName: "procedureCategory",
+        serializedName: "ProcedureCategory",
         type: {
           name: "String"
         }
       },
       delegateAuthorityId: {
-        serializedName: "delegateAuthorityId",
+        serializedName: "DelegateAuthorityId",
         type: {
           name: "Uuid"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
@@ -11777,7 +12318,7 @@ export const CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthority
     className: "CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityData",
     modelProperties: {
       delegateAuthorities: {
-        serializedName: "delegateAuthorities",
+        serializedName: "DelegateAuthorities",
         type: {
           name: "Sequence",
           element: {
@@ -11789,43 +12330,43 @@ export const CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthority
         }
       },
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       code: {
-        serializedName: "code",
+        serializedName: "Code",
         type: {
           name: "String"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
@@ -11841,25 +12382,25 @@ export const CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthority
     className: "CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityUpdateData",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       code: {
-        serializedName: "code",
+        serializedName: "Code",
         type: {
           name: "String"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
@@ -11875,13 +12416,13 @@ export const CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthority
     className: "CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityCreateData",
     modelProperties: {
       code: {
-        serializedName: "code",
+        serializedName: "Code",
         type: {
           name: "String"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
@@ -11897,19 +12438,19 @@ export const CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthority
     className: "CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationCreateData",
     modelProperties: {
       delegatingAuthorityId: {
-        serializedName: "delegatingAuthorityId",
+        serializedName: "DelegatingAuthorityId",
         type: {
           name: "Uuid"
         }
       },
       procedureCategory: {
-        serializedName: "procedureCategory",
+        serializedName: "ProcedureCategory",
         type: {
           name: "String"
         }
       },
       delegateAuthorityId: {
-        serializedName: "delegateAuthorityId",
+        serializedName: "DelegateAuthorityId",
         type: {
           name: "Uuid"
         }
@@ -11925,13 +12466,13 @@ export const CyberjusticeLabKernelSharedRequestRequestAttributeData: msRest.Comp
     className: "CyberjusticeLabKernelSharedRequestRequestAttributeData",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
@@ -11947,67 +12488,67 @@ export const CyberjusticeLabKernelSharedRequestRequestData: msRest.CompositeMapp
     className: "CyberjusticeLabKernelSharedRequestRequestData",
     modelProperties: {
       requestId: {
-        serializedName: "requestId",
+        serializedName: "RequestId",
         type: {
           name: "Uuid"
         }
       },
       requestCode: {
-        serializedName: "requestCode",
+        serializedName: "RequestCode",
         type: {
           name: "String"
         }
       },
       requestDate: {
-        serializedName: "requestDate",
+        serializedName: "RequestDate",
         type: {
           name: "DateTime"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       requestAttributes: {
-        serializedName: "requestAttributes",
+        serializedName: "RequestAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -12029,13 +12570,13 @@ export const CyberjusticeLabKernelSharedRequestRequestCreateData: msRest.Composi
     className: "CyberjusticeLabKernelSharedRequestRequestCreateData",
     modelProperties: {
       requestDate: {
-        serializedName: "requestDate",
+        serializedName: "RequestDate",
         type: {
           name: "DateTime"
         }
       },
       requestAttributes: {
-        serializedName: "requestAttributes",
+        serializedName: "RequestAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -12047,25 +12588,25 @@ export const CyberjusticeLabKernelSharedRequestRequestCreateData: msRest.Composi
         }
       },
       requestCode: {
-        serializedName: "requestCode",
+        serializedName: "RequestCode",
         type: {
           name: "String"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
@@ -12081,37 +12622,37 @@ export const CyberjusticeLabKernelSharedRequestRequestUpdateData: msRest.Composi
     className: "CyberjusticeLabKernelSharedRequestRequestUpdateData",
     modelProperties: {
       requestId: {
-        serializedName: "requestId",
+        serializedName: "RequestId",
         type: {
           name: "Uuid"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       requestCode: {
-        serializedName: "requestCode",
+        serializedName: "RequestCode",
         type: {
           name: "String"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
@@ -12127,13 +12668,13 @@ export const CyberjusticeLabKernelSharedRequestRequestUpdateAttributeData: msRes
     className: "CyberjusticeLabKernelSharedRequestRequestUpdateAttributeData",
     modelProperties: {
       requestId: {
-        serializedName: "requestId",
+        serializedName: "RequestId",
         type: {
           name: "Uuid"
         }
       },
       requestAttributes: {
-        serializedName: "requestAttributes",
+        serializedName: "RequestAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -12155,49 +12696,49 @@ export const CyberjusticeLabKernelServiceContractsSecureMailEmailData: msRest.Co
     className: "CyberjusticeLabKernelServiceContractsSecureMailEmailData",
     modelProperties: {
       emailId: {
-        serializedName: "emailId",
+        serializedName: "EmailId",
         type: {
           name: "Number"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
       },
       culture: {
-        serializedName: "culture",
+        serializedName: "Culture",
         type: {
           name: "String"
         }
       },
       type: {
-        serializedName: "type",
+        serializedName: "Type",
         type: {
           name: "String"
         }
       },
       subject: {
-        serializedName: "subject",
+        serializedName: "Subject",
         type: {
           name: "String"
         }
       },
       message: {
-        serializedName: "message",
+        serializedName: "Message",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -12212,44 +12753,44 @@ export const CyberjusticeLabKernelServiceContractsSecurityClaimValueData: msRest
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsSecurityClaimValueData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       issuer: {
-        serializedName: "issuer",
+        serializedName: "Issuer",
         type: {
           name: "String"
         }
       },
       claimType: {
-        serializedName: "claimType",
+        serializedName: "ClaimType",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
         type: {
           name: "String"
         }
       },
       isAction: {
-        serializedName: "isAction",
+        serializedName: "IsAction",
         type: {
           name: "Boolean"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -12264,32 +12805,32 @@ export const CyberjusticeLabKernelServiceContractsSecurityPredicateData: msRest.
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsSecurityPredicateData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Uuid"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       status: {
-        serializedName: "status",
+        serializedName: "Status",
         type: {
           name: "String"
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
       },
       referredPredicates: {
-        serializedName: "referredPredicates",
+        serializedName: "ReferredPredicates",
         type: {
           name: "Sequence",
           element: {
@@ -12301,7 +12842,7 @@ export const CyberjusticeLabKernelServiceContractsSecurityPredicateData: msRest.
         }
       },
       claims: {
-        serializedName: "claims",
+        serializedName: "Claims",
         type: {
           name: "Sequence",
           element: {
@@ -12313,25 +12854,25 @@ export const CyberjusticeLabKernelServiceContractsSecurityPredicateData: msRest.
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -12347,13 +12888,13 @@ export const CyberjusticeLabKernelSharedTagLocalizedLabelData: msRest.CompositeM
     className: "CyberjusticeLabKernelSharedTagLocalizedLabelData",
     modelProperties: {
       labelId: {
-        serializedName: "labelId",
+        serializedName: "LabelId",
         type: {
           name: "Uuid"
         }
       },
       text: {
-        serializedName: "text",
+        serializedName: "Text",
         type: {
           name: "String"
         }
@@ -12369,49 +12910,49 @@ export const CyberjusticeLabKernelSharedTagTagData: msRest.CompositeMapper = {
     className: "CyberjusticeLabKernelSharedTagTagData",
     modelProperties: {
       tagId: {
-        serializedName: "tagId",
+        serializedName: "TagId",
         type: {
           name: "Uuid"
         }
       },
       tagCode: {
-        serializedName: "tagCode",
+        serializedName: "TagCode",
         type: {
           name: "String"
         }
       },
       targetCode: {
-        serializedName: "targetCode",
+        serializedName: "TargetCode",
         type: {
           name: "String"
         }
       },
       judicialEntityId: {
-        serializedName: "judicialEntityId",
+        serializedName: "JudicialEntityId",
         type: {
           name: "Uuid"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
@@ -12427,50 +12968,50 @@ export const CyberjusticeLabKernelSharedTagTagLinkData: msRest.CompositeMapper =
     className: "CyberjusticeLabKernelSharedTagTagLinkData",
     modelProperties: {
       tagId: {
-        serializedName: "tagId",
+        serializedName: "TagId",
         type: {
           name: "Uuid"
         }
       },
       code: {
-        serializedName: "code",
+        serializedName: "Code",
         type: {
           name: "String"
         }
       },
       tagTaskStatus: {
-        serializedName: "tagTaskStatus",
+        serializedName: "TagTaskStatus",
         type: {
           name: "String"
         }
       },
       tag: {
-        serializedName: "tag",
+        serializedName: "Tag",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedTagTagData"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
@@ -12486,19 +13027,19 @@ export const CyberjusticeLabKernelSharedTagLabelLocalizationData: msRest.Composi
     className: "CyberjusticeLabKernelSharedTagLabelLocalizationData",
     modelProperties: {
       labelId: {
-        serializedName: "labelId",
+        serializedName: "LabelId",
         type: {
           name: "Uuid"
         }
       },
       cultureCode: {
-        serializedName: "cultureCode",
+        serializedName: "CultureCode",
         type: {
           name: "String"
         }
       },
       labelText: {
-        serializedName: "labelText",
+        serializedName: "LabelText",
         type: {
           name: "String"
         }
@@ -12514,55 +13055,55 @@ export const CyberjusticeLabKernelSharedTagLabelData: msRest.CompositeMapper = {
     className: "CyberjusticeLabKernelSharedTagLabelData",
     modelProperties: {
       labelId: {
-        serializedName: "labelId",
+        serializedName: "LabelId",
         type: {
           name: "Uuid"
         }
       },
       section: {
-        serializedName: "section",
+        serializedName: "Section",
         type: {
           name: "String"
         }
       },
       rank: {
-        serializedName: "rank",
+        serializedName: "Rank",
         type: {
           name: "Number"
         }
       },
       default: {
-        serializedName: "default",
+        serializedName: "Default",
         type: {
           name: "Boolean"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       labelLocalizations: {
-        serializedName: "labelLocalizations",
+        serializedName: "LabelLocalizations",
         type: {
           name: "Sequence",
           element: {
@@ -12574,7 +13115,7 @@ export const CyberjusticeLabKernelSharedTagLabelData: msRest.CompositeMapper = {
         }
       },
       tags: {
-        serializedName: "tags",
+        serializedName: "Tags",
         type: {
           name: "Sequence",
           element: {
@@ -12586,7 +13127,7 @@ export const CyberjusticeLabKernelSharedTagLabelData: msRest.CompositeMapper = {
         }
       },
       roleCodes: {
-        serializedName: "roleCodes",
+        serializedName: "RoleCodes",
         type: {
           name: "Sequence",
           element: {
@@ -12607,19 +13148,19 @@ export const CyberjusticeLabKernelSharedTagTagLinkUpdateData: msRest.CompositeMa
     className: "CyberjusticeLabKernelSharedTagTagLinkUpdateData",
     modelProperties: {
       tagId: {
-        serializedName: "tagId",
+        serializedName: "TagId",
         type: {
           name: "Uuid"
         }
       },
       tagTaskStatus: {
-        serializedName: "tagTaskStatus",
+        serializedName: "TagTaskStatus",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
@@ -12635,13 +13176,13 @@ export const CyberjusticeLabKernelSharedTagLabelLocalizationBaseData: msRest.Com
     className: "CyberjusticeLabKernelSharedTagLabelLocalizationBaseData",
     modelProperties: {
       cultureCode: {
-        serializedName: "cultureCode",
+        serializedName: "CultureCode",
         type: {
           name: "String"
         }
       },
       labelText: {
-        serializedName: "labelText",
+        serializedName: "LabelText",
         type: {
           name: "String"
         }
@@ -12657,37 +13198,37 @@ export const CyberjusticeLabKernelSharedTagLabelUpdateData: msRest.CompositeMapp
     className: "CyberjusticeLabKernelSharedTagLabelUpdateData",
     modelProperties: {
       labelId: {
-        serializedName: "labelId",
+        serializedName: "LabelId",
         type: {
           name: "Uuid"
         }
       },
       section: {
-        serializedName: "section",
+        serializedName: "Section",
         type: {
           name: "String"
         }
       },
       rank: {
-        serializedName: "rank",
+        serializedName: "Rank",
         type: {
           name: "Number"
         }
       },
       default: {
-        serializedName: "default",
+        serializedName: "Default",
         type: {
           name: "Boolean"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       labelLocalizations: {
-        serializedName: "labelLocalizations",
+        serializedName: "LabelLocalizations",
         type: {
           name: "Sequence",
           element: {
@@ -12709,19 +13250,19 @@ export const CyberjusticeLabKernelSharedTagTagLinkCreateData: msRest.CompositeMa
     className: "CyberjusticeLabKernelSharedTagTagLinkCreateData",
     modelProperties: {
       tagId: {
-        serializedName: "tagId",
+        serializedName: "TagId",
         type: {
           name: "Uuid"
         }
       },
       code: {
-        serializedName: "code",
+        serializedName: "Code",
         type: {
           name: "String"
         }
       },
       tagTaskStatus: {
-        serializedName: "tagTaskStatus",
+        serializedName: "TagTaskStatus",
         type: {
           name: "String"
         }
@@ -12737,25 +13278,25 @@ export const CyberjusticeLabKernelSharedTagLabelCreateData: msRest.CompositeMapp
     className: "CyberjusticeLabKernelSharedTagLabelCreateData",
     modelProperties: {
       section: {
-        serializedName: "section",
+        serializedName: "Section",
         type: {
           name: "String"
         }
       },
       rank: {
-        serializedName: "rank",
+        serializedName: "Rank",
         type: {
           name: "Number"
         }
       },
       default: {
-        serializedName: "default",
+        serializedName: "Default",
         type: {
           name: "Boolean"
         }
       },
       labelLocalizations: {
-        serializedName: "labelLocalizations",
+        serializedName: "LabelLocalizations",
         type: {
           name: "Sequence",
           element: {
@@ -12767,7 +13308,7 @@ export const CyberjusticeLabKernelSharedTagLabelCreateData: msRest.CompositeMapp
         }
       },
       tags: {
-        serializedName: "tags",
+        serializedName: "Tags",
         type: {
           name: "Sequence",
           element: {
@@ -12778,7 +13319,7 @@ export const CyberjusticeLabKernelSharedTagLabelCreateData: msRest.CompositeMapp
         }
       },
       roleCodes: {
-        serializedName: "roleCodes",
+        serializedName: "RoleCodes",
         type: {
           name: "Sequence",
           element: {
@@ -12799,19 +13340,19 @@ export const CyberjusticeLabKernelServiceContractsUProfileUserPhoneNumberData: m
     className: "CyberjusticeLabKernelServiceContractsUProfileUserPhoneNumberData",
     modelProperties: {
       userPhoneNumberId: {
-        serializedName: "userPhoneNumberId",
+        serializedName: "UserPhoneNumberId",
         type: {
           name: "Uuid"
         }
       },
       phoneNumber: {
-        serializedName: "phoneNumber",
+        serializedName: "PhoneNumber",
         type: {
           name: "String"
         }
       },
       phoneType: {
-        serializedName: "phoneType",
+        serializedName: "PhoneType",
         type: {
           name: "String"
         }
@@ -12827,13 +13368,13 @@ export const CyberjusticeLabKernelServiceContractsUProfileUserAttributeData: msR
     className: "CyberjusticeLabKernelServiceContractsUProfileUserAttributeData",
     modelProperties: {
       userAttributeKey: {
-        serializedName: "userAttributeKey",
+        serializedName: "UserAttributeKey",
         type: {
           name: "String"
         }
       },
       userAttributeValue: {
-        serializedName: "userAttributeValue",
+        serializedName: "UserAttributeValue",
         type: {
           name: "String"
         }
@@ -12849,85 +13390,85 @@ export const CyberjusticeLabKernelServiceContractsUProfileUserData: msRest.Compo
     className: "CyberjusticeLabKernelServiceContractsUProfileUserData",
     modelProperties: {
       userId: {
-        serializedName: "userId",
+        serializedName: "UserId",
         type: {
           name: "Uuid"
         }
       },
       username: {
-        serializedName: "username",
+        serializedName: "Username",
         type: {
           name: "String"
         }
       },
       realm: {
-        serializedName: "realm",
+        serializedName: "Realm",
         type: {
           name: "String"
         }
       },
       predicateId: {
-        serializedName: "predicateId",
+        serializedName: "PredicateId",
         type: {
           name: "Uuid"
         }
       },
       firstname: {
-        serializedName: "firstname",
+        serializedName: "Firstname",
         type: {
           name: "String"
         }
       },
       lastname: {
-        serializedName: "lastname",
+        serializedName: "Lastname",
         type: {
           name: "String"
         }
       },
       address: {
-        serializedName: "address",
+        serializedName: "Address",
         type: {
           name: "String"
         }
       },
       complementAddress: {
-        serializedName: "complementAddress",
+        serializedName: "ComplementAddress",
         type: {
           name: "String"
         }
       },
       city: {
-        serializedName: "city",
+        serializedName: "City",
         type: {
           name: "String"
         }
       },
       state: {
-        serializedName: "state",
+        serializedName: "State",
         type: {
           name: "String"
         }
       },
       zipCode: {
-        serializedName: "zipCode",
+        serializedName: "ZipCode",
         type: {
           name: "String"
         }
       },
       country: {
-        serializedName: "country",
+        serializedName: "Country",
         type: {
           name: "String"
         }
       },
       email: {
-        serializedName: "email",
+        serializedName: "Email",
         type: {
           name: "String"
         }
       },
       userPhoneNumbers: {
-        serializedName: "userPhoneNumbers",
+        serializedName: "UserPhoneNumbers",
         type: {
           name: "Sequence",
           element: {
@@ -12939,7 +13480,7 @@ export const CyberjusticeLabKernelServiceContractsUProfileUserData: msRest.Compo
         }
       },
       userAttributes: {
-        serializedName: "userAttributes",
+        serializedName: "UserAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -12951,25 +13492,25 @@ export const CyberjusticeLabKernelServiceContractsUProfileUserData: msRest.Compo
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -12984,104 +13525,104 @@ export const CyberjusticeLabKernelServiceContractsUserUserData: msRest.Composite
     name: "Composite",
     className: "CyberjusticeLabKernelServiceContractsUserUserData",
     modelProperties: {
-      iD: {
-        serializedName: "iD",
+      id: {
+        serializedName: "ID",
         type: {
           name: "Number"
         }
       },
       organizationID: {
-        serializedName: "organizationID",
+        serializedName: "OrganizationID",
         type: {
           name: "Number"
         }
       },
       userName: {
-        serializedName: "userName",
+        serializedName: "UserName",
         type: {
           name: "String"
         }
       },
       city: {
-        serializedName: "city",
+        serializedName: "City",
         type: {
           name: "String"
         }
       },
       country: {
-        serializedName: "country",
+        serializedName: "Country",
         type: {
           name: "String"
         }
       },
       province: {
-        serializedName: "province",
+        serializedName: "Province",
         type: {
           name: "String"
         }
       },
       zipcode: {
-        serializedName: "zipcode",
+        serializedName: "Zipcode",
         type: {
           name: "String"
         }
       },
       phone: {
-        serializedName: "phone",
+        serializedName: "Phone",
         type: {
           name: "String"
         }
       },
       phone2: {
-        serializedName: "phone2",
+        serializedName: "Phone2",
         type: {
           name: "String"
         }
       },
       address: {
-        serializedName: "address",
+        serializedName: "Address",
         type: {
           name: "String"
         }
       },
       address2: {
-        serializedName: "address2",
+        serializedName: "Address2",
         type: {
           name: "String"
         }
       },
       password: {
-        serializedName: "password",
+        serializedName: "Password",
         type: {
           name: "String"
         }
       },
       email: {
-        serializedName: "email",
+        serializedName: "Email",
         type: {
           name: "String"
         }
       },
       firstName: {
-        serializedName: "firstName",
+        serializedName: "FirstName",
         type: {
           name: "String"
         }
       },
       lastName: {
-        serializedName: "lastName",
+        serializedName: "LastName",
         type: {
           name: "String"
         }
       },
       isActive: {
-        serializedName: "isActive",
+        serializedName: "IsActive",
         type: {
           name: "Boolean"
         }
       },
       groups: {
-        serializedName: "groups",
+        serializedName: "Groups",
         type: {
           name: "Sequence",
           element: {
@@ -13092,25 +13633,25 @@ export const CyberjusticeLabKernelServiceContractsUserUserData: msRest.Composite
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -13126,31 +13667,31 @@ export const CyberjusticeLabKernelServiceContractsUserGroupData: msRest.Composit
     className: "CyberjusticeLabKernelServiceContractsUserGroupData",
     modelProperties: {
       groupId: {
-        serializedName: "groupId",
+        serializedName: "GroupId",
         type: {
           name: "Number"
         }
       },
       groupName: {
-        serializedName: "groupName",
+        serializedName: "GroupName",
         type: {
           name: "String"
         }
       },
       organizationId: {
-        serializedName: "organizationId",
+        serializedName: "OrganizationId",
         type: {
           name: "Number"
         }
       },
       description: {
-        serializedName: "description",
+        serializedName: "Description",
         type: {
           name: "String"
         }
       },
       users: {
-        serializedName: "users",
+        serializedName: "Users",
         type: {
           name: "Sequence",
           element: {
@@ -13172,61 +13713,61 @@ export const CyberjusticeLabKernelServiceContractsUserClaimTransformationRuleDat
     className: "CyberjusticeLabKernelServiceContractsUserClaimTransformationRuleData",
     modelProperties: {
       claimRuleId: {
-        serializedName: "claimRuleId",
+        serializedName: "ClaimRuleId",
         type: {
           name: "Number"
         }
       },
       organizationId: {
-        serializedName: "organizationId",
+        serializedName: "OrganizationId",
         type: {
           name: "Number"
         }
       },
       groupId: {
-        serializedName: "groupId",
+        serializedName: "GroupId",
         type: {
           name: "Number"
         }
       },
       claimTypeURI: {
-        serializedName: "claimTypeURI",
+        serializedName: "ClaimTypeURI",
         type: {
           name: "String"
         }
       },
       claimType: {
-        serializedName: "claimType",
+        serializedName: "ClaimType",
         type: {
           name: "String"
         }
       },
       isUserName: {
-        serializedName: "isUserName",
+        serializedName: "IsUserName",
         type: {
           name: "Boolean"
         }
       },
       isFirstName: {
-        serializedName: "isFirstName",
+        serializedName: "IsFirstName",
         type: {
           name: "Boolean"
         }
       },
       isLastName: {
-        serializedName: "isLastName",
+        serializedName: "IsLastName",
         type: {
           name: "Boolean"
         }
       },
       isEmail: {
-        serializedName: "isEmail",
+        serializedName: "IsEmail",
         type: {
           name: "Boolean"
         }
       },
       isTenant: {
-        serializedName: "isTenant",
+        serializedName: "IsTenant",
         type: {
           name: "Boolean"
         }
@@ -13242,37 +13783,37 @@ export const CyberjusticeLabKernelServiceContractsUserOrganizationData: msRest.C
     className: "CyberjusticeLabKernelServiceContractsUserOrganizationData",
     modelProperties: {
       organizationId: {
-        serializedName: "organizationId",
+        serializedName: "OrganizationId",
         type: {
           name: "Number"
         }
       },
       organizationName: {
-        serializedName: "organizationName",
+        serializedName: "OrganizationName",
         type: {
           name: "String"
         }
       },
       organizationDomain: {
-        serializedName: "organizationDomain",
+        serializedName: "OrganizationDomain",
         type: {
           name: "String"
         }
       },
       organizationGuid: {
-        serializedName: "organizationGuid",
+        serializedName: "OrganizationGuid",
         type: {
           name: "Uuid"
         }
       },
       tenantId: {
-        serializedName: "tenantId",
+        serializedName: "TenantId",
         type: {
           name: "Uuid"
         }
       },
       groups: {
-        serializedName: "groups",
+        serializedName: "Groups",
         type: {
           name: "Sequence",
           element: {
@@ -13284,7 +13825,7 @@ export const CyberjusticeLabKernelServiceContractsUserOrganizationData: msRest.C
         }
       },
       users: {
-        serializedName: "users",
+        serializedName: "Users",
         type: {
           name: "Sequence",
           element: {
@@ -13296,7 +13837,7 @@ export const CyberjusticeLabKernelServiceContractsUserOrganizationData: msRest.C
         }
       },
       claimTransformationRules: {
-        serializedName: "claimTransformationRules",
+        serializedName: "ClaimTransformationRules",
         type: {
           name: "Sequence",
           element: {
@@ -13318,31 +13859,31 @@ export const CyberjusticeLabKernelSharedUserModelsOrganizationSummaryModel: msRe
     className: "CyberjusticeLabKernelSharedUserModelsOrganizationSummaryModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Number"
         }
       },
       name: {
-        serializedName: "name",
+        serializedName: "Name",
         type: {
           name: "String"
         }
       },
       domain: {
-        serializedName: "domain",
+        serializedName: "Domain",
         type: {
           name: "String"
         }
       },
       publicId: {
-        serializedName: "publicId",
+        serializedName: "PublicId",
         type: {
           name: "Uuid"
         }
       },
       tenantId: {
-        serializedName: "tenantId",
+        serializedName: "TenantId",
         type: {
           name: "Uuid"
         }
@@ -13358,43 +13899,43 @@ export const CyberjusticeLabKernelServiceContractsWitnessWitnessPhoneNumberData:
     className: "CyberjusticeLabKernelServiceContractsWitnessWitnessPhoneNumberData",
     modelProperties: {
       witnessPhoneNumberId: {
-        serializedName: "witnessPhoneNumberId",
+        serializedName: "WitnessPhoneNumberId",
         type: {
           name: "Uuid"
         }
       },
       witnessId: {
-        serializedName: "witnessId",
+        serializedName: "WitnessId",
         type: {
           name: "Uuid"
         }
       },
       phone: {
-        serializedName: "phone",
+        serializedName: "Phone",
         type: {
           name: "String"
         }
       },
       phoneTypeId: {
-        serializedName: "phoneTypeId",
+        serializedName: "PhoneTypeId",
         type: {
           name: "String"
         }
       },
       phoneExtention: {
-        serializedName: "phoneExtention",
+        serializedName: "PhoneExtention",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -13410,25 +13951,25 @@ export const CyberjusticeLabKernelServiceContractsWitnessWitnessExpertiseData: m
     className: "CyberjusticeLabKernelServiceContractsWitnessWitnessExpertiseData",
     modelProperties: {
       witnessId: {
-        serializedName: "witnessId",
+        serializedName: "WitnessId",
         type: {
           name: "Uuid"
         }
       },
       expertiseCode: {
-        serializedName: "expertiseCode",
+        serializedName: "ExpertiseCode",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -13444,25 +13985,25 @@ export const CyberjusticeLabKernelServiceContractsWitnessWitnessDocumentData: ms
     className: "CyberjusticeLabKernelServiceContractsWitnessWitnessDocumentData",
     modelProperties: {
       witnessId: {
-        serializedName: "witnessId",
+        serializedName: "WitnessId",
         type: {
           name: "Uuid"
         }
       },
       documentId: {
-        serializedName: "documentId",
+        serializedName: "DocumentId",
         type: {
           name: "Uuid"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -13478,109 +14019,109 @@ export const CyberjusticeLabKernelServiceContractsWitnessWitnessData: msRest.Com
     className: "CyberjusticeLabKernelServiceContractsWitnessWitnessData",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       menuId: {
-        serializedName: "menuId",
+        serializedName: "MenuId",
         type: {
           name: "Uuid"
         }
       },
       isExpert: {
-        serializedName: "isExpert",
+        serializedName: "IsExpert",
         type: {
           name: "Boolean"
         }
       },
       userCode: {
-        serializedName: "userCode",
+        serializedName: "UserCode",
         type: {
           name: "String"
         }
       },
       password: {
-        serializedName: "password",
+        serializedName: "Password",
         type: {
           name: "String"
         }
       },
       firstname: {
-        serializedName: "firstname",
+        serializedName: "Firstname",
         type: {
           name: "String"
         }
       },
       lastname: {
-        serializedName: "lastname",
+        serializedName: "Lastname",
         type: {
           name: "String"
         }
       },
       isActive: {
-        serializedName: "isActive",
+        serializedName: "IsActive",
         type: {
           name: "Boolean"
         }
       },
       gender: {
-        serializedName: "gender",
+        serializedName: "Gender",
         type: {
           name: "String"
         }
       },
       address: {
-        serializedName: "address",
+        serializedName: "Address",
         type: {
           name: "String"
         }
       },
       address2: {
-        serializedName: "address2",
+        serializedName: "Address2",
         type: {
           name: "String"
         }
       },
       city: {
-        serializedName: "city",
+        serializedName: "City",
         type: {
           name: "String"
         }
       },
       province: {
-        serializedName: "province",
+        serializedName: "Province",
         type: {
           name: "String"
         }
       },
       postalCode: {
-        serializedName: "postalCode",
+        serializedName: "PostalCode",
         type: {
           name: "String"
         }
       },
       email: {
-        serializedName: "email",
+        serializedName: "Email",
         type: {
           name: "String"
         }
       },
       witnessPhoneNumbers: {
-        serializedName: "witnessPhoneNumbers",
+        serializedName: "WitnessPhoneNumbers",
         type: {
           name: "Sequence",
           element: {
@@ -13592,7 +14133,7 @@ export const CyberjusticeLabKernelServiceContractsWitnessWitnessData: msRest.Com
         }
       },
       witnessExpertises: {
-        serializedName: "witnessExpertises",
+        serializedName: "WitnessExpertises",
         type: {
           name: "Sequence",
           element: {
@@ -13604,7 +14145,7 @@ export const CyberjusticeLabKernelServiceContractsWitnessWitnessData: msRest.Com
         }
       },
       witnessDocuments: {
-        serializedName: "witnessDocuments",
+        serializedName: "WitnessDocuments",
         type: {
           name: "Sequence",
           element: {
@@ -13616,25 +14157,25 @@ export const CyberjusticeLabKernelServiceContractsWitnessWitnessData: msRest.Com
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       createdDate: {
-        serializedName: "createdDate",
+        serializedName: "CreatedDate",
         type: {
           name: "DateTime"
         }
       },
       createdBy: {
-        serializedName: "createdBy",
+        serializedName: "CreatedBy",
         type: {
           name: "String"
         }
@@ -13650,7 +14191,7 @@ export const CyberjusticeLabKernelSharedWitnessAttributesFilters: msRest.Composi
     className: "CyberjusticeLabKernelSharedWitnessAttributesFilters",
     modelProperties: {
       notAndAttributes: {
-        serializedName: "notAndAttributes",
+        serializedName: "NotAndAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -13662,7 +14203,7 @@ export const CyberjusticeLabKernelSharedWitnessAttributesFilters: msRest.Composi
         }
       },
       andAttributes: {
-        serializedName: "andAttributes",
+        serializedName: "AndAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -13674,7 +14215,7 @@ export const CyberjusticeLabKernelSharedWitnessAttributesFilters: msRest.Composi
         }
       },
       orAttributes: {
-        serializedName: "orAttributes",
+        serializedName: "OrAttributes",
         type: {
           name: "Sequence",
           element: {
@@ -13696,13 +14237,13 @@ export const CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData: msRe
     className: "CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       partyIds: {
-        serializedName: "partyIds",
+        serializedName: "PartyIds",
         type: {
           name: "Sequence",
           element: {
@@ -13713,7 +14254,7 @@ export const CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData: msRe
         }
       },
       witnessIds: {
-        serializedName: "witnessIds",
+        serializedName: "WitnessIds",
         type: {
           name: "Sequence",
           element: {
@@ -13724,37 +14265,37 @@ export const CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData: msRe
         }
       },
       searchText: {
-        serializedName: "searchText",
+        serializedName: "SearchText",
         type: {
           name: "String"
         }
       },
       searchBy: {
-        serializedName: "searchBy",
+        serializedName: "SearchBy",
         type: {
           name: "String"
         }
       },
       take: {
-        serializedName: "take",
+        serializedName: "Take",
         type: {
           name: "Number"
         }
       },
       skip: {
-        serializedName: "skip",
+        serializedName: "Skip",
         type: {
           name: "Number"
         }
       },
       orderByDescending: {
-        serializedName: "orderByDescending",
+        serializedName: "OrderByDescending",
         type: {
           name: "Boolean"
         }
       },
       attributesFilters: {
-        serializedName: "attributesFilters",
+        serializedName: "AttributesFilters",
         type: {
           name: "Sequence",
           element: {
@@ -13776,25 +14317,25 @@ export const CyberjusticeLabKernelSharedWitnessModelsPhoneNumberModel: msRest.Co
     className: "CyberjusticeLabKernelSharedWitnessModelsPhoneNumberModel",
     modelProperties: {
       phoneNumberId: {
-        serializedName: "phoneNumberId",
+        serializedName: "PhoneNumberId",
         type: {
           name: "Uuid"
         }
       },
       phone: {
-        serializedName: "phone",
+        serializedName: "Phone",
         type: {
           name: "String"
         }
       },
       phoneTypeId: {
-        serializedName: "phoneTypeId",
+        serializedName: "PhoneTypeId",
         type: {
           name: "String"
         }
       },
       phoneExtension: {
-        serializedName: "phoneExtension",
+        serializedName: "PhoneExtension",
         type: {
           name: "String"
         }
@@ -13810,13 +14351,59 @@ export const CyberjusticeLabKernelSharedWitnessModelsAttributeModel: msRest.Comp
     className: "CyberjusticeLabKernelSharedWitnessModelsAttributeModel",
     modelProperties: {
       key: {
-        serializedName: "key",
+        serializedName: "Key",
         type: {
           name: "String"
         }
       },
       value: {
-        serializedName: "value",
+        serializedName: "Value",
+        type: {
+          name: "String"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedWitnessModelsWitnessPartyActionModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.Witness.Models.WitnessPartyActionModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedWitnessModelsWitnessPartyActionModel",
+    modelProperties: {
+      id: {
+        serializedName: "Id",
+        type: {
+          name: "Number"
+        }
+      },
+      partyId: {
+        serializedName: "PartyId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      representativeId: {
+        serializedName: "RepresentativeId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      actionCode: {
+        serializedName: "ActionCode",
+        type: {
+          name: "String"
+        }
+      },
+      actionDate: {
+        serializedName: "ActionDate",
+        type: {
+          name: "DateTime"
+        }
+      },
+      actionComplement: {
+        serializedName: "ActionComplement",
         type: {
           name: "String"
         }
@@ -13832,109 +14419,109 @@ export const CyberjusticeLabKernelSharedWitnessModelsWitnessModel: msRest.Compos
     className: "CyberjusticeLabKernelSharedWitnessModelsWitnessModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       menuId: {
-        serializedName: "menuId",
+        serializedName: "MenuId",
         type: {
           name: "Uuid"
         }
       },
       isExpert: {
-        serializedName: "isExpert",
+        serializedName: "IsExpert",
         type: {
           name: "Boolean"
         }
       },
       userCode: {
-        serializedName: "userCode",
+        serializedName: "UserCode",
         type: {
           name: "String"
         }
       },
       firstName: {
-        serializedName: "firstName",
+        serializedName: "FirstName",
         type: {
           name: "String"
         }
       },
       lastName: {
-        serializedName: "lastName",
+        serializedName: "LastName",
         type: {
           name: "String"
         }
       },
       isActive: {
-        serializedName: "isActive",
+        serializedName: "IsActive",
         type: {
           name: "Boolean"
         }
       },
       gender: {
-        serializedName: "gender",
+        serializedName: "Gender",
         type: {
           name: "String"
         }
       },
       address: {
-        serializedName: "address",
+        serializedName: "Address",
         type: {
           name: "String"
         }
       },
       address2: {
-        serializedName: "address2",
+        serializedName: "Address2",
         type: {
           name: "String"
         }
       },
       city: {
-        serializedName: "city",
+        serializedName: "City",
         type: {
           name: "String"
         }
       },
       province: {
-        serializedName: "province",
+        serializedName: "Province",
         type: {
           name: "String"
         }
       },
       postalCode: {
-        serializedName: "postalCode",
+        serializedName: "PostalCode",
         type: {
           name: "String"
         }
       },
       addedBy: {
-        serializedName: "addedBy",
+        serializedName: "AddedBy",
         type: {
           name: "String"
         }
       },
       email: {
-        serializedName: "email",
+        serializedName: "Email",
         type: {
           name: "String"
         }
       },
       phoneNumbers: {
-        serializedName: "phoneNumbers",
+        serializedName: "PhoneNumbers",
         type: {
           name: "Sequence",
           element: {
@@ -13946,7 +14533,7 @@ export const CyberjusticeLabKernelSharedWitnessModelsWitnessModel: msRest.Compos
         }
       },
       expertises: {
-        serializedName: "expertises",
+        serializedName: "Expertises",
         type: {
           name: "Sequence",
           element: {
@@ -13957,7 +14544,7 @@ export const CyberjusticeLabKernelSharedWitnessModelsWitnessModel: msRest.Compos
         }
       },
       documents: {
-        serializedName: "documents",
+        serializedName: "Documents",
         type: {
           name: "Sequence",
           element: {
@@ -13968,13 +14555,25 @@ export const CyberjusticeLabKernelSharedWitnessModelsWitnessModel: msRest.Compos
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
             type: {
               name: "Composite",
               className: "CyberjusticeLabKernelSharedWitnessModelsAttributeModel"
+            }
+          }
+        }
+      },
+      partyActions: {
+        serializedName: "PartyActions",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedWitnessModelsWitnessPartyActionModel"
             }
           }
         }
@@ -13990,19 +14589,19 @@ export const CyberjusticeLabKernelSharedWitnessModelsWitnessApiResponseData: msR
     className: "CyberjusticeLabKernelSharedWitnessModelsWitnessApiResponseData",
     modelProperties: {
       count: {
-        serializedName: "count",
+        serializedName: "Count",
         type: {
           name: "Number"
         }
       },
       countFiltered: {
-        serializedName: "countFiltered",
+        serializedName: "CountFiltered",
         type: {
           name: "Number"
         }
       },
       witnesses: {
-        serializedName: "witnesses",
+        serializedName: "Witnesses",
         type: {
           name: "Sequence",
           element: {
@@ -14024,25 +14623,65 @@ export const CyberjusticeLabKernelServiceContractsWitnessJudicialFileExternalWit
     className: "CyberjusticeLabKernelServiceContractsWitnessJudicialFileExternalWitnessData",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       witnessCode: {
-        serializedName: "witnessCode",
+        serializedName: "WitnessCode",
         type: {
           name: "String"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       witnessType: {
-        serializedName: "witnessType",
+        serializedName: "WitnessType",
+        type: {
+          name: "String"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedWitnessModelsCreateWitnessPartyActionModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.Witness.Models.CreateWitnessPartyActionModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedWitnessModelsCreateWitnessPartyActionModel",
+    modelProperties: {
+      partyId: {
+        serializedName: "PartyId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      representativeId: {
+        serializedName: "RepresentativeId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      actionCode: {
+        serializedName: "ActionCode",
+        type: {
+          name: "String"
+        }
+      },
+      actionDate: {
+        serializedName: "ActionDate",
+        type: {
+          name: "DateTime"
+        }
+      },
+      actionComplement: {
+        serializedName: "ActionComplement",
         type: {
           name: "String"
         }
@@ -14058,109 +14697,109 @@ export const CyberjusticeLabKernelSharedWitnessModelsCreateWitnessModel: msRest.
     className: "CyberjusticeLabKernelSharedWitnessModelsCreateWitnessModel",
     modelProperties: {
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       menuId: {
-        serializedName: "menuId",
+        serializedName: "MenuId",
         type: {
           name: "Uuid"
         }
       },
       isExpert: {
-        serializedName: "isExpert",
+        serializedName: "IsExpert",
         type: {
           name: "Boolean"
         }
       },
       userCode: {
-        serializedName: "userCode",
+        serializedName: "UserCode",
         type: {
           name: "String"
         }
       },
       password: {
-        serializedName: "password",
+        serializedName: "Password",
         type: {
           name: "String"
         }
       },
       firstname: {
-        serializedName: "firstname",
+        serializedName: "Firstname",
         type: {
           name: "String"
         }
       },
       lastname: {
-        serializedName: "lastname",
+        serializedName: "Lastname",
         type: {
           name: "String"
         }
       },
       isActive: {
-        serializedName: "isActive",
+        serializedName: "IsActive",
         type: {
           name: "Boolean"
         }
       },
       gender: {
-        serializedName: "gender",
+        serializedName: "Gender",
         type: {
           name: "String"
         }
       },
       address: {
-        serializedName: "address",
+        serializedName: "Address",
         type: {
           name: "String"
         }
       },
       address2: {
-        serializedName: "address2",
+        serializedName: "Address2",
         type: {
           name: "String"
         }
       },
       city: {
-        serializedName: "city",
+        serializedName: "City",
         type: {
           name: "String"
         }
       },
       province: {
-        serializedName: "province",
+        serializedName: "Province",
         type: {
           name: "String"
         }
       },
       postalCode: {
-        serializedName: "postalCode",
+        serializedName: "PostalCode",
         type: {
           name: "String"
         }
       },
       email: {
-        serializedName: "email",
+        serializedName: "Email",
         type: {
           name: "String"
         }
       },
       addedBy: {
-        serializedName: "addedBy",
+        serializedName: "AddedBy",
         type: {
           name: "String"
         }
       },
       phoneNumbers: {
-        serializedName: "phoneNumbers",
+        serializedName: "PhoneNumbers",
         type: {
           name: "Sequence",
           element: {
@@ -14172,7 +14811,7 @@ export const CyberjusticeLabKernelSharedWitnessModelsCreateWitnessModel: msRest.
         }
       },
       expertises: {
-        serializedName: "expertises",
+        serializedName: "Expertises",
         type: {
           name: "Sequence",
           element: {
@@ -14183,26 +14822,38 @@ export const CyberjusticeLabKernelSharedWitnessModelsCreateWitnessModel: msRest.
         }
       },
       documentId: {
-        serializedName: "documentId",
+        serializedName: "DocumentId",
         type: {
           name: "Uuid"
         }
       },
       document: {
-        serializedName: "document",
+        serializedName: "Document",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
             type: {
               name: "Composite",
               className: "CyberjusticeLabKernelSharedWitnessModelsAttributeModel"
+            }
+          }
+        }
+      },
+      partyActions: {
+        serializedName: "PartyActions",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedWitnessModelsCreateWitnessPartyActionModel"
             }
           }
         }
@@ -14218,19 +14869,19 @@ export const CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessAttributes: ms
     className: "CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessAttributes",
     modelProperties: {
       witnessId: {
-        serializedName: "witnessId",
+        serializedName: "WitnessId",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
@@ -14252,121 +14903,121 @@ export const CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessModel: msRest.
     className: "CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessModel",
     modelProperties: {
       id: {
-        serializedName: "id",
+        serializedName: "Id",
         type: {
           name: "Uuid"
         }
       },
       fileId: {
-        serializedName: "fileId",
+        serializedName: "FileId",
         type: {
           name: "Uuid"
         }
       },
       partyId: {
-        serializedName: "partyId",
+        serializedName: "PartyId",
         type: {
           name: "Uuid"
         }
       },
       menuId: {
-        serializedName: "menuId",
+        serializedName: "MenuId",
         type: {
           name: "Uuid"
         }
       },
       isExpert: {
-        serializedName: "isExpert",
+        serializedName: "IsExpert",
         type: {
           name: "Boolean"
         }
       },
       userCode: {
-        serializedName: "userCode",
+        serializedName: "UserCode",
         type: {
           name: "String"
         }
       },
       password: {
-        serializedName: "password",
+        serializedName: "Password",
         type: {
           name: "String"
         }
       },
       firstName: {
-        serializedName: "firstName",
+        serializedName: "FirstName",
         type: {
           name: "String"
         }
       },
       lastName: {
-        serializedName: "lastName",
+        serializedName: "LastName",
         type: {
           name: "String"
         }
       },
       isActive: {
-        serializedName: "isActive",
+        serializedName: "IsActive",
         type: {
           name: "Boolean"
         }
       },
       gender: {
-        serializedName: "gender",
+        serializedName: "Gender",
         type: {
           name: "String"
         }
       },
       address: {
-        serializedName: "address",
+        serializedName: "Address",
         type: {
           name: "String"
         }
       },
       address2: {
-        serializedName: "address2",
+        serializedName: "Address2",
         type: {
           name: "String"
         }
       },
       city: {
-        serializedName: "city",
+        serializedName: "City",
         type: {
           name: "String"
         }
       },
       province: {
-        serializedName: "province",
+        serializedName: "Province",
         type: {
           name: "String"
         }
       },
       postalCode: {
-        serializedName: "postalCode",
+        serializedName: "PostalCode",
         type: {
           name: "String"
         }
       },
       modifiedBy: {
-        serializedName: "modifiedBy",
+        serializedName: "ModifiedBy",
         type: {
           name: "String"
         }
       },
       modifiedDate: {
-        serializedName: "modifiedDate",
+        serializedName: "ModifiedDate",
         type: {
           name: "DateTime"
         }
       },
       email: {
-        serializedName: "email",
+        serializedName: "Email",
         type: {
           name: "String"
         }
       },
       phoneNumbers: {
-        serializedName: "phoneNumbers",
+        serializedName: "PhoneNumbers",
         type: {
           name: "Sequence",
           element: {
@@ -14378,7 +15029,7 @@ export const CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessModel: msRest.
         }
       },
       expertises: {
-        serializedName: "expertises",
+        serializedName: "Expertises",
         type: {
           name: "Sequence",
           element: {
@@ -14389,26 +15040,77 @@ export const CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessModel: msRest.
         }
       },
       document: {
-        serializedName: "document",
+        serializedName: "Document",
         type: {
           name: "Composite",
           className: "CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel"
         }
       },
       documentId: {
-        serializedName: "documentId",
+        serializedName: "DocumentId",
         type: {
           name: "Uuid"
         }
       },
       attributes: {
-        serializedName: "attributes",
+        serializedName: "Attributes",
         type: {
           name: "Sequence",
           element: {
             type: {
               name: "Composite",
               className: "CyberjusticeLabKernelSharedWitnessModelsAttributeModel"
+            }
+          }
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.Witness.Models.UpdateWitnessPartyActionsModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel",
+    modelProperties: {
+      witnessId: {
+        serializedName: "WitnessId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      updatedPartyActions: {
+        serializedName: "UpdatedPartyActions",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedWitnessModelsWitnessPartyActionModel"
+            }
+          }
+        }
+      },
+      deletedPartyActions: {
+        serializedName: "DeletedPartyActions",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Number"
+            }
+          }
+        }
+      },
+      createdPartyActions: {
+        serializedName: "CreatedPartyActions",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedWitnessModelsCreateWitnessPartyActionModel"
             }
           }
         }

@@ -332,6 +332,16 @@ export var cycleIds = {
     },
     collectionFormat: msRest.QueryCollectionFormat.Multi
 };
+export var dateParameter = {
+    parameterPath: "dateParameter",
+    mapper: {
+        required: true,
+        serializedName: "date",
+        type: {
+            name: "DateTime"
+        }
+    }
+};
 export var disputeDescription = {
     parameterPath: "disputeDescription",
     mapper: {
@@ -430,6 +440,16 @@ export var excludedStatuses = {
     },
     collectionFormat: msRest.QueryCollectionFormat.Multi
 };
+export var expiryDate = {
+    parameterPath: "expiryDate",
+    mapper: {
+        required: true,
+        serializedName: "expiryDate",
+        type: {
+            name: "DateTime"
+        }
+    }
+};
 export var fileId0 = {
     parameterPath: "fileId",
     mapper: {
@@ -483,6 +503,16 @@ export var fileIds1 = {
         }
     },
     collectionFormat: msRest.QueryCollectionFormat.Multi
+};
+export var fileInvitationId = {
+    parameterPath: "fileInvitationId",
+    mapper: {
+        required: true,
+        serializedName: "fileInvitationId",
+        type: {
+            name: "Uuid"
+        }
+    }
 };
 export var fileStatus = {
     parameterPath: "fileStatus",
@@ -549,6 +579,16 @@ export var id1 = {
     mapper: {
         required: true,
         serializedName: "id",
+        type: {
+            name: "Uuid"
+        }
+    }
+};
+export var invitationId = {
+    parameterPath: "invitationId",
+    mapper: {
+        required: true,
+        serializedName: "invitationId",
         type: {
             name: "Uuid"
         }
@@ -706,13 +746,23 @@ export var lang = {
         }
     }
 };
-export var lastModified = {
+export var lastModified0 = {
     parameterPath: "lastModified",
     mapper: {
         required: true,
         serializedName: "lastModified",
         type: {
             name: "Number"
+        }
+    }
+};
+export var lastModified1 = {
+    parameterPath: "lastModified",
+    mapper: {
+        required: true,
+        serializedName: "lastModified",
+        type: {
+            name: "DateTime"
         }
     }
 };

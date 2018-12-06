@@ -67,10 +67,10 @@ export interface CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileW
  */
 export interface CyberjusticeLabKernelServiceContractsCalendarBaseCalendarUpdateData {
   /**
-   * @member {string} [iD] The internal Guid of the base calendar.
+   * @member {string} [id] The internal Guid of the base calendar.
    * Required. Verified existence.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {Date} [modifiedDate] The modified date of an object.
    * Required for optimistic concurrency.
@@ -106,10 +106,10 @@ export interface CyberjusticeLabKernelServiceContractsCalendarBaseCalendarUpdate
  */
 export interface CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityUpdateData {
   /**
-   * @member {string} [iD] The internal ID of the availability period.
+   * @member {string} [id] The internal ID of the availability period.
    * Required. Verified existence.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {Date} [modifiedDate] The modified date of an object.
    * Required for optimistic concurrency.
@@ -145,10 +145,10 @@ export interface CyberjusticeLabKernelServiceContractsCalendarPeriodAvailability
  */
 export interface CyberjusticeLabKernelServiceContractsCalendarClosedDayUpdateData {
   /**
-   * @member {string} [iD] The ID of the closed day.
+   * @member {string} [id] The ID of the closed day.
    * Required. Verified existance.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {Date} [beginDate] The begin date where it is taking place.
    * Required. Must be before the end date.
@@ -181,9 +181,9 @@ export interface CyberjusticeLabKernelServiceContractsCalendarClosedDayUpdateDat
  */
 export interface CyberjusticeLabKernelServiceContractsCalendarAssignmentWeekRoomUserLinkData {
   /**
-   * @member {string} [iD] The assignment week room user link data Id.
+   * @member {string} [id] The assignment week room user link data Id.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [assignmentCycleId] The linked assignment cycle's Id.
    */
@@ -228,9 +228,9 @@ export interface CyberjusticeLabKernelServiceContractsCalendarAssignmentWeekRoom
  */
 export interface CyberjusticeLabKernelServiceContractsCalendarAssignmentCycleUpdateData {
   /**
-   * @member {string} [iD] The assignment cycle's internal Id.
+   * @member {string} [id] The assignment cycle's internal Id.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {Date} [modifiedDate] The modified date of an object.
    * Required for optimistic concurrency.
@@ -1739,9 +1739,9 @@ export interface CyberjusticeLabKernelSharedCalendarModelsCreateEventModel {
  */
 export interface CyberjusticeLabKernelServiceContractsCalendarClosedDayData {
   /**
-   * @member {string} [iD] The ID of the closed day.
+   * @member {string} [id] The ID of the closed day.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [baseCalendarId] The ID of the base calendar who have a
    * scheduled day off.
@@ -1780,9 +1780,9 @@ export interface CyberjusticeLabKernelServiceContractsCalendarClosedDayData {
  */
 export interface CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityRoleData {
   /**
-   * @member {string} [iD] The internal ID of the role period.
+   * @member {string} [id] The internal ID of the role period.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [periodAvailabilityId] The ID of the availability period.
    * Required. Verified existence.
@@ -1819,9 +1819,9 @@ export interface CyberjusticeLabKernelServiceContractsCalendarPeriodAvailability
  */
 export interface CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityData {
   /**
-   * @member {string} [iD] The internal ID of the availability period.
+   * @member {string} [id] The internal ID of the availability period.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [baseCalendarId] The ID of the base calendar.
    */
@@ -1953,10 +1953,10 @@ export interface CyberjusticeLabKernelServiceContractsCalendarBaseCalendarData {
    */
   roles?: CyberjusticeLabKernelServiceContractsCalendarBaseCalendarRoleData[];
   /**
-   * @member {string} [iD] The internal Guid of the base calendar.
+   * @member {string} [id] The internal Guid of the base calendar.
    * Required. Verified existence.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {Date} [modifiedDate] The modified date of an object.
    * Required for optimistic concurrency.
@@ -1992,9 +1992,9 @@ export interface CyberjusticeLabKernelServiceContractsCalendarBaseCalendarData {
  */
 export interface CyberjusticeLabKernelServiceContractsCalendarAssignmentCycleData {
   /**
-   * @member {string} [iD] The assignment cycle's internal Id.
+   * @member {string} [id] The assignment cycle's internal Id.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {Status10} [status] The cycle's status.
    * Required. Possible values include: 'Draft', 'Active'
@@ -2215,9 +2215,9 @@ export interface CyberjusticeLabKernelSharedCalendarModelsCalendarModel {
  */
 export interface CyberjusticeLabKernelServiceContractsDocumentDocumentData {
   /**
-   * @member {string} [iD] Internal ID of the document.
+   * @member {string} [id] Internal ID of the document.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [fileID] ID of the judicial file the document belongs to.
    */
@@ -2247,7 +2247,7 @@ export interface CyberjusticeLabKernelServiceContractsDocumentDocumentData {
    * @member {FormatEnum} [formatEnum] Enum format of the document. Use this to
    * assign the property with a correct enum. Note : The format enum does not
    * contain the dot in "png". Possible values include: 'pdf', 'jpeg', 'mp3',
-   * 'mp4', 'jpg', 'png', 'doc', 'docx', 'txt', 'tiff', 'gif'
+   * 'mp4', 'jpg', 'png', 'doc', 'docx', 'txt', 'tiff', 'gif', 'noformat'
    */
   formatEnum?: FormatEnum;
   /**
@@ -2383,6 +2383,26 @@ export interface CyberjusticeLabKernelSharedDocumentModelsAttributesFilters {
 
 /**
  * @interface
+ * An interface representing CyberjusticeLabKernelSharedDocumentModelsActionsFilters.
+ * Actions filters.
+ *
+ */
+export interface CyberjusticeLabKernelSharedDocumentModelsActionsFilters {
+  /**
+   * @member {SystemCollectionsGenericKeyValuePairSystemStringSystemString[]}
+   * [restrictedCodesAndComplements] Objects that have one of these codes (key)
+   * and complements (value, optional) are filtered out.
+   */
+  restrictedCodesAndComplements?: SystemCollectionsGenericKeyValuePairSystemStringSystemString[];
+  /**
+   * @member {string[]} [allowedPartyIds] The restricted codes don't apply to
+   * an action made by one of these parties.
+   */
+  allowedPartyIds?: string[];
+}
+
+/**
+ * @interface
  * An interface representing CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData.
  * Represents an api filter model when getting a list of judicial files.
  *
@@ -2439,6 +2459,11 @@ export interface CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData
    * [documentsAttributesFilters] Attributes filters.
    */
   documentsAttributesFilters?: CyberjusticeLabKernelSharedDocumentModelsAttributesFilters[];
+  /**
+   * @member {CyberjusticeLabKernelSharedDocumentModelsActionsFilters[]}
+   * [documentsActionsFilters] Actions filters.
+   */
+  documentsActionsFilters?: CyberjusticeLabKernelSharedDocumentModelsActionsFilters[];
 }
 
 /**
@@ -2456,6 +2481,43 @@ export interface CyberjusticeLabKernelSharedDocumentModelsAttributeModel {
    * @member {string} [value] Attribute value.
    */
   value?: string;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedDocumentModelsDocumentPartyActionModel.
+ * Class used for special actions parties. Actions and dates are significant
+ * only to the application.
+ *
+ */
+export interface CyberjusticeLabKernelSharedDocumentModelsDocumentPartyActionModel {
+  /**
+   * @member {number} [id] Unique ID of this action.
+   */
+  id?: number;
+  /**
+   * @member {string} [partyId] Party Id.
+   */
+  partyId?: string;
+  /**
+   * @member {string} [representativeId] Representative Id (optional).
+   */
+  representativeId?: string;
+  /**
+   * @member {string} [actionCode] Any code that the application needs about
+   * this document.
+   */
+  actionCode?: string;
+  /**
+   * @member {Date} [actionDate] Any date related to the code that the
+   * application needs.
+   */
+  actionDate?: Date;
+  /**
+   * @member {string} [actionComplement] Any code complement that the
+   * application needs about this action.
+   */
+  actionComplement?: string;
 }
 
 /**
@@ -2498,7 +2560,8 @@ export interface CyberjusticeLabKernelSharedDocumentModelsDocumentModel {
    * @member {FormatEnum1} [formatEnum] Enum format of the document. Use this
    * to assign the property with a correct enum. Note : The format enum does
    * not contain the dot in "png". Possible values include: 'pdf', 'jpeg',
-   * 'mp3', 'mp4', 'jpg', 'png', 'doc', 'docx', 'txt', 'tiff', 'gif'
+   * 'mp3', 'mp4', 'jpg', 'png', 'doc', 'docx', 'txt', 'tiff', 'gif',
+   * 'noformat'
    */
   formatEnum?: FormatEnum1;
   /**
@@ -2586,6 +2649,12 @@ export interface CyberjusticeLabKernelSharedDocumentModelsDocumentModel {
    */
   attributes?: CyberjusticeLabKernelSharedDocumentModelsAttributeModel[];
   /**
+   * @member
+   * {CyberjusticeLabKernelSharedDocumentModelsDocumentPartyActionModel[]}
+   * [partyActions] List of party actions.
+   */
+  partyActions?: CyberjusticeLabKernelSharedDocumentModelsDocumentPartyActionModel[];
+  /**
    * @member {Date} [modifiedDate] The modified date of an object.
    * Required for optimistic concurrency.
    */
@@ -2624,6 +2693,39 @@ export interface CyberjusticeLabKernelSharedDocumentModelsDocumentApiResponseDat
    * [documents] List of judicial files.
    */
   documents?: CyberjusticeLabKernelSharedDocumentModelsDocumentModel[];
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedDocumentModelsCreateDocumentPartyActionModel.
+ * Class used for special actions parties. Actions and dates are significant
+ * only to the application.
+ *
+ */
+export interface CyberjusticeLabKernelSharedDocumentModelsCreateDocumentPartyActionModel {
+  /**
+   * @member {string} [partyId] Party Id.
+   */
+  partyId?: string;
+  /**
+   * @member {string} [representativeId] Representative Id (optional).
+   */
+  representativeId?: string;
+  /**
+   * @member {string} [actionCode] Any code that the application needs about
+   * this document.
+   */
+  actionCode?: string;
+  /**
+   * @member {Date} [actionDate] Any date related to the code that the
+   * application needs.
+   */
+  actionDate?: Date;
+  /**
+   * @member {string} [actionComplement] Any code complement that the
+   * application needs about this action.
+   */
+  actionComplement?: string;
 }
 
 /**
@@ -2726,6 +2828,12 @@ export interface CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel {
    * the server.**
    */
   readonly hasRestriction?: boolean;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedDocumentModelsCreateDocumentPartyActionModel[]}
+   * [partyActions] List of party actions for this document.
+   */
+  partyActions?: CyberjusticeLabKernelSharedDocumentModelsCreateDocumentPartyActionModel[];
 }
 
 /**
@@ -2786,7 +2894,8 @@ export interface CyberjusticeLabKernelSharedDocumentModelsDocumentResponseModel 
   error?: CyberjusticeLabKernelSharedDocumentModelsDocumentErrorModel;
   /**
    * @member {StatusEnum3} [statusEnum] The document status insertion enum.
-   * Possible values include: 'Success', 'Error'
+   * Can be either Success or Error. Possible values include: 'Success',
+   * 'Error'
    */
   statusEnum?: StatusEnum3;
 }
@@ -2841,7 +2950,8 @@ export interface CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentContentM
    * @member {FormatEnum2} [formatEnum] Enum format of the document. Use this
    * to assign the property with a correct enum. Note : The format enum does
    * not contain the dot in "png". Possible values include: 'pdf', 'jpeg',
-   * 'mp3', 'mp4', 'jpg', 'png', 'doc', 'docx', 'txt', 'tiff', 'gif'
+   * 'mp3', 'mp4', 'jpg', 'png', 'doc', 'docx', 'txt', 'tiff', 'gif',
+   * 'noformat'
    */
   formatEnum?: FormatEnum2;
   /**
@@ -2914,6 +3024,38 @@ export interface CyberjusticeLabKernelSharedDocumentModelsEditDocumentAttributeM
    * [attributes] List of document attributes.
    */
   attributes?: CyberjusticeLabKernelSharedDocumentModelsAttributeModel[];
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel.
+ * Class used for special actions parties. Actions and dates are significant
+ * only to the application.
+ *
+ */
+export interface CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel {
+  /**
+   * @member {string} [documentId] The current document ID for the actions.
+   */
+  documentId?: string;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedDocumentModelsDocumentPartyActionModel[]}
+   * [updatedPartyActions] List of party actions to update. The IDs must be
+   * linked to the documentId.
+   */
+  updatedPartyActions?: CyberjusticeLabKernelSharedDocumentModelsDocumentPartyActionModel[];
+  /**
+   * @member {number[]} [deletedPartyActions] List of party actions to delete.
+   * The IDs must be linked to the documentId.
+   */
+  deletedPartyActions?: number[];
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedDocumentModelsCreateDocumentPartyActionModel[]}
+   * [createdPartyActions] List of party actions to create.
+   */
+  createdPartyActions?: CyberjusticeLabKernelSharedDocumentModelsCreateDocumentPartyActionModel[];
 }
 
 /**
@@ -4457,9 +4599,9 @@ export interface CyberjusticeLabKernelServiceContractsJudicialEntityProsecutingA
  */
 export interface CyberjusticeLabKernelServiceContractsJudicialEntityJudicialEntityData {
   /**
-   * @member {string} [iD] Internal ID of the judicial entity.
+   * @member {string} [id] Internal ID of the judicial entity.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [name] Name of the judicial entity.
    */
@@ -4539,9 +4681,9 @@ export interface CyberjusticeLabKernelServiceContractsJudicialEntityJudicialEnti
  */
 export interface CyberjusticeLabKernelServiceContractsJudicialFileContactPhoneNumberData {
   /**
-   * @member {string} [iD] Id of the type.
+   * @member {string} [id] Id of the type.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [phoneNumber] Phone number of the contact.
    */
@@ -4577,9 +4719,9 @@ export interface CyberjusticeLabKernelServiceContractsJudicialFileContactAttribu
  */
 export interface CyberjusticeLabKernelServiceContractsJudicialFileContactData {
   /**
-   * @member {string} [iD] Id of the contact.
+   * @member {string} [id] Id of the contact.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {boolean} [isCompany] True if is a company or false.
    */
@@ -4678,9 +4820,9 @@ export interface CyberjusticeLabKernelServiceContractsJudicialFileContactData {
  */
 export interface CyberjusticeLabKernelServiceContractsJudicialFileRepresentativeData {
   /**
-   * @member {string} [iD] Id of the representative.
+   * @member {string} [id] Id of the representative.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [name] Name of the representative.
    */
@@ -4940,9 +5082,9 @@ export interface CyberjusticeLabKernelServiceContractsJudicialFilePartyHearingPr
  */
 export interface CyberjusticeLabKernelServiceContractsJudicialFilePartyData {
   /**
-   * @member {string} [iD] Id of the party.
+   * @member {string} [id] Id of the party.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [fileId] Id of the file.
    */
@@ -5117,9 +5259,9 @@ export interface CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileTa
  */
 export interface CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileData {
   /**
-   * @member {string} [iD] Internal Guid of the file.
+   * @member {string} [id] Internal Guid of the file.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [judicialFileID] Friendly Id of the file.
    */
@@ -6230,9 +6372,9 @@ export interface CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileSe
  */
 export interface CyberjusticeLabKernelServiceContractsJudicialFileRepresentativeProfileData {
   /**
-   * @member {string} [iD] Id of the representative.
+   * @member {string} [id] Id of the representative.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [userName] Name of the representative.
    */
@@ -6271,9 +6413,9 @@ export interface CyberjusticeLabKernelServiceContractsJudicialFileRepresentative
  */
 export interface CyberjusticeLabKernelServiceContractsJudicialFileRepresentativeUserData {
   /**
-   * @member {string} [iD] Id of the representative.
+   * @member {string} [id] Id of the representative.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [name] Name of the representative.
    */
@@ -6504,29 +6646,190 @@ export interface CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileVe
 
 /**
  * @interface
- * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel.
- * A party invitation model.
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel.
+ * A File Invitation model.
  *
  */
-export interface CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel {
+export interface CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel {
   /**
-   * @member {string} [partyInvitationId] The Guid of the invitation.
+   * @member {Date} [modifiedDate] The modified date of an object.
+   * Required for optimistic concurrency.
    */
-  partyInvitationId?: string;
+  modifiedDate?: Date;
+  /**
+   * @member {string} [modifiedBy] The modified by of an object.
+   */
+  modifiedBy?: string;
+  /**
+   * @member {Date} [createdDate] The created date of an object.
+   */
+  createdDate?: Date;
+  /**
+   * @member {string} [createdBy] The created by of an object.
+   */
+  createdBy?: string;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileFileInvitationPartyInformationModel.
+ * Party information when reviewing an invitation.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileFileInvitationPartyInformationModel {
+  /**
+   * @member {string} [partyName] Name of the party
+   */
+  partyName?: string;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationInformationModel.
+ * A File Invitation information model.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationInformationModel {
+  /**
+   * @member {string} [fileInvitationId] The Guid of the invitation.
+   */
+  fileInvitationId?: string;
+  /**
+   * @member {string} [judicialFileId]
+   */
+  judicialFileId?: string;
   /**
    * @member {string} [partyId] The Guid of the party that the invited
    * representative will join.
    */
   partyId?: string;
   /**
-   * @member {Date} [expiryDate] The expiry date of the invitation.
+   * @member
+   * {CyberjusticeLabKernelSharedJudicialFileFileInvitationPartyInformationModel[]}
+   * [parties] List of parties in file.
    */
-  expiryDate?: Date;
+  parties?: CyberjusticeLabKernelSharedJudicialFileFileInvitationPartyInformationModel[];
   /**
-   * @member {string} [validationParameter] Parameters used to validate
+   * @member {string} [additionalAttributes] Additional attributes for the file
    * invitation.
    */
-  validationParameter?: string;
+  additionalAttributes?: string;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber.
+ * Phone number
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber {
+  /**
+   * @member {string} [number] Phone number
+   */
+  number?: string;
+  /**
+   * @member {string} [type] Type of the phone number.
+   */
+  type?: string;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation.
+ * Represents the information about the party that was invited.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation {
+  /**
+   * @member {string} [partyType] The type of the party.
+   */
+  partyType?: string;
+  /**
+   * @member {boolean} [isCompany] True if the party was invited as a company.
+   */
+  isCompany?: boolean;
+  /**
+   * @member {string} [companyName] Name of the company if the party
+   * {CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PartyInformation.IsCompany}
+   * is true.
+   */
+  companyName?: string;
+  /**
+   * @member {string} [firstName] First name of the party if the party
+   * {CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PartyInformation.IsCompany}
+   * is false.
+   */
+  firstName?: string;
+  /**
+   * @member {string} [lastName] Last name of the party if  the party
+   * {CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PartyInformation.IsCompany}
+   * is false.
+   */
+  lastName?: string;
+  /**
+   * @member {string} [address] Address of the party.
+   */
+  address?: string;
+  /**
+   * @member {string} [address2] Second address of the party.
+   */
+  address2?: string;
+  /**
+   * @member {string} [city] City of the party.
+   */
+  city?: string;
+  /**
+   * @member {string} [state] State of the party.
+   */
+  state?: string;
+  /**
+   * @member {string} [country] Country of the party.
+   */
+  country?: string;
+  /**
+   * @member {string} [zipCode] Zip code of the party.
+   */
+  zipCode?: string;
+  /**
+   * @member {string} [email] Email of the party.
+   */
+  email?: string;
+  /**
+   * @member {CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber[]}
+   * [phoneNumbers] List of the phone numbers of the party.
+   */
+  phoneNumbers?: CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber[];
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel.
+ * Models that returns the information about the party that was invited to join
+ * a file.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel {
+  /**
+   * @member {string} [fileId] Id of the file.
+   */
+  fileId?: string;
+  /**
+   * @member {string} [fileName] File name.
+   */
+  fileName?: string;
+  /**
+   * @member {string} [judicialFileId] File identifier.
+   */
+  judicialFileId?: string;
+  /**
+   * @member {string} [invitationId] Id of the invitation.
+   */
+  invitationId?: string;
+  /**
+   * @member {CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation}
+   * [partyInvited] Information about the invited party.
+   */
+  partyInvited?: CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation;
 }
 
 /**
@@ -6630,6 +6933,62 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCre
 
 /**
  * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel.
+ * Model used to create a new file invitation.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel {
+  /**
+   * @member {string} [partyId] The Guid of the party that the invited
+   * representative will join.
+   */
+  partyId?: string;
+  /**
+   * @member {string} [invitationType] Type of the invitation
+   */
+  invitationType?: string;
+  /**
+   * @member {{ [propertyName: string]: string }} [substitutionParameter]
+   * Substitution parameter
+   */
+  substitutionParameter?: { [propertyName: string]: string };
+  /**
+   * @member {Date} [expiryDate] The expiry date of the invitation.
+   */
+  expiryDate?: Date;
+  /**
+   * @member {string} [representativeAttributes] Permissions that will be given
+   * when responding to the nvitation.
+   */
+  representativeAttributes?: string;
+  /**
+   * @member {string} [representativeId] The Guid of the representative invited
+   * to join the file.
+   */
+  representativeId?: string;
+  /**
+   * @member {string} [applicationName] Name of the application. Used to
+   * retrieve pending file.
+   */
+  applicationName?: string;
+  /**
+   * @member {string} [additionalAttributes] Aditional attributes for the file
+   * invitation.
+   */
+  additionalAttributes?: string;
+  /**
+   * @member {string} [mailCode] Email code.
+   */
+  mailCode?: string;
+  /**
+   * @member {string} [culture] 2-character code fo the culture for the email
+   * invitation.
+   */
+  culture?: string;
+}
+
+/**
+ * @interface
  * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationRefuseModel.
  * Webapi model to refuse a party invitation and update a tag code.
  *
@@ -6639,6 +6998,37 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationRef
    * @member {string} [partyInvitationId] Party invitation Guid.
    */
   partyInvitationId?: string;
+  /**
+   * @member {string} [tagCode] Tag code to update.
+   */
+  tagCode?: string;
+  /**
+   * @member {string} [taskStatus] Task status of the updated tag link.
+   */
+  taskStatus?: string;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagComplementModel}
+   * [complement] Complement to add to the tag link.
+   */
+  complement?: CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagComplementModel;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationRefuseModel.
+ * Webapi model to refuse a file invitation and update a tag code.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationRefuseModel {
+  /**
+   * @member {string} [invitationCode] Invitation Code
+   */
+  invitationCode?: string;
+  /**
+   * @member {Date} [invitationDate] Invitation Date
+   */
+  invitationDate?: Date;
   /**
    * @member {string} [tagCode] Tag code to update.
    */
@@ -6769,6 +7159,23 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsLinkRepresentative
    * @member {string} [createdBy] The created by of an object.
    */
   createdBy?: string;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel.
+ * Webapi model to accept a file invitation.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel {
+  /**
+   * @member {string} [invitationCode] Invitation Code
+   */
+  invitationCode?: string;
+  /**
+   * @member {Date} [invitationDate] Invitation Date
+   */
+  invitationDate?: Date;
 }
 
 /**
@@ -7754,23 +8161,6 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsPartyContactUpsert
    * @member {string} [createdBy] The created by of an object.
    */
   createdBy?: string;
-}
-
-/**
- * @interface
- * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationUpdateModel.
- * Model used to update a party invitation.
- *
- */
-export interface CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationUpdateModel {
-  /**
-   * @member {string} [partyInvitationId] The existing party invitation Guid.
-   */
-  partyInvitationId?: string;
-  /**
-   * @member {Date} [expiryDate] The updated expiry date of the invitation.
-   */
-  expiryDate?: Date;
 }
 
 /**
@@ -8845,9 +9235,9 @@ export interface CyberjusticeLabKernelServiceContractsSecureMailEmailData {
  */
 export interface CyberjusticeLabKernelServiceContractsSecurityClaimValueData {
   /**
-   * @member {string} [iD] Id of a claim.
+   * @member {string} [id] Id of a claim.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [issuer] Issuer of a claim.
    */
@@ -8882,9 +9272,9 @@ export interface CyberjusticeLabKernelServiceContractsSecurityClaimValueData {
  */
 export interface CyberjusticeLabKernelServiceContractsSecurityPredicateData {
   /**
-   * @member {string} [iD] Id of a predicate.
+   * @member {string} [id] Id of a predicate.
    */
-  iD?: string;
+  id?: string;
   /**
    * @member {string} [name] Name of a predicate.
    */
@@ -9376,9 +9766,9 @@ export interface CyberjusticeLabKernelServiceContractsUProfileUserData {
  */
 export interface CyberjusticeLabKernelServiceContractsUserUserData {
   /**
-   * @member {number} [iD] Id of the new auto-rep user.
+   * @member {number} [id] Id of the new auto-rep user.
    */
-  iD?: number;
+  id?: number;
   /**
    * @member {number} [organizationID] Id of the organization.
    */
@@ -9942,6 +10332,43 @@ export interface CyberjusticeLabKernelSharedWitnessModelsAttributeModel {
 
 /**
  * @interface
+ * An interface representing CyberjusticeLabKernelSharedWitnessModelsWitnessPartyActionModel.
+ * Class used for special actions parties. Actions and dates are significant
+ * only to the application.
+ *
+ */
+export interface CyberjusticeLabKernelSharedWitnessModelsWitnessPartyActionModel {
+  /**
+   * @member {number} [id] Unique ID of this action.
+   */
+  id?: number;
+  /**
+   * @member {string} [partyId] Party Id.
+   */
+  partyId?: string;
+  /**
+   * @member {string} [representativeId] Representative Id (optional).
+   */
+  representativeId?: string;
+  /**
+   * @member {string} [actionCode] Any code that the application needs about
+   * this witness.
+   */
+  actionCode?: string;
+  /**
+   * @member {Date} [actionDate] Any date related to the code that the
+   * application needs.
+   */
+  actionDate?: Date;
+  /**
+   * @member {string} [actionComplement] Any code complement that the
+   * application needs about this action.
+   */
+  actionComplement?: string;
+}
+
+/**
+ * @interface
  * An interface representing CyberjusticeLabKernelSharedWitnessModelsWitnessModel.
  * A witness.
  *
@@ -10033,6 +10460,12 @@ export interface CyberjusticeLabKernelSharedWitnessModelsWitnessModel {
    * [attributes] Attributes.
    */
   attributes?: CyberjusticeLabKernelSharedWitnessModelsAttributeModel[];
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedWitnessModelsWitnessPartyActionModel[]}
+   * [partyActions] List of party actions.
+   */
+  partyActions?: CyberjusticeLabKernelSharedWitnessModelsWitnessPartyActionModel[];
 }
 
 /**
@@ -10080,6 +10513,39 @@ export interface CyberjusticeLabKernelServiceContractsWitnessJudicialFileExterna
    * @member {string} [witnessType] The type of witness for the file.
    */
   witnessType?: string;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedWitnessModelsCreateWitnessPartyActionModel.
+ * Class used for special actions parties. Actions and dates are significant
+ * only to the application.
+ *
+ */
+export interface CyberjusticeLabKernelSharedWitnessModelsCreateWitnessPartyActionModel {
+  /**
+   * @member {string} [partyId] Party Id.
+   */
+  partyId?: string;
+  /**
+   * @member {string} [representativeId] Representative Id (optional).
+   */
+  representativeId?: string;
+  /**
+   * @member {string} [actionCode] Any code that the application needs about
+   * this witness.
+   */
+  actionCode?: string;
+  /**
+   * @member {Date} [actionDate] Any date related to the code that the
+   * application needs.
+   */
+  actionDate?: Date;
+  /**
+   * @member {string} [actionComplement] Any code complement that the
+   * application needs about this action.
+   */
+  actionComplement?: string;
 }
 
 /**
@@ -10180,6 +10646,12 @@ export interface CyberjusticeLabKernelSharedWitnessModelsCreateWitnessModel {
    * [attributes] Attributes.
    */
   attributes?: CyberjusticeLabKernelSharedWitnessModelsAttributeModel[];
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedWitnessModelsCreateWitnessPartyActionModel[]}
+   * [partyActions] List of party actions for this witness.
+   */
+  partyActions?: CyberjusticeLabKernelSharedWitnessModelsCreateWitnessPartyActionModel[];
 }
 
 /**
@@ -10310,6 +10782,38 @@ export interface CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessModel {
    * [attributes] Attributes.
    */
   attributes?: CyberjusticeLabKernelSharedWitnessModelsAttributeModel[];
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel.
+ * Class used for special actions parties. Actions and dates are significant
+ * only to the application.
+ *
+ */
+export interface CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel {
+  /**
+   * @member {string} [witnessId] The current witness ID for the actions.
+   */
+  witnessId?: string;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedWitnessModelsWitnessPartyActionModel[]}
+   * [updatedPartyActions] List of party actions to update. The IDs must be
+   * linked to the WitnessId.
+   */
+  updatedPartyActions?: CyberjusticeLabKernelSharedWitnessModelsWitnessPartyActionModel[];
+  /**
+   * @member {number[]} [deletedPartyActions] List of party actions to delete.
+   * The IDs must be linked to the WitnessId.
+   */
+  deletedPartyActions?: number[];
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedWitnessModelsCreateWitnessPartyActionModel[]}
+   * [createdPartyActions] List of party actions to create.
+   */
+  createdPartyActions?: CyberjusticeLabKernelSharedWitnessModelsCreateWitnessPartyActionModel[];
 }
 
 /**
@@ -11046,11 +11550,11 @@ export type EntryType3 = 'Weekly' | 'Monthly';
 /**
  * Defines values for FormatEnum.
  * Possible values include: 'pdf', 'jpeg', 'mp3', 'mp4', 'jpg', 'png', 'doc', 'docx', 'txt',
- * 'tiff', 'gif'
+ * 'tiff', 'gif', 'noformat'
  * @readonly
  * @enum {string}
  */
-export type FormatEnum = 'pdf' | 'jpeg' | 'mp3' | 'mp4' | 'jpg' | 'png' | 'doc' | 'docx' | 'txt' | 'tiff' | 'gif';
+export type FormatEnum = 'pdf' | 'jpeg' | 'mp3' | 'mp4' | 'jpg' | 'png' | 'doc' | 'docx' | 'txt' | 'tiff' | 'gif' | 'noformat';
 
 /**
  * Defines values for TypeEnum.
@@ -11100,11 +11604,11 @@ export type OrderBy1 = 'Title' | 'Description' | 'Format' | 'ModifiedDate';
 /**
  * Defines values for FormatEnum1.
  * Possible values include: 'pdf', 'jpeg', 'mp3', 'mp4', 'jpg', 'png', 'doc', 'docx', 'txt',
- * 'tiff', 'gif'
+ * 'tiff', 'gif', 'noformat'
  * @readonly
  * @enum {string}
  */
-export type FormatEnum1 = 'pdf' | 'jpeg' | 'mp3' | 'mp4' | 'jpg' | 'png' | 'doc' | 'docx' | 'txt' | 'tiff' | 'gif';
+export type FormatEnum1 = 'pdf' | 'jpeg' | 'mp3' | 'mp4' | 'jpg' | 'png' | 'doc' | 'docx' | 'txt' | 'tiff' | 'gif' | 'noformat';
 
 /**
  * Defines values for TypeEnum1.
@@ -11191,11 +11695,11 @@ export type StatusEnum3 = 'Success' | 'Error';
 /**
  * Defines values for FormatEnum2.
  * Possible values include: 'pdf', 'jpeg', 'mp3', 'mp4', 'jpg', 'png', 'doc', 'docx', 'txt',
- * 'tiff', 'gif'
+ * 'tiff', 'gif', 'noformat'
  * @readonly
  * @enum {string}
  */
-export type FormatEnum2 = 'pdf' | 'jpeg' | 'mp3' | 'mp4' | 'jpg' | 'png' | 'doc' | 'docx' | 'txt' | 'tiff' | 'gif';
+export type FormatEnum2 = 'pdf' | 'jpeg' | 'mp3' | 'mp4' | 'jpg' | 'png' | 'doc' | 'docx' | 'txt' | 'tiff' | 'gif' | 'noformat';
 
 /**
  * Defines values for RoleEnum.
@@ -12743,7 +13247,11 @@ export type JudicialFileGetFileVerifyDataResponse = CyberjusticeLabKernelService
 /**
  * Contains response data for the getPartyInvitation operation.
  */
-export type JudicialFileGetPartyInvitationResponse = CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel & {
+export type JudicialFileGetPartyInvitationResponse = {
+  /**
+   * The parsed response body.
+   */
+  body: any;
   /**
    * The underlying HTTP response.
    */
@@ -12755,14 +13263,18 @@ export type JudicialFileGetPartyInvitationResponse = CyberjusticeLabKernelShared
       /**
        * The response body as parsed JSON or XML
        */
-      parsedBody: CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel;
+      parsedBody: any;
     };
 };
 
 /**
  * Contains response data for the getPartyInvitationsOfParty operation.
  */
-export type JudicialFileGetPartyInvitationsOfPartyResponse = Array<CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel> & {
+export type JudicialFileGetPartyInvitationsOfPartyResponse = {
+  /**
+   * The parsed response body.
+   */
+  body: any;
   /**
    * The underlying HTTP response.
    */
@@ -12774,7 +13286,45 @@ export type JudicialFileGetPartyInvitationsOfPartyResponse = Array<CyberjusticeL
       /**
        * The response body as parsed JSON or XML
        */
-      parsedBody: CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationModel[];
+      parsedBody: any;
+    };
+};
+
+/**
+ * Contains response data for the getFileInvitationsOfParty operation.
+ */
+export type JudicialFileGetFileInvitationsOfPartyResponse = Array<CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel> & {
+  /**
+   * The underlying HTTP response.
+   */
+  _response: msRest.HttpResponse & {
+      /**
+       * The response body as text (string format)
+       */
+      bodyAsText: string;
+      /**
+       * The response body as parsed JSON or XML
+       */
+      parsedBody: CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel[];
+    };
+};
+
+/**
+ * Contains response data for the getFileInformationFromPartyInvitation operation.
+ */
+export type JudicialFileGetFileInformationFromPartyInvitationResponse = CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel & {
+  /**
+   * The underlying HTTP response.
+   */
+  _response: msRest.HttpResponse & {
+      /**
+       * The response body as text (string format)
+       */
+      bodyAsText: string;
+      /**
+       * The response body as parsed JSON or XML
+       */
+      parsedBody: CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel;
     };
 };
 

@@ -17,8 +17,12 @@ export {
   CyberjusticeLabKernelSharedWitnessModelsPhoneNumberModel,
   CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel,
   CyberjusticeLabKernelSharedDocumentModelsAttributeModel,
+  CyberjusticeLabKernelSharedDocumentModelsCreateDocumentPartyActionModel,
   CyberjusticeLabKernelSharedWitnessModelsAttributeModel,
+  CyberjusticeLabKernelSharedWitnessModelsCreateWitnessPartyActionModel,
   CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessAttributes,
-  CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessModel
+  CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessModel,
+  CyberjusticeLabKernelSharedWitnessModelsUpdateWitnessPartyActionsModel,
+  CyberjusticeLabKernelSharedWitnessModelsWitnessPartyActionModel
 } from "../models/mappers";
 
