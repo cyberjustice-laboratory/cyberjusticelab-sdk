@@ -18,7 +18,8 @@
     "url": "git@github.com:cyberjustice-laboratory/cyberjusticelab-sdk.git"
   },
   "scripts": {
-    "build": "npm run clean && babel src --out-dir dist",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production -o ./dist/index.js",
     "test": "mocha --require babel-polyfill --compilers js:@babel/register ./test/**/*.spec.js",
     "prepublishOnly": "npm run build",
     "clean": "rimraf dist"
@@ -46,6 +47,8 @@
     "moxios": "^0.4.0",
     "prettier": "^1.13.2",
     "rimraf": "^2.6.2",
-    "sinon": "^5.0.10"
+    "sinon": "^5.0.10",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.2"
   }
 }
