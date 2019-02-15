@@ -1,0 +1,23 @@
+{
+  "name": "cyberjusticelab-sdk",
+  "version": "1.0.0",
+  "description": "To regenerate sdk",
+  "main": "generateClientAPI.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyberjustice-laboratory/cyberjusticelab-sdk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyberjustice-laboratory/cyberjusticelab-sdk/issues"
+  },
+  "homepage": "https://github.com/cyberjustice-laboratory/cyberjusticelab-sdk#readme",
+  "scripts": {
+    "start": "set NODE_ENV=development && node generateClientAPI.js  && cd ./src && npm run prepack",
+    "build": "set NODE_ENV=production && node generateClientAPI.js && cd ./src && npm run prepack"
+  }
+}

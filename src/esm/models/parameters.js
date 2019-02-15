@@ -332,16 +332,6 @@ export var cycleIds = {
     },
     collectionFormat: msRest.QueryCollectionFormat.Multi
 };
-export var dateParameter = {
-    parameterPath: "dateParameter",
-    mapper: {
-        required: true,
-        serializedName: "date",
-        type: {
-            name: "DateTime"
-        }
-    }
-};
 export var disputeDescription = {
     parameterPath: "disputeDescription",
     mapper: {
@@ -668,11 +658,21 @@ export var judicialEntityIds = {
     },
     collectionFormat: msRest.QueryCollectionFormat.Multi
 };
-export var judicialFileId = {
+export var judicialFileId0 = {
     parameterPath: "judicialFileId",
     mapper: {
         required: true,
         serializedName: "judicialFileId",
+        type: {
+            name: "String"
+        }
+    }
+};
+export var judicialFileId1 = {
+    parameterPath: "judicialFileId",
+    mapper: {
+        required: true,
+        serializedName: "JudicialFileId",
         type: {
             name: "String"
         }
@@ -752,7 +752,7 @@ export var lastModified0 = {
         required: true,
         serializedName: "lastModified",
         type: {
-            name: "Number"
+            name: "String"
         }
     }
 };
@@ -772,7 +772,7 @@ export var lastModifiedDate = {
         required: true,
         serializedName: "lastModifiedDate",
         type: {
-            name: "Number"
+            name: "String"
         }
     }
 };
@@ -872,7 +872,7 @@ export var modifiedTicks = {
         required: true,
         serializedName: "modifiedTicks",
         type: {
-            name: "Number"
+            name: "String"
         }
     }
 };

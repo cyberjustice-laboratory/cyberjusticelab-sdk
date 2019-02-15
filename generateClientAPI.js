@@ -1,8 +1,17 @@
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
 const fs = require("fs");
 const https = require("https");
-const url = "https://localhost:441/swagger/docs/v1";
 
+let url = "";
+
+console.log("Env variable :", process.env.NODE_ENV);
+if (process.env.NODE_ENV.trim() === "development") {
+  console.log("Creating development build");
+  url = "https://localhost:441/swagger/docs/v1";
+} else {
+  console.log("Creating production build");
+  url = "https://vt-svc-api.cyberjustice.ca/swagger/docs/v1";
+}
 // Delete previous swagger.json file.
 try {
   fs.unlinkSync("swagger.json");

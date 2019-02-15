@@ -70,20 +70,20 @@ export declare class Location {
      * @param [options] The optional parameters
      * @returns Promise<msRest.RestResponse>
      */
-    toggleBuildingStatus(buildingId: string, modifiedTicks: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    toggleBuildingStatus(buildingId: string, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
     /**
      * @param buildingId The building's Id.
      * @param modifiedTicks The modified date ticks.
      * @param callback The callback
      */
-    toggleBuildingStatus(buildingId: string, modifiedTicks: number, callback: msRest.ServiceCallback<void>): void;
+    toggleBuildingStatus(buildingId: string, modifiedTicks: string, callback: msRest.ServiceCallback<void>): void;
     /**
      * @param buildingId The building's Id.
      * @param modifiedTicks The modified date ticks.
      * @param options The optional parameters
      * @param callback The callback
      */
-    toggleBuildingStatus(buildingId: string, modifiedTicks: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    toggleBuildingStatus(buildingId: string, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
      * @summary Toggle the rooms's LocationStatus enum between active and inactive. Use this instead of
      * delete.
@@ -92,20 +92,20 @@ export declare class Location {
      * @param [options] The optional parameters
      * @returns Promise<msRest.RestResponse>
      */
-    toggleRoomStatus(roomId: string, modifiedTicks: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    toggleRoomStatus(roomId: string, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
     /**
      * @param roomId The room's Id.
      * @param modifiedTicks The modified date ticks.
      * @param callback The callback
      */
-    toggleRoomStatus(roomId: string, modifiedTicks: number, callback: msRest.ServiceCallback<void>): void;
+    toggleRoomStatus(roomId: string, modifiedTicks: string, callback: msRest.ServiceCallback<void>): void;
     /**
      * @param roomId The room's Id.
      * @param modifiedTicks The modified date ticks.
      * @param options The optional parameters
      * @param callback The callback
      */
-    toggleRoomStatus(roomId: string, modifiedTicks: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    toggleRoomStatus(roomId: string, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
      * @summary Update a building.
      * @param buildingData A {CyberjusticeLab.Kernel.Shared.Location.LocationBuildingUpdateData}

@@ -12,6 +12,7 @@ export {
   CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData,
   CyberjusticeLabKernelSharedWitnessAttributesFilters,
   SystemCollectionsGenericKeyValuePairSystemStringSystemString,
+  CyberjusticeLabKernelSharedWitnessModelsActionsFilters,
   CyberjusticeLabKernelServiceContractsWitnessJudicialFileExternalWitnessData,
   CyberjusticeLabKernelSharedWitnessModelsCreateWitnessModel,
   CyberjusticeLabKernelSharedWitnessModelsPhoneNumberModel,

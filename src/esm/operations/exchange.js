@@ -121,6 +121,7 @@ var addForumMessageOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, { required: true })
     },
     responses: {
+        403: {},
         404: {},
         default: {}
     },

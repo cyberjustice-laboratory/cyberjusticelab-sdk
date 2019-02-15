@@ -17,14 +17,14 @@ export declare class Calendar {
      * @param [options] The optional parameters
      * @returns Promise<msRest.RestResponse>
      */
-    updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
     /**
      * @param baseCalendarId Id of the base calendar.
      * @param status New status of the calendar.
      * @param modifiedTicks The modified date ticks.
      * @param callback The callback
      */
-    updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: number, callback: msRest.ServiceCallback<void>): void;
+    updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: string, callback: msRest.ServiceCallback<void>): void;
     /**
      * @param baseCalendarId Id of the base calendar.
      * @param status New status of the calendar.
@@ -32,7 +32,7 @@ export declare class Calendar {
      * @param options The optional parameters
      * @param callback The callback
      */
-    updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
      * @summary Update an assignment cycle status.
      * @param cycleId Id of the assignment cycle.
@@ -41,14 +41,14 @@ export declare class Calendar {
      * @param [options] The optional parameters
      * @returns Promise<msRest.RestResponse>
      */
-    updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
     /**
      * @param cycleId Id of the assignment cycle.
      * @param status New status of the cycle. Possible values include: 'Draft', 'Active'
      * @param modifiedTicks The modified date ticks.
      * @param callback The callback
      */
-    updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: number, callback: msRest.ServiceCallback<void>): void;
+    updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: string, callback: msRest.ServiceCallback<void>): void;
     /**
      * @param cycleId Id of the assignment cycle.
      * @param status New status of the cycle. Possible values include: 'Draft', 'Active'
@@ -56,7 +56,7 @@ export declare class Calendar {
      * @param options The optional parameters
      * @param callback The callback
      */
-    updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
      * @summary Update a period availability role link status.
      * @param linkId Id of the period availability role link.

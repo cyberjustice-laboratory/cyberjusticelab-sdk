@@ -30,14 +30,14 @@ export class Calendar {
    * @param [options] The optional parameters
    * @returns Promise<msRest.RestResponse>
    */
-  updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
   /**
    * @param baseCalendarId Id of the base calendar.
    * @param status New status of the calendar.
    * @param modifiedTicks The modified date ticks.
    * @param callback The callback
    */
-  updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: number, callback: msRest.ServiceCallback<void>): void;
+  updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: string, callback: msRest.ServiceCallback<void>): void;
   /**
    * @param baseCalendarId Id of the base calendar.
    * @param status New status of the calendar.
@@ -45,8 +45,8 @@ export class Calendar {
    * @param options The optional parameters
    * @param callback The callback
    */
-  updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
-  updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: number, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+  updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  updateBaseCalendarStatus(baseCalendarId: string, status: string, modifiedTicks: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
     return this.client.sendOperationRequest(
       {
         baseCalendarId,
@@ -66,14 +66,14 @@ export class Calendar {
    * @param [options] The optional parameters
    * @returns Promise<msRest.RestResponse>
    */
-  updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
   /**
    * @param cycleId Id of the assignment cycle.
    * @param status New status of the cycle. Possible values include: 'Draft', 'Active'
    * @param modifiedTicks The modified date ticks.
    * @param callback The callback
    */
-  updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: number, callback: msRest.ServiceCallback<void>): void;
+  updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: string, callback: msRest.ServiceCallback<void>): void;
   /**
    * @param cycleId Id of the assignment cycle.
    * @param status New status of the cycle. Possible values include: 'Draft', 'Active'
@@ -81,8 +81,8 @@ export class Calendar {
    * @param options The optional parameters
    * @param callback The callback
    */
-  updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
-  updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: number, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+  updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  updateAssignmentCycleStatus(cycleId: string, status: Models.Status11, modifiedTicks: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
     return this.client.sendOperationRequest(
       {
         cycleId,
@@ -2206,7 +2206,7 @@ const deletePeriodAvailabilityJudicialFileLinkOperationSpec: msRest.OperationSpe
   path: "Calendar/DELETE/PeriodAvailabilityJudicialFileLink",
   queryParameters: [
     Parameters.periodAvailabilityId,
-    Parameters.judicialFileId
+    Parameters.judicialFileId0
   ],
   responses: {
     204: {},

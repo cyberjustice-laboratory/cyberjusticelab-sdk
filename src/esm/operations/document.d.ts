@@ -130,20 +130,20 @@ export declare class Document {
      * @summary Create a document.
      * @param documentModel A CreateDocumentModel object.
      * @param [options] The optional parameters
-     * @returns Promise<msRest.RestResponse>
+     * @returns Promise<Models.DocumentCreateDocumentResponse>
      */
-    createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, options?: msRest.RequestOptionsBase): Promise<Models.DocumentCreateDocumentResponse>;
     /**
      * @param documentModel A CreateDocumentModel object.
      * @param callback The callback
      */
-    createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, callback: msRest.ServiceCallback<void>): void;
+    createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, callback: msRest.ServiceCallback<string>): void;
     /**
      * @param documentModel A CreateDocumentModel object.
      * @param options The optional parameters
      * @param callback The callback
      */
-    createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
     /**
      * @summary Create multiple documents.
      * @param documentModels A {CyberjusticeLab.Kernel.Shared.Document.Models.CreateDocumentsModel}

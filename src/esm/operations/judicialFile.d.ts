@@ -16,20 +16,20 @@ export declare class JudicialFile {
      * @param [options] The optional parameters
      * @returns Promise<msRest.RestResponse>
      */
-    deleteParty(partyId: string, lastModified: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    deleteParty(partyId: string, lastModified: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
     /**
      * @param partyId Party Guid.
      * @param lastModified Last time the party was modified
      * @param callback The callback
      */
-    deleteParty(partyId: string, lastModified: number, callback: msRest.ServiceCallback<void>): void;
+    deleteParty(partyId: string, lastModified: string, callback: msRest.ServiceCallback<void>): void;
     /**
      * @param partyId Party Guid.
      * @param lastModified Last time the party was modified
      * @param options The optional parameters
      * @param callback The callback
      */
-    deleteParty(partyId: string, lastModified: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    deleteParty(partyId: string, lastModified: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
      * @summary Delete a party invitation.
      * @param partyInvitationId Party invitation Guid.
@@ -77,14 +77,14 @@ export declare class JudicialFile {
      * @param [options] The optional parameters
      * @returns Promise<msRest.RestResponse>
      */
-    deleteFileTagLink(fileId: string, tagCode: string, modifiedTicks: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    deleteFileTagLink(fileId: string, tagCode: string, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
     /**
      * @param fileId The file id.
      * @param tagCode The tag code linked to the file.
      * @param modifiedTicks The modified date in ticks.
      * @param callback The callback
      */
-    deleteFileTagLink(fileId: string, tagCode: string, modifiedTicks: number, callback: msRest.ServiceCallback<void>): void;
+    deleteFileTagLink(fileId: string, tagCode: string, modifiedTicks: string, callback: msRest.ServiceCallback<void>): void;
     /**
      * @param fileId The file id.
      * @param tagCode The tag code linked to the file.
@@ -92,7 +92,7 @@ export declare class JudicialFile {
      * @param options The optional parameters
      * @param callback The callback
      */
-    deleteFileTagLink(fileId: string, tagCode: string, modifiedTicks: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    deleteFileTagLink(fileId: string, tagCode: string, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
      * @summary Delete a notification.
      * @param notificationId The notification identifier to delete.
@@ -167,6 +167,27 @@ export declare class JudicialFile {
      * @deprecated This operation is deprecated. Please do not use it any longer.
      */
     getFilesCount(options: Models.JudicialFileGetFilesCountOptionalParams, callback: msRest.ServiceCallback<number>): void;
+    /**
+     * @summary Get a Judicial File.
+     * @param fileId Identification of the requested file..
+     * @param [options] The optional parameters
+     * @deprecated This operation is deprecated. Please do not use it any longer.
+     * @returns Promise<Models.JudicialFileGetFileResponse>
+     */
+    getFile(fileId: string, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileGetFileResponse>;
+    /**
+     * @param fileId Identification of the requested file..
+     * @param callback The callback
+     * @deprecated This operation is deprecated. Please do not use it any longer.
+     */
+    getFile(fileId: string, callback: msRest.ServiceCallback<number>): void;
+    /**
+     * @param fileId Identification of the requested file..
+     * @param options The optional parameters
+     * @param callback The callback
+     * @deprecated This operation is deprecated. Please do not use it any longer.
+     */
+    getFile(fileId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<number>): void;
     /**
      * @summary Get a narrow set of the requested file's properties.
      * This method returns as little information as possible to stay efficient even with many results.
@@ -358,20 +379,20 @@ export declare class JudicialFile {
      * @param [options] The optional parameters
      * @returns Promise<Models.JudicialFileCheckForFileOptimisticConcurrencyResponse>
      */
-    checkForFileOptimisticConcurrency(fileId: string, modifiedTicks: number, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileCheckForFileOptimisticConcurrencyResponse>;
+    checkForFileOptimisticConcurrency(fileId: string, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileCheckForFileOptimisticConcurrencyResponse>;
     /**
      * @param fileId The file to verify.
      * @param modifiedTicks The last known modified date of the file.
      * @param callback The callback
      */
-    checkForFileOptimisticConcurrency(fileId: string, modifiedTicks: number, callback: msRest.ServiceCallback<boolean>): void;
+    checkForFileOptimisticConcurrency(fileId: string, modifiedTicks: string, callback: msRest.ServiceCallback<boolean>): void;
     /**
      * @param fileId The file to verify.
      * @param modifiedTicks The last known modified date of the file.
      * @param options The optional parameters
      * @param callback The callback
      */
-    checkForFileOptimisticConcurrency(fileId: string, modifiedTicks: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<boolean>): void;
+    checkForFileOptimisticConcurrency(fileId: string, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<boolean>): void;
     /**
      * @summary Get the list of neutrals and their zip codes in the given judicial entity.
      * @param urn The URN code of the judicial entity.
@@ -475,24 +496,24 @@ export declare class JudicialFile {
     /**
      * @summary Get the file invitation information.
      * @param code The Invitation Code.
-     * @param dateParameter The Invitation Date.
+     * @param judicialFileId The JudicialFileId.
      * @param [options] The optional parameters
-     * @returns Promise<msRest.RestResponse>
+     * @returns Promise<Models.JudicialFileGetFileInvitationInformationResponse>
      */
-    getFileInvitationInformation(code: string, dateParameter: Date | string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    getFileInvitationInformation(code: string, judicialFileId: string, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileGetFileInvitationInformationResponse>;
     /**
      * @param code The Invitation Code.
-     * @param dateParameter The Invitation Date.
+     * @param judicialFileId The JudicialFileId.
      * @param callback The callback
      */
-    getFileInvitationInformation(code: string, dateParameter: Date | string, callback: msRest.ServiceCallback<void>): void;
+    getFileInvitationInformation(code: string, judicialFileId: string, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationInformationModel>): void;
     /**
      * @param code The Invitation Code.
-     * @param dateParameter The Invitation Date.
+     * @param judicialFileId The JudicialFileId.
      * @param options The optional parameters
      * @param callback The callback
      */
-    getFileInvitationInformation(code: string, dateParameter: Date | string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    getFileInvitationInformation(code: string, judicialFileId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationInformationModel>): void;
     /**
      * @summary Use the invitationId to get some basic information about the file.
      * @param invitationId The party invitation Guid.
@@ -600,22 +621,22 @@ export declare class JudicialFile {
      * @param fileId Requested file.
      * @param currentRole The current user role to access the log entries.
      * @param [options] The optional parameters
-     * @returns Promise<msRest.RestResponse>
+     * @returns Promise<Models.JudicialFileGetLogEntryDistinctCodesResponse>
      */
-    getLogEntryDistinctCodes(fileId: string, currentRole: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    getLogEntryDistinctCodes(fileId: string, currentRole: string, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileGetLogEntryDistinctCodesResponse>;
     /**
      * @param fileId Requested file.
      * @param currentRole The current user role to access the log entries.
      * @param callback The callback
      */
-    getLogEntryDistinctCodes(fileId: string, currentRole: string, callback: msRest.ServiceCallback<void>): void;
+    getLogEntryDistinctCodes(fileId: string, currentRole: string, callback: msRest.ServiceCallback<string[]>): void;
     /**
      * @param fileId Requested file.
      * @param currentRole The current user role to access the log entries.
      * @param options The optional parameters
      * @param callback The callback
      */
-    getLogEntryDistinctCodes(fileId: string, currentRole: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    getLogEntryDistinctCodes(fileId: string, currentRole: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string[]>): void;
     /**
      * @summary Dismiss the file notifications according to the parameters used.
      * The dismissed notifications must correspond to the notification and/or aggregator code.
@@ -666,14 +687,14 @@ export declare class JudicialFile {
      * @param [options] The optional parameters
      * @returns Promise<msRest.RestResponse>
      */
-    updatePartyType(partyId: string, partyType: string, lastModified: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    updatePartyType(partyId: string, partyType: string, lastModified: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
     /**
      * @param partyId Identification of the party.
      * @param partyType Type of the party.
      * @param lastModified Last modified time of the party.
      * @param callback The callback
      */
-    updatePartyType(partyId: string, partyType: string, lastModified: number, callback: msRest.ServiceCallback<void>): void;
+    updatePartyType(partyId: string, partyType: string, lastModified: string, callback: msRest.ServiceCallback<void>): void;
     /**
      * @param partyId Identification of the party.
      * @param partyType Type of the party.
@@ -681,7 +702,7 @@ export declare class JudicialFile {
      * @param options The optional parameters
      * @param callback The callback
      */
-    updatePartyType(partyId: string, partyType: string, lastModified: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    updatePartyType(partyId: string, partyType: string, lastModified: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
      * @summary Update the Dispute Description of a party.
      * @param partyId Identification of the party.
@@ -690,14 +711,14 @@ export declare class JudicialFile {
      * @param [options] The optional parameters
      * @returns Promise<msRest.RestResponse>
      */
-    updatePartyDisputeDescription(partyId: string, disputeDescription: string, lastModified: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    updatePartyDisputeDescription(partyId: string, disputeDescription: string, lastModified: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
     /**
      * @param partyId Identification of the party.
      * @param disputeDescription Dispute description of the party.
      * @param lastModified Last modified time of the party.
      * @param callback The callback
      */
-    updatePartyDisputeDescription(partyId: string, disputeDescription: string, lastModified: number, callback: msRest.ServiceCallback<void>): void;
+    updatePartyDisputeDescription(partyId: string, disputeDescription: string, lastModified: string, callback: msRest.ServiceCallback<void>): void;
     /**
      * @param partyId Identification of the party.
      * @param disputeDescription Dispute description of the party.
@@ -705,7 +726,7 @@ export declare class JudicialFile {
      * @param options The optional parameters
      * @param callback The callback
      */
-    updatePartyDisputeDescription(partyId: string, disputeDescription: string, lastModified: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    updatePartyDisputeDescription(partyId: string, disputeDescription: string, lastModified: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
      * @summary Update the Expiration date of a file invitation.
      * @param fileInvitationId Identification of the file invitation.
@@ -755,65 +776,92 @@ export declare class JudicialFile {
      */
     updatePartyInvitationExpirationDate(partyInvitationId: string, expiryDate: Date | string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
+     * @summary Update the status of a file.
+     * @param fileId Id of the file.
+     * @param fileStatus New judicial file status.
+     * @param lastModifiedDate Time stamp of the last modification of the file.  Used for optimistic
+     * concurrency check.
+     * @param [options] The optional parameters
+     * @returns Promise<msRest.RestResponse>
+     */
+    updateFileStatus(fileId: string, fileStatus: string, lastModifiedDate: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    /**
+     * @param fileId Id of the file.
+     * @param fileStatus New judicial file status.
+     * @param lastModifiedDate Time stamp of the last modification of the file.  Used for optimistic
+     * concurrency check.
+     * @param callback The callback
+     */
+    updateFileStatus(fileId: string, fileStatus: string, lastModifiedDate: string, callback: msRest.ServiceCallback<void>): void;
+    /**
+     * @param fileId Id of the file.
+     * @param fileStatus New judicial file status.
+     * @param lastModifiedDate Time stamp of the last modification of the file.  Used for optimistic
+     * concurrency check.
+     * @param options The optional parameters
+     * @param callback The callback
+     */
+    updateFileStatus(fileId: string, fileStatus: string, lastModifiedDate: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    /**
      * @summary Create a party invitation.
      * @param createModel The party invitation create model.
      * @param [options] The optional parameters
      * @deprecated This operation is deprecated. Please do not use it any longer.
-     * @returns Promise<msRest.RestResponse>
+     * @returns Promise<Models.JudicialFileCreatePartyInvitationResponse>
      */
-    createPartyInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    createPartyInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateModel, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileCreatePartyInvitationResponse>;
     /**
      * @param createModel The party invitation create model.
      * @param callback The callback
      * @deprecated This operation is deprecated. Please do not use it any longer.
      */
-    createPartyInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateModel, callback: msRest.ServiceCallback<void>): void;
+    createPartyInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateModel, callback: msRest.ServiceCallback<string>): void;
     /**
      * @param createModel The party invitation create model.
      * @param options The optional parameters
      * @param callback The callback
      * @deprecated This operation is deprecated. Please do not use it any longer.
      */
-    createPartyInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    createPartyInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
     /**
      * @summary Create an invitation to a file.
      * @param createModel The file invitation create model.
      * @param [options] The optional parameters
-     * @returns Promise<msRest.RestResponse>
+     * @returns Promise<Models.JudicialFileCreateFileInvitationResponse>
      */
-    createFileInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    createFileInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileCreateFileInvitationResponse>;
     /**
      * @param createModel The file invitation create model.
      * @param callback The callback
      */
-    createFileInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel, callback: msRest.ServiceCallback<void>): void;
+    createFileInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel, callback: msRest.ServiceCallback<string>): void;
     /**
      * @param createModel The file invitation create model.
      * @param options The optional parameters
      * @param callback The callback
      */
-    createFileInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    createFileInvitation(createModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
     /**
      * @summary Accept a party invitation.
      * @param partyInvitationId The party invitation Guid.
      * @param [options] The optional parameters
      * @deprecated This operation is deprecated. Please do not use it any longer.
-     * @returns Promise<msRest.RestResponse>
+     * @returns Promise<Models.JudicialFileAcceptPartyInvitationResponse>
      */
-    acceptPartyInvitation(partyInvitationId: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    acceptPartyInvitation(partyInvitationId: string, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileAcceptPartyInvitationResponse>;
     /**
      * @param partyInvitationId The party invitation Guid.
      * @param callback The callback
      * @deprecated This operation is deprecated. Please do not use it any longer.
      */
-    acceptPartyInvitation(partyInvitationId: string, callback: msRest.ServiceCallback<void>): void;
+    acceptPartyInvitation(partyInvitationId: string, callback: msRest.ServiceCallback<string>): void;
     /**
      * @param partyInvitationId The party invitation Guid.
      * @param options The optional parameters
      * @param callback The callback
      * @deprecated This operation is deprecated. Please do not use it any longer.
      */
-    acceptPartyInvitation(partyInvitationId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    acceptPartyInvitation(partyInvitationId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
     /**
      * @summary Refuse a party invitation. Update a tag with a complement.
      * @param refuseModel Data to refuse an invite.
@@ -857,20 +905,20 @@ export declare class JudicialFile {
      * @summary Create a file tag link with its complements.
      * @param tagModel The new tag link model.
      * @param [options] The optional parameters
-     * @returns Promise<msRest.RestResponse>
+     * @returns Promise<Models.JudicialFileCreateFileTagLinkResponse>
      */
-    createFileTagLink(tagModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagCreateModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    createFileTagLink(tagModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagCreateModel, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileCreateFileTagLinkResponse>;
     /**
      * @param tagModel The new tag link model.
      * @param callback The callback
      */
-    createFileTagLink(tagModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagCreateModel, callback: msRest.ServiceCallback<void>): void;
+    createFileTagLink(tagModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagCreateModel, callback: msRest.ServiceCallback<string>): void;
     /**
      * @param tagModel The new tag link model.
      * @param options The optional parameters
      * @param callback The callback
      */
-    createFileTagLink(tagModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagCreateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    createFileTagLink(tagModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagCreateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
     /**
      * @summary Attach representatives to a
      * {CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PartyModel}.
@@ -924,40 +972,40 @@ export declare class JudicialFile {
      * @param invitationId The invitation id.
      * @param [options] The optional parameters
      * @deprecated This operation is deprecated. Please do not use it any longer.
-     * @returns Promise<msRest.RestResponse>
+     * @returns Promise<Models.JudicialFileAcceptRepresentativeInvitationResponse>
      */
-    acceptRepresentativeInvitation(invitationId: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    acceptRepresentativeInvitation(invitationId: string, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileAcceptRepresentativeInvitationResponse>;
     /**
      * @param invitationId The invitation id.
      * @param callback The callback
      * @deprecated This operation is deprecated. Please do not use it any longer.
      */
-    acceptRepresentativeInvitation(invitationId: string, callback: msRest.ServiceCallback<void>): void;
+    acceptRepresentativeInvitation(invitationId: string, callback: msRest.ServiceCallback<string>): void;
     /**
      * @param invitationId The invitation id.
      * @param options The optional parameters
      * @param callback The callback
      * @deprecated This operation is deprecated. Please do not use it any longer.
      */
-    acceptRepresentativeInvitation(invitationId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    acceptRepresentativeInvitation(invitationId: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
     /**
      * @summary Accept an invitation to a file.
      * @param acceptModel The accept invitaton Model.
      * @param [options] The optional parameters
-     * @returns Promise<msRest.RestResponse>
+     * @returns Promise<Models.JudicialFileAcceptFileInvitationResponse>
      */
-    acceptFileInvitation(acceptModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    acceptFileInvitation(acceptModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileAcceptFileInvitationResponse>;
     /**
      * @param acceptModel The accept invitaton Model.
      * @param callback The callback
      */
-    acceptFileInvitation(acceptModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel, callback: msRest.ServiceCallback<void>): void;
+    acceptFileInvitation(acceptModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel, callback: msRest.ServiceCallback<string>): void;
     /**
      * @param acceptModel The accept invitaton Model.
      * @param options The optional parameters
      * @param callback The callback
      */
-    acceptFileInvitation(acceptModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    acceptFileInvitation(acceptModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
     /**
      * @summary Get the list of notification types.
      * @param requestModel Request filter model.
@@ -1070,20 +1118,20 @@ export declare class JudicialFile {
      * @summary Get the list of log entries.
      * @param requestModel Request filter model.
      * @param [options] The optional parameters
-     * @returns Promise<msRest.RestResponse>
+     * @returns Promise<Models.JudicialFileGetLogEntriesResponse>
      */
-    getLogEntries(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestData, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    getLogEntries(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestData, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileGetLogEntriesResponse>;
     /**
      * @param requestModel Request filter model.
      * @param callback The callback
      */
-    getLogEntries(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestData, callback: msRest.ServiceCallback<void>): void;
+    getLogEntries(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestData, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiResponseData>): void;
     /**
      * @param requestModel Request filter model.
      * @param options The optional parameters
      * @param callback The callback
      */
-    getLogEntries(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestData, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    getLogEntries(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestData, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiResponseData>): void;
     /**
      * @summary Create a log template.
      * @param model The create model.
@@ -1182,14 +1230,14 @@ export declare class JudicialFile {
      * @param [options] The optional parameters
      * @returns Promise<msRest.RestResponse>
      */
-    changePartyStatus(partyId: string, status: string, lastModifiedDate: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    changePartyStatus(partyId: string, status: string, lastModifiedDate: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
     /**
      * @param partyId Id of the party.
      * @param status The new status of the party.
      * @param lastModifiedDate Lat date when the party was modified in ticks.
      * @param callback The callback
      */
-    changePartyStatus(partyId: string, status: string, lastModifiedDate: number, callback: msRest.ServiceCallback<void>): void;
+    changePartyStatus(partyId: string, status: string, lastModifiedDate: string, callback: msRest.ServiceCallback<void>): void;
     /**
      * @param partyId Id of the party.
      * @param status The new status of the party.
@@ -1197,7 +1245,7 @@ export declare class JudicialFile {
      * @param options The optional parameters
      * @param callback The callback
      */
-    changePartyStatus(partyId: string, status: string, lastModifiedDate: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    changePartyStatus(partyId: string, status: string, lastModifiedDate: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
      * @summary Upsert a party contact.
      * @param upsertModel The party contact model.

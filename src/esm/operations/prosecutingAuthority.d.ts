@@ -16,20 +16,20 @@ export declare class ProsecutingAuthority {
      * @param [options] The optional parameters
      * @returns Promise<msRest.RestResponse>
      */
-    deleteProsecutingAuthority(id: string, modifiedTicks: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    deleteProsecutingAuthority(id: string, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
     /**
      * @param id Prosecuting authority id.
      * @param modifiedTicks Modified date in ticks.
      * @param callback The callback
      */
-    deleteProsecutingAuthority(id: string, modifiedTicks: number, callback: msRest.ServiceCallback<void>): void;
+    deleteProsecutingAuthority(id: string, modifiedTicks: string, callback: msRest.ServiceCallback<void>): void;
     /**
      * @param id Prosecuting authority id.
      * @param modifiedTicks Modified date in ticks.
      * @param options The optional parameters
      * @param callback The callback
      */
-    deleteProsecutingAuthority(id: string, modifiedTicks: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    deleteProsecutingAuthority(id: string, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
      * @summary Delete a prosecuting authority delegation.
      * @param authorityDelegation A
@@ -39,7 +39,7 @@ export declare class ProsecutingAuthority {
      * @param [options] The optional parameters
      * @returns Promise<msRest.RestResponse>
      */
-    deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
     /**
      * @param authorityDelegation A
      * {CyberjusticeLab.Kernel.Shared.ProsecutingAuthority.ProsecutingAuthorityDelegationDeleteData}
@@ -47,7 +47,7 @@ export declare class ProsecutingAuthority {
      * @param modifiedTicks Modified date in ticks.
      * @param callback The callback
      */
-    deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: number, callback: msRest.ServiceCallback<void>): void;
+    deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: string, callback: msRest.ServiceCallback<void>): void;
     /**
      * @param authorityDelegation A
      * {CyberjusticeLab.Kernel.Shared.ProsecutingAuthority.ProsecutingAuthorityDelegationDeleteData}
@@ -56,7 +56,7 @@ export declare class ProsecutingAuthority {
      * @param options The optional parameters
      * @param callback The callback
      */
-    deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
      * @summary Get all prosecuting authorities available for the context.
      * @param [options] The optional parameters

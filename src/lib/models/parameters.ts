@@ -334,16 +334,6 @@ export const cycleIds: msRest.OperationQueryParameter = {
   },
   collectionFormat: msRest.QueryCollectionFormat.Multi
 };
-export const dateParameter: msRest.OperationQueryParameter = {
-  parameterPath: "dateParameter",
-  mapper: {
-    required: true,
-    serializedName: "date",
-    type: {
-      name: "DateTime"
-    }
-  }
-};
 export const disputeDescription: msRest.OperationQueryParameter = {
   parameterPath: "disputeDescription",
   mapper: {
@@ -670,11 +660,21 @@ export const judicialEntityIds: msRest.OperationQueryParameter = {
   },
   collectionFormat: msRest.QueryCollectionFormat.Multi
 };
-export const judicialFileId: msRest.OperationQueryParameter = {
+export const judicialFileId0: msRest.OperationQueryParameter = {
   parameterPath: "judicialFileId",
   mapper: {
     required: true,
     serializedName: "judicialFileId",
+    type: {
+      name: "String"
+    }
+  }
+};
+export const judicialFileId1: msRest.OperationQueryParameter = {
+  parameterPath: "judicialFileId",
+  mapper: {
+    required: true,
+    serializedName: "JudicialFileId",
     type: {
       name: "String"
     }
@@ -754,7 +754,7 @@ export const lastModified0: msRest.OperationQueryParameter = {
     required: true,
     serializedName: "lastModified",
     type: {
-      name: "Number"
+      name: "String"
     }
   }
 };
@@ -774,7 +774,7 @@ export const lastModifiedDate: msRest.OperationQueryParameter = {
     required: true,
     serializedName: "lastModifiedDate",
     type: {
-      name: "Number"
+      name: "String"
     }
   }
 };
@@ -874,7 +874,7 @@ export const modifiedTicks: msRest.OperationQueryParameter = {
     required: true,
     serializedName: "modifiedTicks",
     type: {
-      name: "Number"
+      name: "String"
     }
   }
 };

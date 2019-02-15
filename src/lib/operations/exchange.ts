@@ -272,6 +272,7 @@ const addForumMessageOperationSpec: msRest.OperationSpec = {
     }
   },
   responses: {
+    403: {},
     404: {},
     default: {}
   },

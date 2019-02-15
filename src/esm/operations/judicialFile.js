@@ -65,6 +65,12 @@ var JudicialFile = /** @class */ (function () {
             options: options
         }, getFilesCountOperationSpec, callback);
     };
+    JudicialFile.prototype.getFile = function (fileId, options, callback) {
+        return this.client.sendOperationRequest({
+            fileId: fileId,
+            options: options
+        }, getFileOperationSpec, callback);
+    };
     JudicialFile.prototype.getFilesSet1 = function (options, callback) {
         return this.client.sendOperationRequest({
             options: options
@@ -159,10 +165,10 @@ var JudicialFile = /** @class */ (function () {
             options: options
         }, getFileInvitationsOfPartyOperationSpec, callback);
     };
-    JudicialFile.prototype.getFileInvitationInformation = function (code, dateParameter, options, callback) {
+    JudicialFile.prototype.getFileInvitationInformation = function (code, judicialFileId, options, callback) {
         return this.client.sendOperationRequest({
             code: code,
-            dateParameter: dateParameter,
+            judicialFileId: judicialFileId,
             options: options
         }, getFileInvitationInformationOperationSpec, callback);
     };
@@ -250,6 +256,14 @@ var JudicialFile = /** @class */ (function () {
             expiryDate: expiryDate,
             options: options
         }, updatePartyInvitationExpirationDateOperationSpec, callback);
+    };
+    JudicialFile.prototype.updateFileStatus = function (fileId, fileStatus, lastModifiedDate, options, callback) {
+        return this.client.sendOperationRequest({
+            fileId: fileId,
+            fileStatus: fileStatus,
+            lastModifiedDate: lastModifiedDate,
+            options: options
+        }, updateFileStatusOperationSpec, callback);
     };
     JudicialFile.prototype.createPartyInvitation = function (createModel, options, callback) {
         return this.client.sendOperationRequest({
@@ -458,7 +472,10 @@ var deletePartyOperationSpec = {
         Parameters.lastModified0
     ],
     responses: {
+        200: {},
+        403: {},
         404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -470,6 +487,7 @@ var deletePartyInvitationOperationSpec = {
         Parameters.partyInvitationId
     ],
     responses: {
+        200: {},
         404: {},
         default: {}
     },
@@ -482,6 +500,7 @@ var deleteFileInvitationOperationSpec = {
         Parameters.fileInvitationId
     ],
     responses: {
+        200: {},
         404: {},
         default: {}
     },
@@ -496,7 +515,9 @@ var deleteFileTagLinkOperationSpec = {
         Parameters.modifiedTicks
     ],
     responses: {
+        200: {},
         403: {},
+        404: {},
         default: {}
     },
     serializer: serializer
@@ -508,6 +529,7 @@ var deleteNotificationOperationSpec = {
         Parameters.notificationId
     ],
     responses: {
+        200: {},
         403: {},
         default: {}
     },
@@ -586,6 +608,25 @@ var getFilesCountOperationSpec = {
         Parameters.searchStatuses,
         Parameters.searchText,
         Parameters.searchBy
+    ],
+    responses: {
+        200: {
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
+                    name: "Number"
+                }
+            }
+        },
+        default: {}
+    },
+    serializer: serializer
+};
+var getFileOperationSpec = {
+    httpMethod: "GET",
+    path: "JudicialFile/GET/File",
+    queryParameters: [
+        Parameters.fileId0
     ],
     responses: {
         200: {
@@ -856,7 +897,7 @@ var getFileVerifyDataOperationSpec = {
     httpMethod: "GET",
     path: "JudicialFile/GET/FileVerifyData",
     queryParameters: [
-        Parameters.judicialFileId,
+        Parameters.judicialFileId0,
         Parameters.judicialEntityId0
     ],
     responses: {
@@ -935,9 +976,12 @@ var getFileInvitationInformationOperationSpec = {
     path: "JudicialFile/GET/FileInvitationInformation",
     queryParameters: [
         Parameters.code,
-        Parameters.dateParameter
+        Parameters.judicialFileId1
     ],
     responses: {
+        200: {
+            bodyMapper: Mappers.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationInformationModel
+        },
         401: {},
         default: {}
     },
@@ -1052,6 +1096,19 @@ var getLogEntryDistinctCodesOperationSpec = {
         Parameters.currentRole
     ],
     responses: {
+        200: {
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "String"
+                        }
+                    }
+                }
+            }
+        },
         403: {},
         404: {},
         default: {}
@@ -1068,6 +1125,7 @@ var dismissNotificationsOperationSpec = {
         Parameters.aggregatorCodeIsSubstring1
     ],
     responses: {
+        200: {},
         404: {},
         default: {}
     },
@@ -1081,6 +1139,7 @@ var updateRepresentativeStatusOperationSpec = {
         Parameters.status
     ],
     responses: {
+        200: {},
         404: {},
         default: {}
     },
@@ -1095,7 +1154,10 @@ var updatePartyTypeOperationSpec = {
         Parameters.lastModified0
     ],
     responses: {
+        200: {},
+        403: {},
         404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -1109,7 +1171,10 @@ var updatePartyDisputeDescriptionOperationSpec = {
         Parameters.lastModified0
     ],
     responses: {
+        200: {},
+        403: {},
         404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -1123,7 +1188,9 @@ var updateFileInvitationExpirationDateOperationSpec = {
         Parameters.lastModified1
     ],
     responses: {
+        200: {},
         404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -1136,7 +1203,25 @@ var updatePartyInvitationExpirationDateOperationSpec = {
         Parameters.expiryDate
     ],
     responses: {
+        200: {},
         404: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var updateFileStatusOperationSpec = {
+    httpMethod: "PATCH",
+    path: "JudicialFile/PATCH/UpdateFileStatus",
+    queryParameters: [
+        Parameters.fileId0,
+        Parameters.fileStatus,
+        Parameters.lastModifiedDate
+    ],
+    responses: {
+        200: {},
+        403: {},
+        404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -1149,6 +1234,14 @@ var createPartyInvitationOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationCreateModel, { required: true })
     },
     responses: {
+        200: {
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
+                    name: "Uuid"
+                }
+            }
+        },
         404: {},
         default: {}
     },
@@ -1162,7 +1255,15 @@ var createFileInvitationOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationCreateModel, { required: true })
     },
     responses: {
-        401: {},
+        200: {
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
+                    name: "Uuid"
+                }
+            }
+        },
+        400: {},
         404: {},
         default: {}
     },
@@ -1182,6 +1283,14 @@ var acceptPartyInvitationOperationSpec = {
         }
     },
     responses: {
+        200: {
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
+                    name: "Uuid"
+                }
+            }
+        },
         400: {},
         403: {},
         404: {},
@@ -1198,6 +1307,7 @@ var refusePartyInvitationOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsPartyInvitationRefuseModel, { required: true })
     },
     responses: {
+        200: {},
         403: {},
         404: {},
         default: {}
@@ -1212,6 +1322,7 @@ var refuseFileInvitationOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationRefuseModel, { required: true })
     },
     responses: {
+        200: {},
         401: {},
         403: {},
         404: {},
@@ -1227,6 +1338,14 @@ var createFileTagLinkOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagCreateModel, { required: true })
     },
     responses: {
+        200: {
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
+                    name: "Uuid"
+                }
+            }
+        },
         404: {},
         default: {}
     },
@@ -1240,6 +1359,8 @@ var attachRepresentativesToPartyOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsRepresentativesToPartyModel, { required: true })
     },
     responses: {
+        200: {},
+        403: {},
         404: {},
         409: {},
         default: {}
@@ -1254,6 +1375,7 @@ var linkRepresentativesToPartyOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsLinkRepresentativesToPartyModel, { required: true })
     },
     responses: {
+        200: {},
         403: {},
         404: {},
         409: {},
@@ -1275,6 +1397,14 @@ var acceptRepresentativeInvitationOperationSpec = {
         }
     },
     responses: {
+        200: {
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
+                    name: "Uuid"
+                }
+            }
+        },
         403: {},
         404: {},
         409: {},
@@ -1290,6 +1420,14 @@ var acceptFileInvitationOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptModel, { required: true })
     },
     responses: {
+        200: {
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
+                    name: "Uuid"
+                }
+            }
+        },
         401: {},
         403: {},
         404: {},
@@ -1336,6 +1474,7 @@ var createNotificationOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreateModel, { required: true })
     },
     responses: {
+        200: {},
         400: {},
         403: {},
         404: {},
@@ -1359,6 +1498,10 @@ var createJudicialFileOperationSpec = {
                 }
             }
         },
+        400: {},
+        404: {},
+        409: {},
+        500: {},
         default: {}
     },
     serializer: serializer
@@ -1399,6 +1542,9 @@ var getLogEntriesOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestData, { required: true })
     },
     responses: {
+        200: {
+            bodyMapper: Mappers.CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiResponseData
+        },
         403: {},
         404: {},
         default: {}
@@ -1446,6 +1592,7 @@ var createLogEntryOperationSpec = {
                 }
             }
         },
+        404: {},
         default: {}
     },
     serializer: serializer
@@ -1458,6 +1605,7 @@ var closeFileOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsCloseFileModel, { required: true })
     },
     responses: {
+        200: {},
         400: {},
         403: {},
         404: {},
@@ -1477,6 +1625,9 @@ var updateFileAttributeOperationSpec = {
         200: {
             bodyMapper: Mappers.CyberjusticeLabKernelSharedJudicialFileModelsPartyUpsertModel
         },
+        403: {},
+        404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -1497,6 +1648,9 @@ var upsertPartyOperationSpec = {
                 }
             }
         },
+        403: {},
+        404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -1510,7 +1664,9 @@ var changePartyStatusOperationSpec = {
         Parameters.lastModifiedDate
     ],
     responses: {
+        200: {},
         403: {},
+        404: {},
         409: {},
         default: {}
     },
@@ -1532,6 +1688,10 @@ var upsertPartyContactOperationSpec = {
                 }
             }
         },
+        400: {},
+        403: {},
+        404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -1544,8 +1704,11 @@ var updatePartyRepresentativesAttributesOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsRepresentativesToPartyModel, { required: true })
     },
     responses: {
+        200: {},
+        400: {},
         403: {},
         404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -1558,7 +1721,10 @@ var updateFileTagLinkOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagUpdateModel, { required: true })
     },
     responses: {
-        204: {},
+        200: {},
+        403: {},
+        404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -1571,7 +1737,11 @@ var updateFileTagLinkAndComplementsOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagUpdateWithComplementModel, { required: true })
     },
     responses: {
-        204: {},
+        200: {},
+        400: {},
+        403: {},
+        404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -1584,7 +1754,8 @@ var updateNotificationTypeResourceOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeResourceUpdateModel, { required: true })
     },
     responses: {
-        204: {},
+        200: {},
+        404: {},
         default: {}
     },
     serializer: serializer
@@ -1597,6 +1768,7 @@ var updateNotificationOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsNotificationUpdateModel, { required: true })
     },
     responses: {
+        200: {},
         403: {},
         default: {}
     },
@@ -1610,6 +1782,7 @@ var updateNotificationRepresentativeOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsNotificationRepresentativeUpdateModel, { required: true })
     },
     responses: {
+        200: {},
         403: {},
         default: {}
     },
@@ -1623,7 +1796,8 @@ var updateLogTemplateOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateUpdateModel, { required: true })
     },
     responses: {
-        204: {},
+        200: {},
+        403: {},
         default: {}
     },
     serializer: serializer
@@ -1648,7 +1822,8 @@ var updateLogTemplatesOperationSpec = {
         }
     },
     responses: {
-        204: {},
+        200: {},
+        403: {},
         default: {}
     },
     serializer: serializer

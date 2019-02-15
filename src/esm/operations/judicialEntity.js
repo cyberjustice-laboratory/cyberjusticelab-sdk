@@ -3,6 +3,7 @@
  * Changes may cause incorrect behavior and will be lost if the code is
  * regenerated.
  */
+import * as tslib_1 from "tslib";
 import * as msRest from "@azure/ms-rest-js";
 import * as Mappers from "../models/judicialEntityMappers";
 import * as Parameters from "../models/parameters";
@@ -26,6 +27,18 @@ var JudicialEntity = /** @class */ (function () {
             urn: urn,
             options: options
         }, getJudicialEntityOperationSpec, callback);
+    };
+    JudicialEntity.prototype.getMatters = function (requestModel, options, callback) {
+        return this.client.sendOperationRequest({
+            requestModel: requestModel,
+            options: options
+        }, getMattersOperationSpec, callback);
+    };
+    JudicialEntity.prototype.getJudicialEntities = function (requestModel, options, callback) {
+        return this.client.sendOperationRequest({
+            requestModel: requestModel,
+            options: options
+        }, getJudicialEntitiesOperationSpec, callback);
     };
     return JudicialEntity;
 }());
@@ -60,6 +73,36 @@ var getJudicialEntityOperationSpec = {
                     name: "Uuid"
                 }
             }
+        },
+        default: {}
+    },
+    serializer: serializer
+};
+var getMattersOperationSpec = {
+    httpMethod: "POST",
+    path: "JudicialEntity/POST/Matters",
+    requestBody: {
+        parameterPath: "requestModel",
+        mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiRequestData, { required: true })
+    },
+    responses: {
+        200: {
+            bodyMapper: Mappers.CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiResponseData
+        },
+        default: {}
+    },
+    serializer: serializer
+};
+var getJudicialEntitiesOperationSpec = {
+    httpMethod: "POST",
+    path: "JudicialEntity/POST/JudicialEntities",
+    requestBody: {
+        parameterPath: "requestModel",
+        mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiRequestData, { required: true })
+    },
+    responses: {
+        200: {
+            bodyMapper: Mappers.CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData
         },
         default: {}
     },

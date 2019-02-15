@@ -206,28 +206,28 @@ export class Document {
    * @summary Create a document.
    * @param documentModel A CreateDocumentModel object.
    * @param [options] The optional parameters
-   * @returns Promise<msRest.RestResponse>
+   * @returns Promise<Models.DocumentCreateDocumentResponse>
    */
-  createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, options?: msRest.RequestOptionsBase): Promise<Models.DocumentCreateDocumentResponse>;
   /**
    * @param documentModel A CreateDocumentModel object.
    * @param callback The callback
    */
-  createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, callback: msRest.ServiceCallback<void>): void;
+  createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, callback: msRest.ServiceCallback<string>): void;
   /**
    * @param documentModel A CreateDocumentModel object.
    * @param options The optional parameters
    * @param callback The callback
    */
-  createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
-  createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+  createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
+  createDocument(documentModel: Models.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<string>, callback?: msRest.ServiceCallback<string>): Promise<Models.DocumentCreateDocumentResponse> {
     return this.client.sendOperationRequest(
       {
         documentModel,
         options
       },
       createDocumentOperationSpec,
-      callback);
+      callback) as Promise<Models.DocumentCreateDocumentResponse>;
   }
 
   /**
@@ -385,7 +385,10 @@ const deleteDocumentOperationSpec: msRest.OperationSpec = {
     Parameters.currentVersion
   ],
   responses: {
-    204: {},
+    200: {},
+    403: {},
+    404: {},
+    409: {},
     default: {}
   },
   serializer
@@ -398,7 +401,8 @@ const deleteDocumentAttributesOperationSpec: msRest.OperationSpec = {
     Parameters.documentId
   ],
   responses: {
-    204: {},
+    200: {},
+    404: {},
     default: {}
   },
   serializer
@@ -497,6 +501,15 @@ const createDocumentOperationSpec: msRest.OperationSpec = {
     }
   },
   responses: {
+    200: {
+      bodyMapper: {
+        serializedName: "parsedResponse",
+        type: {
+          name: "Uuid"
+        }
+      }
+    },
+    403: {},
     404: {},
     409: {},
     default: {}
@@ -518,6 +531,9 @@ const createDocumentsOperationSpec: msRest.OperationSpec = {
     200: {
       bodyMapper: Mappers.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentsResponseModel
     },
+    400: {},
+    403: {},
+    404: {},
     default: {}
   },
   serializer
@@ -534,7 +550,9 @@ const updateDocumentContentOperationSpec: msRest.OperationSpec = {
     }
   },
   responses: {
+    200: {},
     404: {},
+    409: {},
     default: {}
   },
   serializer
@@ -551,7 +569,10 @@ const updateDocumentMetadataOperationSpec: msRest.OperationSpec = {
     }
   },
   responses: {
+    200: {},
+    403: {},
     404: {},
+    409: {},
     default: {}
   },
   serializer
@@ -568,6 +589,7 @@ const updateDocumentAttributesOperationSpec: msRest.OperationSpec = {
     }
   },
   responses: {
+    200: {},
     404: {},
     default: {}
   },
@@ -585,6 +607,7 @@ const updateDocumentPartyActionsOperationSpec: msRest.OperationSpec = {
     }
   },
   responses: {
+    200: {},
     404: {},
     default: {}
   },

@@ -29,21 +29,21 @@ export class ProsecutingAuthority {
    * @param [options] The optional parameters
    * @returns Promise<msRest.RestResponse>
    */
-  deleteProsecutingAuthority(id: string, modifiedTicks: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  deleteProsecutingAuthority(id: string, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
   /**
    * @param id Prosecuting authority id.
    * @param modifiedTicks Modified date in ticks.
    * @param callback The callback
    */
-  deleteProsecutingAuthority(id: string, modifiedTicks: number, callback: msRest.ServiceCallback<void>): void;
+  deleteProsecutingAuthority(id: string, modifiedTicks: string, callback: msRest.ServiceCallback<void>): void;
   /**
    * @param id Prosecuting authority id.
    * @param modifiedTicks Modified date in ticks.
    * @param options The optional parameters
    * @param callback The callback
    */
-  deleteProsecutingAuthority(id: string, modifiedTicks: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
-  deleteProsecutingAuthority(id: string, modifiedTicks: number, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+  deleteProsecutingAuthority(id: string, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  deleteProsecutingAuthority(id: string, modifiedTicks: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
     return this.client.sendOperationRequest(
       {
         id,
@@ -63,7 +63,7 @@ export class ProsecutingAuthority {
    * @param [options] The optional parameters
    * @returns Promise<msRest.RestResponse>
    */
-  deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: number, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
   /**
    * @param authorityDelegation A
    * {CyberjusticeLab.Kernel.Shared.ProsecutingAuthority.ProsecutingAuthorityDelegationDeleteData}
@@ -71,7 +71,7 @@ export class ProsecutingAuthority {
    * @param modifiedTicks Modified date in ticks.
    * @param callback The callback
    */
-  deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: number, callback: msRest.ServiceCallback<void>): void;
+  deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: string, callback: msRest.ServiceCallback<void>): void;
   /**
    * @param authorityDelegation A
    * {CyberjusticeLab.Kernel.Shared.ProsecutingAuthority.ProsecutingAuthorityDelegationDeleteData}
@@ -80,8 +80,8 @@ export class ProsecutingAuthority {
    * @param options The optional parameters
    * @param callback The callback
    */
-  deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
-  deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: number, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+  deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  deleteProsecutingAuthorityDelegation(authorityDelegation: Models.CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData, modifiedTicks: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
     return this.client.sendOperationRequest(
       {
         authorityDelegation,

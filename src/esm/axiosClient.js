@@ -8,6 +8,7 @@ import * as tough from "tough-cookie";
 import * as msrest from "@azure/ms-rest-js";
 import * as https from "https";
 // Workaround for https://github.com/axios/axios/issues/1158
+export var axiosFromApi = axios;
 /**
  * A HttpClient implementation that uses axios to send HTTP requests.
  */

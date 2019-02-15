@@ -105,7 +105,10 @@ var deleteDocumentOperationSpec = {
         Parameters.currentVersion
     ],
     responses: {
-        204: {},
+        200: {},
+        403: {},
+        404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -117,7 +120,8 @@ var deleteDocumentAttributesOperationSpec = {
         Parameters.documentId
     ],
     responses: {
-        204: {},
+        200: {},
+        404: {},
         default: {}
     },
     serializer: serializer
@@ -205,6 +209,15 @@ var createDocumentOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel, { required: true })
     },
     responses: {
+        200: {
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
+                    name: "Uuid"
+                }
+            }
+        },
+        403: {},
         404: {},
         409: {},
         default: {}
@@ -222,6 +235,9 @@ var createDocumentsOperationSpec = {
         200: {
             bodyMapper: Mappers.CyberjusticeLabKernelSharedDocumentModelsCreateDocumentsResponseModel
         },
+        400: {},
+        403: {},
+        404: {},
         default: {}
     },
     serializer: serializer
@@ -234,7 +250,9 @@ var updateDocumentContentOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentContentModel, { required: true })
     },
     responses: {
+        200: {},
         404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -247,7 +265,10 @@ var updateDocumentMetadataOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentMetadatasModel, { required: true })
     },
     responses: {
+        200: {},
+        403: {},
         404: {},
+        409: {},
         default: {}
     },
     serializer: serializer
@@ -260,6 +281,7 @@ var updateDocumentAttributesOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedDocumentModelsEditDocumentAttributeModel, { required: true })
     },
     responses: {
+        200: {},
         404: {},
         default: {}
     },
@@ -273,6 +295,7 @@ var updateDocumentPartyActionsOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentPartyActionsModel, { required: true })
     },
     responses: {
+        200: {},
         404: {},
         default: {}
     },

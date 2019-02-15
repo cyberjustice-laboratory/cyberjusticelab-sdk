@@ -2,6 +2,8 @@
 
 To regenerate sdk
 
+Supprimer swagger.json
+
 `node generateClientAPI.js`
 
 Then go to test/

@@ -719,6 +719,15 @@ export interface CyberjusticeLabKernelSharedCalendarModelsEventPartyResponseMode
      */
     modifiedBy?: string;
     /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
+    /**
      * @member {Date} [createdDate] The created date of an object.
      */
     createdDate?: Date;
@@ -761,6 +770,15 @@ export interface CyberjusticeLabKernelSharedCalendarModelsEventAttemptModel {
      * @member {string} [modifiedBy] The modified by of an object.
      */
     modifiedBy?: string;
+    /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
     /**
      * @member {Date} [createdDate] The created date of an object.
      */
@@ -826,6 +844,15 @@ export interface CyberjusticeLabKernelSharedCalendarModelsEventBehaviourModel {
      * @member {string} [modifiedBy] The modified by of an object.
      */
     modifiedBy?: string;
+    /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
     /**
      * @member {Date} [createdDate] The created date of an object.
      */
@@ -922,6 +949,15 @@ export interface CyberjusticeLabKernelSharedCalendarModelsEventModel {
      * @member {string} [modifiedBy] The modified by of an object.
      */
     modifiedBy?: string;
+    /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
     /**
      * @member {Date} [createdDate] The created date of an object.
      */
@@ -2136,6 +2172,15 @@ export interface CyberjusticeLabKernelSharedCalendarModelsCalendarModel {
      */
     modifiedBy?: string;
     /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
+    /**
      * @member {Date} [createdDate] The created date of an object.
      */
     createdDate?: Date;
@@ -2350,6 +2395,10 @@ export interface CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData
      */
     fileIds?: string[];
     /**
+     * @member {string[]} [partyIds] List of parties identifiers.
+     */
+    partyIds?: string[];
+    /**
      * @member {{ [propertyName: string]: string }} [attributes] List of
      * attributes for query.
      */
@@ -2382,7 +2431,7 @@ export interface CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData
     skip?: number;
     /**
      * @member {OrderBy1} [orderBy] Order by columns. Possible values include:
-     * 'Title', 'Description', 'Format', 'ModifiedDate'
+     * 'Title', 'Description', 'Format', 'ModifiedDate', 'CreatedDate'
      */
     orderBy?: OrderBy1;
     /**
@@ -2451,6 +2500,13 @@ export interface CyberjusticeLabKernelSharedDocumentModelsDocumentPartyActionMod
      * application needs about this action.
      */
     actionComplement?: string;
+    /**
+     * @member {{ [propertyName: string]: string }} [actionAttributes] List of
+     * attributes for this action.
+     */
+    actionAttributes?: {
+        [propertyName: string]: string;
+    };
 }
 /**
  * @interface
@@ -2596,6 +2652,15 @@ export interface CyberjusticeLabKernelSharedDocumentModelsDocumentModel {
      */
     modifiedBy?: string;
     /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
+    /**
      * @member {Date} [createdDate] The created date of an object.
      */
     createdDate?: Date;
@@ -2656,6 +2721,13 @@ export interface CyberjusticeLabKernelSharedDocumentModelsCreateDocumentPartyAct
      * application needs about this action.
      */
     actionComplement?: string;
+    /**
+     * @member {{ [propertyName: string]: string }} [actionAttributes] List of
+     * attributes for this action.
+     */
+    actionAttributes?: {
+        [propertyName: string]: string;
+    };
 }
 /**
  * @interface
@@ -2685,9 +2757,9 @@ export interface CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel {
      */
     description?: string;
     /**
-     * @member {Uint8Array} [content] Binary content of the document.
+     * @member {any} [content] Binary content of the document.
      */
-    content?: Uint8Array;
+    content?: any;
     /**
      * @member {string} [format] Format of the document file.
      */
@@ -2879,9 +2951,9 @@ export interface CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentContentM
      */
     formatEnum?: FormatEnum2;
     /**
-     * @member {Uint8Array} [binaryData] Document content as binary.
+     * @member {any} [binaryData] Document content as binary.
      */
-    binaryData?: Uint8Array;
+    binaryData?: any;
 }
 /**
  * @interface
@@ -4105,6 +4177,15 @@ export interface CyberjusticeLabKernelSharedFormModelsQuestionFormModel {
      */
     modifiedBy?: string;
     /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
+    /**
      * @member {Date} [createdDate] The created date of an object.
      */
     createdDate?: Date;
@@ -4557,6 +4638,263 @@ export interface CyberjusticeLabKernelServiceContractsJudicialEntityJudicialEnti
      * @member {string} [createdBy] The created by of an object.
      */
     createdBy?: string;
+}
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiRequestData.
+ * Represents an api filter model when getting a list of matters.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiRequestData {
+    /**
+     * @member {number} [take] Take.
+     */
+    take?: number;
+    /**
+     * @member {number} [skip] Skip.
+     */
+    skip?: number;
+    /**
+     * @member {boolean} [orderByDescending] Order by ascending or descending.
+     */
+    orderByDescending?: boolean;
+}
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialEntityModelsMatterModel.
+ * Represents a matter.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialEntityModelsMatterModel {
+    /**
+     * @member {string} [matterId] Identification of the matter.
+     */
+    matterId?: string;
+    /**
+     * @member {string} [code] Code.
+     */
+    code?: string;
+    /**
+     * @member {Date} [modifiedDate] The modified date of an object.
+     * Required for optimistic concurrency.
+     */
+    modifiedDate?: Date;
+    /**
+     * @member {string} [modifiedBy] The modified by of an object.
+     */
+    modifiedBy?: string;
+    /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
+    /**
+     * @member {Date} [createdDate] The created date of an object.
+     */
+    createdDate?: Date;
+    /**
+     * @member {string} [createdBy] The created by of an object.
+     */
+    createdBy?: string;
+}
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiResponseData.
+ * Represents an API response when getting a list of matters.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiResponseData {
+    /**
+     * @member {number} [count] Count of matters.
+     */
+    count?: number;
+    /**
+     * @member {number} [countFiltered] Count of filtered matters.
+     */
+    countFiltered?: number;
+    /**
+     * @member {CyberjusticeLabKernelSharedJudicialEntityModelsMatterModel[]}
+     * [matters] List of matters.
+     */
+    matters?: CyberjusticeLabKernelSharedJudicialEntityModelsMatterModel[];
+}
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiRequestData.
+ * Represents an api filter model when getting a list of judicial entities.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiRequestData {
+    /**
+     * @member {number} [take] Take.
+     */
+    take?: number;
+    /**
+     * @member {number} [skip] Skip.
+     */
+    skip?: number;
+    /**
+     * @member {boolean} [orderByDescending] Order by ascending or descending.
+     */
+    orderByDescending?: boolean;
+    /**
+     * @member {string} [filterByMatter] Filter by Matter Id
+     */
+    filterByMatter?: string;
+}
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialEntityModelsEntityNeutralPredicateLinkModel.
+ * Entity neutral predicate link Model.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialEntityModelsEntityNeutralPredicateLinkModel {
+    /**
+     * @member {string} [neutralPredicateId] Neutral predicate fake foreign key.
+     * Guid composite primary key.
+     */
+    neutralPredicateId?: string;
+    /**
+     * @member {string} [neutralPredicateName] Neutral predicate name.
+     */
+    neutralPredicateName?: string;
+}
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialEntityModelsEntityProsecutingAgentPredicateLinkModel.
+ * Entity prosecuting agent predicate link Model.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialEntityModelsEntityProsecutingAgentPredicateLinkModel {
+    /**
+     * @member {string} [predicateId] Prosecuting agent predicate fake foreign
+     * key. String composite primary key.
+     */
+    predicateId?: string;
+}
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialEntityModelsMatterJudicialEntityLinkModel.
+ * Judicial Entity and Matter Link Model
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialEntityModelsMatterJudicialEntityLinkModel {
+    /**
+     * @member {CyberjusticeLabKernelSharedJudicialEntityModelsMatterModel}
+     * [matter] Matter
+     */
+    matter?: CyberjusticeLabKernelSharedJudicialEntityModelsMatterModel;
+    /**
+     * @member {string} [businessRuleId] BusinessRule foreign key.
+     */
+    businessRuleId?: string;
+}
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityModel.
+ * Represents a judicial entity.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityModel {
+    /**
+     * @member {string} [judicialEntityId] Guid primary key.
+     */
+    judicialEntityId?: string;
+    /**
+     * @member {string} [uRN] Unified resource name.
+     */
+    uRN?: string;
+    /**
+     * @member {string} [name] Name.
+     */
+    name?: string;
+    /**
+     * @member {string} [clerkPredicateId] Optional clerk predicate fake foreign
+     * key.
+     */
+    clerkPredicateId?: string;
+    /**
+     * @member {string} [clerkPredicateName] Clerk predicate name.
+     */
+    clerkPredicateName?: string;
+    /**
+     * @member {string} [judgePredicateId] Optional judge predicate fake foreign
+     * key.
+     */
+    judgePredicateId?: string;
+    /**
+     * @member {string} [judgePredicateName] Judge predicate name.
+     */
+    judgePredicateName?: string;
+    /**
+     * @member {string} [tenantPredicateId] Optional tenant predicate fake
+     * foreign key.
+     */
+    tenantPredicateId?: string;
+    /**
+     * @member {string} [tenantPredicateName] Tenant predicate name.
+     */
+    tenantPredicateName?: string;
+    /**
+     * @member {Date} [createdDate] Created date.
+     */
+    createdDate?: Date;
+    /**
+     * @member {string} [createdBy] Created by.
+     */
+    createdBy?: string;
+    /**
+     * @member {Date} [modifiedDate] Modified date.
+     */
+    modifiedDate?: Date;
+    /**
+     * @member {string} [modifiedBy] Modified by.
+     */
+    modifiedBy?: string;
+    /**
+     * @member
+     * {CyberjusticeLabKernelSharedJudicialEntityModelsEntityNeutralPredicateLinkModel[]}
+     * [entityNeutralPredicateLinks] One to many neutral predicate links.
+     */
+    entityNeutralPredicateLinks?: CyberjusticeLabKernelSharedJudicialEntityModelsEntityNeutralPredicateLinkModel[];
+    /**
+     * @member
+     * {CyberjusticeLabKernelSharedJudicialEntityModelsEntityProsecutingAgentPredicateLinkModel[]}
+     * [entityProsecutingAgentPredicateLinks] List agent predicate links.
+     */
+    entityProsecutingAgentPredicateLinks?: CyberjusticeLabKernelSharedJudicialEntityModelsEntityProsecutingAgentPredicateLinkModel[];
+    /**
+     * @member
+     * {CyberjusticeLabKernelSharedJudicialEntityModelsMatterJudicialEntityLinkModel[]}
+     * [judicialEntityMatterLinks] Judicial Entity and Matter Links
+     */
+    judicialEntityMatterLinks?: CyberjusticeLabKernelSharedJudicialEntityModelsMatterJudicialEntityLinkModel[];
+}
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData.
+ * Represents an API response when getting a list of judicial entities.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData {
+    /**
+     * @member {number} [count] Count of matters.
+     */
+    count?: number;
+    /**
+     * @member {number} [countFiltered] Count of filtered matters.
+     */
+    countFiltered?: number;
+    /**
+     * @member
+     * {CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityModel[]}
+     * [judicialEntities] The list of judicial entities
+     */
+    judicialEntities?: CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityModel[];
 }
 /**
  * @interface
@@ -5499,6 +5837,15 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsContactModel {
      */
     modifiedBy?: string;
     /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
+    /**
      * @member {Date} [createdDate] The created date of an object.
      */
     createdDate?: Date;
@@ -5601,6 +5948,15 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeMode
      */
     modifiedBy?: string;
     /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
+    /**
      * @member {Date} [createdDate] The created date of an object.
      */
     createdDate?: Date;
@@ -5679,6 +6035,15 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsPleaModel {
      */
     modifiedBy?: string;
     /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
+    /**
      * @member {Date} [createdDate] The created date of an object.
      */
     createdDate?: Date;
@@ -5747,6 +6112,15 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsChargePenalOffence
      * @member {string} [modifiedBy] The modified by of an object.
      */
     modifiedBy?: string;
+    /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
     /**
      * @member {Date} [createdDate] The created date of an object.
      */
@@ -5873,6 +6247,15 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsPartyModel {
      */
     modifiedBy?: string;
     /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
+    /**
      * @member {Date} [createdDate] The created date of an object.
      */
     createdDate?: Date;
@@ -5992,6 +6375,15 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagMod
      */
     modifiedBy?: string;
     /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
+    /**
      * @member {Date} [createdDate] The created date of an object.
      */
     createdDate?: Date;
@@ -6008,13 +6400,13 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagMod
  */
 export interface CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel {
     /**
-     * @member {string} [id] Internal Guid of the file.
+     * @member {string} [businessRuleId] Guid of the business rule.
      */
-    id?: string;
+    businessRuleId?: string;
     /**
-     * @member {string} [judicialFileId] Friendly Id of the file.
+     * @member {string} [businessRuleName] Name of the business rule.
      */
-    judicialFileId?: string;
+    businessRuleName?: string;
     /**
      * @member {string} [judicialEntityId] Guid of the judicial entity.
      */
@@ -6023,6 +6415,14 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel 
      * @member {string} [judicialEntityName] Name of the judicial entity.
      */
     judicialEntityName?: string;
+    /**
+     * @member {string} [id] Internal Guid of the file.
+     */
+    id?: string;
+    /**
+     * @member {string} [judicialFileId] Friendly Id of the file.
+     */
+    judicialFileId?: string;
     /**
      * @member {string} [name] Name of the file.
      */
@@ -6062,14 +6462,6 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel 
      * @member {string} [formId] Guid of the form.
      */
     formId?: string;
-    /**
-     * @member {string} [businessRuleId] Guid of the business rule.
-     */
-    businessRuleId?: string;
-    /**
-     * @member {string} [businessRuleName] Name of the business rule.
-     */
-    businessRuleName?: string;
     /**
      * @member {string} [closingReason] Reason why a file is closed.
      */
@@ -6125,6 +6517,10 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel 
      */
     fileTags?: CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagModel[];
     /**
+     * @member {string} [matterId] The Matter Id
+     */
+    matterId?: string;
+    /**
      * @member {Date} [modifiedDate] The modified date of an object.
      * Required for optimistic concurrency.
      */
@@ -6133,6 +6529,15 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel 
      * @member {string} [modifiedBy] The modified by of an object.
      */
     modifiedBy?: string;
+    /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
     /**
      * @member {Date} [createdDate] The created date of an object.
      */
@@ -6525,6 +6930,14 @@ export interface CyberjusticeLabKernelSharedJudicialFileFileInvitationPartyInfor
      * @member {string} [partyName] Name of the party
      */
     partyName?: string;
+    /**
+     * @member {string} [partyId] The Guid of the party
+     */
+    partyId?: string;
+    /**
+     * @member {string} [partyType] The type of the party
+     */
+    partyType?: string;
 }
 /**
  * @interface
@@ -6557,6 +6970,10 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationInfo
      * invitation.
      */
     additionalAttributes?: string;
+    /**
+     * @member {string} [invitationType] The type of the invitation
+     */
+    invitationType?: string;
 }
 /**
  * @interface
@@ -6863,9 +7280,9 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationRefu
      */
     invitationCode?: string;
     /**
-     * @member {Date} [invitationDate] Invitation Date
+     * @member {string} [judicialFileId] JudicialFileId
      */
-    invitationDate?: Date;
+    judicialFileId?: string;
     /**
      * @member {string} [tagCode] Tag code to update.
      */
@@ -6947,6 +7364,15 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsRepresentativesToP
      */
     modifiedBy?: string;
     /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
+    /**
      * @member {Date} [createdDate] The created date of an object.
      */
     createdDate?: Date;
@@ -6990,6 +7416,15 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsLinkRepresentative
      */
     modifiedBy?: string;
     /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
+    /**
      * @member {Date} [createdDate] The created date of an object.
      */
     createdDate?: Date;
@@ -7010,9 +7445,9 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcce
      */
     invitationCode?: string;
     /**
-     * @member {Date} [invitationDate] Invitation Date
+     * @member {string} [judicialFileId] JudicialFileId
      */
-    invitationDate?: Date;
+    judicialFileId?: string;
 }
 /**
  * @interface
@@ -7342,9 +7777,17 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileCreate
      */
     formId?: string;
     /**
-     * @member {string} [status] Statud of the file. Optional. Draft by default.
+     * @member {string} [status] Status of the file. Optional. Draft by default.
      */
     status?: string;
+    /**
+     * @member {string} [currentWorkflow] Current workflow of the file. Optional.
+     */
+    currentWorkflow?: string;
+    /**
+     * @member {string} [matterId] MatterId - Optional
+     */
+    matterId?: string;
 }
 /**
  * @interface
@@ -7796,22 +8239,12 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileAttrib
      */
     fileId?: string;
     /**
-     * @member {Date} [modifiedDate] The modified date of an object.
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
      * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
      */
-    modifiedDate?: Date;
-    /**
-     * @member {string} [modifiedBy] The modified by of an object.
-     */
-    modifiedBy?: string;
-    /**
-     * @member {Date} [createdDate] The created date of an object.
-     */
-    createdDate?: Date;
-    /**
-     * @member {string} [createdBy] The created by of an object.
-     */
-    createdBy?: string;
+    modifiedDateTicks?: string;
 }
 /**
  * @interface
@@ -7870,6 +8303,15 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsPartyUpsertModel {
      * @member {string} [modifiedBy] The modified by of an object.
      */
     modifiedBy?: string;
+    /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
     /**
      * @member {Date} [createdDate] The created date of an object.
      */
@@ -7978,6 +8420,15 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsPartyContactUpsert
      * @member {string} [modifiedBy] The modified by of an object.
      */
     modifiedBy?: string;
+    /**
+     * @member {string} [modifiedDateTicks] The modified date of an object,
+     * expressed in ticks.
+     * Required for optimistic concurrency.
+     * Prevent loss of precision when converting to JS object.
+     * **NOTE: This property will not be serialized. It can only be populated by
+     * the server.**
+     */
+    readonly modifiedDateTicks?: string;
     /**
      * @member {Date} [createdDate] The created date of an object.
      */
@@ -10016,6 +10467,25 @@ export interface CyberjusticeLabKernelSharedWitnessAttributesFilters {
 }
 /**
  * @interface
+ * An interface representing CyberjusticeLabKernelSharedWitnessModelsActionsFilters.
+ * Actions filters.
+ *
+ */
+export interface CyberjusticeLabKernelSharedWitnessModelsActionsFilters {
+    /**
+     * @member {SystemCollectionsGenericKeyValuePairSystemStringSystemString[]}
+     * [restrictedCodesAndComplements] Objects that have one of these codes (key)
+     * and complements (value, optional) are filtered out.
+     */
+    restrictedCodesAndComplements?: SystemCollectionsGenericKeyValuePairSystemStringSystemString[];
+    /**
+     * @member {string[]} [allowedPartyIds] The restricted codes don't apply to
+     * an action made by one of these parties.
+     */
+    allowedPartyIds?: string[];
+}
+/**
+ * @interface
  * An interface representing CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData.
  * <summary>Represents an api filter model when getting a list of
  * witnesses.</summary>
@@ -10059,6 +10529,11 @@ export interface CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData {
      * [attributesFilters] Attributes filters.
      */
     attributesFilters?: CyberjusticeLabKernelSharedWitnessAttributesFilters[];
+    /**
+     * @member {CyberjusticeLabKernelSharedWitnessModelsActionsFilters[]}
+     * [actionsFilters] Actions filters.
+     */
+    actionsFilters?: CyberjusticeLabKernelSharedWitnessModelsActionsFilters[];
 }
 /**
  * @interface
@@ -10135,6 +10610,13 @@ export interface CyberjusticeLabKernelSharedWitnessModelsWitnessPartyActionModel
      * application needs about this action.
      */
     actionComplement?: string;
+    /**
+     * @member {{ [propertyName: string]: string }} [actionAttributes] List of
+     * attributes for this action.
+     */
+    actionAttributes?: {
+        [propertyName: string]: string;
+    };
 }
 /**
  * @interface
@@ -10312,6 +10794,13 @@ export interface CyberjusticeLabKernelSharedWitnessModelsCreateWitnessPartyActio
      * application needs about this action.
      */
     actionComplement?: string;
+    /**
+     * @member {{ [propertyName: string]: string }} [actionAttributes] List of
+     * attributes for this action.
+     */
+    actionAttributes?: {
+        [propertyName: string]: string;
+    };
 }
 /**
  * @interface
@@ -11317,11 +11806,11 @@ export declare type PermissionEnum = 'Public' | 'Private';
 export declare type DocumentationEnum = 'Digital' | 'External' | 'Oral';
 /**
  * Defines values for OrderBy1.
- * Possible values include: 'Title', 'Description', 'Format', 'ModifiedDate'
+ * Possible values include: 'Title', 'Description', 'Format', 'ModifiedDate', 'CreatedDate'
  * @readonly
  * @enum {string}
  */
-export declare type OrderBy1 = 'Title' | 'Description' | 'Format' | 'ModifiedDate';
+export declare type OrderBy1 = 'Title' | 'Description' | 'Format' | 'ModifiedDate' | 'CreatedDate';
 /**
  * Defines values for FormatEnum1.
  * Possible values include: 'pdf', 'jpeg', 'mp3', 'mp4', 'jpg', 'png', 'doc', 'docx', 'txt',
@@ -12083,6 +12572,28 @@ export declare type DocumentGetDocumentsResponse = CyberjusticeLabKernelSharedDo
     };
 };
 /**
+ * Contains response data for the createDocument operation.
+ */
+export declare type DocumentCreateDocumentResponse = {
+    /**
+     * The parsed response body.
+     */
+    body: string;
+    /**
+     * The underlying HTTP response.
+     */
+    _response: msRest.HttpResponse & {
+        /**
+         * The response body as text (string format)
+         */
+        bodyAsText: string;
+        /**
+         * The response body as parsed JSON or XML
+         */
+        parsedBody: string;
+    };
+};
+/**
  * Contains response data for the createDocuments operation.
  */
 export declare type DocumentCreateDocumentsResponse = CyberjusticeLabKernelSharedDocumentModelsCreateDocumentsResponseModel & {
@@ -12555,6 +13066,42 @@ export declare type JudicialEntityGetJudicialEntityResponse = {
     };
 };
 /**
+ * Contains response data for the getMatters operation.
+ */
+export declare type JudicialEntityGetMattersResponse = CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiResponseData & {
+    /**
+     * The underlying HTTP response.
+     */
+    _response: msRest.HttpResponse & {
+        /**
+         * The response body as text (string format)
+         */
+        bodyAsText: string;
+        /**
+         * The response body as parsed JSON or XML
+         */
+        parsedBody: CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiResponseData;
+    };
+};
+/**
+ * Contains response data for the getJudicialEntities operation.
+ */
+export declare type JudicialEntityGetJudicialEntitiesResponse = CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData & {
+    /**
+     * The underlying HTTP response.
+     */
+    _response: msRest.HttpResponse & {
+        /**
+         * The response body as text (string format)
+         */
+        bodyAsText: string;
+        /**
+         * The response body as parsed JSON or XML
+         */
+        parsedBody: CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData;
+    };
+};
+/**
  * Contains response data for the getFiles operation.
  */
 export declare type JudicialFileGetFilesResponse = Array<CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileData> & {
@@ -12594,6 +13141,28 @@ export declare type JudicialFileGetFiles1Response = CyberjusticeLabKernelSharedJ
  * Contains response data for the getFilesCount operation.
  */
 export declare type JudicialFileGetFilesCountResponse = {
+    /**
+     * The parsed response body.
+     */
+    body: number;
+    /**
+     * The underlying HTTP response.
+     */
+    _response: msRest.HttpResponse & {
+        /**
+         * The response body as text (string format)
+         */
+        bodyAsText: string;
+        /**
+         * The response body as parsed JSON or XML
+         */
+        parsedBody: number;
+    };
+};
+/**
+ * Contains response data for the getFile operation.
+ */
+export declare type JudicialFileGetFileResponse = {
     /**
      * The parsed response body.
      */
@@ -12913,6 +13482,24 @@ export declare type JudicialFileGetFileInvitationsOfPartyResponse = Array<Cyberj
     };
 };
 /**
+ * Contains response data for the getFileInvitationInformation operation.
+ */
+export declare type JudicialFileGetFileInvitationInformationResponse = CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationInformationModel & {
+    /**
+     * The underlying HTTP response.
+     */
+    _response: msRest.HttpResponse & {
+        /**
+         * The response body as text (string format)
+         */
+        bodyAsText: string;
+        /**
+         * The response body as parsed JSON or XML
+         */
+        parsedBody: CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationInformationModel;
+    };
+};
+/**
  * Contains response data for the getFileInformationFromPartyInvitation operation.
  */
 export declare type JudicialFileGetFileInformationFromPartyInvitationResponse = CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel & {
@@ -13007,6 +13594,156 @@ export declare type JudicialFileGetNotificationTypeResponse = CyberjusticeLabKer
     };
 };
 /**
+ * Contains response data for the getLogEntryDistinctCodes operation.
+ */
+export declare type JudicialFileGetLogEntryDistinctCodesResponse = Array<string> & {
+    /**
+     * The underlying HTTP response.
+     */
+    _response: msRest.HttpResponse & {
+        /**
+         * The response body as text (string format)
+         */
+        bodyAsText: string;
+        /**
+         * The response body as parsed JSON or XML
+         */
+        parsedBody: string[];
+    };
+};
+/**
+ * Contains response data for the createPartyInvitation operation.
+ */
+export declare type JudicialFileCreatePartyInvitationResponse = {
+    /**
+     * The parsed response body.
+     */
+    body: string;
+    /**
+     * The underlying HTTP response.
+     */
+    _response: msRest.HttpResponse & {
+        /**
+         * The response body as text (string format)
+         */
+        bodyAsText: string;
+        /**
+         * The response body as parsed JSON or XML
+         */
+        parsedBody: string;
+    };
+};
+/**
+ * Contains response data for the createFileInvitation operation.
+ */
+export declare type JudicialFileCreateFileInvitationResponse = {
+    /**
+     * The parsed response body.
+     */
+    body: string;
+    /**
+     * The underlying HTTP response.
+     */
+    _response: msRest.HttpResponse & {
+        /**
+         * The response body as text (string format)
+         */
+        bodyAsText: string;
+        /**
+         * The response body as parsed JSON or XML
+         */
+        parsedBody: string;
+    };
+};
+/**
+ * Contains response data for the acceptPartyInvitation operation.
+ */
+export declare type JudicialFileAcceptPartyInvitationResponse = {
+    /**
+     * The parsed response body.
+     */
+    body: string;
+    /**
+     * The underlying HTTP response.
+     */
+    _response: msRest.HttpResponse & {
+        /**
+         * The response body as text (string format)
+         */
+        bodyAsText: string;
+        /**
+         * The response body as parsed JSON or XML
+         */
+        parsedBody: string;
+    };
+};
+/**
+ * Contains response data for the createFileTagLink operation.
+ */
+export declare type JudicialFileCreateFileTagLinkResponse = {
+    /**
+     * The parsed response body.
+     */
+    body: string;
+    /**
+     * The underlying HTTP response.
+     */
+    _response: msRest.HttpResponse & {
+        /**
+         * The response body as text (string format)
+         */
+        bodyAsText: string;
+        /**
+         * The response body as parsed JSON or XML
+         */
+        parsedBody: string;
+    };
+};
+/**
+ * Contains response data for the acceptRepresentativeInvitation operation.
+ */
+export declare type JudicialFileAcceptRepresentativeInvitationResponse = {
+    /**
+     * The parsed response body.
+     */
+    body: string;
+    /**
+     * The underlying HTTP response.
+     */
+    _response: msRest.HttpResponse & {
+        /**
+         * The response body as text (string format)
+         */
+        bodyAsText: string;
+        /**
+         * The response body as parsed JSON or XML
+         */
+        parsedBody: string;
+    };
+};
+/**
+ * Contains response data for the acceptFileInvitation operation.
+ */
+export declare type JudicialFileAcceptFileInvitationResponse = {
+    /**
+     * The parsed response body.
+     */
+    body: string;
+    /**
+     * The underlying HTTP response.
+     */
+    _response: msRest.HttpResponse & {
+        /**
+         * The response body as text (string format)
+         */
+        bodyAsText: string;
+        /**
+         * The response body as parsed JSON or XML
+         */
+        parsedBody: string;
+    };
+};
+/**
  * Contains response data for the getNotificationTypes operation.
  */
 export declare type JudicialFileGetNotificationTypesResponse = CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeApiResponseData & {
@@ -13080,6 +13817,24 @@ export declare type JudicialFileGetLogTemplatesResponse = CyberjusticeLabKernelS
          * The response body as parsed JSON or XML
          */
         parsedBody: CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateApiResponseData;
+    };
+};
+/**
+ * Contains response data for the getLogEntries operation.
+ */
+export declare type JudicialFileGetLogEntriesResponse = CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiResponseData & {
+    /**
+     * The underlying HTTP response.
+     */
+    _response: msRest.HttpResponse & {
+        /**
+         * The response body as text (string format)
+         */
+        bodyAsText: string;
+        /**
+         * The response body as parsed JSON or XML
+         */
+        parsedBody: CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiResponseData;
     };
 };
 /**

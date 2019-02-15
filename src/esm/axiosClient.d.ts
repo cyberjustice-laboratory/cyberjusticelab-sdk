@@ -1,4 +1,5 @@
 import * as msrest from "@azure/ms-rest-js";
+export declare const axiosFromApi: import("axios").AxiosStatic;
 /**
  * A HttpClient implementation that uses axios to send HTTP requests.
  */

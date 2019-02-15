@@ -998,6 +998,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventPartyResponseModel: m
           name: "String"
         }
       },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
+        type: {
+          name: "String"
+        }
+      },
       createdDate: {
         serializedName: "CreatedDate",
         type: {
@@ -1058,6 +1065,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventAttemptModel: msRest.
       },
       modifiedBy: {
         serializedName: "ModifiedBy",
+        type: {
+          name: "String"
+        }
+      },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
         type: {
           name: "String"
         }
@@ -1156,6 +1170,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventBehaviourModel: msRes
       },
       modifiedBy: {
         serializedName: "ModifiedBy",
+        type: {
+          name: "String"
+        }
+      },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
         type: {
           name: "String"
         }
@@ -1310,6 +1331,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsEventModel: msRest.Composi
       },
       modifiedBy: {
         serializedName: "ModifiedBy",
+        type: {
+          name: "String"
+        }
+      },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
         type: {
           name: "String"
         }
@@ -2962,6 +2990,13 @@ export const CyberjusticeLabKernelSharedCalendarModelsCalendarModel: msRest.Comp
           name: "String"
         }
       },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
+        type: {
+          name: "String"
+        }
+      },
       createdDate: {
         serializedName: "CreatedDate",
         type: {
@@ -3274,6 +3309,17 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData: ms
           }
         }
       },
+      partyIds: {
+        serializedName: "PartyIds",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Uuid"
+            }
+          }
+        }
+      },
       attributes: {
         serializedName: "Attributes",
         type: {
@@ -3428,6 +3474,17 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentPartyActionModel: 
         serializedName: "ActionComplement",
         type: {
           name: "String"
+        }
+      },
+      actionAttributes: {
+        serializedName: "ActionAttributes",
+        type: {
+          name: "Dictionary",
+          value: {
+            type: {
+              name: "String"
+            }
+          }
         }
       }
     }
@@ -3620,6 +3677,13 @@ export const CyberjusticeLabKernelSharedDocumentModelsDocumentModel: msRest.Comp
           name: "String"
         }
       },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
+        type: {
+          name: "String"
+        }
+      },
       createdDate: {
         serializedName: "CreatedDate",
         type: {
@@ -3705,6 +3769,17 @@ export const CyberjusticeLabKernelSharedDocumentModelsCreateDocumentPartyActionM
         type: {
           name: "String"
         }
+      },
+      actionAttributes: {
+        serializedName: "ActionAttributes",
+        type: {
+          name: "Dictionary",
+          value: {
+            type: {
+              name: "String"
+            }
+          }
+        }
       }
     }
   }
@@ -3749,7 +3824,7 @@ export const CyberjusticeLabKernelSharedDocumentModelsCreateDocumentModel: msRes
       content: {
         serializedName: "Content",
         type: {
-          name: "ByteArray"
+          name: "Object"
         }
       },
       format: {
@@ -4010,7 +4085,7 @@ export const CyberjusticeLabKernelSharedDocumentModelsUpdateDocumentContentModel
       binaryData: {
         serializedName: "BinaryData",
         type: {
-          name: "ByteArray"
+          name: "Object"
         }
       }
     }
@@ -5830,6 +5905,13 @@ export const CyberjusticeLabKernelSharedFormModelsQuestionFormModel: msRest.Comp
           name: "String"
         }
       },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
+        type: {
+          name: "String"
+        }
+      },
       createdDate: {
         serializedName: "CreatedDate",
         type: {
@@ -6482,6 +6564,374 @@ export const CyberjusticeLabKernelServiceContractsJudicialEntityJudicialEntityDa
         serializedName: "CreatedBy",
         type: {
           name: "String"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiRequestData: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialEntity.Models.MatterApiRequestData",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiRequestData",
+    modelProperties: {
+      take: {
+        serializedName: "Take",
+        type: {
+          name: "Number"
+        }
+      },
+      skip: {
+        serializedName: "Skip",
+        type: {
+          name: "Number"
+        }
+      },
+      orderByDescending: {
+        serializedName: "OrderByDescending",
+        type: {
+          name: "Boolean"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialEntityModelsMatterModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialEntity.Models.MatterModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialEntityModelsMatterModel",
+    modelProperties: {
+      matterId: {
+        serializedName: "MatterId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      code: {
+        serializedName: "Code",
+        type: {
+          name: "String"
+        }
+      },
+      modifiedDate: {
+        serializedName: "ModifiedDate",
+        type: {
+          name: "DateTime"
+        }
+      },
+      modifiedBy: {
+        serializedName: "ModifiedBy",
+        type: {
+          name: "String"
+        }
+      },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
+        type: {
+          name: "String"
+        }
+      },
+      createdDate: {
+        serializedName: "CreatedDate",
+        type: {
+          name: "DateTime"
+        }
+      },
+      createdBy: {
+        serializedName: "CreatedBy",
+        type: {
+          name: "String"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiResponseData: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialEntity.Models.MatterApiResponseData",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiResponseData",
+    modelProperties: {
+      count: {
+        serializedName: "Count",
+        type: {
+          name: "Number"
+        }
+      },
+      countFiltered: {
+        serializedName: "CountFiltered",
+        type: {
+          name: "Number"
+        }
+      },
+      matters: {
+        serializedName: "Matters",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedJudicialEntityModelsMatterModel"
+            }
+          }
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiRequestData: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialEntity.Models.JudicialEntityApiRequestData",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiRequestData",
+    modelProperties: {
+      take: {
+        serializedName: "Take",
+        type: {
+          name: "Number"
+        }
+      },
+      skip: {
+        serializedName: "Skip",
+        type: {
+          name: "Number"
+        }
+      },
+      orderByDescending: {
+        serializedName: "OrderByDescending",
+        type: {
+          name: "Boolean"
+        }
+      },
+      filterByMatter: {
+        serializedName: "FilterByMatter",
+        type: {
+          name: "Uuid"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialEntityModelsEntityNeutralPredicateLinkModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialEntity.Models.EntityNeutralPredicateLinkModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialEntityModelsEntityNeutralPredicateLinkModel",
+    modelProperties: {
+      neutralPredicateId: {
+        serializedName: "NeutralPredicateId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      neutralPredicateName: {
+        serializedName: "NeutralPredicateName",
+        type: {
+          name: "String"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialEntityModelsEntityProsecutingAgentPredicateLinkModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialEntity.Models.EntityProsecutingAgentPredicateLinkModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialEntityModelsEntityProsecutingAgentPredicateLinkModel",
+    modelProperties: {
+      predicateId: {
+        serializedName: "PredicateId",
+        type: {
+          name: "Uuid"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialEntityModelsMatterJudicialEntityLinkModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialEntity.Models.MatterJudicialEntityLinkModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialEntityModelsMatterJudicialEntityLinkModel",
+    modelProperties: {
+      matter: {
+        serializedName: "Matter",
+        type: {
+          name: "Composite",
+          className: "CyberjusticeLabKernelSharedJudicialEntityModelsMatterModel"
+        }
+      },
+      businessRuleId: {
+        serializedName: "BusinessRuleId",
+        type: {
+          name: "Uuid"
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityModel: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialEntity.Models.JudicialEntityModel",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityModel",
+    modelProperties: {
+      judicialEntityId: {
+        serializedName: "JudicialEntityId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      uRN: {
+        serializedName: "URN",
+        type: {
+          name: "String"
+        }
+      },
+      name: {
+        serializedName: "Name",
+        type: {
+          name: "String"
+        }
+      },
+      clerkPredicateId: {
+        serializedName: "ClerkPredicateId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      clerkPredicateName: {
+        serializedName: "ClerkPredicateName",
+        type: {
+          name: "String"
+        }
+      },
+      judgePredicateId: {
+        serializedName: "JudgePredicateId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      judgePredicateName: {
+        serializedName: "JudgePredicateName",
+        type: {
+          name: "String"
+        }
+      },
+      tenantPredicateId: {
+        serializedName: "TenantPredicateId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      tenantPredicateName: {
+        serializedName: "TenantPredicateName",
+        type: {
+          name: "String"
+        }
+      },
+      createdDate: {
+        serializedName: "CreatedDate",
+        type: {
+          name: "DateTime"
+        }
+      },
+      createdBy: {
+        serializedName: "CreatedBy",
+        type: {
+          name: "String"
+        }
+      },
+      modifiedDate: {
+        serializedName: "ModifiedDate",
+        type: {
+          name: "DateTime"
+        }
+      },
+      modifiedBy: {
+        serializedName: "ModifiedBy",
+        type: {
+          name: "String"
+        }
+      },
+      entityNeutralPredicateLinks: {
+        serializedName: "EntityNeutralPredicateLinks",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedJudicialEntityModelsEntityNeutralPredicateLinkModel"
+            }
+          }
+        }
+      },
+      entityProsecutingAgentPredicateLinks: {
+        serializedName: "EntityProsecutingAgentPredicateLinks",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedJudicialEntityModelsEntityProsecutingAgentPredicateLinkModel"
+            }
+          }
+        }
+      },
+      judicialEntityMatterLinks: {
+        serializedName: "JudicialEntityMatterLinks",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedJudicialEntityModelsMatterJudicialEntityLinkModel"
+            }
+          }
+        }
+      }
+    }
+  }
+};
+
+export const CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.JudicialEntity.Models.JudicialEntityApiResponseData",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData",
+    modelProperties: {
+      count: {
+        serializedName: "Count",
+        type: {
+          name: "Number"
+        }
+      },
+      countFiltered: {
+        serializedName: "CountFiltered",
+        type: {
+          name: "Number"
+        }
+      },
+      judicialEntities: {
+        serializedName: "JudicialEntities",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityModel"
+            }
+          }
         }
       }
     }
@@ -7870,6 +8320,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsContactModel: msRest.C
           name: "String"
         }
       },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
+        type: {
+          name: "String"
+        }
+      },
       createdDate: {
         serializedName: "CreatedDate",
         type: {
@@ -8004,6 +8461,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeModel: m
           name: "String"
         }
       },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
+        type: {
+          name: "String"
+        }
+      },
       createdDate: {
         serializedName: "CreatedDate",
         type: {
@@ -8108,6 +8572,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPleaModel: msRest.Comp
           name: "String"
         }
       },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
+        type: {
+          name: "String"
+        }
+      },
       createdDate: {
         serializedName: "CreatedDate",
         type: {
@@ -8205,6 +8676,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsChargePenalOffenceStat
       },
       modifiedBy: {
         serializedName: "ModifiedBy",
+        type: {
+          name: "String"
+        }
+      },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
         type: {
           name: "String"
         }
@@ -8402,6 +8880,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyModel: msRest.Com
           name: "String"
         }
       },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
+        type: {
+          name: "String"
+        }
+      },
       createdDate: {
         serializedName: "CreatedDate",
         type: {
@@ -8562,6 +9047,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileTagModel: 
           name: "String"
         }
       },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
+        type: {
+          name: "String"
+        }
+      },
       createdDate: {
         serializedName: "CreatedDate",
         type: {
@@ -8584,14 +9076,14 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel: msR
     name: "Composite",
     className: "CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel",
     modelProperties: {
-      id: {
-        serializedName: "Id",
+      businessRuleId: {
+        serializedName: "BusinessRuleId",
         type: {
           name: "Uuid"
         }
       },
-      judicialFileId: {
-        serializedName: "JudicialFileId",
+      businessRuleName: {
+        serializedName: "BusinessRuleName",
         type: {
           name: "String"
         }
@@ -8604,6 +9096,18 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel: msR
       },
       judicialEntityName: {
         serializedName: "JudicialEntityName",
+        type: {
+          name: "String"
+        }
+      },
+      id: {
+        serializedName: "Id",
+        type: {
+          name: "Uuid"
+        }
+      },
+      judicialFileId: {
+        serializedName: "JudicialFileId",
         type: {
           name: "String"
         }
@@ -8654,18 +9158,6 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel: msR
         serializedName: "FormId",
         type: {
           name: "Uuid"
-        }
-      },
-      businessRuleId: {
-        serializedName: "BusinessRuleId",
-        type: {
-          name: "Uuid"
-        }
-      },
-      businessRuleName: {
-        serializedName: "BusinessRuleName",
-        type: {
-          name: "String"
         }
       },
       closingReason: {
@@ -8740,6 +9232,12 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel: msR
           }
         }
       },
+      matterId: {
+        serializedName: "MatterId",
+        type: {
+          name: "Uuid"
+        }
+      },
       modifiedDate: {
         serializedName: "ModifiedDate",
         type: {
@@ -8748,6 +9246,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileModel: msR
       },
       modifiedBy: {
         serializedName: "ModifiedBy",
+        type: {
+          name: "String"
+        }
+      },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
         type: {
           name: "String"
         }
@@ -9278,6 +9783,18 @@ export const CyberjusticeLabKernelSharedJudicialFileFileInvitationPartyInformati
         type: {
           name: "String"
         }
+      },
+      partyId: {
+        serializedName: "PartyId",
+        type: {
+          name: "Uuid"
+        }
+      },
+      partyType: {
+        serializedName: "PartyType",
+        type: {
+          name: "String"
+        }
       }
     }
   }
@@ -9321,6 +9838,12 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationInformat
       },
       additionalAttributes: {
         serializedName: "AdditionalAttributes",
+        type: {
+          name: "String"
+        }
+      },
+      invitationType: {
+        serializedName: "InvitationType",
         type: {
           name: "String"
         }
@@ -9737,10 +10260,10 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationRefuseMo
           name: "String"
         }
       },
-      invitationDate: {
-        serializedName: "InvitationDate",
+      judicialFileId: {
+        serializedName: "JudicialFileId",
         type: {
-          name: "DateTime"
+          name: "String"
         }
       },
       tagCode: {
@@ -9859,6 +10382,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsRepresentativesToParty
           name: "String"
         }
       },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
+        type: {
+          name: "String"
+        }
+      },
       createdDate: {
         serializedName: "CreatedDate",
         type: {
@@ -9922,6 +10452,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsLinkRepresentativesToP
           name: "String"
         }
       },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
+        type: {
+          name: "String"
+        }
+      },
       createdDate: {
         serializedName: "CreatedDate",
         type: {
@@ -9950,10 +10487,10 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationAcceptMo
           name: "String"
         }
       },
-      invitationDate: {
-        serializedName: "InvitationDate",
+      judicialFileId: {
+        serializedName: "JudicialFileId",
         type: {
-          name: "DateTime"
+          name: "String"
         }
       }
     }
@@ -10439,6 +10976,18 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileCreateMode
         serializedName: "Status",
         type: {
           name: "String"
+        }
+      },
+      currentWorkflow: {
+        serializedName: "CurrentWorkflow",
+        type: {
+          name: "String"
+        }
+      },
+      matterId: {
+        serializedName: "MatterId",
+        type: {
+          name: "Uuid"
         }
       }
     }
@@ -11092,26 +11641,8 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileAttributes
           name: "Uuid"
         }
       },
-      modifiedDate: {
-        serializedName: "ModifiedDate",
-        type: {
-          name: "DateTime"
-        }
-      },
-      modifiedBy: {
-        serializedName: "ModifiedBy",
-        type: {
-          name: "String"
-        }
-      },
-      createdDate: {
-        serializedName: "CreatedDate",
-        type: {
-          name: "DateTime"
-        }
-      },
-      createdBy: {
-        serializedName: "CreatedBy",
+      modifiedDateTicks: {
+        serializedName: "ModifiedDateTicks",
         type: {
           name: "String"
         }
@@ -11196,6 +11727,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyUpsertModel: msRe
       },
       modifiedBy: {
         serializedName: "ModifiedBy",
+        type: {
+          name: "String"
+        }
+      },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
         type: {
           name: "String"
         }
@@ -11356,6 +11894,13 @@ export const CyberjusticeLabKernelSharedJudicialFileModelsPartyContactUpsertMode
       },
       modifiedBy: {
         serializedName: "ModifiedBy",
+        type: {
+          name: "String"
+        }
+      },
+      modifiedDateTicks: {
+        readOnly: true,
+        serializedName: "ModifiedDateTicks",
         type: {
           name: "String"
         }
@@ -14230,6 +14775,39 @@ export const CyberjusticeLabKernelSharedWitnessAttributesFilters: msRest.Composi
   }
 };
 
+export const CyberjusticeLabKernelSharedWitnessModelsActionsFilters: msRest.CompositeMapper = {
+  serializedName: "CyberjusticeLab.Kernel.Shared.Witness.Models.ActionsFilters",
+  type: {
+    name: "Composite",
+    className: "CyberjusticeLabKernelSharedWitnessModelsActionsFilters",
+    modelProperties: {
+      restrictedCodesAndComplements: {
+        serializedName: "RestrictedCodesAndComplements",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "SystemCollectionsGenericKeyValuePairSystemStringSystemString"
+            }
+          }
+        }
+      },
+      allowedPartyIds: {
+        serializedName: "AllowedPartyIds",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Uuid"
+            }
+          }
+        }
+      }
+    }
+  }
+};
+
 export const CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData: msRest.CompositeMapper = {
   serializedName: "CyberjusticeLab.Kernel.Shared.Witness.Models.WitnessApiRequestData",
   type: {
@@ -14302,6 +14880,18 @@ export const CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData: msRe
             type: {
               name: "Composite",
               className: "CyberjusticeLabKernelSharedWitnessAttributesFilters"
+            }
+          }
+        }
+      },
+      actionsFilters: {
+        serializedName: "ActionsFilters",
+        type: {
+          name: "Sequence",
+          element: {
+            type: {
+              name: "Composite",
+              className: "CyberjusticeLabKernelSharedWitnessModelsActionsFilters"
             }
           }
         }
@@ -14406,6 +14996,17 @@ export const CyberjusticeLabKernelSharedWitnessModelsWitnessPartyActionModel: ms
         serializedName: "ActionComplement",
         type: {
           name: "String"
+        }
+      },
+      actionAttributes: {
+        serializedName: "ActionAttributes",
+        type: {
+          name: "Dictionary",
+          value: {
+            type: {
+              name: "String"
+            }
+          }
         }
       }
     }
@@ -14684,6 +15285,17 @@ export const CyberjusticeLabKernelSharedWitnessModelsCreateWitnessPartyActionMod
         serializedName: "ActionComplement",
         type: {
           name: "String"
+        }
+      },
+      actionAttributes: {
+        serializedName: "ActionAttributes",
+        type: {
+          name: "Dictionary",
+          value: {
+            type: {
+              name: "String"
+            }
+          }
         }
       }
     }

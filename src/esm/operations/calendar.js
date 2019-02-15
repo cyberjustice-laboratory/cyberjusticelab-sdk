@@ -763,7 +763,7 @@ var deletePeriodAvailabilityJudicialFileLinkOperationSpec = {
     path: "Calendar/DELETE/PeriodAvailabilityJudicialFileLink",
     queryParameters: [
         Parameters.periodAvailabilityId,
-        Parameters.judicialFileId
+        Parameters.judicialFileId0
     ],
     responses: {
         204: {},

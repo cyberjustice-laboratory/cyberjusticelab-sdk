@@ -77,6 +77,62 @@ export class JudicialEntity {
       getJudicialEntityOperationSpec,
       callback) as Promise<Models.JudicialEntityGetJudicialEntityResponse>;
   }
+
+  /**
+   * @summary Get the list of matters.
+   * @param requestModel Request filter model.
+   * @param [options] The optional parameters
+   * @returns Promise<Models.JudicialEntityGetMattersResponse>
+   */
+  getMatters(requestModel: Models.CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiRequestData, options?: msRest.RequestOptionsBase): Promise<Models.JudicialEntityGetMattersResponse>;
+  /**
+   * @param requestModel Request filter model.
+   * @param callback The callback
+   */
+  getMatters(requestModel: Models.CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiRequestData, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiResponseData>): void;
+  /**
+   * @param requestModel Request filter model.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  getMatters(requestModel: Models.CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiRequestData, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiResponseData>): void;
+  getMatters(requestModel: Models.CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiRequestData, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiResponseData>, callback?: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiResponseData>): Promise<Models.JudicialEntityGetMattersResponse> {
+    return this.client.sendOperationRequest(
+      {
+        requestModel,
+        options
+      },
+      getMattersOperationSpec,
+      callback) as Promise<Models.JudicialEntityGetMattersResponse>;
+  }
+
+  /**
+   * @summary Get the list of judicial entity associated with a Matter.
+   * @param requestModel Request filter model.
+   * @param [options] The optional parameters
+   * @returns Promise<Models.JudicialEntityGetJudicialEntitiesResponse>
+   */
+  getJudicialEntities(requestModel: Models.CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiRequestData, options?: msRest.RequestOptionsBase): Promise<Models.JudicialEntityGetJudicialEntitiesResponse>;
+  /**
+   * @param requestModel Request filter model.
+   * @param callback The callback
+   */
+  getJudicialEntities(requestModel: Models.CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiRequestData, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData>): void;
+  /**
+   * @param requestModel Request filter model.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  getJudicialEntities(requestModel: Models.CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiRequestData, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData>): void;
+  getJudicialEntities(requestModel: Models.CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiRequestData, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData>, callback?: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData>): Promise<Models.JudicialEntityGetJudicialEntitiesResponse> {
+    return this.client.sendOperationRequest(
+      {
+        requestModel,
+        options
+      },
+      getJudicialEntitiesOperationSpec,
+      callback) as Promise<Models.JudicialEntityGetJudicialEntitiesResponse>;
+  }
 }
 
 // Operation Specifications
@@ -110,6 +166,44 @@ const getJudicialEntityOperationSpec: msRest.OperationSpec = {
           name: "Uuid"
         }
       }
+    },
+    default: {}
+  },
+  serializer
+};
+
+const getMattersOperationSpec: msRest.OperationSpec = {
+  httpMethod: "POST",
+  path: "JudicialEntity/POST/Matters",
+  requestBody: {
+    parameterPath: "requestModel",
+    mapper: {
+      ...Mappers.CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiRequestData,
+      required: true
+    }
+  },
+  responses: {
+    200: {
+      bodyMapper: Mappers.CyberjusticeLabKernelSharedJudicialEntityModelsMatterApiResponseData
+    },
+    default: {}
+  },
+  serializer
+};
+
+const getJudicialEntitiesOperationSpec: msRest.OperationSpec = {
+  httpMethod: "POST",
+  path: "JudicialEntity/POST/JudicialEntities",
+  requestBody: {
+    parameterPath: "requestModel",
+    mapper: {
+      ...Mappers.CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiRequestData,
+      required: true
+    }
+  },
+  responses: {
+    200: {
+      bodyMapper: Mappers.CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData
     },
     default: {}
   },
