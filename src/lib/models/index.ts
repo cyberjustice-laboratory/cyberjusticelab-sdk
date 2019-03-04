@@ -10742,9 +10742,9 @@ export interface CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData {
    */
   searchText?: string;
   /**
-   * @member {string} [searchBy] Search By.
+   * @member {string[]} [searchBy] List of search by columns.
    */
-  searchBy?: string;
+  searchBy?: string[];
   /**
    * @member {number} [take] Take.
    */
@@ -10753,6 +10753,13 @@ export interface CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData {
    * @member {number} [skip] Skip.
    */
   skip?: number;
+  /**
+   * @member {OrderBy8} [orderBy] Order by columns. Possible values include:
+   * 'FirstName', 'LastName', 'AttributeTestimonyMethod',
+   * 'PartyActionAdjudicationAddedIdentificationFr',
+   * 'PartyActionAdjudicationAddedIdentificationEn'
+   */
+  orderBy?: OrderBy8;
   /**
    * @member {boolean} [orderByDescending] Order by ascending or descending.
    */
@@ -11602,11 +11609,11 @@ export interface JudicialFileGetFilesOptionalParams extends msRest.RequestOption
    */
   skip?: number;
   /**
-   * @member {OrderBy8} [orderBy] Orders the list before the take and skip
+   * @member {OrderBy9} [orderBy] Orders the list before the take and skip
    * operations. Possible values include: 'Name', 'JudicialFileId',
    * 'CreatedDate', 'ModifiedDate', 'Status', 'Key'
    */
-  orderBy?: OrderBy8;
+  orderBy?: OrderBy9;
   /**
    * @member {boolean} [orderByDescending] Orders by descending instead of the
    * default ascending.
@@ -11767,10 +11774,10 @@ export interface JudicialFileGetPartyEntitiesOptionalParams extends msRest.Reque
    */
   skip?: number;
   /**
-   * @member {OrderBy9} [orderBy] Orders the list before the take and skip
+   * @member {OrderBy10} [orderBy] Orders the list before the take and skip
    * operations. Possible values include: 'Code', 'CreatedDate'
    */
-  orderBy?: OrderBy9;
+  orderBy?: OrderBy10;
 }
 
 /**
@@ -11839,10 +11846,10 @@ export interface LocationGetBuildingsOptionalParams extends msRest.RequestOption
    */
   skip?: number;
   /**
-   * @member {OrderBy10} [orderBy] Orders the list before the take and skip
+   * @member {OrderBy11} [orderBy] Orders the list before the take and skip
    * operations. Possible values include: 'Name', 'CreatedDate'
    */
-  orderBy?: OrderBy10;
+  orderBy?: OrderBy11;
 }
 
 /**
@@ -12554,6 +12561,15 @@ export type LocationStatus4 = 'Active' | 'Inactive';
 export type LocationStatus5 = 'Active' | 'Inactive';
 
 /**
+ * Defines values for OrderBy8.
+ * Possible values include: 'FirstName', 'LastName', 'AttributeTestimonyMethod',
+ * 'PartyActionAdjudicationAddedIdentificationFr', 'PartyActionAdjudicationAddedIdentificationEn'
+ * @readonly
+ * @enum {string}
+ */
+export type OrderBy8 = 'FirstName' | 'LastName' | 'AttributeTestimonyMethod' | 'PartyActionAdjudicationAddedIdentificationFr' | 'PartyActionAdjudicationAddedIdentificationEn';
+
+/**
  * Defines values for CalendarTypes.
  * Possible values include: 'JudicialEntity', 'User', 'Room'
  * @readonly
@@ -12562,29 +12578,29 @@ export type LocationStatus5 = 'Active' | 'Inactive';
 export type CalendarTypes = 'JudicialEntity' | 'User' | 'Room';
 
 /**
- * Defines values for OrderBy8.
+ * Defines values for OrderBy9.
  * Possible values include: 'Name', 'JudicialFileId', 'CreatedDate', 'ModifiedDate', 'Status',
  * 'Key'
  * @readonly
  * @enum {string}
  */
-export type OrderBy8 = 'Name' | 'JudicialFileId' | 'CreatedDate' | 'ModifiedDate' | 'Status' | 'Key';
+export type OrderBy9 = 'Name' | 'JudicialFileId' | 'CreatedDate' | 'ModifiedDate' | 'Status' | 'Key';
 
 /**
- * Defines values for OrderBy9.
+ * Defines values for OrderBy10.
  * Possible values include: 'Code', 'CreatedDate'
  * @readonly
  * @enum {string}
  */
-export type OrderBy9 = 'Code' | 'CreatedDate';
+export type OrderBy10 = 'Code' | 'CreatedDate';
 
 /**
- * Defines values for OrderBy10.
+ * Defines values for OrderBy11.
  * Possible values include: 'Name', 'CreatedDate'
  * @readonly
  * @enum {string}
  */
-export type OrderBy10 = 'Name' | 'CreatedDate';
+export type OrderBy11 = 'Name' | 'CreatedDate';
 
 /**
  * Defines values for Status11.

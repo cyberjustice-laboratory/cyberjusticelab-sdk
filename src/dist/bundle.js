@@ -14649,7 +14649,12 @@
                 searchBy: {
                     serializedName: "SearchBy",
                     type: {
-                        name: "String"
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "String"
+                            }
+                        }
                     }
                 },
                 take: {
@@ -14662,6 +14667,12 @@
                     serializedName: "Skip",
                     type: {
                         name: "Number"
+                    }
+                },
+                orderBy: {
+                    serializedName: "OrderBy",
+                    type: {
+                        name: "String"
                     }
                 },
                 orderByDescending: {

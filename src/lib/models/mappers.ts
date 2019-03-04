@@ -14851,7 +14851,12 @@ export const CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData: msRe
       searchBy: {
         serializedName: "SearchBy",
         type: {
-          name: "String"
+          name: "Sequence",
+          element: {
+            type: {
+              name: "String"
+            }
+          }
         }
       },
       take: {
@@ -14864,6 +14869,12 @@ export const CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData: msRe
         serializedName: "Skip",
         type: {
           name: "Number"
+        }
+      },
+      orderBy: {
+        serializedName: "OrderBy",
+        type: {
+          name: "String"
         }
       },
       orderByDescending: {
