@@ -1,11 +1,18 @@
 # Autorest Api for Cyberjustice sdk
 
-To regenerate sdk
+To generate the **Cyberjustice SDK**, execute the following command (_in the same directory as this markdown file_): 
 
-`node generateClientAPI.js`
+```cmd 
+node ./generateClientAPI.js
+```
 
-Then go to test/
+Then, in the same terminal execute the following commands:
 
-`npm install`
+```
+cd ./src/
+npm run prepack
+```
 
-`npm run prepack`
+Copy the content of the `./src/esm/` directory in:
+
+> path / to / CyberjusticeLab.App.VirtualTribunal / VirtualTribunal.App / src / autorest /
