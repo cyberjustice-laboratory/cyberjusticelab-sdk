@@ -6,7 +6,7 @@ const url = "https://localhost:441/swagger/docs/v1";
 // Delete previous swagger.json file.
 try {
   fs.unlinkSync("swagger.json");
-} catch {
+} catch (error) {
   console.log("Previous swagger.json was not found");
 }
 
