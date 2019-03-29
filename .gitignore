@@ -1,3 +1,8 @@
+# Root
 swagger.json
+
+# Source Code
 src/package-lock.json
-src/node_modules
+src/node_modules/
+src/dist/
+src/esm/
