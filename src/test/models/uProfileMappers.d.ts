@@ -1,0 +1,2 @@
+export { CyberjusticeLabKernelServiceContractsUProfileUserData, CyberjusticeLabKernelServiceContractsUProfileUserPhoneNumberData, CyberjusticeLabKernelServiceContractsUProfileUserAttributeData } from "../models/mappers";
+//# sourceMappingURL=uProfileMappers.d.ts.map

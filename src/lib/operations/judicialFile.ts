@@ -55,6 +55,40 @@ export class JudicialFile {
   }
 
   /**
+   * @summary Detach Representative From Party.
+   * @param detachRepresentativeFromPartyModel A
+   * {CyberjusticeLab.Kernel.Shared.JudicialFile.Models.DetachRepresentativeFromPartyModel}Object
+   * that contains a party Id
+   * @param [options] The optional parameters
+   * @returns Promise<msRest.RestResponse>
+   */
+  detachRepresentativeFromParty(detachRepresentativeFromPartyModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  /**
+   * @param detachRepresentativeFromPartyModel A
+   * {CyberjusticeLab.Kernel.Shared.JudicialFile.Models.DetachRepresentativeFromPartyModel}Object
+   * that contains a party Id
+   * @param callback The callback
+   */
+  detachRepresentativeFromParty(detachRepresentativeFromPartyModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel, callback: msRest.ServiceCallback<void>): void;
+  /**
+   * @param detachRepresentativeFromPartyModel A
+   * {CyberjusticeLab.Kernel.Shared.JudicialFile.Models.DetachRepresentativeFromPartyModel}Object
+   * that contains a party Id
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  detachRepresentativeFromParty(detachRepresentativeFromPartyModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  detachRepresentativeFromParty(detachRepresentativeFromPartyModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+    return this.client.sendOperationRequest(
+      {
+        detachRepresentativeFromPartyModel,
+        options
+      },
+      detachRepresentativeFromPartyOperationSpec,
+      callback);
+  }
+
+  /**
    * @summary Delete a party invitation.
    * @param partyInvitationId Party invitation Guid.
    * @param [options] The optional parameters
@@ -174,6 +208,38 @@ export class JudicialFile {
         options
       },
       deleteNotificationOperationSpec,
+      callback);
+  }
+
+  /**
+   * @summary Delete a charge (used for both penal charges and criminal charges).
+   * @param chargeId The Guid of the charge to be deleted.
+   * @param modifiedTicks The modified date in ticks.
+   * @param [options] The optional parameters
+   * @returns Promise<msRest.RestResponse>
+   */
+  deleteCharge(chargeId: string, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  /**
+   * @param chargeId The Guid of the charge to be deleted.
+   * @param modifiedTicks The modified date in ticks.
+   * @param callback The callback
+   */
+  deleteCharge(chargeId: string, modifiedTicks: string, callback: msRest.ServiceCallback<void>): void;
+  /**
+   * @param chargeId The Guid of the charge to be deleted.
+   * @param modifiedTicks The modified date in ticks.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  deleteCharge(chargeId: string, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  deleteCharge(chargeId: string, modifiedTicks: string, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+    return this.client.sendOperationRequest(
+      {
+        chargeId,
+        modifiedTicks,
+        options
+      },
+      deleteChargeOperationSpec,
       callback);
   }
 
@@ -1581,6 +1647,34 @@ export class JudicialFile {
   }
 
   /**
+   * @summary Notifications count by file for the current user.
+   * @param requestModel Notification by file filter model.
+   * @param [options] The optional parameters
+   * @returns Promise<Models.JudicialFileGetNotificationsSummaryByFileResponse>
+   */
+  getNotificationsSummaryByFile(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileGetNotificationsSummaryByFileResponse>;
+  /**
+   * @param requestModel Notification by file filter model.
+   * @param callback The callback
+   */
+  getNotificationsSummaryByFile(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData>): void;
+  /**
+   * @param requestModel Notification by file filter model.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  getNotificationsSummaryByFile(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData>): void;
+  getNotificationsSummaryByFile(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData>, callback?: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData>): Promise<Models.JudicialFileGetNotificationsSummaryByFileResponse> {
+    return this.client.sendOperationRequest(
+      {
+        requestModel,
+        options
+      },
+      getNotificationsSummaryByFileOperationSpec,
+      callback) as Promise<Models.JudicialFileGetNotificationsSummaryByFileResponse>;
+  }
+
+  /**
    * @summary Create a new notification and representatives links.
    * @param model The new model.
    * @param [options] The optional parameters
@@ -1774,6 +1868,62 @@ export class JudicialFile {
       },
       createLogEntryOperationSpec,
       callback) as Promise<Models.JudicialFileCreateLogEntryResponse>;
+  }
+
+  /**
+   * @summary Create a penal charge.
+   * @param charge The penal charge create model.
+   * @param [options] The optional parameters
+   * @returns Promise<Models.JudicialFileCreateChargeResponse>
+   */
+  createCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileCreateChargeResponse>;
+  /**
+   * @param charge The penal charge create model.
+   * @param callback The callback
+   */
+  createCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel, callback: msRest.ServiceCallback<string>): void;
+  /**
+   * @param charge The penal charge create model.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  createCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
+  createCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<string>, callback?: msRest.ServiceCallback<string>): Promise<Models.JudicialFileCreateChargeResponse> {
+    return this.client.sendOperationRequest(
+      {
+        charge,
+        options
+      },
+      createChargeOperationSpec,
+      callback) as Promise<Models.JudicialFileCreateChargeResponse>;
+  }
+
+  /**
+   * @summary Creates a representative profile
+   * @param model The create representative profile model
+   * @param [options] The optional parameters
+   * @returns Promise<msRest.RestResponse>
+   */
+  createRepresentativeProfile(model: Models.CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  /**
+   * @param model The create representative profile model
+   * @param callback The callback
+   */
+  createRepresentativeProfile(model: Models.CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel, callback: msRest.ServiceCallback<void>): void;
+  /**
+   * @param model The create representative profile model
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  createRepresentativeProfile(model: Models.CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+  createRepresentativeProfile(model: Models.CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+    return this.client.sendOperationRequest(
+      {
+        model,
+        options
+      },
+      createRepresentativeProfileOperationSpec,
+      callback);
   }
 
   /**
@@ -2149,6 +2299,34 @@ export class JudicialFile {
       updateLogTemplatesOperationSpec,
       callback);
   }
+
+  /**
+   * @summary Update a penal charge.
+   * @param charge The penal charge update model.
+   * @param [options] The optional parameters
+   * @returns Promise<Models.JudicialFileUpdateChargeResponse>
+   */
+  updateCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileUpdateChargeResponse>;
+  /**
+   * @param charge The penal charge update model.
+   * @param callback The callback
+   */
+  updateCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel, callback: msRest.ServiceCallback<string>): void;
+  /**
+   * @param charge The penal charge update model.
+   * @param options The optional parameters
+   * @param callback The callback
+   */
+  updateCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
+  updateCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<string>, callback?: msRest.ServiceCallback<string>): Promise<Models.JudicialFileUpdateChargeResponse> {
+    return this.client.sendOperationRequest(
+      {
+        charge,
+        options
+      },
+      updateChargeOperationSpec,
+      callback) as Promise<Models.JudicialFileUpdateChargeResponse>;
+  }
 }
 
 // Operation Specifications
@@ -2165,6 +2343,25 @@ const deletePartyOperationSpec: msRest.OperationSpec = {
     403: {},
     404: {},
     409: {},
+    default: {}
+  },
+  serializer
+};
+
+const detachRepresentativeFromPartyOperationSpec: msRest.OperationSpec = {
+  httpMethod: "DELETE",
+  path: "JudicialFile/DELETE/DetachRepresentativeFromParty",
+  requestBody: {
+    parameterPath: "detachRepresentativeFromPartyModel",
+    mapper: {
+      ...Mappers.CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel,
+      required: true
+    }
+  },
+  responses: {
+    200: {},
+    403: {},
+    404: {},
     default: {}
   },
   serializer
@@ -2220,6 +2417,21 @@ const deleteNotificationOperationSpec: msRest.OperationSpec = {
   path: "JudicialFile/DELETE/Notification",
   queryParameters: [
     Parameters.notificationId
+  ],
+  responses: {
+    200: {},
+    403: {},
+    default: {}
+  },
+  serializer
+};
+
+const deleteChargeOperationSpec: msRest.OperationSpec = {
+  httpMethod: "DELETE",
+  path: "JudicialFile/DELETE/Charge",
+  queryParameters: [
+    Parameters.chargeId,
+    Parameters.modifiedTicks
   ],
   responses: {
     200: {},
@@ -3239,6 +3451,25 @@ const getNotificationsOperationSpec: msRest.OperationSpec = {
   serializer
 };
 
+const getNotificationsSummaryByFileOperationSpec: msRest.OperationSpec = {
+  httpMethod: "POST",
+  path: "JudicialFile/POST/NotificationsSummaryByFile",
+  requestBody: {
+    parameterPath: "requestModel",
+    mapper: {
+      ...Mappers.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData,
+      required: true
+    }
+  },
+  responses: {
+    200: {
+      bodyMapper: Mappers.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData
+    },
+    default: {}
+  },
+  serializer
+};
+
 const createNotificationOperationSpec: msRest.OperationSpec = {
   httpMethod: "POST",
   path: "JudicialFile/POST/CreateNotification",
@@ -3393,6 +3624,49 @@ const createLogEntryOperationSpec: msRest.OperationSpec = {
       }
     },
     404: {},
+    default: {}
+  },
+  serializer
+};
+
+const createChargeOperationSpec: msRest.OperationSpec = {
+  httpMethod: "POST",
+  path: "JudicialFile/POST/CreatePenalCharge",
+  requestBody: {
+    parameterPath: "charge",
+    mapper: {
+      ...Mappers.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel,
+      required: true
+    }
+  },
+  responses: {
+    200: {
+      bodyMapper: {
+        serializedName: "parsedResponse",
+        type: {
+          name: "Uuid"
+        }
+      }
+    },
+    403: {},
+    404: {},
+    default: {}
+  },
+  serializer
+};
+
+const createRepresentativeProfileOperationSpec: msRest.OperationSpec = {
+  httpMethod: "POST",
+  path: "JudicialFile/POST/CreateRepresentativeProfile",
+  requestBody: {
+    parameterPath: "model",
+    mapper: {
+      ...Mappers.CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel,
+      required: true
+    }
+  },
+  responses: {
+    200: {},
     default: {}
   },
   serializer
@@ -3670,6 +3944,32 @@ const updateLogTemplatesOperationSpec: msRest.OperationSpec = {
   responses: {
     200: {},
     403: {},
+    default: {}
+  },
+  serializer
+};
+
+const updateChargeOperationSpec: msRest.OperationSpec = {
+  httpMethod: "POST",
+  path: "JudicialFile/PUT/UpdatePenalCharge",
+  requestBody: {
+    parameterPath: "charge",
+    mapper: {
+      ...Mappers.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel,
+      required: true
+    }
+  },
+  responses: {
+    200: {
+      bodyMapper: {
+        serializedName: "parsedResponse",
+        type: {
+          name: "Uuid"
+        }
+      }
+    },
+    403: {},
+    404: {},
     default: {}
   },
   serializer

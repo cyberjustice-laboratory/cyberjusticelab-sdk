@@ -31,6 +31,30 @@ export declare class JudicialFile {
      */
     deleteParty(partyId: string, lastModified: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
+     * @summary Detach Representative From Party.
+     * @param detachRepresentativeFromPartyModel A
+     * {CyberjusticeLab.Kernel.Shared.JudicialFile.Models.DetachRepresentativeFromPartyModel}Object
+     * that contains a party Id
+     * @param [options] The optional parameters
+     * @returns Promise<msRest.RestResponse>
+     */
+    detachRepresentativeFromParty(detachRepresentativeFromPartyModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    /**
+     * @param detachRepresentativeFromPartyModel A
+     * {CyberjusticeLab.Kernel.Shared.JudicialFile.Models.DetachRepresentativeFromPartyModel}Object
+     * that contains a party Id
+     * @param callback The callback
+     */
+    detachRepresentativeFromParty(detachRepresentativeFromPartyModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel, callback: msRest.ServiceCallback<void>): void;
+    /**
+     * @param detachRepresentativeFromPartyModel A
+     * {CyberjusticeLab.Kernel.Shared.JudicialFile.Models.DetachRepresentativeFromPartyModel}Object
+     * that contains a party Id
+     * @param options The optional parameters
+     * @param callback The callback
+     */
+    detachRepresentativeFromParty(detachRepresentativeFromPartyModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    /**
      * @summary Delete a party invitation.
      * @param partyInvitationId Party invitation Guid.
      * @param [options] The optional parameters
@@ -111,6 +135,27 @@ export declare class JudicialFile {
      * @param callback The callback
      */
     deleteNotification(notificationId: number, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    /**
+     * @summary Delete a charge (used for both penal charges and criminal charges).
+     * @param chargeId The Guid of the charge to be deleted.
+     * @param modifiedTicks The modified date in ticks.
+     * @param [options] The optional parameters
+     * @returns Promise<msRest.RestResponse>
+     */
+    deleteCharge(chargeId: string, modifiedTicks: string, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    /**
+     * @param chargeId The Guid of the charge to be deleted.
+     * @param modifiedTicks The modified date in ticks.
+     * @param callback The callback
+     */
+    deleteCharge(chargeId: string, modifiedTicks: string, callback: msRest.ServiceCallback<void>): void;
+    /**
+     * @param chargeId The Guid of the charge to be deleted.
+     * @param modifiedTicks The modified date in ticks.
+     * @param options The optional parameters
+     * @param callback The callback
+     */
+    deleteCharge(chargeId: string, modifiedTicks: string, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
      * Instead use POST/Files.
      * @summary Get the available files according to the authenticated person role.
@@ -1043,6 +1088,24 @@ export declare class JudicialFile {
      */
     getNotifications(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRequestData, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiResponseData>): void;
     /**
+     * @summary Notifications count by file for the current user.
+     * @param requestModel Notification by file filter model.
+     * @param [options] The optional parameters
+     * @returns Promise<Models.JudicialFileGetNotificationsSummaryByFileResponse>
+     */
+    getNotificationsSummaryByFile(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileGetNotificationsSummaryByFileResponse>;
+    /**
+     * @param requestModel Notification by file filter model.
+     * @param callback The callback
+     */
+    getNotificationsSummaryByFile(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData>): void;
+    /**
+     * @param requestModel Notification by file filter model.
+     * @param options The optional parameters
+     * @param callback The callback
+     */
+    getNotificationsSummaryByFile(requestModel: Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<Models.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData>): void;
+    /**
      * @summary Create a new notification and representatives links.
      * @param model The new model.
      * @param [options] The optional parameters
@@ -1168,6 +1231,42 @@ export declare class JudicialFile {
      * @param callback The callback
      */
     createLogEntry(model: Models.CyberjusticeLabKernelSharedJudicialFileModelsLogEntryCreateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string[]>): void;
+    /**
+     * @summary Create a penal charge.
+     * @param charge The penal charge create model.
+     * @param [options] The optional parameters
+     * @returns Promise<Models.JudicialFileCreateChargeResponse>
+     */
+    createCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileCreateChargeResponse>;
+    /**
+     * @param charge The penal charge create model.
+     * @param callback The callback
+     */
+    createCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel, callback: msRest.ServiceCallback<string>): void;
+    /**
+     * @param charge The penal charge create model.
+     * @param options The optional parameters
+     * @param callback The callback
+     */
+    createCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
+    /**
+     * @summary Creates a representative profile
+     * @param model The create representative profile model
+     * @param [options] The optional parameters
+     * @returns Promise<msRest.RestResponse>
+     */
+    createRepresentativeProfile(model: Models.CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    /**
+     * @param model The create representative profile model
+     * @param callback The callback
+     */
+    createRepresentativeProfile(model: Models.CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel, callback: msRest.ServiceCallback<void>): void;
+    /**
+     * @param model The create representative profile model
+     * @param options The optional parameters
+     * @param callback The callback
+     */
+    createRepresentativeProfile(model: Models.CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
     /**
      * @summary Close a file.
      * @param closeFileModel Model used to close a file.
@@ -1410,5 +1509,23 @@ export declare class JudicialFile {
      * @param callback The callback
      */
     updateLogTemplates(model: Models.CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateUpdateModel[], options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    /**
+     * @summary Update a penal charge.
+     * @param charge The penal charge update model.
+     * @param [options] The optional parameters
+     * @returns Promise<Models.JudicialFileUpdateChargeResponse>
+     */
+    updateCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel, options?: msRest.RequestOptionsBase): Promise<Models.JudicialFileUpdateChargeResponse>;
+    /**
+     * @param charge The penal charge update model.
+     * @param callback The callback
+     */
+    updateCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel, callback: msRest.ServiceCallback<string>): void;
+    /**
+     * @param charge The penal charge update model.
+     * @param options The optional parameters
+     * @param callback The callback
+     */
+    updateCharge(charge: Models.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
 }
 //# sourceMappingURL=judicialFile.d.ts.map

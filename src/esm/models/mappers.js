@@ -3,6 +3,461 @@
  * Changes may cause incorrect behavior and will be lost if the code is
  * regenerated.
  */
+export var CyberjusticeLabKernelSharedAsyncModelsTimeEventApiRequestModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventApiRequestModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventApiRequestModel",
+        modelProperties: {
+            timeEventIds: {
+                serializedName: "TimeEventIds",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Uuid"
+                        }
+                    }
+                }
+            },
+            fileIds: {
+                serializedName: "FileIds",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Uuid"
+                        }
+                    }
+                }
+            },
+            timerCodes: {
+                serializedName: "TimerCodes",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "String"
+                        }
+                    }
+                }
+            },
+            timerStatuses: {
+                serializedName: "TimerStatuses",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "String"
+                        }
+                    }
+                }
+            },
+            minDate: {
+                serializedName: "MinDate",
+                type: {
+                    name: "DateTime"
+                }
+            },
+            maxDate: {
+                serializedName: "MaxDate",
+                type: {
+                    name: "DateTime"
+                }
+            },
+            take: {
+                serializedName: "Take",
+                type: {
+                    name: "Number"
+                }
+            },
+            skip: {
+                serializedName: "Skip",
+                type: {
+                    name: "Number"
+                }
+            },
+            orderBy: {
+                serializedName: "OrderBy",
+                type: {
+                    name: "String"
+                }
+            },
+            orderByDescending: {
+                serializedName: "OrderByDescending",
+                type: {
+                    name: "Boolean"
+                }
+            }
+        }
+    }
+};
+export var CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventNotificationResourceModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel",
+        modelProperties: {
+            culture: {
+                serializedName: "Culture",
+                type: {
+                    name: "String"
+                }
+            },
+            message: {
+                serializedName: "Message",
+                type: {
+                    name: "String"
+                }
+            },
+            parameters: {
+                serializedName: "Parameters",
+                type: {
+                    name: "String"
+                }
+            }
+        }
+    }
+};
+export var CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventNotificationModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel",
+        modelProperties: {
+            notificationCode: {
+                serializedName: "NotificationCode",
+                type: {
+                    name: "String"
+                }
+            },
+            partyType: {
+                serializedName: "PartyType",
+                type: {
+                    name: "String"
+                }
+            },
+            link: {
+                serializedName: "Link",
+                type: {
+                    name: "String"
+                }
+            },
+            aggregatorCode: {
+                serializedName: "AggregatorCode",
+                type: {
+                    name: "String"
+                }
+            },
+            emailCode: {
+                serializedName: "EmailCode",
+                type: {
+                    name: "String"
+                }
+            },
+            timeEventNotificationResourceModels: {
+                serializedName: "TimeEventNotificationResourceModels",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel"
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+export var CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventLogResourceModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel",
+        modelProperties: {
+            culture: {
+                serializedName: "Culture",
+                type: {
+                    name: "String"
+                }
+            },
+            message: {
+                serializedName: "Message",
+                type: {
+                    name: "String"
+                }
+            },
+            parameters: {
+                serializedName: "Parameters",
+                type: {
+                    name: "String"
+                }
+            }
+        }
+    }
+};
+export var CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventLogModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel",
+        modelProperties: {
+            eventCode: {
+                serializedName: "EventCode",
+                type: {
+                    name: "String"
+                }
+            },
+            authorName: {
+                serializedName: "AuthorName",
+                type: {
+                    name: "String"
+                }
+            },
+            authorRole: {
+                serializedName: "AuthorRole",
+                type: {
+                    name: "String"
+                }
+            },
+            authorUID: {
+                serializedName: "AuthorUID",
+                type: {
+                    name: "String"
+                }
+            },
+            fileStep: {
+                serializedName: "FileStep",
+                type: {
+                    name: "String"
+                }
+            },
+            entryDate: {
+                serializedName: "EntryDate",
+                type: {
+                    name: "DateTime"
+                }
+            },
+            timeEventLogResourceModels: {
+                serializedName: "TimeEventLogResourceModels",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel"
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+export var CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventEmailModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel",
+        modelProperties: {
+            emailCode: {
+                serializedName: "EmailCode",
+                type: {
+                    name: "String"
+                }
+            },
+            culture: {
+                serializedName: "Culture",
+                type: {
+                    name: "String"
+                }
+            },
+            parameters: {
+                serializedName: "Parameters",
+                type: {
+                    name: "String"
+                }
+            }
+        }
+    }
+};
+export var CyberjusticeLabKernelSharedAsyncModelsTimeEventModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventModel",
+        modelProperties: {
+            timeEventId: {
+                serializedName: "TimeEventId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            fileId: {
+                serializedName: "FileId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            timerCode: {
+                serializedName: "TimerCode",
+                type: {
+                    name: "String"
+                }
+            },
+            timerDate: {
+                serializedName: "TimerDate",
+                type: {
+                    name: "DateTime"
+                }
+            },
+            timerStatus: {
+                serializedName: "TimerStatus",
+                type: {
+                    name: "String"
+                }
+            },
+            notificationLinks: {
+                serializedName: "NotificationLinks",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel"
+                        }
+                    }
+                }
+            },
+            logLinks: {
+                serializedName: "LogLinks",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel"
+                        }
+                    }
+                }
+            },
+            emailLinks: {
+                serializedName: "EmailLinks",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel"
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+export var CyberjusticeLabKernelSharedAsyncModelsTimeEventApiResponseModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventApiResponseModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventApiResponseModel",
+        modelProperties: {
+            count: {
+                serializedName: "Count",
+                type: {
+                    name: "Number"
+                }
+            },
+            countFiltered: {
+                serializedName: "CountFiltered",
+                type: {
+                    name: "Number"
+                }
+            },
+            timeEvents: {
+                serializedName: "TimeEvents",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventModel"
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+export var CyberjusticeLabKernelSharedAsyncModelsTimeEventCreateModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventCreateModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventCreateModel",
+        modelProperties: {
+            fileId: {
+                serializedName: "FileId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            timerCode: {
+                serializedName: "TimerCode",
+                type: {
+                    name: "String"
+                }
+            },
+            timerDate: {
+                serializedName: "TimerDate",
+                type: {
+                    name: "DateTime"
+                }
+            },
+            timerStatus: {
+                serializedName: "TimerStatus",
+                type: {
+                    name: "String"
+                }
+            },
+            notificationLinks: {
+                serializedName: "NotificationLinks",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel"
+                        }
+                    }
+                }
+            },
+            logLinks: {
+                serializedName: "LogLinks",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel"
+                        }
+                    }
+                }
+            },
+            emailLinks: {
+                serializedName: "EmailLinks",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel"
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
 export var CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithFormProposalsCount = {
     serializedName: "CyberjusticeLab.Kernel.DataAccess.BusinessInformation.JudicialFileWithFormProposalsCount",
     type: {
@@ -6812,6 +7267,27 @@ export var CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiRespo
         }
     }
 };
+export var CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.DetachRepresentativeFromPartyModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel",
+        modelProperties: {
+            partyId: {
+                serializedName: "PartyId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            representativeId: {
+                serializedName: "RepresentativeId",
+                type: {
+                    name: "Uuid"
+                }
+            }
+        }
+    }
+};
 export var CyberjusticeLabKernelServiceContractsJudicialFileContactPhoneNumberData = {
     serializedName: "CyberjusticeLab.Kernel.ServiceContracts.JudicialFile.ContactPhoneNumberData",
     type: {
@@ -9576,6 +10052,72 @@ export var CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel = {
         name: "Composite",
         className: "CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel",
         modelProperties: {
+            fileInvitationId: {
+                serializedName: "FileInvitationId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            partyId: {
+                serializedName: "PartyId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            representativeId: {
+                serializedName: "RepresentativeId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            applicationName: {
+                serializedName: "ApplicationName",
+                type: {
+                    name: "String"
+                }
+            },
+            fileId: {
+                serializedName: "FileId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            expiryDate: {
+                serializedName: "ExpiryDate",
+                type: {
+                    name: "DateTime"
+                }
+            },
+            invitationType: {
+                serializedName: "InvitationType",
+                type: {
+                    name: "String"
+                }
+            },
+            validationCode: {
+                serializedName: "ValidationCode",
+                type: {
+                    name: "String"
+                }
+            },
+            judicialFileId: {
+                serializedName: "JudicialFileId",
+                type: {
+                    name: "String"
+                }
+            },
+            representativeAttributes: {
+                serializedName: "RepresentativeAttributes",
+                type: {
+                    name: "String"
+                }
+            },
+            additionalAttributes: {
+                serializedName: "AdditionalAttributes",
+                type: {
+                    name: "String"
+                }
+            },
             modifiedDate: {
                 serializedName: "ModifiedDate",
                 type: {
@@ -9584,6 +10126,13 @@ export var CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel = {
             },
             modifiedBy: {
                 serializedName: "ModifiedBy",
+                type: {
+                    name: "String"
+                }
+            },
+            modifiedDateTicks: {
+                readOnly: true,
+                serializedName: "ModifiedDateTicks",
                 type: {
                     name: "String"
                 }
@@ -9702,6 +10251,27 @@ export var CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber = {
         }
     }
 };
+export var CyberjusticeLabKernelSharedJudicialFileModelsAtribute = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.Atribute",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedJudicialFileModelsAtribute",
+        modelProperties: {
+            key: {
+                serializedName: "Key",
+                type: {
+                    name: "String"
+                }
+            },
+            value: {
+                serializedName: "Value",
+                type: {
+                    name: "String"
+                }
+            }
+        }
+    }
+};
 export var CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation = {
     serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PartyInformation",
     type: {
@@ -9791,6 +10361,18 @@ export var CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation = {
                         }
                     }
                 }
+            },
+            partyAttributes: {
+                serializedName: "PartyAttributes",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedJudicialFileModelsAtribute"
+                        }
+                    }
+                }
             }
         }
     }
@@ -9830,6 +10412,18 @@ export var CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromParty
                 type: {
                     name: "Composite",
                     className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation"
+                }
+            },
+            parties: {
+                serializedName: "Parties",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyModel"
+                        }
+                    }
                 }
             }
         }
@@ -10483,6 +11077,33 @@ export var CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRequestDa
         }
     }
 };
+export var CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.NotificationResourceModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel",
+        modelProperties: {
+            culture: {
+                serializedName: "Culture",
+                type: {
+                    name: "String"
+                }
+            },
+            message: {
+                serializedName: "Message",
+                type: {
+                    name: "String"
+                }
+            },
+            substitutionParameters: {
+                serializedName: "SubstitutionParameters",
+                type: {
+                    name: "String"
+                }
+            }
+        }
+    }
+};
 export var CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel = {
     serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.NotificationModel",
     type: {
@@ -10588,6 +11209,18 @@ export var CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel = {
                         }
                     }
                 }
+            },
+            notificationResources: {
+                serializedName: "NotificationResources",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel"
+                        }
+                    }
+                }
             }
         }
     }
@@ -10618,6 +11251,60 @@ export var CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiResponseD
                         type: {
                             name: "Composite",
                             className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel"
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+export var CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.NotificationsSummaryByFileApiRequestData",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData",
+        modelProperties: {
+            take: {
+                serializedName: "Take",
+                type: {
+                    name: "Number"
+                }
+            },
+            skip: {
+                serializedName: "Skip",
+                type: {
+                    name: "Number"
+                }
+            },
+            judicialEntityId: {
+                serializedName: "JudicialEntityId",
+                type: {
+                    name: "Uuid"
+                }
+            }
+        }
+    }
+};
+export var CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.NotificationsSummaryByFileApiResponseData",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData",
+        modelProperties: {
+            totalNotificationsCount: {
+                serializedName: "TotalNotificationsCount",
+                type: {
+                    name: "Number"
+                }
+            },
+            notificationsByFile: {
+                serializedName: "NotificationsByFile",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByFileModel"
                         }
                     }
                 }
@@ -10720,6 +11407,18 @@ export var CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreateModel 
                         type: {
                             name: "Composite",
                             className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreatePartyRepresentativeModel"
+                        }
+                    }
+                }
+            },
+            notificationResources: {
+                serializedName: "NotificationResources",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel"
                         }
                     }
                 }
@@ -11384,6 +12083,234 @@ export var CyberjusticeLabKernelSharedJudicialFileModelsLogEntryCreateModel = {
         }
     }
 };
+export var CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PenalChargeCreateModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel",
+        modelProperties: {
+            partyId: {
+                serializedName: "PartyId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            ruleType: {
+                serializedName: "RuleType",
+                type: {
+                    name: "String"
+                }
+            },
+            ruleCode: {
+                serializedName: "RuleCode",
+                type: {
+                    name: "String"
+                }
+            },
+            attributes: {
+                serializedName: "Attributes",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedJudicialFileModelsChargeAttributeModel"
+                        }
+                    }
+                }
+            },
+            plea: {
+                serializedName: "Plea",
+                type: {
+                    name: "Composite",
+                    className: "CyberjusticeLabKernelSharedJudicialFileModelsPleaModel"
+                }
+            },
+            offenceStatementDate: {
+                serializedName: "OffenceStatementDate",
+                type: {
+                    name: "DateTime"
+                }
+            },
+            offenceStatementDescription: {
+                serializedName: "OffenceStatementDescription",
+                type: {
+                    name: "String"
+                }
+            },
+            offenceStatementNumber: {
+                serializedName: "OffenceStatementNumber",
+                type: {
+                    name: "String"
+                }
+            },
+            documentId: {
+                serializedName: "DocumentId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            modifiedDate: {
+                serializedName: "ModifiedDate",
+                type: {
+                    name: "DateTime"
+                }
+            },
+            modifiedBy: {
+                serializedName: "ModifiedBy",
+                type: {
+                    name: "String"
+                }
+            },
+            modifiedDateTicks: {
+                readOnly: true,
+                serializedName: "ModifiedDateTicks",
+                type: {
+                    name: "String"
+                }
+            },
+            createdDate: {
+                serializedName: "CreatedDate",
+                type: {
+                    name: "DateTime"
+                }
+            },
+            createdBy: {
+                serializedName: "CreatedBy",
+                type: {
+                    name: "String"
+                }
+            }
+        }
+    }
+};
+export var CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.RepresentativeContactModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel",
+        modelProperties: {
+            firstName: {
+                serializedName: "FirstName",
+                type: {
+                    name: "String"
+                }
+            },
+            lastName: {
+                serializedName: "LastName",
+                type: {
+                    name: "String"
+                }
+            },
+            adresse: {
+                serializedName: "Adresse",
+                type: {
+                    name: "String"
+                }
+            },
+            adresse2: {
+                serializedName: "Adresse2",
+                type: {
+                    name: "String"
+                }
+            },
+            city: {
+                serializedName: "City",
+                type: {
+                    name: "String"
+                }
+            },
+            state: {
+                serializedName: "State",
+                type: {
+                    name: "String"
+                }
+            },
+            country: {
+                serializedName: "Country",
+                type: {
+                    name: "String"
+                }
+            },
+            zipCode: {
+                serializedName: "ZipCode",
+                type: {
+                    name: "String"
+                }
+            },
+            email: {
+                serializedName: "Email",
+                type: {
+                    name: "String"
+                }
+            },
+            website: {
+                serializedName: "Website",
+                type: {
+                    name: "String"
+                }
+            },
+            latitude: {
+                serializedName: "Latitude",
+                type: {
+                    name: "String"
+                }
+            },
+            longitude: {
+                serializedName: "Longitude",
+                type: {
+                    name: "String"
+                }
+            },
+            phoneNumbers: {
+                serializedName: "PhoneNumbers",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedJudicialFileModelsContactPhoneNumberModel"
+                        }
+                    }
+                }
+            },
+            contactAttributes: {
+                serializedName: "ContactAttributes",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedJudicialFileModelsContactAttributeModel"
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+export var CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.CreateRepresentativeProfileModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel",
+        modelProperties: {
+            representativeId: {
+                serializedName: "RepresentativeId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            contact: {
+                serializedName: "Contact",
+                type: {
+                    name: "Composite",
+                    className: "CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel"
+                }
+            }
+        }
+    }
+};
 export var CyberjusticeLabKernelSharedJudicialFileModelsCloseFileModel = {
     serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.CloseFileModel",
     type: {
@@ -11870,6 +12797,18 @@ export var CyberjusticeLabKernelSharedJudicialFileModelsNotificationUpdateModel 
                 type: {
                     name: "String"
                 }
+            },
+            notificationResources: {
+                serializedName: "NotificationResources",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel"
+                        }
+                    }
+                }
             }
         }
     }
@@ -11947,6 +12886,113 @@ export var CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateUpdateModel =
                             name: "String"
                         }
                     }
+                }
+            }
+        }
+    }
+};
+export var CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel = {
+    serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PenalChargeUpdateModel",
+    type: {
+        name: "Composite",
+        className: "CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel",
+        modelProperties: {
+            chargeId: {
+                serializedName: "ChargeId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            partyId: {
+                serializedName: "PartyId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            ruleType: {
+                serializedName: "RuleType",
+                type: {
+                    name: "String"
+                }
+            },
+            ruleCode: {
+                serializedName: "RuleCode",
+                type: {
+                    name: "String"
+                }
+            },
+            attributes: {
+                serializedName: "Attributes",
+                type: {
+                    name: "Sequence",
+                    element: {
+                        type: {
+                            name: "Composite",
+                            className: "CyberjusticeLabKernelSharedJudicialFileModelsChargeAttributeModel"
+                        }
+                    }
+                }
+            },
+            plea: {
+                serializedName: "Plea",
+                type: {
+                    name: "Composite",
+                    className: "CyberjusticeLabKernelSharedJudicialFileModelsPleaModel"
+                }
+            },
+            offenceStatementDate: {
+                serializedName: "OffenceStatementDate",
+                type: {
+                    name: "DateTime"
+                }
+            },
+            offenceStatementDescription: {
+                serializedName: "OffenceStatementDescription",
+                type: {
+                    name: "String"
+                }
+            },
+            offenceStatementNumber: {
+                serializedName: "OffenceStatementNumber",
+                type: {
+                    name: "String"
+                }
+            },
+            documentId: {
+                serializedName: "DocumentId",
+                type: {
+                    name: "Uuid"
+                }
+            },
+            modifiedDate: {
+                serializedName: "ModifiedDate",
+                type: {
+                    name: "DateTime"
+                }
+            },
+            modifiedBy: {
+                serializedName: "ModifiedBy",
+                type: {
+                    name: "String"
+                }
+            },
+            modifiedDateTicks: {
+                readOnly: true,
+                serializedName: "ModifiedDateTicks",
+                type: {
+                    name: "String"
+                }
+            },
+            createdDate: {
+                serializedName: "CreatedDate",
+                type: {
+                    name: "DateTime"
+                }
+            },
+            createdBy: {
+                serializedName: "CreatedBy",
+                type: {
+                    name: "String"
                 }
             }
         }

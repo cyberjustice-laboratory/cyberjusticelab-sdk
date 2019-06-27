@@ -64,6 +64,461 @@
      * Changes may cause incorrect behavior and will be lost if the code is
      * regenerated.
      */
+    var CyberjusticeLabKernelSharedAsyncModelsTimeEventApiRequestModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventApiRequestModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventApiRequestModel",
+            modelProperties: {
+                timeEventIds: {
+                    serializedName: "TimeEventIds",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Uuid"
+                            }
+                        }
+                    }
+                },
+                fileIds: {
+                    serializedName: "FileIds",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Uuid"
+                            }
+                        }
+                    }
+                },
+                timerCodes: {
+                    serializedName: "TimerCodes",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "String"
+                            }
+                        }
+                    }
+                },
+                timerStatuses: {
+                    serializedName: "TimerStatuses",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "String"
+                            }
+                        }
+                    }
+                },
+                minDate: {
+                    serializedName: "MinDate",
+                    type: {
+                        name: "DateTime"
+                    }
+                },
+                maxDate: {
+                    serializedName: "MaxDate",
+                    type: {
+                        name: "DateTime"
+                    }
+                },
+                take: {
+                    serializedName: "Take",
+                    type: {
+                        name: "Number"
+                    }
+                },
+                skip: {
+                    serializedName: "Skip",
+                    type: {
+                        name: "Number"
+                    }
+                },
+                orderBy: {
+                    serializedName: "OrderBy",
+                    type: {
+                        name: "String"
+                    }
+                },
+                orderByDescending: {
+                    serializedName: "OrderByDescending",
+                    type: {
+                        name: "Boolean"
+                    }
+                }
+            }
+        }
+    };
+    var CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventNotificationResourceModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel",
+            modelProperties: {
+                culture: {
+                    serializedName: "Culture",
+                    type: {
+                        name: "String"
+                    }
+                },
+                message: {
+                    serializedName: "Message",
+                    type: {
+                        name: "String"
+                    }
+                },
+                parameters: {
+                    serializedName: "Parameters",
+                    type: {
+                        name: "String"
+                    }
+                }
+            }
+        }
+    };
+    var CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventNotificationModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel",
+            modelProperties: {
+                notificationCode: {
+                    serializedName: "NotificationCode",
+                    type: {
+                        name: "String"
+                    }
+                },
+                partyType: {
+                    serializedName: "PartyType",
+                    type: {
+                        name: "String"
+                    }
+                },
+                link: {
+                    serializedName: "Link",
+                    type: {
+                        name: "String"
+                    }
+                },
+                aggregatorCode: {
+                    serializedName: "AggregatorCode",
+                    type: {
+                        name: "String"
+                    }
+                },
+                emailCode: {
+                    serializedName: "EmailCode",
+                    type: {
+                        name: "String"
+                    }
+                },
+                timeEventNotificationResourceModels: {
+                    serializedName: "TimeEventNotificationResourceModels",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    };
+    var CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventLogResourceModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel",
+            modelProperties: {
+                culture: {
+                    serializedName: "Culture",
+                    type: {
+                        name: "String"
+                    }
+                },
+                message: {
+                    serializedName: "Message",
+                    type: {
+                        name: "String"
+                    }
+                },
+                parameters: {
+                    serializedName: "Parameters",
+                    type: {
+                        name: "String"
+                    }
+                }
+            }
+        }
+    };
+    var CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventLogModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel",
+            modelProperties: {
+                eventCode: {
+                    serializedName: "EventCode",
+                    type: {
+                        name: "String"
+                    }
+                },
+                authorName: {
+                    serializedName: "AuthorName",
+                    type: {
+                        name: "String"
+                    }
+                },
+                authorRole: {
+                    serializedName: "AuthorRole",
+                    type: {
+                        name: "String"
+                    }
+                },
+                authorUID: {
+                    serializedName: "AuthorUID",
+                    type: {
+                        name: "String"
+                    }
+                },
+                fileStep: {
+                    serializedName: "FileStep",
+                    type: {
+                        name: "String"
+                    }
+                },
+                entryDate: {
+                    serializedName: "EntryDate",
+                    type: {
+                        name: "DateTime"
+                    }
+                },
+                timeEventLogResourceModels: {
+                    serializedName: "TimeEventLogResourceModels",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    };
+    var CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventEmailModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel",
+            modelProperties: {
+                emailCode: {
+                    serializedName: "EmailCode",
+                    type: {
+                        name: "String"
+                    }
+                },
+                culture: {
+                    serializedName: "Culture",
+                    type: {
+                        name: "String"
+                    }
+                },
+                parameters: {
+                    serializedName: "Parameters",
+                    type: {
+                        name: "String"
+                    }
+                }
+            }
+        }
+    };
+    var CyberjusticeLabKernelSharedAsyncModelsTimeEventModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventModel",
+            modelProperties: {
+                timeEventId: {
+                    serializedName: "TimeEventId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                fileId: {
+                    serializedName: "FileId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                timerCode: {
+                    serializedName: "TimerCode",
+                    type: {
+                        name: "String"
+                    }
+                },
+                timerDate: {
+                    serializedName: "TimerDate",
+                    type: {
+                        name: "DateTime"
+                    }
+                },
+                timerStatus: {
+                    serializedName: "TimerStatus",
+                    type: {
+                        name: "String"
+                    }
+                },
+                notificationLinks: {
+                    serializedName: "NotificationLinks",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel"
+                            }
+                        }
+                    }
+                },
+                logLinks: {
+                    serializedName: "LogLinks",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel"
+                            }
+                        }
+                    }
+                },
+                emailLinks: {
+                    serializedName: "EmailLinks",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    };
+    var CyberjusticeLabKernelSharedAsyncModelsTimeEventApiResponseModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventApiResponseModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventApiResponseModel",
+            modelProperties: {
+                count: {
+                    serializedName: "Count",
+                    type: {
+                        name: "Number"
+                    }
+                },
+                countFiltered: {
+                    serializedName: "CountFiltered",
+                    type: {
+                        name: "Number"
+                    }
+                },
+                timeEvents: {
+                    serializedName: "TimeEvents",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventModel"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    };
+    var CyberjusticeLabKernelSharedAsyncModelsTimeEventCreateModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.Async.Models.TimeEventCreateModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventCreateModel",
+            modelProperties: {
+                fileId: {
+                    serializedName: "FileId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                timerCode: {
+                    serializedName: "TimerCode",
+                    type: {
+                        name: "String"
+                    }
+                },
+                timerDate: {
+                    serializedName: "TimerDate",
+                    type: {
+                        name: "DateTime"
+                    }
+                },
+                timerStatus: {
+                    serializedName: "TimerStatus",
+                    type: {
+                        name: "String"
+                    }
+                },
+                notificationLinks: {
+                    serializedName: "NotificationLinks",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel"
+                            }
+                        }
+                    }
+                },
+                logLinks: {
+                    serializedName: "LogLinks",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel"
+                            }
+                        }
+                    }
+                },
+                emailLinks: {
+                    serializedName: "EmailLinks",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    };
     var CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithFormProposalsCount = {
         serializedName: "CyberjusticeLab.Kernel.DataAccess.BusinessInformation.JudicialFileWithFormProposalsCount",
         type: {
@@ -6873,6 +7328,27 @@
             }
         }
     };
+    var CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.DetachRepresentativeFromPartyModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel",
+            modelProperties: {
+                partyId: {
+                    serializedName: "PartyId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                representativeId: {
+                    serializedName: "RepresentativeId",
+                    type: {
+                        name: "Uuid"
+                    }
+                }
+            }
+        }
+    };
     var CyberjusticeLabKernelServiceContractsJudicialFileContactPhoneNumberData = {
         serializedName: "CyberjusticeLab.Kernel.ServiceContracts.JudicialFile.ContactPhoneNumberData",
         type: {
@@ -9637,6 +10113,72 @@
             name: "Composite",
             className: "CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel",
             modelProperties: {
+                fileInvitationId: {
+                    serializedName: "FileInvitationId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                partyId: {
+                    serializedName: "PartyId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                representativeId: {
+                    serializedName: "RepresentativeId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                applicationName: {
+                    serializedName: "ApplicationName",
+                    type: {
+                        name: "String"
+                    }
+                },
+                fileId: {
+                    serializedName: "FileId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                expiryDate: {
+                    serializedName: "ExpiryDate",
+                    type: {
+                        name: "DateTime"
+                    }
+                },
+                invitationType: {
+                    serializedName: "InvitationType",
+                    type: {
+                        name: "String"
+                    }
+                },
+                validationCode: {
+                    serializedName: "ValidationCode",
+                    type: {
+                        name: "String"
+                    }
+                },
+                judicialFileId: {
+                    serializedName: "JudicialFileId",
+                    type: {
+                        name: "String"
+                    }
+                },
+                representativeAttributes: {
+                    serializedName: "RepresentativeAttributes",
+                    type: {
+                        name: "String"
+                    }
+                },
+                additionalAttributes: {
+                    serializedName: "AdditionalAttributes",
+                    type: {
+                        name: "String"
+                    }
+                },
                 modifiedDate: {
                     serializedName: "ModifiedDate",
                     type: {
@@ -9645,6 +10187,13 @@
                 },
                 modifiedBy: {
                     serializedName: "ModifiedBy",
+                    type: {
+                        name: "String"
+                    }
+                },
+                modifiedDateTicks: {
+                    readOnly: true,
+                    serializedName: "ModifiedDateTicks",
                     type: {
                         name: "String"
                     }
@@ -9763,6 +10312,27 @@
             }
         }
     };
+    var CyberjusticeLabKernelSharedJudicialFileModelsAtribute = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.Atribute",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedJudicialFileModelsAtribute",
+            modelProperties: {
+                key: {
+                    serializedName: "Key",
+                    type: {
+                        name: "String"
+                    }
+                },
+                value: {
+                    serializedName: "Value",
+                    type: {
+                        name: "String"
+                    }
+                }
+            }
+        }
+    };
     var CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation = {
         serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PartyInformation",
         type: {
@@ -9852,6 +10422,18 @@
                             }
                         }
                     }
+                },
+                partyAttributes: {
+                    serializedName: "PartyAttributes",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedJudicialFileModelsAtribute"
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -9891,6 +10473,18 @@
                     type: {
                         name: "Composite",
                         className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation"
+                    }
+                },
+                parties: {
+                    serializedName: "Parties",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedJudicialFileModelsPartyModel"
+                            }
+                        }
                     }
                 }
             }
@@ -10544,6 +11138,33 @@
             }
         }
     };
+    var CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.NotificationResourceModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel",
+            modelProperties: {
+                culture: {
+                    serializedName: "Culture",
+                    type: {
+                        name: "String"
+                    }
+                },
+                message: {
+                    serializedName: "Message",
+                    type: {
+                        name: "String"
+                    }
+                },
+                substitutionParameters: {
+                    serializedName: "SubstitutionParameters",
+                    type: {
+                        name: "String"
+                    }
+                }
+            }
+        }
+    };
     var CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel = {
         serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.NotificationModel",
         type: {
@@ -10649,6 +11270,18 @@
                             }
                         }
                     }
+                },
+                notificationResources: {
+                    serializedName: "NotificationResources",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel"
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -10679,6 +11312,60 @@
                             type: {
                                 name: "Composite",
                                 className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    };
+    var CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.NotificationsSummaryByFileApiRequestData",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData",
+            modelProperties: {
+                take: {
+                    serializedName: "Take",
+                    type: {
+                        name: "Number"
+                    }
+                },
+                skip: {
+                    serializedName: "Skip",
+                    type: {
+                        name: "Number"
+                    }
+                },
+                judicialEntityId: {
+                    serializedName: "JudicialEntityId",
+                    type: {
+                        name: "Uuid"
+                    }
+                }
+            }
+        }
+    };
+    var CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.NotificationsSummaryByFileApiResponseData",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData",
+            modelProperties: {
+                totalNotificationsCount: {
+                    serializedName: "TotalNotificationsCount",
+                    type: {
+                        name: "Number"
+                    }
+                },
+                notificationsByFile: {
+                    serializedName: "NotificationsByFile",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByFileModel"
                             }
                         }
                     }
@@ -10781,6 +11468,18 @@
                             type: {
                                 name: "Composite",
                                 className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreatePartyRepresentativeModel"
+                            }
+                        }
+                    }
+                },
+                notificationResources: {
+                    serializedName: "NotificationResources",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel"
                             }
                         }
                     }
@@ -11445,6 +12144,234 @@
             }
         }
     };
+    var CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PenalChargeCreateModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel",
+            modelProperties: {
+                partyId: {
+                    serializedName: "PartyId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                ruleType: {
+                    serializedName: "RuleType",
+                    type: {
+                        name: "String"
+                    }
+                },
+                ruleCode: {
+                    serializedName: "RuleCode",
+                    type: {
+                        name: "String"
+                    }
+                },
+                attributes: {
+                    serializedName: "Attributes",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedJudicialFileModelsChargeAttributeModel"
+                            }
+                        }
+                    }
+                },
+                plea: {
+                    serializedName: "Plea",
+                    type: {
+                        name: "Composite",
+                        className: "CyberjusticeLabKernelSharedJudicialFileModelsPleaModel"
+                    }
+                },
+                offenceStatementDate: {
+                    serializedName: "OffenceStatementDate",
+                    type: {
+                        name: "DateTime"
+                    }
+                },
+                offenceStatementDescription: {
+                    serializedName: "OffenceStatementDescription",
+                    type: {
+                        name: "String"
+                    }
+                },
+                offenceStatementNumber: {
+                    serializedName: "OffenceStatementNumber",
+                    type: {
+                        name: "String"
+                    }
+                },
+                documentId: {
+                    serializedName: "DocumentId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                modifiedDate: {
+                    serializedName: "ModifiedDate",
+                    type: {
+                        name: "DateTime"
+                    }
+                },
+                modifiedBy: {
+                    serializedName: "ModifiedBy",
+                    type: {
+                        name: "String"
+                    }
+                },
+                modifiedDateTicks: {
+                    readOnly: true,
+                    serializedName: "ModifiedDateTicks",
+                    type: {
+                        name: "String"
+                    }
+                },
+                createdDate: {
+                    serializedName: "CreatedDate",
+                    type: {
+                        name: "DateTime"
+                    }
+                },
+                createdBy: {
+                    serializedName: "CreatedBy",
+                    type: {
+                        name: "String"
+                    }
+                }
+            }
+        }
+    };
+    var CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.RepresentativeContactModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel",
+            modelProperties: {
+                firstName: {
+                    serializedName: "FirstName",
+                    type: {
+                        name: "String"
+                    }
+                },
+                lastName: {
+                    serializedName: "LastName",
+                    type: {
+                        name: "String"
+                    }
+                },
+                adresse: {
+                    serializedName: "Adresse",
+                    type: {
+                        name: "String"
+                    }
+                },
+                adresse2: {
+                    serializedName: "Adresse2",
+                    type: {
+                        name: "String"
+                    }
+                },
+                city: {
+                    serializedName: "City",
+                    type: {
+                        name: "String"
+                    }
+                },
+                state: {
+                    serializedName: "State",
+                    type: {
+                        name: "String"
+                    }
+                },
+                country: {
+                    serializedName: "Country",
+                    type: {
+                        name: "String"
+                    }
+                },
+                zipCode: {
+                    serializedName: "ZipCode",
+                    type: {
+                        name: "String"
+                    }
+                },
+                email: {
+                    serializedName: "Email",
+                    type: {
+                        name: "String"
+                    }
+                },
+                website: {
+                    serializedName: "Website",
+                    type: {
+                        name: "String"
+                    }
+                },
+                latitude: {
+                    serializedName: "Latitude",
+                    type: {
+                        name: "String"
+                    }
+                },
+                longitude: {
+                    serializedName: "Longitude",
+                    type: {
+                        name: "String"
+                    }
+                },
+                phoneNumbers: {
+                    serializedName: "PhoneNumbers",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedJudicialFileModelsContactPhoneNumberModel"
+                            }
+                        }
+                    }
+                },
+                contactAttributes: {
+                    serializedName: "ContactAttributes",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedJudicialFileModelsContactAttributeModel"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    };
+    var CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.CreateRepresentativeProfileModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel",
+            modelProperties: {
+                representativeId: {
+                    serializedName: "RepresentativeId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                contact: {
+                    serializedName: "Contact",
+                    type: {
+                        name: "Composite",
+                        className: "CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel"
+                    }
+                }
+            }
+        }
+    };
     var CyberjusticeLabKernelSharedJudicialFileModelsCloseFileModel = {
         serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.CloseFileModel",
         type: {
@@ -11931,6 +12858,18 @@
                     type: {
                         name: "String"
                     }
+                },
+                notificationResources: {
+                    serializedName: "NotificationResources",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel"
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -12008,6 +12947,113 @@
                                 name: "String"
                             }
                         }
+                    }
+                }
+            }
+        }
+    };
+    var CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel = {
+        serializedName: "CyberjusticeLab.Kernel.Shared.JudicialFile.Models.PenalChargeUpdateModel",
+        type: {
+            name: "Composite",
+            className: "CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel",
+            modelProperties: {
+                chargeId: {
+                    serializedName: "ChargeId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                partyId: {
+                    serializedName: "PartyId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                ruleType: {
+                    serializedName: "RuleType",
+                    type: {
+                        name: "String"
+                    }
+                },
+                ruleCode: {
+                    serializedName: "RuleCode",
+                    type: {
+                        name: "String"
+                    }
+                },
+                attributes: {
+                    serializedName: "Attributes",
+                    type: {
+                        name: "Sequence",
+                        element: {
+                            type: {
+                                name: "Composite",
+                                className: "CyberjusticeLabKernelSharedJudicialFileModelsChargeAttributeModel"
+                            }
+                        }
+                    }
+                },
+                plea: {
+                    serializedName: "Plea",
+                    type: {
+                        name: "Composite",
+                        className: "CyberjusticeLabKernelSharedJudicialFileModelsPleaModel"
+                    }
+                },
+                offenceStatementDate: {
+                    serializedName: "OffenceStatementDate",
+                    type: {
+                        name: "DateTime"
+                    }
+                },
+                offenceStatementDescription: {
+                    serializedName: "OffenceStatementDescription",
+                    type: {
+                        name: "String"
+                    }
+                },
+                offenceStatementNumber: {
+                    serializedName: "OffenceStatementNumber",
+                    type: {
+                        name: "String"
+                    }
+                },
+                documentId: {
+                    serializedName: "DocumentId",
+                    type: {
+                        name: "Uuid"
+                    }
+                },
+                modifiedDate: {
+                    serializedName: "ModifiedDate",
+                    type: {
+                        name: "DateTime"
+                    }
+                },
+                modifiedBy: {
+                    serializedName: "ModifiedBy",
+                    type: {
+                        name: "String"
+                    }
+                },
+                modifiedDateTicks: {
+                    readOnly: true,
+                    serializedName: "ModifiedDateTicks",
+                    type: {
+                        name: "String"
+                    }
+                },
+                createdDate: {
+                    serializedName: "CreatedDate",
+                    type: {
+                        name: "DateTime"
+                    }
+                },
+                createdBy: {
+                    serializedName: "CreatedBy",
+                    type: {
+                        name: "String"
                     }
                 }
             }
@@ -15530,6 +16576,15 @@
     };
 
     var mappers = /*#__PURE__*/Object.freeze({
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventApiRequestModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventApiRequestModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventApiResponseModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventApiResponseModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventCreateModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventCreateModel,
         CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithFormProposalsCount: CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithFormProposalsCount,
         CyberjusticeLabKernelServiceContractsCalendarBaseCalendarUpdateData: CyberjusticeLabKernelServiceContractsCalendarBaseCalendarUpdateData,
         CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityUpdateData: CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityUpdateData,
@@ -15652,6 +16707,7 @@
         CyberjusticeLabKernelSharedJudicialEntityModelsMatterJudicialEntityLinkModel: CyberjusticeLabKernelSharedJudicialEntityModelsMatterJudicialEntityLinkModel,
         CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityModel: CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityModel,
         CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData: CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityApiResponseData,
+        CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel: CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel,
         CyberjusticeLabKernelServiceContractsJudicialFileContactPhoneNumberData: CyberjusticeLabKernelServiceContractsJudicialFileContactPhoneNumberData,
         CyberjusticeLabKernelServiceContractsJudicialFileContactAttributeData: CyberjusticeLabKernelServiceContractsJudicialFileContactAttributeData,
         CyberjusticeLabKernelServiceContractsJudicialFileContactData: CyberjusticeLabKernelServiceContractsJudicialFileContactData,
@@ -15698,6 +16754,7 @@
         CyberjusticeLabKernelSharedJudicialFileFileInvitationPartyInformationModel: CyberjusticeLabKernelSharedJudicialFileFileInvitationPartyInformationModel,
         CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationInformationModel: CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationInformationModel,
         CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber: CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber,
+        CyberjusticeLabKernelSharedJudicialFileModelsAtribute: CyberjusticeLabKernelSharedJudicialFileModelsAtribute,
         CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation: CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation,
         CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel: CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByFileModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByFileModel,
@@ -15714,8 +16771,11 @@
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeApiRequestData: CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeApiRequestData,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeApiResponseData: CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeApiResponseData,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRequestData: CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRequestData,
+        CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiResponseData: CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiResponseData,
+        CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData: CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData,
+        CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData: CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreatePartyRepresentativeModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreatePartyRepresentativeModel,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreateModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreateModel,
         CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileCreateModel: CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileCreateModel,
@@ -15731,6 +16791,9 @@
         CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiResponseData: CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiResponseData,
         CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateCreateModel: CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateCreateModel,
         CyberjusticeLabKernelSharedJudicialFileModelsLogEntryCreateModel: CyberjusticeLabKernelSharedJudicialFileModelsLogEntryCreateModel,
+        CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel: CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel,
+        CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel: CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel,
+        CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel: CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel,
         CyberjusticeLabKernelSharedJudicialFileModelsCloseFileModel: CyberjusticeLabKernelSharedJudicialFileModelsCloseFileModel,
         CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileAttributesUpdateModel: CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileAttributesUpdateModel,
         CyberjusticeLabKernelSharedJudicialFileModelsPartyUpsertModel: CyberjusticeLabKernelSharedJudicialFileModelsPartyUpsertModel,
@@ -15741,6 +16804,7 @@
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationUpdateModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationUpdateModel,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationRepresentativeUpdateModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationRepresentativeUpdateModel,
         CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateUpdateModel: CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateUpdateModel,
+        CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel: CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel,
         CyberjusticeLabKernelSharedLocationLocationRoomData: CyberjusticeLabKernelSharedLocationLocationRoomData,
         CyberjusticeLabKernelSharedLocationLocationBuildingData: CyberjusticeLabKernelSharedLocationLocationBuildingData,
         CyberjusticeLabKernelSharedLocationLocationBuildingUpdateData: CyberjusticeLabKernelSharedLocationLocationBuildingUpdateData,
@@ -15810,7 +16874,15 @@
      */
 
     var Mappers = /*#__PURE__*/Object.freeze({
-        CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithFormProposalsCount: CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithFormProposalsCount
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventApiRequestModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventApiRequestModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventApiResponseModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventApiResponseModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel,
+        CyberjusticeLabKernelSharedAsyncModelsTimeEventCreateModel: CyberjusticeLabKernelSharedAsyncModelsTimeEventCreateModel
     });
 
     /*
@@ -15985,6 +17057,16 @@
             serializedName: "calendarTypes",
             type: {
                 name: "String"
+            }
+        }
+    };
+    var chargeId = {
+        parameterPath: "chargeId",
+        mapper: {
+            required: true,
+            serializedName: "chargeId",
+            type: {
+                name: "Uuid"
             }
         }
     };
@@ -17282,6 +18364,36 @@
             }
         }
     };
+    var timeEventId = {
+        parameterPath: "timeEventId",
+        mapper: {
+            required: true,
+            serializedName: "timeEventId",
+            type: {
+                name: "Uuid"
+            }
+        }
+    };
+    var timerDate = {
+        parameterPath: "timerDate",
+        mapper: {
+            required: true,
+            serializedName: "timerDate",
+            type: {
+                name: "DateTime"
+            }
+        }
+    };
+    var timerStatus = {
+        parameterPath: "timerStatus",
+        mapper: {
+            required: true,
+            serializedName: "timerStatus",
+            type: {
+                name: "String"
+            }
+        }
+    };
     var titles = {
         parameterPath: [
             "options",
@@ -17412,6 +18524,146 @@
      * Changes may cause incorrect behavior and will be lost if the code is
      * regenerated.
      */
+    /** Class representing a Async. */
+    var Async = /** @class */ (function () {
+        /**
+         * Create a Async.
+         * @param {CyberjusticeAPIsContext} client Reference to the service client.
+         */
+        function Async(client) {
+            this.client = client;
+        }
+        Async.prototype.deleteTimeEvent = function (timeEventId$$1, options, callback) {
+            return this.client.sendOperationRequest({
+                timeEventId: timeEventId$$1,
+                options: options
+            }, deleteTimeEventOperationSpec, callback);
+        };
+        Async.prototype.patchTimeEvent = function (timeEventId$$1, timerStatus$$1, timerDate$$1, options, callback) {
+            return this.client.sendOperationRequest({
+                timeEventId: timeEventId$$1,
+                timerStatus: timerStatus$$1,
+                timerDate: timerDate$$1,
+                options: options
+            }, patchTimeEventOperationSpec, callback);
+        };
+        Async.prototype.getTimeEvents = function (requestModel, options, callback) {
+            return this.client.sendOperationRequest({
+                requestModel: requestModel,
+                options: options
+            }, getTimeEventsOperationSpec, callback);
+        };
+        Async.prototype.createTimeEvent = function (model, options, callback) {
+            return this.client.sendOperationRequest({
+                model: model,
+                options: options
+            }, createTimeEventOperationSpec, callback);
+        };
+        Async.prototype.updateTimeEvent = function (model, options, callback) {
+            return this.client.sendOperationRequest({
+                model: model,
+                options: options
+            }, updateTimeEventOperationSpec, callback);
+        };
+        return Async;
+    }());
+    // Operation Specifications
+    var serializer = new msRest.Serializer(Mappers);
+    var deleteTimeEventOperationSpec = {
+        httpMethod: "DELETE",
+        path: "Async/DELETE/TimeEvent",
+        queryParameters: [
+            timeEventId
+        ],
+        responses: {
+            200: {},
+            404: {},
+            default: {}
+        },
+        serializer: serializer
+    };
+    var patchTimeEventOperationSpec = {
+        httpMethod: "PATCH",
+        path: "Async/PATCH/PatchTimeEvent",
+        queryParameters: [
+            timeEventId,
+            timerStatus,
+            timerDate
+        ],
+        responses: {
+            200: {},
+            400: {},
+            404: {},
+            default: {}
+        },
+        serializer: serializer
+    };
+    var getTimeEventsOperationSpec = {
+        httpMethod: "POST",
+        path: "Async/POST/GetTimeEvents",
+        requestBody: {
+            parameterPath: "requestModel",
+            mapper: __assign({}, CyberjusticeLabKernelSharedAsyncModelsTimeEventApiRequestModel, { required: true })
+        },
+        responses: {
+            200: {
+                bodyMapper: CyberjusticeLabKernelSharedAsyncModelsTimeEventApiResponseModel
+            },
+            default: {}
+        },
+        serializer: serializer
+    };
+    var createTimeEventOperationSpec = {
+        httpMethod: "POST",
+        path: "Async/POST/CreateTimeEvent",
+        requestBody: {
+            parameterPath: "model",
+            mapper: __assign({}, CyberjusticeLabKernelSharedAsyncModelsTimeEventCreateModel, { required: true })
+        },
+        responses: {
+            200: {
+                bodyMapper: {
+                    serializedName: "parsedResponse",
+                    type: {
+                        name: "Uuid"
+                    }
+                }
+            },
+            404: {},
+            default: {}
+        },
+        serializer: serializer
+    };
+    var updateTimeEventOperationSpec = {
+        httpMethod: "PUT",
+        path: "Async/PUT/UpdateTimeEvent",
+        requestBody: {
+            parameterPath: "model",
+            mapper: __assign({}, CyberjusticeLabKernelSharedAsyncModelsTimeEventModel, { required: true })
+        },
+        responses: {
+            200: {},
+            404: {},
+            default: {}
+        },
+        serializer: serializer
+    };
+
+    /*
+     * Code generated by Microsoft (R) AutoRest Code Generator.
+     * Changes may cause incorrect behavior and will be lost if the code is
+     * regenerated.
+     */
+
+    var Mappers$1 = /*#__PURE__*/Object.freeze({
+        CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithFormProposalsCount: CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithFormProposalsCount
+    });
+
+    /*
+     * Code generated by Microsoft (R) AutoRest Code Generator.
+     * Changes may cause incorrect behavior and will be lost if the code is
+     * regenerated.
+     */
     /** Class representing a BusinessInformation. */
     var BusinessInformation = /** @class */ (function () {
         /**
@@ -17439,7 +18691,7 @@
         return BusinessInformation;
     }());
     // Operation Specifications
-    var serializer = new msRest.Serializer(Mappers);
+    var serializer$1 = new msRest.Serializer(Mappers$1);
     var validateTransitionStatusOperationSpec = {
         httpMethod: "GET",
         path: "BusinessInformation/GET/ValidateTransitionStatus",
@@ -17459,7 +18711,7 @@
             },
             default: {}
         },
-        serializer: serializer
+        serializer: serializer$1
     };
     var judicialFileWithFormProposalsCountOperationSpec = {
         httpMethod: "GET",
@@ -17485,7 +18737,7 @@
             },
             default: {}
         },
-        serializer: serializer
+        serializer: serializer$1
     };
 
     /*
@@ -17494,7 +18746,7 @@
      * regenerated.
      */
 
-    var Mappers$1 = /*#__PURE__*/Object.freeze({
+    var Mappers$2 = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelServiceContractsCalendarBaseCalendarUpdateData: CyberjusticeLabKernelServiceContractsCalendarBaseCalendarUpdateData,
         CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityUpdateData: CyberjusticeLabKernelServiceContractsCalendarPeriodAvailabilityUpdateData,
         CyberjusticeLabKernelServiceContractsCalendarClosedDayUpdateData: CyberjusticeLabKernelServiceContractsCalendarClosedDayUpdateData,
@@ -17934,7 +19186,7 @@
         return Calendar;
     }());
     // Operation Specifications
-    var serializer$1 = new msRest.Serializer(Mappers$1);
+    var serializer$2 = new msRest.Serializer(Mappers$2);
     var updateBaseCalendarStatusOperationSpec = {
         httpMethod: "PATCH",
         path: "Calendar/PATCH/UpdateBaseCalendarStatus",
@@ -17949,7 +19201,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updateAssignmentCycleStatusOperationSpec = {
         httpMethod: "PATCH",
@@ -17965,7 +19217,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updatePeriodAvailabilityRoleLinkStatusOperationSpec = {
         httpMethod: "PATCH",
@@ -17979,7 +19231,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updateBaseCalendarOperationSpec = {
         httpMethod: "PUT",
@@ -17994,7 +19246,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updateBaseCalendarRoomLocationLinkOperationSpec = {
         httpMethod: "PUT",
@@ -18022,7 +19274,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updatePeriodAvailabilityOperationSpec = {
         httpMethod: "PUT",
@@ -18037,7 +19289,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updateClosedDayOperationSpec = {
         httpMethod: "PUT",
@@ -18052,7 +19304,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updateBaseCalendarJudicialEntityLinkOperationSpec = {
         httpMethod: "PUT",
@@ -18066,7 +19318,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updateAssignmentCycleOperationSpec = {
         httpMethod: "PUT",
@@ -18081,7 +19333,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updatePeriodAvailabilityGroupOperationSpec = {
         httpMethod: "PUT",
@@ -18108,7 +19360,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updateSchedulePatternOperationSpec = {
         httpMethod: "PUT",
@@ -18123,7 +19375,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updateScheduleEntryOperationSpec = {
         httpMethod: "PUT",
@@ -18138,7 +19390,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updatePeriodAvailabilityJudicialFileLinkOperationSpec = {
         httpMethod: "PUT",
@@ -18151,7 +19403,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updateEventOperationSpec = {
         httpMethod: "PUT",
@@ -18165,7 +19417,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updateEventAttributesOperationSpec = {
         httpMethod: "PUT",
@@ -18179,7 +19431,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updateEventBehavioursOperationSpec = {
         httpMethod: "PUT",
@@ -18193,7 +19445,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updateEventRankOperationSpec = {
         httpMethod: "PUT",
@@ -18207,7 +19459,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var updateEventStartDateOperationSpec = {
         httpMethod: "PUT",
@@ -18221,7 +19473,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deleteClosedDayOperationSpec = {
         httpMethod: "DELETE",
@@ -18233,7 +19485,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deleteClosedWeekdayOperationSpec = {
         httpMethod: "DELETE",
@@ -18246,7 +19498,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deletePeriodAvailabilityOperationSpec = {
         httpMethod: "DELETE",
@@ -18258,7 +19510,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deletePeriodAvailabilitiesOperationSpec = {
         httpMethod: "DELETE",
@@ -18282,7 +19534,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deletePeriodAvailabilityGroupOperationSpec = {
         httpMethod: "DELETE",
@@ -18294,7 +19546,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deletePeriodAvailabilityRoleLinkOperationSpec = {
         httpMethod: "DELETE",
@@ -18306,7 +19558,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deletePeriodAvailabilityJudicialFileLinkOperationSpec = {
         httpMethod: "DELETE",
@@ -18319,7 +19571,7 @@
             204: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deleteBaseCalendarLocationRoomLinkOperationSpec = {
         httpMethod: "DELETE",
@@ -18332,7 +19584,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deleteAssignmentCycleOperationSpec = {
         httpMethod: "DELETE",
@@ -18345,7 +19597,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deleteSchedulePatternOperationSpec = {
         httpMethod: "DELETE",
@@ -18357,7 +19609,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deleteScheduleEntryOperationSpec = {
         httpMethod: "DELETE",
@@ -18369,7 +19621,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deleteAssignmentCyclesOperationSpec = {
         httpMethod: "DELETE",
@@ -18393,7 +19645,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deletePeriodAvailabilityRoleLinksOperationSpec = {
         httpMethod: "DELETE",
@@ -18417,7 +19669,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deleteClosedDaysOperationSpec = {
         httpMethod: "DELETE",
@@ -18441,7 +19693,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deleteEventOperationSpec = {
         httpMethod: "DELETE",
@@ -18454,7 +19706,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deleteAllEventsOperationSpec = {
         httpMethod: "DELETE",
@@ -18466,7 +19718,7 @@
             204: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var deleteBehaviorsOperationSpec = {
         httpMethod: "DELETE",
@@ -18495,7 +19747,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var getEventsOperationSpec = {
         httpMethod: "POST",
@@ -18510,7 +19762,7 @@
             },
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var getFullCalendarOperationSpec = {
         httpMethod: "POST",
@@ -18525,7 +19777,7 @@
             },
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var createBaseCalendarOperationSpec = {
         httpMethod: "POST",
@@ -18539,7 +19791,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var createPeriodAvailabilityOperationSpec = {
         httpMethod: "POST",
@@ -18553,7 +19805,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var createPeriodAvailabilityGroupOperationSpec = {
         httpMethod: "POST",
@@ -18579,7 +19831,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var baseCalendarAddClosedWeekdayOperationSpec = {
         httpMethod: "POST",
@@ -18593,7 +19845,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var createClosedDayOperationSpec = {
         httpMethod: "POST",
@@ -18607,7 +19859,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var createAssignmentCycleOperationSpec = {
         httpMethod: "POST",
@@ -18621,7 +19873,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var createPeriodAvailabilityRoleLinkOperationSpec = {
         httpMethod: "POST",
@@ -18634,7 +19886,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var createPeriodAvailabilityJudicialFileLinkOperationSpec = {
         httpMethod: "POST",
@@ -18647,7 +19899,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var createPeriodAvailabilitiesFromPatternOperationSpec = {
         httpMethod: "POST",
@@ -18661,7 +19913,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var createSchedulePatternOperationSpec = {
         httpMethod: "POST",
@@ -18675,7 +19927,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var createScheduleEntryOperationSpec = {
         httpMethod: "POST",
@@ -18689,7 +19941,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var createCalendarOperationSpec = {
         httpMethod: "POST",
@@ -18702,7 +19954,7 @@
             403: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var createEventOperationSpec = {
         httpMethod: "POST",
@@ -18716,7 +19968,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var getBaseCalendarsOperationSpec = {
         httpMethod: "GET",
@@ -18751,7 +20003,7 @@
             },
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var getPeriodAvailabilitiesOperationSpec = {
         httpMethod: "GET",
@@ -18781,7 +20033,7 @@
             },
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var getPeriodAvailabilitiesOfUserOperationSpec = {
         httpMethod: "GET",
@@ -18807,7 +20059,7 @@
             },
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var getClosedDaysOperationSpec = {
         httpMethod: "GET",
@@ -18834,7 +20086,7 @@
             },
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var getAssignmentCyclesOperationSpec = {
         httpMethod: "GET",
@@ -18863,7 +20115,7 @@
             },
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var getSchedulePatternsOperationSpec = {
         httpMethod: "GET",
@@ -18889,7 +20141,7 @@
             },
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var getScheduleEntryOperationSpec = {
         httpMethod: "GET",
@@ -18903,7 +20155,7 @@
             },
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var getFileCalendarsOperationSpec = {
         httpMethod: "GET",
@@ -18928,7 +20180,7 @@
             },
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
     var getFilesWithCurrentEventsOperationSpec = {
         httpMethod: "GET",
@@ -18953,7 +20205,7 @@
             },
             default: {}
         },
-        serializer: serializer$1
+        serializer: serializer$2
     };
 
     /*
@@ -18962,7 +20214,7 @@
      * regenerated.
      */
 
-    var Mappers$2 = /*#__PURE__*/Object.freeze({
+    var Mappers$3 = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelServiceContractsDocumentDocumentData: CyberjusticeLabKernelServiceContractsDocumentDocumentData,
         CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData: CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData,
         CyberjusticeLabKernelSharedDocumentModelsAttributesFilters: CyberjusticeLabKernelSharedDocumentModelsAttributesFilters,
@@ -19076,7 +20328,7 @@
         return Document;
     }());
     // Operation Specifications
-    var serializer$2 = new msRest.Serializer(Mappers$2);
+    var serializer$3 = new msRest.Serializer(Mappers$3);
     var deleteDocumentOperationSpec = {
         httpMethod: "DELETE",
         path: "Document/DELETE/DeleteDocument",
@@ -19092,7 +20344,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$2
+        serializer: serializer$3
     };
     var deleteDocumentAttributesOperationSpec = {
         httpMethod: "DELETE",
@@ -19105,7 +20357,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$2
+        serializer: serializer$3
     };
     var getDocumentsMetadataOperationSpec = {
         httpMethod: "GET",
@@ -19131,7 +20383,7 @@
             },
             default: {}
         },
-        serializer: serializer$2
+        serializer: serializer$3
     };
     var getDocumentMetadataOperationSpec = {
         httpMethod: "GET",
@@ -19145,7 +20397,7 @@
             },
             default: {}
         },
-        serializer: serializer$2
+        serializer: serializer$3
     };
     var getDocumentContentByIdOperationSpec = {
         httpMethod: "GET",
@@ -19165,7 +20417,7 @@
             },
             default: {}
         },
-        serializer: serializer$2
+        serializer: serializer$3
     };
     var getDocumentsOperationSpec = {
         httpMethod: "POST",
@@ -19180,7 +20432,7 @@
             },
             default: {}
         },
-        serializer: serializer$2
+        serializer: serializer$3
     };
     var createDocumentOperationSpec = {
         httpMethod: "POST",
@@ -19203,7 +20455,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$2
+        serializer: serializer$3
     };
     var createDocumentsOperationSpec = {
         httpMethod: "POST",
@@ -19221,7 +20473,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$2
+        serializer: serializer$3
     };
     var updateDocumentContentOperationSpec = {
         httpMethod: "PUT",
@@ -19236,7 +20488,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$2
+        serializer: serializer$3
     };
     var updateDocumentMetadataOperationSpec = {
         httpMethod: "PUT",
@@ -19252,7 +20504,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$2
+        serializer: serializer$3
     };
     var updateDocumentAttributesOperationSpec = {
         httpMethod: "PUT",
@@ -19266,7 +20518,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$2
+        serializer: serializer$3
     };
     var updateDocumentPartyActionsOperationSpec = {
         httpMethod: "PUT",
@@ -19280,7 +20532,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$2
+        serializer: serializer$3
     };
 
     /*
@@ -19289,7 +20541,7 @@
      * regenerated.
      */
 
-    var Mappers$3 = /*#__PURE__*/Object.freeze({
+    var Mappers$4 = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelServiceContractsExchangeForumData: CyberjusticeLabKernelServiceContractsExchangeForumData,
         CyberjusticeLabKernelServiceContractsExchangeForumPartyLinkData: CyberjusticeLabKernelServiceContractsExchangeForumPartyLinkData,
         CyberjusticeLabKernelSharedExchangeModelsForumMessageApiRequestData: CyberjusticeLabKernelSharedExchangeModelsForumMessageApiRequestData,
@@ -19356,7 +20608,7 @@
         return Exchange;
     }());
     // Operation Specifications
-    var serializer$3 = new msRest.Serializer(Mappers$3);
+    var serializer$4 = new msRest.Serializer(Mappers$4);
     var getForumMessagesOperationSpec = {
         httpMethod: "GET",
         path: "Exchange/GET/ForumMessages",
@@ -19380,7 +20632,7 @@
             },
             default: {}
         },
-        serializer: serializer$3
+        serializer: serializer$4
     };
     var getForumMessages1OperationSpec = {
         httpMethod: "POST",
@@ -19395,7 +20647,7 @@
             },
             default: {}
         },
-        serializer: serializer$3
+        serializer: serializer$4
     };
     var getForumMessageOperationSpec = {
         httpMethod: "GET",
@@ -19410,7 +20662,7 @@
             },
             default: {}
         },
-        serializer: serializer$3
+        serializer: serializer$4
     };
     var addForumMessageOperationSpec = {
         httpMethod: "POST",
@@ -19420,11 +20672,19 @@
             mapper: __assign({}, CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, { required: true })
         },
         responses: {
+            200: {
+                bodyMapper: {
+                    serializedName: "parsedResponse",
+                    type: {
+                        name: "Uuid"
+                    }
+                }
+            },
             403: {},
             404: {},
             default: {}
         },
-        serializer: serializer$3
+        serializer: serializer$4
     };
     var addPartyToForumMessagesOperationSpec = {
         httpMethod: "POST",
@@ -19434,10 +20694,11 @@
             mapper: __assign({}, CyberjusticeLabKernelSharedExchangeModelsAddPartyToForumMessagesModel, { required: true })
         },
         responses: {
+            200: {},
             404: {},
             default: {}
         },
-        serializer: serializer$3
+        serializer: serializer$4
     };
     var addForumMessageAttributesOperationSpec = {
         httpMethod: "POST",
@@ -19447,10 +20708,11 @@
             mapper: __assign({}, CyberjusticeLabKernelSharedExchangeModelsAddForumMessageAttributesModel, { required: true })
         },
         responses: {
+            200: {},
             404: {},
             default: {}
         },
-        serializer: serializer$3
+        serializer: serializer$4
     };
 
     /*
@@ -19459,7 +20721,7 @@
      * regenerated.
      */
 
-    var Mappers$4 = /*#__PURE__*/Object.freeze({
+    var Mappers$5 = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelServiceContractsFormFormQuestionData: CyberjusticeLabKernelServiceContractsFormFormQuestionData,
         CyberjusticeLabKernelServiceContractsFormFormSectionData: CyberjusticeLabKernelServiceContractsFormFormSectionData,
         CyberjusticeLabKernelServiceContractsFormFormSectionOptionData: CyberjusticeLabKernelServiceContractsFormFormSectionOptionData,
@@ -19582,7 +20844,7 @@
         return Form;
     }());
     // Operation Specifications
-    var serializer$4 = new msRest.Serializer(Mappers$4);
+    var serializer$5 = new msRest.Serializer(Mappers$5);
     var getFormQuestionProposalOperationSpec = {
         httpMethod: "GET",
         path: "Form/GET/FormQuestionProposals",
@@ -19606,7 +20868,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
     var getFormQuestionProposalByCodeOperationSpec = {
         httpMethod: "GET",
@@ -19632,7 +20894,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
     var getFormQuestionDescriptionOperationSpec = {
         httpMethod: "GET",
@@ -19657,7 +20919,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
     var getFormQuestionDescriptionByCodeOperationSpec = {
         httpMethod: "GET",
@@ -19683,7 +20945,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
     var getDraftQuestionFormOperationSpec = {
         httpMethod: "GET",
@@ -19708,7 +20970,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
     var getDraftQuestionDescriptionFormOperationSpec = {
         httpMethod: "GET",
@@ -19733,7 +20995,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
     var getDraftQuestionProposalFormOperationSpec = {
         httpMethod: "GET",
@@ -19758,7 +21020,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
     var getPartyQuestionDescriptionOperationSpec = {
         httpMethod: "GET",
@@ -19773,7 +21035,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
     var getPartyQuestionDescriptionsOperationSpec = {
         httpMethod: "GET",
@@ -19798,7 +21060,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
     var getPartyQuestionProposalOperationSpec = {
         httpMethod: "GET",
@@ -19813,7 +21075,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
     var getPartyQuestionProposalsOperationSpec = {
         httpMethod: "GET",
@@ -19838,7 +21100,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
     var getPartyQuestionProposalCountOperationSpec = {
         httpMethod: "GET",
@@ -19863,7 +21125,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
     var getPartyArchiveQuestionProposalsOperationSpec = {
         httpMethod: "GET",
@@ -19888,7 +21150,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
     var getDraftQuestionFormsOperationSpec = {
         httpMethod: "POST",
@@ -19903,7 +21165,7 @@
             },
             default: {}
         },
-        serializer: serializer$4
+        serializer: serializer$5
     };
 
     /*
@@ -19912,7 +21174,7 @@
      * regenerated.
      */
 
-    var Mappers$5 = /*#__PURE__*/Object.freeze({
+    var Mappers$6 = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelServiceContractsHearingMenuData: CyberjusticeLabKernelServiceContractsHearingMenuData
     });
 
@@ -19946,7 +21208,7 @@
         return Hearing;
     }());
     // Operation Specifications
-    var serializer$5 = new msRest.Serializer(Mappers$5);
+    var serializer$6 = new msRest.Serializer(Mappers$6);
     var getMenuDataOperationSpec = {
         httpMethod: "GET",
         path: "Hearing/GET/MenuData",
@@ -19960,7 +21222,7 @@
             },
             default: {}
         },
-        serializer: serializer$5
+        serializer: serializer$6
     };
     var getAllJudgesMenuDataOperationSpec = {
         httpMethod: "GET",
@@ -19985,7 +21247,7 @@
             },
             default: {}
         },
-        serializer: serializer$5
+        serializer: serializer$6
     };
 
     /*
@@ -19994,7 +21256,7 @@
      * regenerated.
      */
 
-    var Mappers$6 = /*#__PURE__*/Object.freeze({
+    var Mappers$7 = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelServiceContractsJournalJournalData: CyberjusticeLabKernelServiceContractsJournalJournalData,
         CyberjusticeLabKernelSharedJournalModelsJournalModel: CyberjusticeLabKernelSharedJournalModelsJournalModel,
         CyberjusticeLabKernelSharedJournalModelsJournalApiResquestData: CyberjusticeLabKernelSharedJournalModelsJournalApiResquestData,
@@ -20055,7 +21317,7 @@
         return Journal;
     }());
     // Operation Specifications
-    var serializer$6 = new msRest.Serializer(Mappers$6);
+    var serializer$7 = new msRest.Serializer(Mappers$7);
     var getJournalEntryByIdOperationSpec = {
         httpMethod: "GET",
         path: "Journal/GET/JournalEntryById",
@@ -20081,7 +21343,7 @@
             },
             default: {}
         },
-        serializer: serializer$6
+        serializer: serializer$7
     };
     var getLatestJournalsByCodesOperationSpec = {
         httpMethod: "GET",
@@ -20107,7 +21369,7 @@
             },
             default: {}
         },
-        serializer: serializer$6
+        serializer: serializer$7
     };
     var getFileHistoryOperationSpec = {
         httpMethod: "POST",
@@ -20122,7 +21384,7 @@
             },
             default: {}
         },
-        serializer: serializer$6
+        serializer: serializer$7
     };
     var getFileLatestJournalsOperationSpec = {
         httpMethod: "POST",
@@ -20137,7 +21399,7 @@
             },
             default: {}
         },
-        serializer: serializer$6
+        serializer: serializer$7
     };
     var addJournalEntryOperationSpec = {
         httpMethod: "POST",
@@ -20150,7 +21412,7 @@
             204: {},
             default: {}
         },
-        serializer: serializer$6
+        serializer: serializer$7
     };
 
     /*
@@ -20159,7 +21421,7 @@
      * regenerated.
      */
 
-    var Mappers$7 = /*#__PURE__*/Object.freeze({
+    var Mappers$8 = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelServiceContractsJudicialEntityJudicialEntityData: CyberjusticeLabKernelServiceContractsJudicialEntityJudicialEntityData,
         CyberjusticeLabKernelServiceContractsJudicialEntityNeutralPredicateData: CyberjusticeLabKernelServiceContractsJudicialEntityNeutralPredicateData,
         CyberjusticeLabKernelServiceContractsJudicialEntityProsecutingAgentPredicateData: CyberjusticeLabKernelServiceContractsJudicialEntityProsecutingAgentPredicateData,
@@ -20215,7 +21477,7 @@
         return JudicialEntity;
     }());
     // Operation Specifications
-    var serializer$7 = new msRest.Serializer(Mappers$7);
+    var serializer$8 = new msRest.Serializer(Mappers$8);
     var getJudicialEntityCompleteInfosOperationSpec = {
         httpMethod: "GET",
         path: "JudicialEntity/GET/JudicialEntityCompleteInfos",
@@ -20228,7 +21490,7 @@
             },
             default: {}
         },
-        serializer: serializer$7
+        serializer: serializer$8
     };
     var getJudicialEntityOperationSpec = {
         httpMethod: "GET",
@@ -20247,7 +21509,7 @@
             },
             default: {}
         },
-        serializer: serializer$7
+        serializer: serializer$8
     };
     var getMattersOperationSpec = {
         httpMethod: "POST",
@@ -20262,7 +21524,7 @@
             },
             default: {}
         },
-        serializer: serializer$7
+        serializer: serializer$8
     };
     var getJudicialEntitiesOperationSpec = {
         httpMethod: "POST",
@@ -20277,7 +21539,7 @@
             },
             default: {}
         },
-        serializer: serializer$7
+        serializer: serializer$8
     };
 
     /*
@@ -20286,7 +21548,8 @@
      * regenerated.
      */
 
-    var Mappers$8 = /*#__PURE__*/Object.freeze({
+    var Mappers$9 = /*#__PURE__*/Object.freeze({
+        CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel: CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel,
         CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileData: CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileData,
         CyberjusticeLabKernelServiceContractsJudicialFilePartyData: CyberjusticeLabKernelServiceContractsJudicialFilePartyData,
         CyberjusticeLabKernelServiceContractsJudicialFileContactData: CyberjusticeLabKernelServiceContractsJudicialFileContactData,
@@ -20335,6 +21598,7 @@
         CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel: CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFromPartyInvitationModel,
         CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation: CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation,
         CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber: CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber,
+        CyberjusticeLabKernelSharedJudicialFileModelsAtribute: CyberjusticeLabKernelSharedJudicialFileModelsAtribute,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByFileModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByFileModel,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByAggregatorCodeModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByAggregatorCodeModel,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeModel,
@@ -20351,6 +21615,9 @@
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRequestData: CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRequestData,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiResponseData: CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiResponseData,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel,
+        CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel,
+        CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData: CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData,
+        CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData: CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreateModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreateModel,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreatePartyRepresentativeModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreatePartyRepresentativeModel,
         CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileCreateModel: CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileCreateModel,
@@ -20366,6 +21633,9 @@
         CyberjusticeLabKernelSharedJudicialFileModelsLogEntryResourceModel: CyberjusticeLabKernelSharedJudicialFileModelsLogEntryResourceModel,
         CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateCreateModel: CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateCreateModel,
         CyberjusticeLabKernelSharedJudicialFileModelsLogEntryCreateModel: CyberjusticeLabKernelSharedJudicialFileModelsLogEntryCreateModel,
+        CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel: CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel,
+        CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel: CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel,
+        CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel: CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel,
         CyberjusticeLabKernelSharedJudicialFileModelsCloseFileModel: CyberjusticeLabKernelSharedJudicialFileModelsCloseFileModel,
         CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileAttributesUpdateModel: CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileAttributesUpdateModel,
         CyberjusticeLabKernelSharedJudicialFileModelsPartyUpsertModel: CyberjusticeLabKernelSharedJudicialFileModelsPartyUpsertModel,
@@ -20375,7 +21645,8 @@
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeResourceUpdateModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationTypeResourceUpdateModel,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationUpdateModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationUpdateModel,
         CyberjusticeLabKernelSharedJudicialFileModelsNotificationRepresentativeUpdateModel: CyberjusticeLabKernelSharedJudicialFileModelsNotificationRepresentativeUpdateModel,
-        CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateUpdateModel: CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateUpdateModel
+        CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateUpdateModel: CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateUpdateModel,
+        CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel: CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel
     });
 
     /*
@@ -20398,6 +21669,12 @@
                 lastModified: lastModified,
                 options: options
             }, deletePartyOperationSpec, callback);
+        };
+        JudicialFile.prototype.detachRepresentativeFromParty = function (detachRepresentativeFromPartyModel, options, callback) {
+            return this.client.sendOperationRequest({
+                detachRepresentativeFromPartyModel: detachRepresentativeFromPartyModel,
+                options: options
+            }, detachRepresentativeFromPartyOperationSpec, callback);
         };
         JudicialFile.prototype.deletePartyInvitation = function (partyInvitationId$$1, options, callback) {
             return this.client.sendOperationRequest({
@@ -20424,6 +21701,13 @@
                 notificationId: notificationId$$1,
                 options: options
             }, deleteNotificationOperationSpec, callback);
+        };
+        JudicialFile.prototype.deleteCharge = function (chargeId$$1, modifiedTicks$$1, options, callback) {
+            return this.client.sendOperationRequest({
+                chargeId: chargeId$$1,
+                modifiedTicks: modifiedTicks$$1,
+                options: options
+            }, deleteChargeOperationSpec, callback);
         };
         JudicialFile.prototype.getFiles = function (options, callback) {
             return this.client.sendOperationRequest({
@@ -20713,6 +21997,12 @@
                 options: options
             }, getNotificationsOperationSpec, callback);
         };
+        JudicialFile.prototype.getNotificationsSummaryByFile = function (requestModel, options, callback) {
+            return this.client.sendOperationRequest({
+                requestModel: requestModel,
+                options: options
+            }, getNotificationsSummaryByFileOperationSpec, callback);
+        };
         JudicialFile.prototype.createNotification = function (model, options, callback) {
             return this.client.sendOperationRequest({
                 model: model,
@@ -20754,6 +22044,18 @@
                 model: model,
                 options: options
             }, createLogEntryOperationSpec, callback);
+        };
+        JudicialFile.prototype.createCharge = function (charge, options, callback) {
+            return this.client.sendOperationRequest({
+                charge: charge,
+                options: options
+            }, createChargeOperationSpec, callback);
+        };
+        JudicialFile.prototype.createRepresentativeProfile = function (model, options, callback) {
+            return this.client.sendOperationRequest({
+                model: model,
+                options: options
+            }, createRepresentativeProfileOperationSpec, callback);
         };
         JudicialFile.prototype.closeFile = function (closeFileModel, options, callback) {
             return this.client.sendOperationRequest({
@@ -20835,10 +22137,16 @@
                 options: options
             }, updateLogTemplatesOperationSpec, callback);
         };
+        JudicialFile.prototype.updateCharge = function (charge, options, callback) {
+            return this.client.sendOperationRequest({
+                charge: charge,
+                options: options
+            }, updateChargeOperationSpec, callback);
+        };
         return JudicialFile;
     }());
     // Operation Specifications
-    var serializer$8 = new msRest.Serializer(Mappers$8);
+    var serializer$9 = new msRest.Serializer(Mappers$9);
     var deletePartyOperationSpec = {
         httpMethod: "DELETE",
         path: "JudicialFile/DELETE/Party",
@@ -20853,7 +22161,22 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
+    };
+    var detachRepresentativeFromPartyOperationSpec = {
+        httpMethod: "DELETE",
+        path: "JudicialFile/DELETE/DetachRepresentativeFromParty",
+        requestBody: {
+            parameterPath: "detachRepresentativeFromPartyModel",
+            mapper: __assign({}, CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel, { required: true })
+        },
+        responses: {
+            200: {},
+            403: {},
+            404: {},
+            default: {}
+        },
+        serializer: serializer$9
     };
     var deletePartyInvitationOperationSpec = {
         httpMethod: "DELETE",
@@ -20866,7 +22189,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var deleteFileInvitationOperationSpec = {
         httpMethod: "DELETE",
@@ -20879,7 +22202,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var deleteFileTagLinkOperationSpec = {
         httpMethod: "DELETE",
@@ -20895,7 +22218,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var deleteNotificationOperationSpec = {
         httpMethod: "DELETE",
@@ -20908,7 +22231,21 @@
             403: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
+    };
+    var deleteChargeOperationSpec = {
+        httpMethod: "DELETE",
+        path: "JudicialFile/DELETE/Charge",
+        queryParameters: [
+            chargeId,
+            modifiedTicks
+        ],
+        responses: {
+            200: {},
+            403: {},
+            default: {}
+        },
+        serializer: serializer$9
     };
     var getFilesOperationSpec = {
         httpMethod: "GET",
@@ -20949,7 +22286,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getFiles1OperationSpec = {
         httpMethod: "POST",
@@ -20964,7 +22301,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getFilesCountOperationSpec = {
         httpMethod: "GET",
@@ -20995,7 +22332,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getFileOperationSpec = {
         httpMethod: "GET",
@@ -21014,7 +22351,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getFilesSet1OperationSpec = {
         httpMethod: "GET",
@@ -21030,7 +22367,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getFilesSet2OperationSpec = {
         httpMethod: "GET",
@@ -21046,7 +22383,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getPartyEntitiesOperationSpec = {
         httpMethod: "GET",
@@ -21075,7 +22412,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getFilesOfLabelOperationSpec = {
         httpMethod: "GET",
@@ -21100,7 +22437,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getFilesOfTagCodeOperationSpec = {
         httpMethod: "GET",
@@ -21125,7 +22462,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getBusinessRulesOperationSpec = {
         httpMethod: "GET",
@@ -21147,7 +22484,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getRepresentativeUsersOperationSpec = {
         httpMethod: "GET",
@@ -21169,7 +22506,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getRepresentativeProfileOperationSpec = {
         httpMethod: "GET",
@@ -21180,7 +22517,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getTargetRepresentativeProfileOperationSpec = {
         httpMethod: "GET",
@@ -21196,7 +22533,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getRepresentativeNeutralListOperationSpec = {
         httpMethod: "GET",
@@ -21221,7 +22558,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var checkForFileOptimisticConcurrencyOperationSpec = {
         httpMethod: "GET",
@@ -21241,7 +22578,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getNeutralZipCodeDataListOperationSpec = {
         httpMethod: "GET",
@@ -21266,7 +22603,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getFileVerifyDataOperationSpec = {
         httpMethod: "GET",
@@ -21281,7 +22618,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getPartyInvitationOperationSpec = {
         httpMethod: "GET",
@@ -21300,7 +22637,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getPartyInvitationsOfPartyOperationSpec = {
         httpMethod: "GET",
@@ -21319,7 +22656,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getFileInvitationsOfPartyOperationSpec = {
         httpMethod: "GET",
@@ -21344,7 +22681,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getFileInvitationInformationOperationSpec = {
         httpMethod: "GET",
@@ -21360,7 +22697,7 @@
             401: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getFileInformationFromPartyInvitationOperationSpec = {
         httpMethod: "GET",
@@ -21374,7 +22711,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getNewNotificationsCountOperationSpec = {
         httpMethod: "GET",
@@ -21393,7 +22730,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getNotificationsCountByFileOperationSpec = {
         httpMethod: "GET",
@@ -21419,7 +22756,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getNotificationsCountAggregatorCodeOperationSpec = {
         httpMethod: "GET",
@@ -21446,7 +22783,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getNotificationTypeOperationSpec = {
         httpMethod: "GET",
@@ -21461,7 +22798,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getLogEntryDistinctCodesOperationSpec = {
         httpMethod: "GET",
@@ -21488,7 +22825,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var dismissNotificationsOperationSpec = {
         httpMethod: "PATCH",
@@ -21504,7 +22841,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updateRepresentativeStatusOperationSpec = {
         httpMethod: "PATCH",
@@ -21518,7 +22855,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updatePartyTypeOperationSpec = {
         httpMethod: "PATCH",
@@ -21535,7 +22872,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updatePartyDisputeDescriptionOperationSpec = {
         httpMethod: "PATCH",
@@ -21552,7 +22889,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updateFileInvitationExpirationDateOperationSpec = {
         httpMethod: "PATCH",
@@ -21568,7 +22905,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updatePartyInvitationExpirationDateOperationSpec = {
         httpMethod: "PATCH",
@@ -21582,7 +22919,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updateFileStatusOperationSpec = {
         httpMethod: "PATCH",
@@ -21599,7 +22936,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var createPartyInvitationOperationSpec = {
         httpMethod: "POST",
@@ -21620,7 +22957,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var createFileInvitationOperationSpec = {
         httpMethod: "POST",
@@ -21642,7 +22979,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var acceptPartyInvitationOperationSpec = {
         httpMethod: "POST",
@@ -21672,7 +23009,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var refusePartyInvitationOperationSpec = {
         httpMethod: "POST",
@@ -21687,7 +23024,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var refuseFileInvitationOperationSpec = {
         httpMethod: "POST",
@@ -21703,7 +23040,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var createFileTagLinkOperationSpec = {
         httpMethod: "POST",
@@ -21724,7 +23061,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var attachRepresentativesToPartyOperationSpec = {
         httpMethod: "POST",
@@ -21740,7 +23077,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var linkRepresentativesToPartyOperationSpec = {
         httpMethod: "POST",
@@ -21756,7 +23093,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var acceptRepresentativeInvitationOperationSpec = {
         httpMethod: "POST",
@@ -21785,7 +23122,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var acceptFileInvitationOperationSpec = {
         httpMethod: "POST",
@@ -21809,7 +23146,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getNotificationTypesOperationSpec = {
         httpMethod: "POST",
@@ -21824,7 +23161,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getNotificationsOperationSpec = {
         httpMethod: "POST",
@@ -21839,7 +23176,22 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
+    };
+    var getNotificationsSummaryByFileOperationSpec = {
+        httpMethod: "POST",
+        path: "JudicialFile/POST/NotificationsSummaryByFile",
+        requestBody: {
+            parameterPath: "requestModel",
+            mapper: __assign({}, CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData, { required: true })
+        },
+        responses: {
+            200: {
+                bodyMapper: CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData
+            },
+            default: {}
+        },
+        serializer: serializer$9
     };
     var createNotificationOperationSpec = {
         httpMethod: "POST",
@@ -21855,7 +23207,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var createJudicialFileOperationSpec = {
         httpMethod: "POST",
@@ -21879,7 +23231,7 @@
             500: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getLastActorOperationSpec = {
         httpMethod: "POST",
@@ -21892,7 +23244,7 @@
             204: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getLogTemplatesOperationSpec = {
         httpMethod: "POST",
@@ -21907,7 +23259,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var getLogEntriesOperationSpec = {
         httpMethod: "POST",
@@ -21924,7 +23276,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var createLogTemplateOperationSpec = {
         httpMethod: "POST",
@@ -21944,7 +23296,7 @@
             },
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var createLogEntryOperationSpec = {
         httpMethod: "POST",
@@ -21970,7 +23322,42 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
+    };
+    var createChargeOperationSpec = {
+        httpMethod: "POST",
+        path: "JudicialFile/POST/CreatePenalCharge",
+        requestBody: {
+            parameterPath: "charge",
+            mapper: __assign({}, CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel, { required: true })
+        },
+        responses: {
+            200: {
+                bodyMapper: {
+                    serializedName: "parsedResponse",
+                    type: {
+                        name: "Uuid"
+                    }
+                }
+            },
+            403: {},
+            404: {},
+            default: {}
+        },
+        serializer: serializer$9
+    };
+    var createRepresentativeProfileOperationSpec = {
+        httpMethod: "POST",
+        path: "JudicialFile/POST/CreateRepresentativeProfile",
+        requestBody: {
+            parameterPath: "model",
+            mapper: __assign({}, CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel, { required: true })
+        },
+        responses: {
+            200: {},
+            default: {}
+        },
+        serializer: serializer$9
     };
     var closeFileOperationSpec = {
         httpMethod: "PUT",
@@ -21987,7 +23374,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updateFileAttributeOperationSpec = {
         httpMethod: "PUT",
@@ -22005,7 +23392,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var upsertPartyOperationSpec = {
         httpMethod: "PUT",
@@ -22028,7 +23415,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var changePartyStatusOperationSpec = {
         httpMethod: "PUT",
@@ -22045,7 +23432,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var upsertPartyContactOperationSpec = {
         httpMethod: "PUT",
@@ -22069,7 +23456,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updatePartyRepresentativesAttributesOperationSpec = {
         httpMethod: "PUT",
@@ -22086,7 +23473,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updateFileTagLinkOperationSpec = {
         httpMethod: "PUT",
@@ -22102,7 +23489,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updateFileTagLinkAndComplementsOperationSpec = {
         httpMethod: "PUT",
@@ -22119,7 +23506,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updateNotificationTypeResourceOperationSpec = {
         httpMethod: "PUT",
@@ -22133,7 +23520,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updateNotificationOperationSpec = {
         httpMethod: "PUT",
@@ -22147,7 +23534,7 @@
             403: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updateNotificationRepresentativeOperationSpec = {
         httpMethod: "PUT",
@@ -22161,7 +23548,7 @@
             403: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updateLogTemplateOperationSpec = {
         httpMethod: "PUT",
@@ -22175,7 +23562,7 @@
             403: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
     };
     var updateLogTemplatesOperationSpec = {
         httpMethod: "PUT",
@@ -22201,7 +23588,29 @@
             403: {},
             default: {}
         },
-        serializer: serializer$8
+        serializer: serializer$9
+    };
+    var updateChargeOperationSpec = {
+        httpMethod: "POST",
+        path: "JudicialFile/PUT/UpdatePenalCharge",
+        requestBody: {
+            parameterPath: "charge",
+            mapper: __assign({}, CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel, { required: true })
+        },
+        responses: {
+            200: {
+                bodyMapper: {
+                    serializedName: "parsedResponse",
+                    type: {
+                        name: "Uuid"
+                    }
+                }
+            },
+            403: {},
+            404: {},
+            default: {}
+        },
+        serializer: serializer$9
     };
 
     /*
@@ -22210,7 +23619,7 @@
      * regenerated.
      */
 
-    var Mappers$9 = /*#__PURE__*/Object.freeze({
+    var Mappers$a = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelSharedLocationLocationBuildingData: CyberjusticeLabKernelSharedLocationLocationBuildingData,
         CyberjusticeLabKernelSharedLocationLocationRoomData: CyberjusticeLabKernelSharedLocationLocationRoomData,
         CyberjusticeLabKernelSharedLocationLocationBuildingUpdateData: CyberjusticeLabKernelSharedLocationLocationBuildingUpdateData,
@@ -22291,7 +23700,7 @@
         return Location;
     }());
     // Operation Specifications
-    var serializer$9 = new msRest.Serializer(Mappers$9);
+    var serializer$a = new msRest.Serializer(Mappers$a);
     var getBuildingsOperationSpec = {
         httpMethod: "GET",
         path: "Location/GET/Buildings",
@@ -22322,7 +23731,7 @@
             },
             default: {}
         },
-        serializer: serializer$9
+        serializer: serializer$a
     };
     var getBuildingOperationSpec = {
         httpMethod: "GET",
@@ -22336,7 +23745,7 @@
             },
             default: {}
         },
-        serializer: serializer$9
+        serializer: serializer$a
     };
     var getBuildingWithRoomOperationSpec = {
         httpMethod: "GET",
@@ -22350,7 +23759,7 @@
             },
             default: {}
         },
-        serializer: serializer$9
+        serializer: serializer$a
     };
     var toggleBuildingStatusOperationSpec = {
         httpMethod: "PATCH",
@@ -22364,7 +23773,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$9
+        serializer: serializer$a
     };
     var toggleRoomStatusOperationSpec = {
         httpMethod: "PATCH",
@@ -22378,7 +23787,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$9
+        serializer: serializer$a
     };
     var updateBuildingOperationSpec = {
         httpMethod: "PUT",
@@ -22393,7 +23802,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$9
+        serializer: serializer$a
     };
     var updateRoomOperationSpec = {
         httpMethod: "PUT",
@@ -22408,7 +23817,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$9
+        serializer: serializer$a
     };
     var createBuildingOperationSpec = {
         httpMethod: "POST",
@@ -22422,7 +23831,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$9
+        serializer: serializer$a
     };
     var createRoomOperationSpec = {
         httpMethod: "POST",
@@ -22436,7 +23845,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$9
+        serializer: serializer$a
     };
 
     /*
@@ -22445,7 +23854,7 @@
      * regenerated.
      */
 
-    var Mappers$a = /*#__PURE__*/Object.freeze({
+    var Mappers$b = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelSharedLookupModelsLookupModel: CyberjusticeLabKernelSharedLookupModelsLookupModel,
         CyberjusticeLabKernelSharedLookupModelsLookupValueModel: CyberjusticeLabKernelSharedLookupModelsLookupValueModel,
         CyberjusticeLabKernelSharedLookupModelsLookupApiRequestData: CyberjusticeLabKernelSharedLookupModelsLookupApiRequestData
@@ -22504,7 +23913,7 @@
         return Lookup;
     }());
     // Operation Specifications
-    var serializer$a = new msRest.Serializer(Mappers$a);
+    var serializer$b = new msRest.Serializer(Mappers$b);
     var getLocalizedLookupOperationSpec = {
         httpMethod: "GET",
         path: "Lookup/GET/LocalizedLookup",
@@ -22519,7 +23928,7 @@
             },
             default: {}
         },
-        serializer: serializer$a
+        serializer: serializer$b
     };
     var getLookupOperationSpec = {
         httpMethod: "GET",
@@ -22534,7 +23943,7 @@
             },
             default: {}
         },
-        serializer: serializer$a
+        serializer: serializer$b
     };
     var getLocalizedLookupsOperationSpec = {
         httpMethod: "GET",
@@ -22561,7 +23970,7 @@
             },
             default: {}
         },
-        serializer: serializer$a
+        serializer: serializer$b
     };
     var getLookupsOperationSpec = {
         httpMethod: "GET",
@@ -22587,7 +23996,7 @@
             },
             default: {}
         },
-        serializer: serializer$a
+        serializer: serializer$b
     };
     var getLookups1OperationSpec = {
         httpMethod: "POST",
@@ -22613,7 +24022,7 @@
             },
             default: {}
         },
-        serializer: serializer$a
+        serializer: serializer$b
     };
 
     /*
@@ -22622,7 +24031,7 @@
      * regenerated.
      */
 
-    var Mappers$b = /*#__PURE__*/Object.freeze({
+    var Mappers$c = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData: CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationDeleteData,
         CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityData: CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityData,
         CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationData: CyberjusticeLabKernelSharedProsecutingAuthorityProsecutingAuthorityDelegationData,
@@ -22691,7 +24100,7 @@
         return ProsecutingAuthority;
     }());
     // Operation Specifications
-    var serializer$b = new msRest.Serializer(Mappers$b);
+    var serializer$c = new msRest.Serializer(Mappers$c);
     var deleteProsecutingAuthorityOperationSpec = {
         httpMethod: "DELETE",
         path: "ProsecutingAuthority/DELETE/DeleteProsecutingAuthority",
@@ -22703,7 +24112,7 @@
             204: {},
             default: {}
         },
-        serializer: serializer$b
+        serializer: serializer$c
     };
     var deleteProsecutingAuthorityDelegationOperationSpec = {
         httpMethod: "DELETE",
@@ -22720,7 +24129,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$b
+        serializer: serializer$c
     };
     var getProsecutingAuthoritiesOperationSpec = {
         httpMethod: "GET",
@@ -22747,7 +24156,7 @@
             },
             default: {}
         },
-        serializer: serializer$b
+        serializer: serializer$c
     };
     var getProsecutingAuthoritiesCountOperationSpec = {
         httpMethod: "GET",
@@ -22763,7 +24172,7 @@
             },
             default: {}
         },
-        serializer: serializer$b
+        serializer: serializer$c
     };
     var updateProsecutingAuthorityOperationSpec = {
         httpMethod: "PUT",
@@ -22778,7 +24187,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$b
+        serializer: serializer$c
     };
     var createProsecutingAuthorityOperationSpec = {
         httpMethod: "POST",
@@ -22792,7 +24201,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$b
+        serializer: serializer$c
     };
     var createProsecutingAuthorityDelegationOperationSpec = {
         httpMethod: "POST",
@@ -22806,7 +24215,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$b
+        serializer: serializer$c
     };
 
     /*
@@ -22815,7 +24224,7 @@
      * regenerated.
      */
 
-    var Mappers$c = /*#__PURE__*/Object.freeze({
+    var Mappers$d = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelSharedRequestRequestData: CyberjusticeLabKernelSharedRequestRequestData,
         CyberjusticeLabKernelSharedRequestRequestAttributeData: CyberjusticeLabKernelSharedRequestRequestAttributeData,
         CyberjusticeLabKernelSharedRequestRequestCreateData: CyberjusticeLabKernelSharedRequestRequestCreateData,
@@ -22875,7 +24284,7 @@
         return Request;
     }());
     // Operation Specifications
-    var serializer$c = new msRest.Serializer(Mappers$c);
+    var serializer$d = new msRest.Serializer(Mappers$d);
     var deleteRequestOperationSpec = {
         httpMethod: "DELETE",
         path: "Request/DELETE/DeleteRequest",
@@ -22886,7 +24295,7 @@
             204: {},
             default: {}
         },
-        serializer: serializer$c
+        serializer: serializer$d
     };
     var getRequestsOperationSpec = {
         httpMethod: "GET",
@@ -22908,7 +24317,7 @@
             },
             default: {}
         },
-        serializer: serializer$c
+        serializer: serializer$d
     };
     var getRequestOperationSpec = {
         httpMethod: "GET",
@@ -22922,7 +24331,7 @@
             },
             default: {}
         },
-        serializer: serializer$c
+        serializer: serializer$d
     };
     var createRequestOperationSpec = {
         httpMethod: "POST",
@@ -22935,7 +24344,7 @@
             400: {},
             default: {}
         },
-        serializer: serializer$c
+        serializer: serializer$d
     };
     var updateRequestOperationSpec = {
         httpMethod: "PUT",
@@ -22949,7 +24358,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$c
+        serializer: serializer$d
     };
     var updateRequestAttributesOperationSpec = {
         httpMethod: "PUT",
@@ -22962,7 +24371,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$c
+        serializer: serializer$d
     };
 
     /*
@@ -22971,7 +24380,7 @@
      * regenerated.
      */
 
-    var Mappers$d = /*#__PURE__*/Object.freeze({
+    var Mappers$e = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelServiceContractsSecureMailEmailData: CyberjusticeLabKernelServiceContractsSecureMailEmailData
     });
 
@@ -23004,7 +24413,7 @@
         return SecureMail;
     }());
     // Operation Specifications
-    var serializer$d = new msRest.Serializer(Mappers$d);
+    var serializer$e = new msRest.Serializer(Mappers$e);
     var getMailListOperationSpec = {
         httpMethod: "GET",
         path: "SecureMail/GET/MailList",
@@ -23025,7 +24434,7 @@
             },
             default: {}
         },
-        serializer: serializer$d
+        serializer: serializer$e
     };
     var getMailOperationSpec = {
         httpMethod: "GET",
@@ -23040,7 +24449,7 @@
             },
             default: {}
         },
-        serializer: serializer$d
+        serializer: serializer$e
     };
 
     /*
@@ -23049,7 +24458,7 @@
      * regenerated.
      */
 
-    var Mappers$e = /*#__PURE__*/Object.freeze({
+    var Mappers$f = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelServiceContractsSecurityPredicateData: CyberjusticeLabKernelServiceContractsSecurityPredicateData,
         CyberjusticeLabKernelServiceContractsSecurityClaimValueData: CyberjusticeLabKernelServiceContractsSecurityClaimValueData
     });
@@ -23083,7 +24492,7 @@
         return Security;
     }());
     // Operation Specifications
-    var serializer$e = new msRest.Serializer(Mappers$e);
+    var serializer$f = new msRest.Serializer(Mappers$f);
     var getPredicateOperationSpec = {
         httpMethod: "GET",
         path: "Security/GET/Predicate",
@@ -23096,7 +24505,7 @@
             },
             default: {}
         },
-        serializer: serializer$e
+        serializer: serializer$f
     };
     var getPredicateIdByNameOperationSpec = {
         httpMethod: "GET",
@@ -23115,7 +24524,7 @@
             },
             default: {}
         },
-        serializer: serializer$e
+        serializer: serializer$f
     };
 
     /*
@@ -23124,7 +24533,7 @@
      * regenerated.
      */
 
-    var Mappers$f = /*#__PURE__*/Object.freeze({
+    var Mappers$g = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelSharedTagLocalizedLabelData: CyberjusticeLabKernelSharedTagLocalizedLabelData,
         CyberjusticeLabKernelSharedTagTagLinkData: CyberjusticeLabKernelSharedTagTagLinkData,
         CyberjusticeLabKernelSharedTagTagData: CyberjusticeLabKernelSharedTagTagData,
@@ -23267,7 +24676,7 @@
         return Tag;
     }());
     // Operation Specifications
-    var serializer$f = new msRest.Serializer(Mappers$f);
+    var serializer$g = new msRest.Serializer(Mappers$g);
     var getLabelsOfCurrentUserOperationSpec = {
         httpMethod: "GET",
         path: "Tag/GET/LabelsOfCurrentUser",
@@ -23293,7 +24702,7 @@
             },
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var getTagsOfCodesOperationSpec = {
         httpMethod: "GET",
@@ -23318,7 +24727,7 @@
             },
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var getTagsOperationSpec = {
         httpMethod: "GET",
@@ -23343,7 +24752,7 @@
             },
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var getTagOperationSpec = {
         httpMethod: "GET",
@@ -23357,7 +24766,7 @@
             },
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var getTagLinksOperationSpec = {
         httpMethod: "GET",
@@ -23382,7 +24791,7 @@
             },
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var getTagLinkOperationSpec = {
         httpMethod: "GET",
@@ -23397,7 +24806,7 @@
             },
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var getLabelsOperationSpec = {
         httpMethod: "GET",
@@ -23419,7 +24828,7 @@
             },
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var getLabelOperationSpec = {
         httpMethod: "GET",
@@ -23433,7 +24842,7 @@
             },
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var updateTagLinkOperationSpec = {
         httpMethod: "PUT",
@@ -23447,7 +24856,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var updateLabelOperationSpec = {
         httpMethod: "PUT",
@@ -23460,7 +24869,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var createTagLinkOperationSpec = {
         httpMethod: "POST",
@@ -23474,7 +24883,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var createLabelOperationSpec = {
         httpMethod: "POST",
@@ -23494,7 +24903,7 @@
             },
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var createTagLabelLinkOperationSpec = {
         httpMethod: "POST",
@@ -23507,7 +24916,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var createLabelRoleLinkOperationSpec = {
         httpMethod: "POST",
@@ -23521,7 +24930,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var deleteTagLinkOperationSpec = {
         httpMethod: "DELETE",
@@ -23534,7 +24943,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var deleteLabelOperationSpec = {
         httpMethod: "DELETE",
@@ -23546,7 +24955,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var deleteTagLabelLinkOperationSpec = {
         httpMethod: "DELETE",
@@ -23559,7 +24968,7 @@
             204: {},
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
     var deleteLabelRoleLinkOperationSpec = {
         httpMethod: "DELETE",
@@ -23572,7 +24981,7 @@
             204: {},
             default: {}
         },
-        serializer: serializer$f
+        serializer: serializer$g
     };
 
     /*
@@ -23581,7 +24990,7 @@
      * regenerated.
      */
 
-    var Mappers$g = /*#__PURE__*/Object.freeze({
+    var Mappers$h = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelServiceContractsUProfileUserData: CyberjusticeLabKernelServiceContractsUProfileUserData,
         CyberjusticeLabKernelServiceContractsUProfileUserPhoneNumberData: CyberjusticeLabKernelServiceContractsUProfileUserPhoneNumberData,
         CyberjusticeLabKernelServiceContractsUProfileUserAttributeData: CyberjusticeLabKernelServiceContractsUProfileUserAttributeData
@@ -23622,7 +25031,7 @@
         return UProfile;
     }());
     // Operation Specifications
-    var serializer$g = new msRest.Serializer(Mappers$g);
+    var serializer$h = new msRest.Serializer(Mappers$h);
     var getCurrentUserProfileOperationSpec = {
         httpMethod: "GET",
         path: "UProfile/GET/CurrentUserProfile",
@@ -23632,7 +25041,7 @@
             },
             default: {}
         },
-        serializer: serializer$g
+        serializer: serializer$h
     };
     var getUserProfileOperationSpec = {
         httpMethod: "GET",
@@ -23648,7 +25057,7 @@
             },
             default: {}
         },
-        serializer: serializer$g
+        serializer: serializer$h
     };
     var getRealmUserProfilesOperationSpec = {
         httpMethod: "GET",
@@ -23670,7 +25079,7 @@
             },
             default: {}
         },
-        serializer: serializer$g
+        serializer: serializer$h
     };
 
     /*
@@ -23679,7 +25088,7 @@
      * regenerated.
      */
 
-    var Mappers$h = /*#__PURE__*/Object.freeze({
+    var Mappers$i = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelServiceContractsUserUserData: CyberjusticeLabKernelServiceContractsUserUserData,
         CyberjusticeLabKernelServiceContractsUserOrganizationData: CyberjusticeLabKernelServiceContractsUserOrganizationData,
         CyberjusticeLabKernelServiceContractsUserGroupData: CyberjusticeLabKernelServiceContractsUserGroupData,
@@ -23719,7 +25128,7 @@
         return User;
     }());
     // Operation Specifications
-    var serializer$h = new msRest.Serializer(Mappers$h);
+    var serializer$i = new msRest.Serializer(Mappers$i);
     var getCurrentRealmUsersOperationSpec = {
         httpMethod: "GET",
         path: "User/GET/CurrentRealmUsers",
@@ -23740,7 +25149,7 @@
             },
             default: {}
         },
-        serializer: serializer$h
+        serializer: serializer$i
     };
     var getOrganizationsOperationSpec = {
         httpMethod: "GET",
@@ -23762,7 +25171,7 @@
             },
             default: {}
         },
-        serializer: serializer$h
+        serializer: serializer$i
     };
     var getOrganizationsSummariesOperationSpec = {
         httpMethod: "GET",
@@ -23784,7 +25193,7 @@
             },
             default: {}
         },
-        serializer: serializer$h
+        serializer: serializer$i
     };
 
     /*
@@ -23793,7 +25202,7 @@
      * regenerated.
      */
 
-    var Mappers$i = /*#__PURE__*/Object.freeze({
+    var Mappers$j = /*#__PURE__*/Object.freeze({
         CyberjusticeLabKernelServiceContractsWitnessWitnessData: CyberjusticeLabKernelServiceContractsWitnessWitnessData,
         CyberjusticeLabKernelServiceContractsWitnessWitnessPhoneNumberData: CyberjusticeLabKernelServiceContractsWitnessWitnessPhoneNumberData,
         CyberjusticeLabKernelServiceContractsWitnessWitnessExpertiseData: CyberjusticeLabKernelServiceContractsWitnessWitnessExpertiseData,
@@ -23896,7 +25305,7 @@
         return Witness;
     }());
     // Operation Specifications
-    var serializer$i = new msRest.Serializer(Mappers$i);
+    var serializer$j = new msRest.Serializer(Mappers$j);
     var deleteWitnessOperationSpec = {
         httpMethod: "DELETE",
         path: "Witness/DELETE/DeleteWitness",
@@ -23909,7 +25318,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$i
+        serializer: serializer$j
     };
     var deleteWitnessDocumentOperationSpec = {
         httpMethod: "DELETE",
@@ -23924,7 +25333,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$i
+        serializer: serializer$j
     };
     var getWitnessesOperationSpec = {
         httpMethod: "GET",
@@ -23949,7 +25358,7 @@
             },
             default: {}
         },
-        serializer: serializer$i
+        serializer: serializer$j
     };
     var getWitnesses1OperationSpec = {
         httpMethod: "POST",
@@ -23962,7 +25371,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$i
+        serializer: serializer$j
     };
     var getExternalWitnessesLinkByFileIdOperationSpec = {
         httpMethod: "GET",
@@ -23987,7 +25396,7 @@
             },
             default: {}
         },
-        serializer: serializer$i
+        serializer: serializer$j
     };
     var getExternalWitnessesLinkByWitnessCodeOperationSpec = {
         httpMethod: "GET",
@@ -24012,7 +25421,7 @@
             },
             default: {}
         },
-        serializer: serializer$i
+        serializer: serializer$j
     };
     var createWitnessOperationSpec = {
         httpMethod: "POST",
@@ -24027,7 +25436,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$i
+        serializer: serializer$j
     };
     var updateWitnessAttributesOperationSpec = {
         httpMethod: "PUT",
@@ -24041,7 +25450,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$i
+        serializer: serializer$j
     };
     var updateWitnessOperationSpec = {
         httpMethod: "PUT",
@@ -24056,7 +25465,7 @@
             409: {},
             default: {}
         },
-        serializer: serializer$i
+        serializer: serializer$j
     };
     var updateWitnessPartyActionsOperationSpec = {
         httpMethod: "PUT",
@@ -24069,7 +25478,7 @@
             404: {},
             default: {}
         },
-        serializer: serializer$i
+        serializer: serializer$j
     };
 
     /*
@@ -24121,6 +25530,7 @@
          */
         function CyberjusticeAPIs(options) {
             var _this = _super.call(this, options) || this;
+            _this.async = new Async(_this);
             _this.businessInformation = new BusinessInformation(_this);
             _this.calendar = new Calendar(_this);
             _this.document = new Document(_this);
@@ -24149,6 +25559,7 @@
     exports.CyberjusticeAPIsContext = CyberjusticeAPIsContext;
     exports.CyberjusticeAPIsModels = index;
     exports.CyberjusticeAPIsMappers = mappers;
+    exports.Async = Async;
     exports.BusinessInformation = BusinessInformation;
     exports.Calendar = Calendar;
     exports.Document = Document;

@@ -1,3 +1,4 @@
+/* eslint-disable */ 
 import * as tslib_1 from "tslib";
 import { AxiosHttpClient } from "./axiosClient";
 export { axiosFromApi } from "./axiosClient";

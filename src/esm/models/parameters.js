@@ -174,6 +174,16 @@ export var calendarTypes = {
         }
     }
 };
+export var chargeId = {
+    parameterPath: "chargeId",
+    mapper: {
+        required: true,
+        serializedName: "chargeId",
+        type: {
+            name: "Uuid"
+        }
+    }
+};
 export var childrenLevel = {
     parameterPath: "childrenLevel",
     mapper: {
@@ -1465,6 +1475,36 @@ export var take1 = {
         serializedName: "take",
         type: {
             name: "Number"
+        }
+    }
+};
+export var timeEventId = {
+    parameterPath: "timeEventId",
+    mapper: {
+        required: true,
+        serializedName: "timeEventId",
+        type: {
+            name: "Uuid"
+        }
+    }
+};
+export var timerDate = {
+    parameterPath: "timerDate",
+    mapper: {
+        required: true,
+        serializedName: "timerDate",
+        type: {
+            name: "DateTime"
+        }
+    }
+};
+export var timerStatus = {
+    parameterPath: "timerStatus",
+    mapper: {
+        required: true,
+        serializedName: "timerStatus",
+        type: {
+            name: "String"
         }
     }
 };

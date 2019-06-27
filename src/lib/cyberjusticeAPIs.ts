@@ -11,6 +11,7 @@ import { CyberjusticeAPIsContext } from "./cyberjusticeAPIsContext";
 
 class CyberjusticeAPIs extends CyberjusticeAPIsContext {
   // Operation groups
+  async: operations.Async;
   businessInformation: operations.BusinessInformation;
   calendar: operations.Calendar;
   document: operations.Document;
@@ -37,6 +38,7 @@ class CyberjusticeAPIs extends CyberjusticeAPIsContext {
    */
   constructor(options?: Models.CyberjusticeAPIsOptions) {
     super(options);
+    this.async = new operations.Async(this);
     this.businessInformation = new operations.BusinessInformation(this);
     this.calendar = new operations.Calendar(this);
     this.document = new operations.Document(this);

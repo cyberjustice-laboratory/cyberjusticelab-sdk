@@ -10,6 +10,308 @@ import * as msRest from "@azure/ms-rest-js";
 
 /**
  * @interface
+ * An interface representing CyberjusticeLabKernelSharedAsyncModelsTimeEventApiRequestModel.
+ * Represents an api filter model when getting a list of timely events.
+ *
+ */
+export interface CyberjusticeLabKernelSharedAsyncModelsTimeEventApiRequestModel {
+  /**
+   * @member {string[]} [timeEventIds] List of identifiers.
+   */
+  timeEventIds?: string[];
+  /**
+   * @member {string[]} [fileIds] List of related files.
+   */
+  fileIds?: string[];
+  /**
+   * @member {string[]} [timerCodes] List of timer codes.
+   */
+  timerCodes?: string[];
+  /**
+   * @member {string[]} [timerStatuses] List of timer statuses.
+   */
+  timerStatuses?: string[];
+  /**
+   * @member {Date} [minDate] The minimum date of the queried timer events.
+   */
+  minDate?: Date;
+  /**
+   * @member {Date} [maxDate] The maximum date of the queried timer events.
+   */
+  maxDate?: Date;
+  /**
+   * @member {number} [take] Take.
+   */
+  take?: number;
+  /**
+   * @member {number} [skip] Skip.
+   */
+  skip?: number;
+  /**
+   * @member {OrderBy} [orderBy] Order by columns. Possible values include:
+   * 'Status', 'Date'
+   */
+  orderBy?: OrderBy;
+  /**
+   * @member {boolean} [orderByDescending] Order by ascending or descending.
+   */
+  orderByDescending?: boolean;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel.
+ * Resources for the time event notification model.
+ *
+ */
+export interface CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel {
+  /**
+   * @member {string} [culture] Language of the message.
+   */
+  culture?: string;
+  /**
+   * @member {string} [message] Message of the notification.
+   */
+  message?: string;
+  /**
+   * @member {string} [parameters] Dynamic parameters that were used to create
+   * this message.
+   */
+  parameters?: string;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel.
+ * Notification for a time event model.
+ *
+ */
+export interface CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel {
+  /**
+   * @member {string} [notificationCode] Code of the notification to trigger.
+   */
+  notificationCode?: string;
+  /**
+   * @member {string} [partyType] The party type that the notification will be
+   * sent to. Every representative in a party with this type will receive it.
+   */
+  partyType?: string;
+  /**
+   * @member {string} [link] Link for the notification that will be created.
+   */
+  link?: string;
+  /**
+   * @member {string} [aggregatorCode] Aggregator code for the notification
+   * that will be created.
+   */
+  aggregatorCode?: string;
+  /**
+   * @member {string} [emailCode] Email to be sent for this notification. In
+   * case of instant emails.
+   */
+  emailCode?: string;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel[]}
+   * [timeEventNotificationResourceModels] Resources.
+   */
+  timeEventNotificationResourceModels?: CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationResourceModel[];
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel.
+ * Resources for the time event log model.
+ *
+ */
+export interface CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel {
+  /**
+   * @member {string} [culture] Language of the log entry.
+   */
+  culture?: string;
+  /**
+   * @member {string} [message] Message of the log entry.
+   */
+  message?: string;
+  /**
+   * @member {string} [parameters] Dynamic parameters that were used to create
+   * this message.
+   */
+  parameters?: string;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel.
+ * Log entry / log template for a time event model.
+ *
+ */
+export interface CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel {
+  /**
+   * @member {string} [eventCode] Log event code that this time event will
+   * triggers.
+   */
+  eventCode?: string;
+  /**
+   * @member {string} [authorName] Author of the log entry.
+   */
+  authorName?: string;
+  /**
+   * @member {string} [authorRole] Role of the author.
+   */
+  authorRole?: string;
+  /**
+   * @member {string} [authorUID] Unique ID to identify the author.
+   */
+  authorUID?: string;
+  /**
+   * @member {string} [fileStep] File step when the entry happened.
+   */
+  fileStep?: string;
+  /**
+   * @member {Date} [entryDate] Date and time of this entry.
+   */
+  entryDate?: Date;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel[]}
+   * [timeEventLogResourceModels] Resources.
+   */
+  timeEventLogResourceModels?: CyberjusticeLabKernelSharedAsyncModelsTimeEventLogResourceModel[];
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel.
+ * Email for a time event model.
+ *
+ */
+export interface CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel {
+  /**
+   * @member {string} [emailCode] Email to be sent when this event occurs.
+   */
+  emailCode?: string;
+  /**
+   * @member {string} [culture] Language of the email.
+   */
+  culture?: string;
+  /**
+   * @member {string} [parameters] Dynamic parameters that were used to create
+   * this message.
+   */
+  parameters?: string;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedAsyncModelsTimeEventModel.
+ * Time entry model.
+ *
+ */
+export interface CyberjusticeLabKernelSharedAsyncModelsTimeEventModel {
+  /**
+   * @member {string} [timeEventId] Guid primary key.
+   */
+  timeEventId?: string;
+  /**
+   * @member {string} [fileId] File Id.
+   */
+  fileId?: string;
+  /**
+   * @member {string} [timerCode] Time code for the application.
+   */
+  timerCode?: string;
+  /**
+   * @member {Date} [timerDate] Timer's date. The event occurs at that time.
+   */
+  timerDate?: Date;
+  /**
+   * @member {string} [timerStatus] The status of the timer.
+   */
+  timerStatus?: string;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel[]}
+   * [notificationLinks] Notifications that will be sent if the event happens.
+   */
+  notificationLinks?: CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel[];
+  /**
+   * @member {CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel[]}
+   * [logLinks] Logs that will be triggered if the event happens.
+   */
+  logLinks?: CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel[];
+  /**
+   * @member {CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel[]}
+   * [emailLinks] Emails that will be sent if the event happens.
+   */
+  emailLinks?: CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel[];
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedAsyncModelsTimeEventApiResponseModel.
+ * Represents an API response when getting a list of time events.
+ *
+ */
+export interface CyberjusticeLabKernelSharedAsyncModelsTimeEventApiResponseModel {
+  /**
+   * @member {number} [count] Count of time events.
+   */
+  count?: number;
+  /**
+   * @member {number} [countFiltered] Count of filtered time events.
+   */
+  countFiltered?: number;
+  /**
+   * @member {CyberjusticeLabKernelSharedAsyncModelsTimeEventModel[]}
+   * [timeEvents] List of time events.
+   */
+  timeEvents?: CyberjusticeLabKernelSharedAsyncModelsTimeEventModel[];
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedAsyncModelsTimeEventCreateModel.
+ * Time entry create model.
+ *
+ */
+export interface CyberjusticeLabKernelSharedAsyncModelsTimeEventCreateModel {
+  /**
+   * @member {string} [fileId] File Id.
+   */
+  fileId?: string;
+  /**
+   * @member {string} [timerCode] Time code for the application.
+   */
+  timerCode?: string;
+  /**
+   * @member {Date} [timerDate] Timer's date. The event occurs at that time.
+   */
+  timerDate?: Date;
+  /**
+   * @member {string} [timerStatus] The status of the timer.
+   */
+  timerStatus?: string;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel[]}
+   * [notificationLinks] Notifications that will be sent if the event happens.
+   */
+  notificationLinks?: CyberjusticeLabKernelSharedAsyncModelsTimeEventNotificationModel[];
+  /**
+   * @member {CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel[]}
+   * [logLinks] Logs that will be triggered if the event happens.
+   */
+  logLinks?: CyberjusticeLabKernelSharedAsyncModelsTimeEventLogModel[];
+  /**
+   * @member {CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel[]}
+   * [emailLinks] Emails that will be sent if the event happens.
+   */
+  emailLinks?: CyberjusticeLabKernelSharedAsyncModelsTimeEventEmailModel[];
+}
+
+/**
+ * @interface
  * An interface representing CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithFormProposalsCount.
  */
 export interface CyberjusticeLabKernelDataAccessBusinessInformationJudicialFileWithFormProposalsCount {
@@ -690,10 +992,10 @@ export interface CyberjusticeLabKernelSharedCalendarModelsEventApiResquestData {
    */
   attributes?: { [propertyName: string]: string };
   /**
-   * @member {OrderBy} [orderBy] Order by columns. Possible values include:
+   * @member {OrderBy1} [orderBy] Order by columns. Possible values include:
    * 'Title', 'BeginDate', 'Rank'
    */
-  orderBy?: OrderBy;
+  orderBy?: OrderBy1;
   /**
    * @member {boolean} [orderByDescending] Order by ascending or descending.
    */
@@ -2495,10 +2797,12 @@ export interface CyberjusticeLabKernelSharedDocumentModelsDocumentApiRequestData
    */
   skip?: number;
   /**
-   * @member {OrderBy1} [orderBy] Order by columns. Possible values include:
-   * 'Title', 'Description', 'Format', 'ModifiedDate', 'CreatedDate'
+   * @member {OrderBy2} [orderBy] Order by columns. Possible values include:
+   * 'Title', 'Description', 'Format', 'ModifiedDate', 'CreatedDate',
+   * 'PartyActionAdjudicationAddedIdentificationFr',
+   * 'PartyActionAdjudicationAddedIdentificationEn'
    */
-  orderBy?: OrderBy1;
+  orderBy?: OrderBy2;
   /**
    * @member {boolean} [orderByDescending] Order by ascending or descending.
    */
@@ -3147,7 +3451,7 @@ export interface CyberjusticeLabKernelServiceContractsExchangeForumPartyLinkData
   role?: string;
   /**
    * @member {RoleEnum} [roleEnum] Enum party role. Use this to assign the
-   * property with a correct enum. Possible values include: 'Sender',
+   * property with a correct enum. Possible values include: 'Empty', 'Sender',
    * 'Recipient'
    */
   roleEnum?: RoleEnum;
@@ -3271,10 +3575,10 @@ export interface CyberjusticeLabKernelSharedExchangeModelsForumMessageApiRequest
    */
   skip?: number;
   /**
-   * @member {OrderBy2} [orderBy] Order by columns. Possible values include:
+   * @member {OrderBy3} [orderBy] Order by columns. Possible values include:
    * 'Subject', 'Sender', 'CreatedDate'
    */
-  orderBy?: OrderBy2;
+  orderBy?: OrderBy3;
   /**
    * @member {boolean} [orderByDescending] Order by ascending or descending.
    */
@@ -3311,7 +3615,7 @@ export interface CyberjusticeLabKernelSharedExchangeModelsForumMessagePartyLinkM
   role?: string;
   /**
    * @member {RoleEnum1} [roleEnum] Enum party role. Use this to assign the
-   * property with a correct enum. Possible values include: 'Sender',
+   * property with a correct enum. Possible values include: 'Empty', 'Sender',
    * 'Recipient'
    */
   roleEnum?: RoleEnum1;
@@ -3509,7 +3813,7 @@ export interface CyberjusticeLabKernelSharedExchangeModelsAddPartyToForumMessage
   partyName?: string;
   /**
    * @member {Role} [role] Rol of the party in the messages. Possible values
-   * include: 'Sender', 'Recipient'
+   * include: 'Empty', 'Sender', 'Recipient'
    */
   role?: Role;
   /**
@@ -4202,10 +4506,10 @@ export interface CyberjusticeLabKernelSharedFormModelsQuestionFormApiRequestData
    */
   searchBy?: string[];
   /**
-   * @member {OrderBy3} [orderBy] Order by columns. Possible values include:
+   * @member {OrderBy4} [orderBy] Order by columns. Possible values include:
    * 'Rank', 'Code', 'Caption', 'CreatedDate', 'ModifiedDate'
    */
-  orderBy?: OrderBy3;
+  orderBy?: OrderBy4;
   /**
    * @member {number} [take] Take.
    */
@@ -4516,10 +4820,10 @@ export interface CyberjusticeLabKernelSharedJournalModelsJournalApiResquestData 
    */
   skip?: number;
   /**
-   * @member {OrderBy4} [orderBy] The ordering criteria (column). Possible
+   * @member {OrderBy5} [orderBy] The ordering criteria (column). Possible
    * values include: 'JournalDate', 'JournalSubject', 'JournalFrom'
    */
-  orderBy?: OrderBy4;
+  orderBy?: OrderBy5;
   /**
    * @member {boolean} [orderByDescending] The ordering direction.
    */
@@ -5014,6 +5318,23 @@ export interface CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityAp
    * [judicialEntities] The list of judicial entities
    */
   judicialEntities?: CyberjusticeLabKernelSharedJudicialEntityModelsJudicialEntityModel[];
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel.
+ * Model used to Detach Representative From Party.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel {
+  /**
+   * @member {string} [partyId] Party Id.
+   */
+  partyId?: string;
+  /**
+   * @member {string} [representativeId] Representative Id.
+   */
+  representativeId?: string;
 }
 
 /**
@@ -5833,10 +6154,10 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsJudicialFileApiRes
    */
   skip?: number;
   /**
-   * @member {OrderBy5} [orderBy] Order by columns. Possible values include:
+   * @member {OrderBy6} [orderBy] Order by columns. Possible values include:
    * 'Name', 'JudicialFileId', 'CreatedDate', 'ModifiedDate', 'Status', 'Key'
    */
-  orderBy?: OrderBy5;
+  orderBy?: OrderBy6;
   /**
    * @member {boolean} [orderByDescending] Order by ascending or descending.
    */
@@ -7062,6 +7383,57 @@ export interface CyberjusticeLabKernelServiceContractsJudicialFileJudicialFileVe
  */
 export interface CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationModel {
   /**
+   * @member {string} [fileInvitationId] The Guid of the invitation.
+   */
+  fileInvitationId?: string;
+  /**
+   * @member {string} [partyId] The Guid of the party that the invited
+   * representative will join.
+   */
+  partyId?: string;
+  /**
+   * @member {string} [representativeId] The Guid of the representative invited
+   * to join the file.
+   */
+  representativeId?: string;
+  /**
+   * @member {string} [applicationName] Name of the application. Used to
+   * retrieve pending file.
+   */
+  applicationName?: string;
+  /**
+   * @member {string} [fileId] The Guid of the file that the invited
+   * representative will join.
+   */
+  fileId?: string;
+  /**
+   * @member {Date} [expiryDate] The expiry date of the invitation.
+   */
+  expiryDate?: Date;
+  /**
+   * @member {string} [invitationType] Type of the invitation
+   */
+  invitationType?: string;
+  /**
+   * @member {string} [validationCode] Friendly validation code.
+   */
+  validationCode?: string;
+  /**
+   * @member {string} [judicialFileId] JudicialFileId of the file, to decrease
+   * the possibility of brute forcing a simple validation code.
+   */
+  judicialFileId?: string;
+  /**
+   * @member {string} [representativeAttributes] Permissions that will be given
+   * when responding to the invitation.
+   */
+  representativeAttributes?: string;
+  /**
+   * @member {string} [additionalAttributes] Additional attributes for the file
+   * invitation.
+   */
+  additionalAttributes?: string;
+  /**
    * @member {Date} [modifiedDate] The modified date of an object.
    * Required for optimistic concurrency.
    */
@@ -7070,6 +7442,15 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsFileInvitationMode
    * @member {string} [modifiedBy] The modified by of an object.
    */
   modifiedBy?: string;
+  /**
+   * @member {string} [modifiedDateTicks] The modified date of an object,
+   * expressed in ticks.
+   * Required for optimistic concurrency.
+   * Prevent loss of precision when converting to JS object.
+   * **NOTE: This property will not be serialized. It can only be populated by
+   * the server.**
+   */
+  readonly modifiedDateTicks?: string;
   /**
    * @member {Date} [createdDate] The created date of an object.
    */
@@ -7157,6 +7538,23 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber {
 
 /**
  * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsAtribute.
+ * List of attributes of the party.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsAtribute {
+  /**
+   * @member {string} [key] Attribute key.
+   */
+  key?: string;
+  /**
+   * @member {string} [value] Attribute value.
+   */
+  value?: string;
+}
+
+/**
+ * @interface
  * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation.
  * Represents the information about the party that was invited.
  *
@@ -7221,6 +7619,11 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation {
    * [phoneNumbers] List of the phone numbers of the party.
    */
   phoneNumbers?: CyberjusticeLabKernelSharedJudicialFileModelsPhoneNumber[];
+  /**
+   * @member {CyberjusticeLabKernelSharedJudicialFileModelsAtribute[]}
+   * [partyAttributes] List of attributes of a party.
+   */
+  partyAttributes?: CyberjusticeLabKernelSharedJudicialFileModelsAtribute[];
 }
 
 /**
@@ -7252,6 +7655,11 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsFileInformationFro
    * [partyInvited] Information about the invited party.
    */
   partyInvited?: CyberjusticeLabKernelSharedJudicialFileModelsPartyInformation;
+  /**
+   * @member {CyberjusticeLabKernelSharedJudicialFileModelsPartyModel[]}
+   * [parties] Information about parties.
+   */
+  parties?: CyberjusticeLabKernelSharedJudicialFileModelsPartyModel[];
 }
 
 /**
@@ -7730,6 +8138,28 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiReq
 
 /**
  * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel.
+ * Notification resource model.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel {
+  /**
+   * @member {string} [culture] The language of this message.
+   */
+  culture?: string;
+  /**
+   * @member {string} [message] Message of the notification.
+   */
+  message?: string;
+  /**
+   * @member {string} [substitutionParameters] Substitution parameters that
+   * were used to create this message.
+   */
+  substitutionParameters?: string;
+}
+
+/**
+ * @interface
  * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel.
  * Notification data class.
  *
@@ -7758,7 +8188,9 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel 
    */
   aggregatorCode?: string;
   /**
-   * @member {string} [message] Content of the notification itself.
+   * @member {string} [message] Content of the notification itself. If a
+   * language specific message can be found in the localized resources, use
+   * that one instead.
    */
   message?: string;
   /**
@@ -7769,7 +8201,9 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel 
   cultureContentDictionary?: { [propertyName: string]: string };
   /**
    * @member {string} [notificationSubstitutionParameters] Substituted
-   * parameters that are used to replace the content of the message.
+   * parameters that are used to replace the content of the message. If
+   * language specific substitution parameters can be found in the localized
+   * resources, use those instead.
    */
   notificationSubstitutionParameters?: string;
   /**
@@ -7804,6 +8238,13 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel 
    * attributes.
    */
   attributes?: { [propertyName: string]: string };
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel[]}
+   * [notificationResources] Notification message and parameters in localized
+   * languages.
+   */
+  notificationResources?: CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel[];
 }
 
 /**
@@ -7826,6 +8267,48 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsNotificationApiRes
    * [notifications] List of notifications.
    */
   notifications?: CyberjusticeLabKernelSharedJudicialFileModelsNotificationModel[];
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData.
+ * Notification by file request data class.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData {
+  /**
+   * @member {number} [take] Take. The notifications are ordered by created
+   * date.
+   */
+  take?: number;
+  /**
+   * @member {number} [skip] Skip.
+   */
+  skip?: number;
+  /**
+   * @member {string} [judicialEntityId] Id of the judicial entity the
+   * notifications belongs to.
+   */
+  judicialEntityId?: string;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData.
+ * Notification summary count by file data class.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData {
+  /**
+   * @member {number} [totalNotificationsCount] Total of notifications.
+   */
+  totalNotificationsCount?: number;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByFileModel[]}
+   * [notificationsByFile] Notifications count by file.
+   */
+  notificationsByFile?: CyberjusticeLabKernelSharedJudicialFileModelsNotificationCountByFileModel[];
 }
 
 /**
@@ -7906,6 +8389,13 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreate
    * notification is sent to.
    */
   partyAndRepresentatives?: CyberjusticeLabKernelSharedJudicialFileModelsNotificationCreatePartyRepresentativeModel[];
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel[]}
+   * [notificationResources] Notification message and parameters in localized
+   * languages.
+   */
+  notificationResources?: CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel[];
 }
 
 /**
@@ -8017,10 +8507,10 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateApiRequ
    */
   specificStatus?: string;
   /**
-   * @member {OrderBy6} [orderBy] Order by columns. Possible values include:
+   * @member {OrderBy7} [orderBy] Order by columns. Possible values include:
    * 'EventCode', 'Status', 'CultureMessage'
    */
-  orderBy?: OrderBy6;
+  orderBy?: OrderBy7;
   /**
    * @member {string} [orderByCulture] Culture for the order by columns (Only
    * for the case when the order by message template).
@@ -8193,10 +8683,10 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequest
    */
   dedicatedSearch?: CyberjusticeLabKernelSharedJudicialFileModelsLogEntryApiRequestDataDedicatedSearch;
   /**
-   * @member {OrderBy7} [orderBy] Order by columns. Possible values include:
+   * @member {OrderBy8} [orderBy] Order by columns. Possible values include:
    * 'AuthorName', 'AuthorRole', 'FileStep', 'EntryDate', 'Message'
    */
-  orderBy?: OrderBy7;
+  orderBy?: OrderBy8;
   /**
    * @member {boolean} [orderByDescending] Order by ascending or descending.
    */
@@ -8375,6 +8865,171 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsLogEntryCreateMode
    * {CyberjusticeLab.Kernel.Shared.JudicialFile.Models.LogEntryDynamicParameterModel}.
    */
   cultureDynamicParametersDictionary?: { [propertyName: string]: string };
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel.
+ * Represents a penal çharge statement to be created.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel {
+  /**
+   * @member {string} [partyId] Party Guid for this charge.
+   */
+  partyId?: string;
+  /**
+   * @member {string} [ruleType] Charge rule type.
+   */
+  ruleType?: string;
+  /**
+   * @member {string} [ruleCode] Charge rule code. External Identifier.
+   */
+  ruleCode?: string;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedJudicialFileModelsChargeAttributeModel[]}
+   * [attributes] Attributes dictionary.
+   */
+  attributes?: CyberjusticeLabKernelSharedJudicialFileModelsChargeAttributeModel[];
+  /**
+   * @member {CyberjusticeLabKernelSharedJudicialFileModelsPleaModel} [plea]
+   * Plea of the charge.
+   */
+  plea?: CyberjusticeLabKernelSharedJudicialFileModelsPleaModel;
+  /**
+   * @member {Date} [offenceStatementDate] The offence statement date.
+   */
+  offenceStatementDate?: Date;
+  /**
+   * @member {string} [offenceStatementDescription] The offence statement
+   * description.
+   */
+  offenceStatementDescription?: string;
+  /**
+   * @member {string} [offenceStatementNumber] The offence statement number.
+   */
+  offenceStatementNumber?: string;
+  /**
+   * @member {string} [documentId] Optional document Id.
+   */
+  documentId?: string;
+  /**
+   * @member {Date} [modifiedDate] The modified date of an object.
+   * Required for optimistic concurrency.
+   */
+  modifiedDate?: Date;
+  /**
+   * @member {string} [modifiedBy] The modified by of an object.
+   */
+  modifiedBy?: string;
+  /**
+   * @member {string} [modifiedDateTicks] The modified date of an object,
+   * expressed in ticks.
+   * Required for optimistic concurrency.
+   * Prevent loss of precision when converting to JS object.
+   * **NOTE: This property will not be serialized. It can only be populated by
+   * the server.**
+   */
+  readonly modifiedDateTicks?: string;
+  /**
+   * @member {Date} [createdDate] The created date of an object.
+   */
+  createdDate?: Date;
+  /**
+   * @member {string} [createdBy] The created by of an object.
+   */
+  createdBy?: string;
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel.
+ * The representative contact model
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel {
+  /**
+   * @member {string} [firstName] First name of the contact.
+   */
+  firstName?: string;
+  /**
+   * @member {string} [lastName] Last name of the contact.
+   */
+  lastName?: string;
+  /**
+   * @member {string} [adresse] Address of the contact.
+   */
+  adresse?: string;
+  /**
+   * @member {string} [adresse2] Second address of the contact.
+   */
+  adresse2?: string;
+  /**
+   * @member {string} [city] City of the contact.
+   */
+  city?: string;
+  /**
+   * @member {string} [state] State of the contact.
+   */
+  state?: string;
+  /**
+   * @member {string} [country] Country of the contact.
+   */
+  country?: string;
+  /**
+   * @member {string} [zipCode] Zip code of the contact.
+   */
+  zipCode?: string;
+  /**
+   * @member {string} [email] Email of the contact.
+   */
+  email?: string;
+  /**
+   * @member {string} [website] Website of the contact.
+   */
+  website?: string;
+  /**
+   * @member {string} [latitude] The Gps latitude in degree for the City and
+   * Postal Code of the model.
+   */
+  latitude?: string;
+  /**
+   * @member {string} [longitude] The Gps latitude in degree for the City and
+   * Postal Code of the model.
+   */
+  longitude?: string;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedJudicialFileModelsContactPhoneNumberModel[]}
+   * [phoneNumbers] List of the phone numbers of the contact.
+   */
+  phoneNumbers?: CyberjusticeLabKernelSharedJudicialFileModelsContactPhoneNumberModel[];
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedJudicialFileModelsContactAttributeModel[]}
+   * [contactAttributes] List of the attributes of the contact.
+   */
+  contactAttributes?: CyberjusticeLabKernelSharedJudicialFileModelsContactAttributeModel[];
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel.
+ * The representative create contact model
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel {
+  /**
+   * @member {string} [representativeId] The representative ID
+   */
+  representativeId?: string;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel}
+   * [contact] The contact information
+   */
+  contact?: CyberjusticeLabKernelSharedJudicialFileModelsRepresentativeContactModel;
 }
 
 /**
@@ -8742,6 +9397,13 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsNotificationUpdate
    * an application.
    */
   link?: string;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel[]}
+   * [notificationResources] Notification message and parameters in localized
+   * languages.
+   */
+  notificationResources?: CyberjusticeLabKernelSharedJudicialFileModelsNotificationResourceModel[];
 }
 
 /**
@@ -8801,6 +9463,85 @@ export interface CyberjusticeLabKernelSharedJudicialFileModelsLogTemplateUpdateM
    * template messages. The key is the language, the value is the message.
    */
   templateMessages?: { [propertyName: string]: string };
+}
+
+/**
+ * @interface
+ * An interface representing CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel.
+ * Represents a penal çharge statement to be updated.
+ *
+ */
+export interface CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel {
+  /**
+   * @member {string} [chargeId] Guid of the charge.
+   */
+  chargeId?: string;
+  /**
+   * @member {string} [partyId] Party Guid for this charge.
+   */
+  partyId?: string;
+  /**
+   * @member {string} [ruleType] Charge rule type.
+   */
+  ruleType?: string;
+  /**
+   * @member {string} [ruleCode] Charge rule code. External Identifier.
+   */
+  ruleCode?: string;
+  /**
+   * @member
+   * {CyberjusticeLabKernelSharedJudicialFileModelsChargeAttributeModel[]}
+   * [attributes] Attributes dictionary.
+   */
+  attributes?: CyberjusticeLabKernelSharedJudicialFileModelsChargeAttributeModel[];
+  /**
+   * @member {CyberjusticeLabKernelSharedJudicialFileModelsPleaModel} [plea]
+   * Plea of the charge.
+   */
+  plea?: CyberjusticeLabKernelSharedJudicialFileModelsPleaModel;
+  /**
+   * @member {Date} [offenceStatementDate] The offence statement date.
+   */
+  offenceStatementDate?: Date;
+  /**
+   * @member {string} [offenceStatementDescription] The offence statement
+   * description.
+   */
+  offenceStatementDescription?: string;
+  /**
+   * @member {string} [offenceStatementNumber] The offence statement number.
+   */
+  offenceStatementNumber?: string;
+  /**
+   * @member {string} [documentId] Optional document Id.
+   */
+  documentId?: string;
+  /**
+   * @member {Date} [modifiedDate] The modified date of an object.
+   * Required for optimistic concurrency.
+   */
+  modifiedDate?: Date;
+  /**
+   * @member {string} [modifiedBy] The modified by of an object.
+   */
+  modifiedBy?: string;
+  /**
+   * @member {string} [modifiedDateTicks] The modified date of an object,
+   * expressed in ticks.
+   * Required for optimistic concurrency.
+   * Prevent loss of precision when converting to JS object.
+   * **NOTE: This property will not be serialized. It can only be populated by
+   * the server.**
+   */
+  readonly modifiedDateTicks?: string;
+  /**
+   * @member {Date} [createdDate] The created date of an object.
+   */
+  createdDate?: Date;
+  /**
+   * @member {string} [createdBy] The created by of an object.
+   */
+  createdBy?: string;
 }
 
 /**
@@ -10754,12 +11495,12 @@ export interface CyberjusticeLabKernelSharedWitnessModelsWitnessApiRequestData {
    */
   skip?: number;
   /**
-   * @member {OrderBy8} [orderBy] Order by columns. Possible values include:
+   * @member {OrderBy9} [orderBy] Order by columns. Possible values include:
    * 'FirstName', 'LastName', 'AttributeTestimonyMethod',
    * 'PartyActionAdjudicationAddedIdentificationFr',
    * 'PartyActionAdjudicationAddedIdentificationEn'
    */
-  orderBy?: OrderBy8;
+  orderBy?: OrderBy9;
   /**
    * @member {boolean} [orderByDescending] Order by ascending or descending.
    */
@@ -11609,11 +12350,11 @@ export interface JudicialFileGetFilesOptionalParams extends msRest.RequestOption
    */
   skip?: number;
   /**
-   * @member {OrderBy9} [orderBy] Orders the list before the take and skip
+   * @member {OrderBy10} [orderBy] Orders the list before the take and skip
    * operations. Possible values include: 'Name', 'JudicialFileId',
    * 'CreatedDate', 'ModifiedDate', 'Status', 'Key'
    */
-  orderBy?: OrderBy9;
+  orderBy?: OrderBy10;
   /**
    * @member {boolean} [orderByDescending] Orders by descending instead of the
    * default ascending.
@@ -11774,10 +12515,10 @@ export interface JudicialFileGetPartyEntitiesOptionalParams extends msRest.Reque
    */
   skip?: number;
   /**
-   * @member {OrderBy10} [orderBy] Orders the list before the take and skip
+   * @member {OrderBy11} [orderBy] Orders the list before the take and skip
    * operations. Possible values include: 'Code', 'CreatedDate'
    */
-  orderBy?: OrderBy10;
+  orderBy?: OrderBy11;
 }
 
 /**
@@ -11846,10 +12587,10 @@ export interface LocationGetBuildingsOptionalParams extends msRest.RequestOption
    */
   skip?: number;
   /**
-   * @member {OrderBy11} [orderBy] Orders the list before the take and skip
+   * @member {OrderBy12} [orderBy] Orders the list before the take and skip
    * operations. Possible values include: 'Name', 'CreatedDate'
    */
-  orderBy?: OrderBy11;
+  orderBy?: OrderBy12;
 }
 
 /**
@@ -11906,6 +12647,14 @@ export interface TagGetTagLinksOptionalParams extends msRest.RequestOptionsBase 
 }
 
 /**
+ * Defines values for OrderBy.
+ * Possible values include: 'Status', 'Date'
+ * @readonly
+ * @enum {string}
+ */
+export type OrderBy = 'Status' | 'Date';
+
+/**
  * Defines values for Status.
  * Possible values include: 'Draft', 'Active'
  * @readonly
@@ -11942,12 +12691,12 @@ export type EntryType = 'Weekly' | 'Monthly';
 export type FileStatus = 'Empty' | 'Draft' | 'InPreparation' | 'Planned' | 'PartiesIdentification' | 'ProblemDescription' | 'InitialProposal' | 'InitialDocumentFiling' | 'FilingCompletion' | 'Submitted' | 'Initiate' | 'Pending' | 'Open' | 'Negotiation' | 'MediationRequest' | 'MediatorAssign' | 'NegoMed' | 'Mediation' | 'MediationCompleted' | 'MinuteApproval' | 'MinuteApprovalRecall' | 'Complete' | 'Adjudication' | 'Reject' | 'Close' | 'Refuse' | 'Invalid';
 
 /**
- * Defines values for OrderBy.
+ * Defines values for OrderBy1.
  * Possible values include: 'Title', 'BeginDate', 'Rank'
  * @readonly
  * @enum {string}
  */
-export type OrderBy = 'Title' | 'BeginDate' | 'Rank';
+export type OrderBy1 = 'Title' | 'BeginDate' | 'Rank';
 
 /**
  * Defines values for Status2.
@@ -12092,12 +12841,13 @@ export type PermissionEnum = 'Public' | 'Private';
 export type DocumentationEnum = 'Digital' | 'External' | 'Oral';
 
 /**
- * Defines values for OrderBy1.
- * Possible values include: 'Title', 'Description', 'Format', 'ModifiedDate', 'CreatedDate'
+ * Defines values for OrderBy2.
+ * Possible values include: 'Title', 'Description', 'Format', 'ModifiedDate', 'CreatedDate',
+ * 'PartyActionAdjudicationAddedIdentificationFr', 'PartyActionAdjudicationAddedIdentificationEn'
  * @readonly
  * @enum {string}
  */
-export type OrderBy1 = 'Title' | 'Description' | 'Format' | 'ModifiedDate' | 'CreatedDate';
+export type OrderBy2 = 'Title' | 'Description' | 'Format' | 'ModifiedDate' | 'CreatedDate' | 'PartyActionAdjudicationAddedIdentificationFr' | 'PartyActionAdjudicationAddedIdentificationEn';
 
 /**
  * Defines values for FormatEnum1.
@@ -12201,11 +12951,11 @@ export type FormatEnum2 = 'pdf' | 'jpeg' | 'mp3' | 'mp4' | 'jpg' | 'png' | 'doc'
 
 /**
  * Defines values for RoleEnum.
- * Possible values include: 'Sender', 'Recipient'
+ * Possible values include: 'Empty', 'Sender', 'Recipient'
  * @readonly
  * @enum {string}
  */
-export type RoleEnum = 'Sender' | 'Recipient';
+export type RoleEnum = 'Empty' | 'Sender' | 'Recipient';
 
 /**
  * Defines values for StatusEnum4.
@@ -12216,20 +12966,20 @@ export type RoleEnum = 'Sender' | 'Recipient';
 export type StatusEnum4 = 'Active' | 'Inactive';
 
 /**
- * Defines values for OrderBy2.
+ * Defines values for OrderBy3.
  * Possible values include: 'Subject', 'Sender', 'CreatedDate'
  * @readonly
  * @enum {string}
  */
-export type OrderBy2 = 'Subject' | 'Sender' | 'CreatedDate';
+export type OrderBy3 = 'Subject' | 'Sender' | 'CreatedDate';
 
 /**
  * Defines values for RoleEnum1.
- * Possible values include: 'Sender', 'Recipient'
+ * Possible values include: 'Empty', 'Sender', 'Recipient'
  * @readonly
  * @enum {string}
  */
-export type RoleEnum1 = 'Sender' | 'Recipient';
+export type RoleEnum1 = 'Empty' | 'Sender' | 'Recipient';
 
 /**
  * Defines values for StatusEnum5.
@@ -12249,11 +12999,11 @@ export type StatusEnum6 = 'Active' | 'Inactive';
 
 /**
  * Defines values for Role.
- * Possible values include: 'Sender', 'Recipient'
+ * Possible values include: 'Empty', 'Sender', 'Recipient'
  * @readonly
  * @enum {string}
  */
-export type Role = 'Sender' | 'Recipient';
+export type Role = 'Empty' | 'Sender' | 'Recipient';
 
 /**
  * Defines values for FormStatusEnum.
@@ -12272,20 +13022,20 @@ export type FormStatusEnum = 'Active' | 'Inactive';
 export type FormStatusEnum1 = 'Active' | 'Inactive';
 
 /**
- * Defines values for OrderBy3.
+ * Defines values for OrderBy4.
  * Possible values include: 'Rank', 'Code', 'Caption', 'CreatedDate', 'ModifiedDate'
  * @readonly
  * @enum {string}
  */
-export type OrderBy3 = 'Rank' | 'Code' | 'Caption' | 'CreatedDate' | 'ModifiedDate';
+export type OrderBy4 = 'Rank' | 'Code' | 'Caption' | 'CreatedDate' | 'ModifiedDate';
 
 /**
- * Defines values for OrderBy4.
+ * Defines values for OrderBy5.
  * Possible values include: 'JournalDate', 'JournalSubject', 'JournalFrom'
  * @readonly
  * @enum {string}
  */
-export type OrderBy4 = 'JournalDate' | 'JournalSubject' | 'JournalFrom';
+export type OrderBy5 = 'JournalDate' | 'JournalSubject' | 'JournalFrom';
 
 /**
  * Defines values for StatusEnum7.
@@ -12376,13 +13126,13 @@ export type StatusBeforeClosingEnum = 'Empty' | 'Draft' | 'InPreparation' | 'Pla
 export type ProcedureCategoryEnum = 'Penal' | 'Criminal' | 'Civil';
 
 /**
- * Defines values for OrderBy5.
+ * Defines values for OrderBy6.
  * Possible values include: 'Name', 'JudicialFileId', 'CreatedDate', 'ModifiedDate', 'Status',
  * 'Key'
  * @readonly
  * @enum {string}
  */
-export type OrderBy5 = 'Name' | 'JudicialFileId' | 'CreatedDate' | 'ModifiedDate' | 'Status' | 'Key';
+export type OrderBy6 = 'Name' | 'JudicialFileId' | 'CreatedDate' | 'ModifiedDate' | 'Status' | 'Key';
 
 /**
  * Defines values for StatusEnum10.
@@ -12497,20 +13247,20 @@ export type StatusEnum14 = 'Empty' | 'Draft' | 'InPreparation' | 'Planned' | 'Pa
 export type ClosingReasonEnum1 = 'Agreement' | 'MediationFails' | 'NoEnrollment' | 'Abandon' | 'NotValid' | 'NoAnswer' | 'Other' | 'FeesNotPaid' | 'NotSpecified' | 'AbandonParty1' | 'AbandonParty2' | 'AgreementMediationManual' | 'InactiveNegotiation' | 'AbandonParty1IncompleteFile' | 'AbandonParty1WithHelp' | 'AbandonParty1WithoutHelp';
 
 /**
- * Defines values for OrderBy6.
+ * Defines values for OrderBy7.
  * Possible values include: 'EventCode', 'Status', 'CultureMessage'
  * @readonly
  * @enum {string}
  */
-export type OrderBy6 = 'EventCode' | 'Status' | 'CultureMessage';
+export type OrderBy7 = 'EventCode' | 'Status' | 'CultureMessage';
 
 /**
- * Defines values for OrderBy7.
+ * Defines values for OrderBy8.
  * Possible values include: 'AuthorName', 'AuthorRole', 'FileStep', 'EntryDate', 'Message'
  * @readonly
  * @enum {string}
  */
-export type OrderBy7 = 'AuthorName' | 'AuthorRole' | 'FileStep' | 'EntryDate' | 'Message';
+export type OrderBy8 = 'AuthorName' | 'AuthorRole' | 'FileStep' | 'EntryDate' | 'Message';
 
 /**
  * Defines values for LocationStatus.
@@ -12561,13 +13311,13 @@ export type LocationStatus4 = 'Active' | 'Inactive';
 export type LocationStatus5 = 'Active' | 'Inactive';
 
 /**
- * Defines values for OrderBy8.
+ * Defines values for OrderBy9.
  * Possible values include: 'FirstName', 'LastName', 'AttributeTestimonyMethod',
  * 'PartyActionAdjudicationAddedIdentificationFr', 'PartyActionAdjudicationAddedIdentificationEn'
  * @readonly
  * @enum {string}
  */
-export type OrderBy8 = 'FirstName' | 'LastName' | 'AttributeTestimonyMethod' | 'PartyActionAdjudicationAddedIdentificationFr' | 'PartyActionAdjudicationAddedIdentificationEn';
+export type OrderBy9 = 'FirstName' | 'LastName' | 'AttributeTestimonyMethod' | 'PartyActionAdjudicationAddedIdentificationFr' | 'PartyActionAdjudicationAddedIdentificationEn';
 
 /**
  * Defines values for CalendarTypes.
@@ -12578,29 +13328,29 @@ export type OrderBy8 = 'FirstName' | 'LastName' | 'AttributeTestimonyMethod' | '
 export type CalendarTypes = 'JudicialEntity' | 'User' | 'Room';
 
 /**
- * Defines values for OrderBy9.
+ * Defines values for OrderBy10.
  * Possible values include: 'Name', 'JudicialFileId', 'CreatedDate', 'ModifiedDate', 'Status',
  * 'Key'
  * @readonly
  * @enum {string}
  */
-export type OrderBy9 = 'Name' | 'JudicialFileId' | 'CreatedDate' | 'ModifiedDate' | 'Status' | 'Key';
+export type OrderBy10 = 'Name' | 'JudicialFileId' | 'CreatedDate' | 'ModifiedDate' | 'Status' | 'Key';
 
 /**
- * Defines values for OrderBy10.
+ * Defines values for OrderBy11.
  * Possible values include: 'Code', 'CreatedDate'
  * @readonly
  * @enum {string}
  */
-export type OrderBy10 = 'Code' | 'CreatedDate';
+export type OrderBy11 = 'Code' | 'CreatedDate';
 
 /**
- * Defines values for OrderBy11.
+ * Defines values for OrderBy12.
  * Possible values include: 'Name', 'CreatedDate'
  * @readonly
  * @enum {string}
  */
-export type OrderBy11 = 'Name' | 'CreatedDate';
+export type OrderBy12 = 'Name' | 'CreatedDate';
 
 /**
  * Defines values for Status11.
@@ -12609,6 +13359,48 @@ export type OrderBy11 = 'Name' | 'CreatedDate';
  * @enum {string}
  */
 export type Status11 = 'Draft' | 'Active';
+
+/**
+ * Contains response data for the getTimeEvents operation.
+ */
+export type AsyncGetTimeEventsResponse = CyberjusticeLabKernelSharedAsyncModelsTimeEventApiResponseModel & {
+  /**
+   * The underlying HTTP response.
+   */
+  _response: msRest.HttpResponse & {
+      /**
+       * The response body as text (string format)
+       */
+      bodyAsText: string;
+      /**
+       * The response body as parsed JSON or XML
+       */
+      parsedBody: CyberjusticeLabKernelSharedAsyncModelsTimeEventApiResponseModel;
+    };
+};
+
+/**
+ * Contains response data for the createTimeEvent operation.
+ */
+export type AsyncCreateTimeEventResponse = {
+  /**
+   * The parsed response body.
+   */
+  body: string;
+  /**
+   * The underlying HTTP response.
+   */
+  _response: msRest.HttpResponse & {
+      /**
+       * The response body as text (string format)
+       */
+      bodyAsText: string;
+      /**
+       * The response body as parsed JSON or XML
+       */
+      parsedBody: string;
+    };
+};
 
 /**
  * Contains response data for the validateTransitionStatus operation.
@@ -13037,6 +13829,29 @@ export type ExchangeGetForumMessageResponse = CyberjusticeLabKernelServiceContra
        * The response body as parsed JSON or XML
        */
       parsedBody: CyberjusticeLabKernelServiceContractsExchangeForumData;
+    };
+};
+
+/**
+ * Contains response data for the addForumMessage operation.
+ */
+export type ExchangeAddForumMessageResponse = {
+  /**
+   * The parsed response body.
+   */
+  body: string;
+  /**
+   * The underlying HTTP response.
+   */
+  _response: msRest.HttpResponse & {
+      /**
+       * The response body as text (string format)
+       */
+      bodyAsText: string;
+      /**
+       * The response body as parsed JSON or XML
+       */
+      parsedBody: string;
     };
 };
 
@@ -14214,6 +15029,25 @@ export type JudicialFileGetNotificationsResponse = CyberjusticeLabKernelSharedJu
 };
 
 /**
+ * Contains response data for the getNotificationsSummaryByFile operation.
+ */
+export type JudicialFileGetNotificationsSummaryByFileResponse = CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData & {
+  /**
+   * The underlying HTTP response.
+   */
+  _response: msRest.HttpResponse & {
+      /**
+       * The response body as text (string format)
+       */
+      bodyAsText: string;
+      /**
+       * The response body as parsed JSON or XML
+       */
+      parsedBody: CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData;
+    };
+};
+
+/**
  * Contains response data for the createJudicialFile operation.
  */
 export type JudicialFileCreateJudicialFileResponse = {
@@ -14317,6 +15151,29 @@ export type JudicialFileCreateLogEntryResponse = Array<string> & {
 };
 
 /**
+ * Contains response data for the createCharge operation.
+ */
+export type JudicialFileCreateChargeResponse = {
+  /**
+   * The parsed response body.
+   */
+  body: string;
+  /**
+   * The underlying HTTP response.
+   */
+  _response: msRest.HttpResponse & {
+      /**
+       * The response body as text (string format)
+       */
+      bodyAsText: string;
+      /**
+       * The response body as parsed JSON or XML
+       */
+      parsedBody: string;
+    };
+};
+
+/**
  * Contains response data for the updateFileAttribute operation.
  */
 export type JudicialFileUpdateFileAttributeResponse = CyberjusticeLabKernelSharedJudicialFileModelsPartyUpsertModel & {
@@ -14362,6 +15219,29 @@ export type JudicialFileUpsertPartyResponse = {
  * Contains response data for the upsertPartyContact operation.
  */
 export type JudicialFileUpsertPartyContactResponse = {
+  /**
+   * The parsed response body.
+   */
+  body: string;
+  /**
+   * The underlying HTTP response.
+   */
+  _response: msRest.HttpResponse & {
+      /**
+       * The response body as text (string format)
+       */
+      bodyAsText: string;
+      /**
+       * The response body as parsed JSON or XML
+       */
+      parsedBody: string;
+    };
+};
+
+/**
+ * Contains response data for the updateCharge operation.
+ */
+export type JudicialFileUpdateChargeResponse = {
   /**
    * The parsed response body.
    */

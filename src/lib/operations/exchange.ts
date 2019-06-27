@@ -115,30 +115,30 @@ export class Exchange {
    * @param forumMessageModel A {CyberjusticeLab.Kernel.Shared.Exchange.Models.AddForumMessageModel}
    * object with the new message information.
    * @param [options] The optional parameters
-   * @returns Promise<msRest.RestResponse>
+   * @returns Promise<Models.ExchangeAddForumMessageResponse>
    */
-  addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+  addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, options?: msRest.RequestOptionsBase): Promise<Models.ExchangeAddForumMessageResponse>;
   /**
    * @param forumMessageModel A {CyberjusticeLab.Kernel.Shared.Exchange.Models.AddForumMessageModel}
    * object with the new message information.
    * @param callback The callback
    */
-  addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, callback: msRest.ServiceCallback<void>): void;
+  addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, callback: msRest.ServiceCallback<string>): void;
   /**
    * @param forumMessageModel A {CyberjusticeLab.Kernel.Shared.Exchange.Models.AddForumMessageModel}
    * object with the new message information.
    * @param options The optional parameters
    * @param callback The callback
    */
-  addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
-  addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<void>, callback?: msRest.ServiceCallback<void>): Promise<msRest.RestResponse> {
+  addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
+  addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, options?: msRest.RequestOptionsBase | msRest.ServiceCallback<string>, callback?: msRest.ServiceCallback<string>): Promise<Models.ExchangeAddForumMessageResponse> {
     return this.client.sendOperationRequest(
       {
         forumMessageModel,
         options
       },
       addForumMessageOperationSpec,
-      callback);
+      callback) as Promise<Models.ExchangeAddForumMessageResponse>;
   }
 
   /**
@@ -272,6 +272,14 @@ const addForumMessageOperationSpec: msRest.OperationSpec = {
     }
   },
   responses: {
+    200: {
+      bodyMapper: {
+        serializedName: "parsedResponse",
+        type: {
+          name: "Uuid"
+        }
+      }
+    },
     403: {},
     404: {},
     default: {}
@@ -290,6 +298,7 @@ const addPartyToForumMessagesOperationSpec: msRest.OperationSpec = {
     }
   },
   responses: {
+    200: {},
     404: {},
     default: {}
   },
@@ -307,6 +316,7 @@ const addForumMessageAttributesOperationSpec: msRest.OperationSpec = {
     }
   },
   responses: {
+    200: {},
     404: {},
     default: {}
   },

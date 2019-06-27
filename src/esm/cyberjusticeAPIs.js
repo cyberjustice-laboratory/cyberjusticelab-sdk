@@ -16,6 +16,7 @@ var CyberjusticeAPIs = /** @class */ (function (_super) {
      */
     function CyberjusticeAPIs(options) {
         var _this = _super.call(this, options) || this;
+        _this.async = new operations.Async(_this);
         _this.businessInformation = new operations.BusinessInformation(_this);
         _this.calendar = new operations.Calendar(_this);
         _this.document = new operations.Document(_this);

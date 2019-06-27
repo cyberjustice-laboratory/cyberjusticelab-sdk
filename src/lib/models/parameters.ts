@@ -176,6 +176,16 @@ export const calendarTypes: msRest.OperationQueryParameter = {
     }
   }
 };
+export const chargeId: msRest.OperationQueryParameter = {
+  parameterPath: "chargeId",
+  mapper: {
+    required: true,
+    serializedName: "chargeId",
+    type: {
+      name: "Uuid"
+    }
+  }
+};
 export const childrenLevel: msRest.OperationQueryParameter = {
   parameterPath: "childrenLevel",
   mapper: {
@@ -1467,6 +1477,36 @@ export const take1: msRest.OperationQueryParameter = {
     serializedName: "take",
     type: {
       name: "Number"
+    }
+  }
+};
+export const timeEventId: msRest.OperationQueryParameter = {
+  parameterPath: "timeEventId",
+  mapper: {
+    required: true,
+    serializedName: "timeEventId",
+    type: {
+      name: "Uuid"
+    }
+  }
+};
+export const timerDate: msRest.OperationQueryParameter = {
+  parameterPath: "timerDate",
+  mapper: {
+    required: true,
+    serializedName: "timerDate",
+    type: {
+      name: "DateTime"
+    }
+  }
+};
+export const timerStatus: msRest.OperationQueryParameter = {
+  parameterPath: "timerStatus",
+  mapper: {
+    required: true,
+    serializedName: "timerStatus",
+    type: {
+      name: "String"
     }
   }
 };

@@ -71,22 +71,22 @@ export declare class Exchange {
      * @param forumMessageModel A {CyberjusticeLab.Kernel.Shared.Exchange.Models.AddForumMessageModel}
      * object with the new message information.
      * @param [options] The optional parameters
-     * @returns Promise<msRest.RestResponse>
+     * @returns Promise<Models.ExchangeAddForumMessageResponse>
      */
-    addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, options?: msRest.RequestOptionsBase): Promise<msRest.RestResponse>;
+    addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, options?: msRest.RequestOptionsBase): Promise<Models.ExchangeAddForumMessageResponse>;
     /**
      * @param forumMessageModel A {CyberjusticeLab.Kernel.Shared.Exchange.Models.AddForumMessageModel}
      * object with the new message information.
      * @param callback The callback
      */
-    addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, callback: msRest.ServiceCallback<void>): void;
+    addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, callback: msRest.ServiceCallback<string>): void;
     /**
      * @param forumMessageModel A {CyberjusticeLab.Kernel.Shared.Exchange.Models.AddForumMessageModel}
      * object with the new message information.
      * @param options The optional parameters
      * @param callback The callback
      */
-    addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<void>): void;
+    addForumMessage(forumMessageModel: Models.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, options: msRest.RequestOptionsBase, callback: msRest.ServiceCallback<string>): void;
     /**
      * @summary Add a party to a forum's message
      * @param partyForumMessageModel The party, file id and the attribute filter.

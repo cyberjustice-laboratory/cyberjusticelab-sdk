@@ -3,6 +3,7 @@ import * as Mappers from "./models/mappers";
 import * as operations from "./operations";
 import { CyberjusticeAPIsContext } from "./cyberjusticeAPIsContext";
 declare class CyberjusticeAPIs extends CyberjusticeAPIsContext {
+    async: operations.Async;
     businessInformation: operations.BusinessInformation;
     calendar: operations.Calendar;
     document: operations.Document;

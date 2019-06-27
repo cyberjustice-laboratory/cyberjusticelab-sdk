@@ -1,0 +1,2 @@
+export { CyberjusticeLabKernelSharedLocationLocationBuildingData, CyberjusticeLabKernelSharedLocationLocationRoomData, CyberjusticeLabKernelSharedLocationLocationBuildingUpdateData, CyberjusticeLabKernelSharedLocationLocationRoomUpdateData, CyberjusticeLabKernelSharedLocationLocationBuildingCreateData, CyberjusticeLabKernelSharedLocationLocationRoomCreateData } from "../models/mappers";
+//# sourceMappingURL=locationMappers.d.ts.map

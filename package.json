@@ -4,7 +4,8 @@
   "description": "To regenerate sdk",
   "main": "generateClientAPI.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "set NODE_ENV=development && node generateClientAPI.js  && cd ./src && npm run prepack && cd .. && node eslintfix.js",
+    "build": "set NODE_ENV=production && node generateClientAPI.js && cd ./src && npm run prepack  && cd .. && node eslintfix.js"
   },
   "repository": {
     "type": "git",
@@ -16,8 +17,7 @@
     "url": "https://github.com/cyberjustice-laboratory/cyberjusticelab-sdk/issues"
   },
   "homepage": "https://github.com/cyberjustice-laboratory/cyberjusticelab-sdk#readme",
-  "scripts": {
-    "start": "set NODE_ENV=development && node generateClientAPI.js  && cd ./src && npm run prepack",
-    "build": "set NODE_ENV=production && node generateClientAPI.js && cd ./src && npm run prepack"
+  "dependencies": {
+    "prepend-file": "^1.3.1"
   }
 }

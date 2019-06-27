@@ -23,6 +23,12 @@ var JudicialFile = /** @class */ (function () {
             options: options
         }, deletePartyOperationSpec, callback);
     };
+    JudicialFile.prototype.detachRepresentativeFromParty = function (detachRepresentativeFromPartyModel, options, callback) {
+        return this.client.sendOperationRequest({
+            detachRepresentativeFromPartyModel: detachRepresentativeFromPartyModel,
+            options: options
+        }, detachRepresentativeFromPartyOperationSpec, callback);
+    };
     JudicialFile.prototype.deletePartyInvitation = function (partyInvitationId, options, callback) {
         return this.client.sendOperationRequest({
             partyInvitationId: partyInvitationId,
@@ -48,6 +54,13 @@ var JudicialFile = /** @class */ (function () {
             notificationId: notificationId,
             options: options
         }, deleteNotificationOperationSpec, callback);
+    };
+    JudicialFile.prototype.deleteCharge = function (chargeId, modifiedTicks, options, callback) {
+        return this.client.sendOperationRequest({
+            chargeId: chargeId,
+            modifiedTicks: modifiedTicks,
+            options: options
+        }, deleteChargeOperationSpec, callback);
     };
     JudicialFile.prototype.getFiles = function (options, callback) {
         return this.client.sendOperationRequest({
@@ -337,6 +350,12 @@ var JudicialFile = /** @class */ (function () {
             options: options
         }, getNotificationsOperationSpec, callback);
     };
+    JudicialFile.prototype.getNotificationsSummaryByFile = function (requestModel, options, callback) {
+        return this.client.sendOperationRequest({
+            requestModel: requestModel,
+            options: options
+        }, getNotificationsSummaryByFileOperationSpec, callback);
+    };
     JudicialFile.prototype.createNotification = function (model, options, callback) {
         return this.client.sendOperationRequest({
             model: model,
@@ -378,6 +397,18 @@ var JudicialFile = /** @class */ (function () {
             model: model,
             options: options
         }, createLogEntryOperationSpec, callback);
+    };
+    JudicialFile.prototype.createCharge = function (charge, options, callback) {
+        return this.client.sendOperationRequest({
+            charge: charge,
+            options: options
+        }, createChargeOperationSpec, callback);
+    };
+    JudicialFile.prototype.createRepresentativeProfile = function (model, options, callback) {
+        return this.client.sendOperationRequest({
+            model: model,
+            options: options
+        }, createRepresentativeProfileOperationSpec, callback);
     };
     JudicialFile.prototype.closeFile = function (closeFileModel, options, callback) {
         return this.client.sendOperationRequest({
@@ -459,6 +490,12 @@ var JudicialFile = /** @class */ (function () {
             options: options
         }, updateLogTemplatesOperationSpec, callback);
     };
+    JudicialFile.prototype.updateCharge = function (charge, options, callback) {
+        return this.client.sendOperationRequest({
+            charge: charge,
+            options: options
+        }, updateChargeOperationSpec, callback);
+    };
     return JudicialFile;
 }());
 export { JudicialFile };
@@ -476,6 +513,21 @@ var deletePartyOperationSpec = {
         403: {},
         404: {},
         409: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var detachRepresentativeFromPartyOperationSpec = {
+    httpMethod: "DELETE",
+    path: "JudicialFile/DELETE/DetachRepresentativeFromParty",
+    requestBody: {
+        parameterPath: "detachRepresentativeFromPartyModel",
+        mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsDetachRepresentativeFromPartyModel, { required: true })
+    },
+    responses: {
+        200: {},
+        403: {},
+        404: {},
         default: {}
     },
     serializer: serializer
@@ -527,6 +579,20 @@ var deleteNotificationOperationSpec = {
     path: "JudicialFile/DELETE/Notification",
     queryParameters: [
         Parameters.notificationId
+    ],
+    responses: {
+        200: {},
+        403: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var deleteChargeOperationSpec = {
+    httpMethod: "DELETE",
+    path: "JudicialFile/DELETE/Charge",
+    queryParameters: [
+        Parameters.chargeId,
+        Parameters.modifiedTicks
     ],
     responses: {
         200: {},
@@ -1466,6 +1532,21 @@ var getNotificationsOperationSpec = {
     },
     serializer: serializer
 };
+var getNotificationsSummaryByFileOperationSpec = {
+    httpMethod: "POST",
+    path: "JudicialFile/POST/NotificationsSummaryByFile",
+    requestBody: {
+        parameterPath: "requestModel",
+        mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiRequestData, { required: true })
+    },
+    responses: {
+        200: {
+            bodyMapper: Mappers.CyberjusticeLabKernelSharedJudicialFileModelsNotificationsSummaryByFileApiResponseData
+        },
+        default: {}
+    },
+    serializer: serializer
+};
 var createNotificationOperationSpec = {
     httpMethod: "POST",
     path: "JudicialFile/POST/CreateNotification",
@@ -1593,6 +1674,41 @@ var createLogEntryOperationSpec = {
             }
         },
         404: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var createChargeOperationSpec = {
+    httpMethod: "POST",
+    path: "JudicialFile/POST/CreatePenalCharge",
+    requestBody: {
+        parameterPath: "charge",
+        mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeCreateModel, { required: true })
+    },
+    responses: {
+        200: {
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
+                    name: "Uuid"
+                }
+            }
+        },
+        403: {},
+        404: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var createRepresentativeProfileOperationSpec = {
+    httpMethod: "POST",
+    path: "JudicialFile/POST/CreateRepresentativeProfile",
+    requestBody: {
+        parameterPath: "model",
+        mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsCreateRepresentativeProfileModel, { required: true })
+    },
+    responses: {
+        200: {},
         default: {}
     },
     serializer: serializer
@@ -1824,6 +1940,28 @@ var updateLogTemplatesOperationSpec = {
     responses: {
         200: {},
         403: {},
+        default: {}
+    },
+    serializer: serializer
+};
+var updateChargeOperationSpec = {
+    httpMethod: "POST",
+    path: "JudicialFile/PUT/UpdatePenalCharge",
+    requestBody: {
+        parameterPath: "charge",
+        mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedJudicialFileModelsPenalChargeUpdateModel, { required: true })
+    },
+    responses: {
+        200: {
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
+                    name: "Uuid"
+                }
+            }
+        },
+        403: {},
+        404: {},
         default: {}
     },
     serializer: serializer

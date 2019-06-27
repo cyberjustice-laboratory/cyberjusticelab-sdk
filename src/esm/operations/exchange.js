@@ -121,6 +121,14 @@ var addForumMessageOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageModel, { required: true })
     },
     responses: {
+        200: {
+            bodyMapper: {
+                serializedName: "parsedResponse",
+                type: {
+                    name: "Uuid"
+                }
+            }
+        },
         403: {},
         404: {},
         default: {}
@@ -135,6 +143,7 @@ var addPartyToForumMessagesOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedExchangeModelsAddPartyToForumMessagesModel, { required: true })
     },
     responses: {
+        200: {},
         404: {},
         default: {}
     },
@@ -148,6 +157,7 @@ var addForumMessageAttributesOperationSpec = {
         mapper: tslib_1.__assign({}, Mappers.CyberjusticeLabKernelSharedExchangeModelsAddForumMessageAttributesModel, { required: true })
     },
     responses: {
+        200: {},
         404: {},
         default: {}
     },
